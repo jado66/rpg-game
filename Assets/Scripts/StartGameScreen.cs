@@ -159,7 +159,7 @@ public class StartGameScreen : MonoBehaviour
         PlayerPrefs.SetString("PlayerName",name);
         PlayerPrefs.Save();
 
-        LoadingData.sceneToLoad = "Terra";
+        LoadingData.sceneToLoad = "Tutorial";
             
         Instantiate(loadingScreen,Vector3.zero,Quaternion.identity);
     }
