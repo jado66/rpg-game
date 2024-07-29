@@ -1,0 +1,4397 @@
+fileFormatVersion: 2
+guid: d5f67c5523b07844786a6cdd8b91ec94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3605422958066905048
+    second: DarkTower_0
+  - first:
+      213: 4426764509908534555
+    second: DarkTower_1
+  - first:
+      213: -2798925027614586771
+    second: DarkTower_2
+  - first:
+      213: 6399152321623363167
+    second: DarkTower_3
+  - first:
+      213: -5159813646563221832
+    second: DarkTower_4
+  - first:
+      213: 4998000625559023482
+    second: DarkTower_5
+  - first:
+      213: -1280797999337553810
+    second: DarkTower_6
+  - first:
+      213: 5440440811143471481
+    second: DarkTower_7
+  - first:
+      213: 1772494121894218722
+    second: DarkTower_8
+  - first:
+      213: -1140637855640076582
+    second: DarkTower_9
+  - first:
+      213: -4949186976501655227
+    second: DarkTower_10
+  - first:
+      213: -6549982867309069692
+    second: DarkTower_11
+  - first:
+      213: 2067924705523821494
+    second: DarkTower_12
+  - first:
+      213: 2190671147903057204
+    second: DarkTower_13
+  - first:
+      213: 862965219659541288
+    second: DarkTower_14
+  - first:
+      213: 8087321020705459888
+    second: DarkTower_15
+  - first:
+      213: 2626341561291507400
+    second: DarkTower_16
+  - first:
+      213: 3126511558763629373
+    second: DarkTower_17
+  - first:
+      213: 7790981352899956237
+    second: DarkTower_18
+  - first:
+      213: 5563835634084001763
+    second: DarkTower_19
+  - first:
+      213: 1947517569272850158
+    second: DarkTower_20
+  - first:
+      213: 6843432073573884175
+    second: DarkTower_21
+  - first:
+      213: -6919179926937805359
+    second: DarkTower_22
+  - first:
+      213: -6546221023697081734
+    second: DarkTower_23
+  - first:
+      213: 7291296970350273972
+    second: DarkTower_24
+  - first:
+      213: 6530402871337076027
+    second: DarkTower_25
+  - first:
+      213: 8914576679298399643
+    second: DarkTower_26
+  - first:
+      213: 7934455651332555186
+    second: DarkTower_27
+  - first:
+      213: 6665940881075207578
+    second: DarkTower_28
+  - first:
+      213: -2959999869208714403
+    second: DarkTower_29
+  - first:
+      213: -1263458530970468987
+    second: DarkTower_30
+  - first:
+      213: -8858829679155430600
+    second: DarkTower_31
+  - first:
+      213: -3608401078214807552
+    second: DarkTower_32
+  - first:
+      213: 5410552403954366401
+    second: DarkTower_33
+  - first:
+      213: -3925099844573479469
+    second: DarkTower_34
+  - first:
+      213: 4616995176773613570
+    second: DarkTower_35
+  - first:
+      213: 4290734704285746757
+    second: DarkTower_36
+  - first:
+      213: -6812513019163488220
+    second: DarkTower_37
+  - first:
+      213: -1952216189093282780
+    second: DarkTower_38
+  - first:
+      213: -8299994178426314856
+    second: DarkTower_39
+  - first:
+      213: 6957229184567739688
+    second: DarkTower_40
+  - first:
+      213: 8827818034059372857
+    second: DarkTower_41
+  - first:
+      213: -819124565922617923
+    second: DarkTower_42
+  - first:
+      213: 2859893237937030629
+    second: DarkTower_43
+  - first:
+      213: 787120781291159782
+    second: DarkTower_44
+  - first:
+      213: 3044828452662875363
+    second: DarkTower_45
+  - first:
+      213: -599926566789083041
+    second: DarkTower_46
+  - first:
+      213: 7483406869047902629
+    second: DarkTower_47
+  - first:
+      213: -1144818394335338365
+    second: DarkTower_48
+  - first:
+      213: -5278417190905633774
+    second: DarkTower_49
+  - first:
+      213: 8403912393185346609
+    second: DarkTower_50
+  - first:
+      213: 2454718892293519492
+    second: DarkTower_51
+  - first:
+      213: -2737952758595664331
+    second: DarkTower_52
+  - first:
+      213: 1886829108624357171
+    second: DarkTower_53
+  - first:
+      213: 8909417095353982844
+    second: DarkTower_54
+  - first:
+      213: -3794275133181560865
+    second: DarkTower_55
+  - first:
+      213: 9165327825322773936
+    second: DarkTower_56
+  - first:
+      213: 4361669270601505580
+    second: DarkTower_57
+  - first:
+      213: 7445837267748065631
+    second: DarkTower_58
+  - first:
+      213: 2954768476721180008
+    second: DarkTower_59
+  - first:
+      213: 3333124689800999770
+    second: DarkTower_60
+  - first:
+      213: 6952682118818028540
+    second: DarkTower_61
+  - first:
+      213: 6933466745102163970
+    second: DarkTower_62
+  - first:
+      213: 4662500683226537398
+    second: DarkTower_63
+  - first:
+      213: -2620757446792653232
+    second: DarkTower_64
+  - first:
+      213: -2496505426650532318
+    second: DarkTower_65
+  - first:
+      213: -6984005728340252783
+    second: DarkTower_66
+  - first:
+      213: 9165668715676039621
+    second: DarkTower_67
+  - first:
+      213: 4731103375902929544
+    second: DarkTower_68
+  - first:
+      213: 7893693584014186675
+    second: DarkTower_69
+  - first:
+      213: -3553327819942584677
+    second: DarkTower_70
+  - first:
+      213: -5636335709244215691
+    second: DarkTower_71
+  - first:
+      213: -2180052603411061140
+    second: DarkTower_72
+  - first:
+      213: -7068763328406978169
+    second: DarkTower_73
+  - first:
+      213: 3404514588930192221
+    second: DarkTower_74
+  - first:
+      213: -7380018255436611426
+    second: DarkTower_75
+  - first:
+      213: -1098944083130230360
+    second: DarkTower_76
+  - first:
+      213: -4597601410506434165
+    second: DarkTower_77
+  - first:
+      213: -7167295002554093947
+    second: DarkTower_78
+  - first:
+      213: -8127706975254901756
+    second: DarkTower_79
+  - first:
+      213: -4924269903892248340
+    second: DarkTower_80
+  - first:
+      213: -5908336122442146661
+    second: DarkTower_81
+  - first:
+      213: 4886364240084579752
+    second: DarkTower_82
+  - first:
+      213: -2914852276447662318
+    second: DarkTower_83
+  - first:
+      213: -7127031986315769795
+    second: DarkTower_84
+  - first:
+      213: -7134372891148974087
+    second: DarkTower_85
+  - first:
+      213: 846408028609450845
+    second: DarkTower_86
+  - first:
+      213: -8391411491006015900
+    second: DarkTower_87
+  - first:
+      213: 7720733243332839426
+    second: DarkTower_88
+  - first:
+      213: -5862977065777404987
+    second: DarkTower_89
+  - first:
+      213: -5212492848669290672
+    second: DarkTower_90
+  - first:
+      213: 2014262726798903922
+    second: DarkTower_91
+  - first:
+      213: 5251474546792786597
+    second: DarkTower_92
+  - first:
+      213: 8966489483063681962
+    second: DarkTower_93
+  - first:
+      213: 8627618795341798344
+    second: DarkTower_94
+  - first:
+      213: -5975223507546355091
+    second: DarkTower_95
+  - first:
+      213: 1331666903818615243
+    second: DarkTower_96
+  - first:
+      213: 5512136094163995682
+    second: DarkTower_97
+  - first:
+      213: 2351466748398409020
+    second: DarkTower_98
+  - first:
+      213: -4412346776388499070
+    second: DarkTower_99
+  - first:
+      213: -649972022511264835
+    second: DarkTower_100
+  - first:
+      213: 1436998108910180963
+    second: DarkTower_101
+  - first:
+      213: -8636000952490219562
+    second: DarkTower_102
+  - first:
+      213: 7861268605379381271
+    second: DarkTower_103
+  - first:
+      213: 1376582255710214643
+    second: DarkTower_104
+  - first:
+      213: -5706126441600150457
+    second: DarkTower_105
+  - first:
+      213: -4356853867094257421
+    second: DarkTower_106
+  - first:
+      213: 608796950694273354
+    second: DarkTower_107
+  - first:
+      213: 4565269338975209589
+    second: DarkTower_108
+  - first:
+      213: -7505213255482835499
+    second: DarkTower_109
+  - first:
+      213: -5107181419996095193
+    second: DarkTower_110
+  - first:
+      213: -5687151335907051238
+    second: DarkTower_111
+  - first:
+      213: -645699241751778530
+    second: DarkTower_112
+  - first:
+      213: 7498418951948988578
+    second: DarkTower_113
+  - first:
+      213: -6927195542481563001
+    second: DarkTower_114
+  - first:
+      213: 6520668128460648647
+    second: DarkTower_115
+  - first:
+      213: 135781293745891711
+    second: DarkTower_116
+  - first:
+      213: 7736002588817957921
+    second: DarkTower_117
+  - first:
+      213: -4653434241031292824
+    second: DarkTower_118
+  - first:
+      213: 4101916107337795571
+    second: DarkTower_119
+  - first:
+      213: 6858658272910951014
+    second: DarkTower_120
+  - first:
+      213: 5267214963610143995
+    second: DarkTower_121
+  - first:
+      213: -6173544435915498128
+    second: DarkTower_122
+  - first:
+      213: 3063147589648627613
+    second: DarkTower_123
+  - first:
+      213: 2581420285537849774
+    second: DarkTower_124
+  - first:
+      213: -2079287098971254058
+    second: DarkTower_125
+  - first:
+      213: -725748632680343022
+    second: DarkTower_126
+  - first:
+      213: 4504796302536827769
+    second: DarkTower_127
+  - first:
+      213: 6928403500559024639
+    second: DarkTower_128
+  - first:
+      213: -2783101914240599840
+    second: DarkTower_129
+  - first:
+      213: 7289030128756864871
+    second: DarkTower_130
+  - first:
+      213: 199463164042510478
+    second: DarkTower_131
+  - first:
+      213: 2131538962454589694
+    second: DarkTower_132
+  - first:
+      213: 7253208274602112874
+    second: DarkTower_133
+  - first:
+      213: -4384919770534458990
+    second: DarkTower_134
+  - first:
+      213: -5089056771408606893
+    second: DarkTower_135
+  - first:
+      213: -6827582168551309978
+    second: DarkTower_136
+  - first:
+      213: -7831365140296621119
+    second: DarkTower_137
+  - first:
+      213: 1997971664337767384
+    second: DarkTower_138
+  - first:
+      213: -7411230349329542665
+    second: DarkTower_139
+  - first:
+      213: 471345850862121800
+    second: DarkTower_140
+  - first:
+      213: -1935546498320090406
+    second: DarkTower_141
+  - first:
+      213: 4780030790438229683
+    second: DarkTower_142
+  - first:
+      213: 2594785737508889313
+    second: DarkTower_143
+  - first:
+      213: 3166447119501816400
+    second: DarkTower_144
+  - first:
+      213: 1161447179829777004
+    second: DarkTower_145
+  - first:
+      213: -1727832643812216536
+    second: DarkTower_146
+  - first:
+      213: 7557429417688630999
+    second: DarkTower_147
+  - first:
+      213: 9166648430501330846
+    second: DarkTower_0
+  - first:
+      213: 6488868185356256749
+    second: DarkTower_1
+  - first:
+      213: -6054392542343889699
+    second: DarkTower_2
+  - first:
+      213: -2107422749849066034
+    second: DarkTower_3
+  - first:
+      213: -6499194444402996101
+    second: DarkTower_4
+  - first:
+      213: -1557608349460275124
+    second: DarkTower_5
+  - first:
+      213: -2551941271361475785
+    second: DarkTower_6
+  - first:
+      213: 4698860564760074176
+    second: DarkTower_7
+  - first:
+      213: 208091776545047777
+    second: DarkTower_8
+  - first:
+      213: -7537902554968388680
+    second: DarkTower_9
+  - first:
+      213: 4043944427238786886
+    second: DarkTower_10
+  - first:
+      213: -7436522671230950539
+    second: DarkTower_11
+  - first:
+      213: 1605172872583266422
+    second: DarkTower_12
+  - first:
+      213: 602180004565109958
+    second: DarkTower_13
+  - first:
+      213: 8747613332093814253
+    second: DarkTower_14
+  - first:
+      213: -1922564763196840024
+    second: DarkTower_15
+  - first:
+      213: -552329031724957058
+    second: DarkTower_16
+  - first:
+      213: -7007695670416740694
+    second: DarkTower_17
+  - first:
+      213: -8946124266492333719
+    second: DarkTower_18
+  - first:
+      213: -6911791921119709922
+    second: DarkTower_19
+  - first:
+      213: -8022778615737939496
+    second: DarkTower_20
+  - first:
+      213: 2504255055463078477
+    second: DarkTower_21
+  - first:
+      213: -8241601939455611859
+    second: DarkTower_22
+  - first:
+      213: 7404977018792298287
+    second: DarkTower_23
+  - first:
+      213: -4407082508128755844
+    second: DarkTower_24
+  - first:
+      213: 5359692786955361952
+    second: DarkTower_25
+  - first:
+      213: 778984076243832559
+    second: DarkTower_26
+  - first:
+      213: 8604207978163905746
+    second: DarkTower_27
+  - first:
+      213: 8052501157292512006
+    second: DarkTower_28
+  - first:
+      213: -7188925801814307921
+    second: DarkTower_29
+  - first:
+      213: -4500321061575227622
+    second: DarkTower_30
+  - first:
+      213: 3182164250726039807
+    second: DarkTower_31
+  - first:
+      213: -5006650537228964359
+    second: DarkTower_32
+  - first:
+      213: -8382159948001326664
+    second: DarkTower_33
+  - first:
+      213: -4482207809666394504
+    second: DarkTower_34
+  - first:
+      213: 1512935846309350723
+    second: DarkTower_35
+  - first:
+      213: -8022722102970515085
+    second: DarkTower_36
+  - first:
+      213: -4182356736928622387
+    second: DarkTower_37
+  - first:
+      213: -3763940418859316456
+    second: DarkTower_38
+  - first:
+      213: -2798243800487661923
+    second: DarkTower_39
+  - first:
+      213: 6283245555930901284
+    second: DarkTower_40
+  - first:
+      213: -5160177041265246970
+    second: DarkTower_41
+  - first:
+      213: -7374300923567796345
+    second: DarkTower_42
+  - first:
+      213: 6221705039738841348
+    second: DarkTower_43
+  - first:
+      213: 2690252646713640316
+    second: DarkTower_44
+  - first:
+      213: 2341953562960160496
+    second: DarkTower_45
+  - first:
+      213: 6170617797597647315
+    second: DarkTower_46
+  - first:
+      213: 2331104580559309118
+    second: DarkTower_47
+  - first:
+      213: -6162681032345224521
+    second: DarkTower_48
+  - first:
+      213: -8995693493856436027
+    second: DarkTower_49
+  - first:
+      213: -6262080876226398929
+    second: DarkTower_50
+  - first:
+      213: 6453228379874785630
+    second: DarkTower_51
+  - first:
+      213: 7895483231429415805
+    second: DarkTower_52
+  - first:
+      213: -6283814149958172707
+    second: DarkTower_53
+  - first:
+      213: -2741503712018916892
+    second: DarkTower_54
+  - first:
+      213: 3924433155233273460
+    second: DarkTower_55
+  - first:
+      213: 6975852846654080719
+    second: DarkTower_56
+  - first:
+      213: 2386644661149769379
+    second: DarkTower_57
+  - first:
+      213: 614833436698287834
+    second: DarkTower_58
+  - first:
+      213: -6126783034384824117
+    second: DarkTower_59
+  - first:
+      213: -1485979132478450393
+    second: DarkTower_60
+  - first:
+      213: -4207857687202973547
+    second: DarkTower_61
+  - first:
+      213: 6939502194350000145
+    second: DarkTower_62
+  - first:
+      213: -2977912990931416380
+    second: DarkTower_63
+  - first:
+      213: -4663244538457463714
+    second: DarkTower_64
+  - first:
+      213: 5025582072459655833
+    second: DarkTower_65
+  - first:
+      213: 753563097780980493
+    second: DarkTower_66
+  - first:
+      213: -2122806701344696753
+    second: DarkTower_67
+  - first:
+      213: 5224762317839003734
+    second: DarkTower_68
+  - first:
+      213: -4289102972973056083
+    second: DarkTower_69
+  - first:
+      213: -5920666719388443560
+    second: DarkTower_70
+  - first:
+      213: 6969393754176988112
+    second: DarkTower_71
+  - first:
+      213: 1113455103349614465
+    second: DarkTower_72
+  - first:
+      213: 6248286971548545312
+    second: DarkTower_73
+  - first:
+      213: -1558629511060417646
+    second: DarkTower_74
+  - first:
+      213: -4194663010055774231
+    second: DarkTower_75
+  - first:
+      213: 7115601391175624575
+    second: DarkTower_76
+  - first:
+      213: -8573348532375722959
+    second: DarkTower_77
+  - first:
+      213: 5263505734121452984
+    second: DarkTower_78
+  - first:
+      213: -1892611514563431372
+    second: DarkTower_79
+  - first:
+      213: 4787763259248980806
+    second: DarkTower_80
+  - first:
+      213: 8220296370179355906
+    second: DarkTower_81
+  - first:
+      213: -7892507645810787271
+    second: DarkTower_82
+  - first:
+      213: -2237756009363893407
+    second: DarkTower_83
+  - first:
+      213: 1299010028504686297
+    second: DarkTower_84
+  - first:
+      213: -6849859248481601907
+    second: DarkTower_85
+  - first:
+      213: 2555048213109169927
+    second: DarkTower_86
+  - first:
+      213: 4604261364483633323
+    second: DarkTower_87
+  - first:
+      213: 2058571191197351482
+    second: DarkTower_88
+  - first:
+      213: -8603033678745259451
+    second: DarkTower_89
+  - first:
+      213: 3400037406385869054
+    second: DarkTower_90
+  - first:
+      213: -8871872890268088900
+    second: DarkTower_91
+  - first:
+      213: -1386471863400526529
+    second: DarkTower_92
+  - first:
+      213: -4954824746183389977
+    second: DarkTower_93
+  - first:
+      213: -3503154583438817857
+    second: DarkTower_94
+  - first:
+      213: 340654768523198186
+    second: DarkTower_95
+  - first:
+      213: 7194521972186661839
+    second: DarkTower_96
+  - first:
+      213: -1760781677350806316
+    second: DarkTower_97
+  - first:
+      213: 2507345063489789051
+    second: DarkTower_98
+  - first:
+      213: 9114456128969556857
+    second: DarkTower_99
+  - first:
+      213: 5318521139599762722
+    second: DarkTower_100
+  - first:
+      213: -6761430756058999902
+    second: DarkTower_101
+  - first:
+      213: -6459420725136937062
+    second: DarkTower_102
+  - first:
+      213: -8269665381568268310
+    second: DarkTower_103
+  - first:
+      213: 8158269374295055090
+    second: DarkTower_104
+  - first:
+      213: 4336653294301297299
+    second: DarkTower_105
+  - first:
+      213: -7753469589879835737
+    second: DarkTower_106
+  - first:
+      213: -3957292987380441557
+    second: DarkTower_107
+  - first:
+      213: 7711621673560804522
+    second: DarkTower_108
+  - first:
+      213: 4926236702392522097
+    second: DarkTower_109
+  - first:
+      213: -2615184125395341175
+    second: DarkTower_110
+  - first:
+      213: 7515247517960716084
+    second: DarkTower_111
+  - first:
+      213: -1427501910392608851
+    second: DarkTower_112
+  - first:
+      213: 2111678111062710122
+    second: DarkTower_113
+  - first:
+      213: -5829339679985541210
+    second: DarkTower_114
+  - first:
+      213: 1926449070351096839
+    second: DarkTower_115
+  - first:
+      213: 6979406970360074730
+    second: DarkTower_116
+  - first:
+      213: 5207980747479177186
+    second: DarkTower_117
+  - first:
+      213: 5336025987900589795
+    second: DarkTower_118
+  - first:
+      213: -5467831323652163180
+    second: DarkTower_119
+  - first:
+      213: -438697502786001655
+    second: DarkTower_120
+  - first:
+      213: 3616655879137012179
+    second: DarkTower_121
+  - first:
+      213: -7809820565879171359
+    second: DarkTower_122
+  - first:
+      213: 7945130326318101
+    second: DarkTower_123
+  - first:
+      213: 455119825513461590
+    second: DarkTower_124
+  - first:
+      213: -1071803916885100911
+    second: DarkTower_125
+  - first:
+      213: -7285257627707272727
+    second: DarkTower_126
+  - first:
+      213: -5912094354774620389
+    second: DarkTower_127
+  - first:
+      213: 1600469359173602301
+    second: DarkTower_128
+  - first:
+      213: -2930853539060138293
+    second: DarkTower_129
+  - first:
+      213: 1807476807026823082
+    second: DarkTower_130
+  - first:
+      213: -7268735443539950142
+    second: DarkTower_131
+  - first:
+      213: -7615711146854757645
+    second: DarkTower_132
+  - first:
+      213: -7966237049378002007
+    second: DarkTower_133
+  - first:
+      213: 9191074927370092658
+    second: DarkTower_134
+  - first:
+      213: -9219914052043963189
+    second: DarkTower_135
+  - first:
+      213: -7515358901268487228
+    second: DarkTower_136
+  - first:
+      213: -2763762907713524577
+    second: DarkTower_137
+  - first:
+      213: -5645075888352833936
+    second: DarkTower_138
+  - first:
+      213: -4900437859460696673
+    second: DarkTower_139
+  - first:
+      213: 355444934291881069
+    second: DarkTower_140
+  - first:
+      213: 3411226002074473021
+    second: DarkTower_141
+  - first:
+      213: 8929862505274707640
+    second: DarkTower_142
+  - first:
+      213: -4774736670530437449
+    second: DarkTower_143
+  - first:
+      213: 3005338700813986087
+    second: DarkTower_144
+  - first:
+      213: 8595365469620859989
+    second: DarkTower_145
+  - first:
+      213: 7920804207162625615
+    second: DarkTower_146
+  - first:
+      213: -8434210688515672344
+    second: DarkTower_147
+  - first:
+      213: -2254164334671811597
+    second: DarkTower_148
+  - first:
+      213: 8654849647735410729
+    second: DarkTower_149
+  - first:
+      213: 4714733544229687033
+    second: DarkTower_150
+  - first:
+      213: -7097666028754724204
+    second: DarkTower_151
+  - first:
+      213: -4347590843508562469
+    second: DarkTower_152
+  - first:
+      213: -7723571113805203871
+    second: DarkTower_153
+  - first:
+      213: 403883234599204202
+    second: DarkTower_154
+  - first:
+      213: -6342090964894390795
+    second: DarkTower_155
+  - first:
+      213: 4287743124318022876
+    second: DarkTower_156
+  - first:
+      213: 136000597111074432
+    second: DarkTower_157
+  - first:
+      213: 957981900499454738
+    second: DarkTower_148
+  - first:
+      213: -8497664992743747868
+    second: DarkTower_149
+  - first:
+      213: 7043155661778057648
+    second: DarkTower_150
+  - first:
+      213: 2687484800168225656
+    second: DarkTower_151
+  - first:
+      213: -2763616896269313490
+    second: DarkTower_152
+  - first:
+      213: -3254304423584900260
+    second: DarkTower_153
+  - first:
+      213: 2691418304547520746
+    second: DarkTower_154
+  - first:
+      213: 8156730430124818489
+    second: DarkTower_155
+  - first:
+      213: -8893851924581650505
+    second: DarkTower_156
+  - first:
+      213: 545902158708435034
+    second: DarkTower_157
+  - first:
+      213: 435614307748382433
+    second: DarkTower_158
+  - first:
+      213: 4721228787772672403
+    second: DarkTower_158
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkTower_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f7ce83e2a763f70800000000000000
+      internalID: 9166648430501330846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de54e7e2c371d0a50800000000000000
+      internalID: 6488868185356256749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc71de6f0a7afba0800000000000000
+      internalID: -6054392542343889699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec56ba3bc2ee0c2e0800000000000000
+      internalID: -2107422749849066034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cca2746193ec5a0800000000000000
+      internalID: -6499194444402996101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40ec3f6573426ae0800000000000000
+      internalID: -1557608349460275124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b27d83feea59cd0800000000000000
+      internalID: -2551941271361475785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c79d9bb9c4b53140800000000000000
+      internalID: 4698860564760074176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4c5a54e5a43e200800000000000000
+      internalID: 208091776545047777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb8993509df36790800000000000000
+      internalID: -7537902554968388680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6470df4e70afe1830800000000000000
+      internalID: 4043944427238786886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573e329e70a2cc890800000000000000
+      internalID: -7436522671230950539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6704b691938b64610800000000000000
+      internalID: 1605172872583266422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc42fe068f5b5800800000000000000
+      internalID: 602180004565109958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de54ceb8af3c56970800000000000000
+      internalID: 8747613332093814253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a728f7b88da155e0800000000000000
+      internalID: -1922564763196840024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7206e80cabb558f0800000000000000
+      internalID: -552329031724957058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae64c68ae9afbe90800000000000000
+      internalID: -7007695670416740694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961f833d06bf8d380800000000000000
+      internalID: -8946124266492333719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15be343ed16410a0800000000000000
+      internalID: -6911791921119709922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d907510b5d59a090800000000000000
+      internalID: -8022778615737939496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a5adf64b6e0c220800000000000000
+      internalID: 2504255055463078477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ce392b3b2ff9d80800000000000000
+      internalID: -8241601939455611859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27cb078d53c3c660800000000000000
+      internalID: 7404977018792298287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fd52ffec5e6d2c0800000000000000
+      internalID: -4407082508128755844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae92bf5134716a40800000000000000
+      internalID: 5359692786955361952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee033ed3e18fca00800000000000000
+      internalID: 778984076243832559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4aa00b199486770800000000000000
+      internalID: 8604207978163905746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60397d9732b30cf60800000000000000
+      internalID: 8052501157292512006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabc732621ecb3c90800000000000000
+      internalID: -7188925801814307921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17899596d5ab81c0800000000000000
+      internalID: -4500321061575227622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_31
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff00975b681592c20800000000000000
+      internalID: 3182164250726039807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fde2fddcddc48ab0800000000000000
+      internalID: -5006650537228964359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9cfd810f59cab80800000000000000
+      internalID: -8382159948001326664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8765a5faebffbc1c0800000000000000
+      internalID: -4482207809666394504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d4937e2270ff410800000000000000
+      internalID: 1512935846309350723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37184c8e0c099a090800000000000000
+      internalID: -8022722102970515085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc85863f4b845f5c0800000000000000
+      internalID: -4182356736928622387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bc72a912cc3cbc0800000000000000
+      internalID: -3763940418859316456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e6ef4d614aa29d0800000000000000
+      internalID: -2798243800487661923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b20d50b82923750800000000000000
+      internalID: 6283245555930901284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d324d125e5368b0800000000000000
+      internalID: -5160177041265246970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f08e7716839a990800000000000000
+      internalID: -7374300923567796345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40924e605cfe75650800000000000000
+      internalID: 6221705039738841348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75cb635782b55520800000000000000
+      internalID: 2690252646713640316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f663b87b5a408020800000000000000
+      internalID: 2341953562960160496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d28e813072a550800000000000000
+      internalID: 6170617797597647315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39068ae34fb95020800000000000000
+      internalID: 2331104580559309118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba760b9042c97aa0800000000000000
+      internalID: -6162681032345224521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_49
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c00566bd60e82380800000000000000
+      internalID: -8995693493856436027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2532c9fe9e9819a0800000000000000
+      internalID: -6262080876226398929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_51
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59f7e455097e8950800000000000000
+      internalID: 6453228379874785630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73576bba24629d60800000000000000
+      internalID: 7895483231429415805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_53
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf7b2dd2586bc8a0800000000000000
+      internalID: -6283814149958172707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e992b626e834f9d0800000000000000
+      internalID: -2741503712018916892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_55
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476d1728923667630800000000000000
+      internalID: 3924433155233273460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6c63254353fc060800000000000000
+      internalID: 6975852846654080719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae1ae0aca01f1120800000000000000
+      internalID: 2386644661149769379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade1f6ec0c3588800800000000000000
+      internalID: 614833436698287834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc84a939a4b49faa0800000000000000
+      internalID: -6126783034384824117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7259af02addb06be0800000000000000
+      internalID: -1485979132478450393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598bed84abfaa95c0800000000000000
+      internalID: -4207857687202973547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118864c8a701e4060800000000000000
+      internalID: 6939502194350000145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_63
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca038399e35ca6d0800000000000000
+      internalID: -2977912990931416380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5466789cc3d84fb0800000000000000
+      internalID: -4663244538457463714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a778aa4447eb540800000000000000
+      internalID: 5025582072459655833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b041715a1357a00800000000000000
+      internalID: 753563097780980493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46d78f5d864a82e0800000000000000
+      internalID: -2122806701344696753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650f3a665a5128840800000000000000
+      internalID: 5224762317839003734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf7eda129b0a74c0800000000000000
+      internalID: -4289102972973056083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cdf5ddcf095dda0800000000000000
+      internalID: -5920666719388443560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3ab89a1b248b060800000000000000
+      internalID: 6969393754176988112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187ef746489c37f00800000000000000
+      internalID: 1113455103349614465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0213ad155ef56b650800000000000000
+      internalID: 6248286971548545312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2939dc8b7b2ae5ae0800000000000000
+      internalID: -1558629511060417646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_75
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef9725773099c5c0800000000000000
+      internalID: -4194663010055774231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_76
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f776c44e3c1bfb260800000000000000
+      internalID: 7115601391175624575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134e020fee8550980800000000000000
+      internalID: -8573348532375722959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_78
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b57a83f39abb0940800000000000000
+      internalID: 5263505734121452984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_79
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434f1a0ead71cb5e0800000000000000
+      internalID: -1892611514563431372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_80
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643b330515d817240800000000000000
+      internalID: 4787763259248980806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20539f4eefb541270800000000000000
+      internalID: 8220296370179355906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cb468cc1e287290800000000000000
+      internalID: -7892507645810787271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1639edff3c4e1f0e0800000000000000
+      internalID: -2237756009363893407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de11bc0db2070210800000000000000
+      internalID: 1299010028504686297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8674dc3e4960f0a0800000000000000
+      internalID: -6849859248481601907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f5e5600da557320800000000000000
+      internalID: 2555048213109169927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba03a1b015f95ef30800000000000000
+      internalID: 4604261364483633323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ebb247793819c10800000000000000
+      internalID: 2058571191197351482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542baa33372eb9880800000000000000
+      internalID: -8603033678745259451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_90
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef09ba6c10c5f2f20800000000000000
+      internalID: 3400037406385869054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5072b8c96c0e480800000000000000
+      internalID: -8871872890268088900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_92
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d00f2af2342cce0800000000000000
+      internalID: -1386471863400526529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_93
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec8c67252dec3bb0800000000000000
+      internalID: -4954824746183389977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_94
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb509d4877b426fc0800000000000000
+      internalID: -3503154583438817857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_95
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee3ed405bf3ab400800000000000000
+      internalID: 340654768523198186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_96
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3cde09d9318d360800000000000000
+      internalID: 7194521972186661839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc1d7ab4627097e0800000000000000
+      internalID: -1760781677350806316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c53aefc01ebc220800000000000000
+      internalID: 2507345063489789051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_99
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973cc101f8d0d7e70800000000000000
+      internalID: 9114456128969556857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_100
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225ef383cce2fc940800000000000000
+      internalID: 5318521139599762722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_101
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3d3bb0d829a22a0800000000000000
+      internalID: -6761430756058999902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9faa6fe2178b56a0800000000000000
+      internalID: -6459420725136937062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae73748662f3c3d80800000000000000
+      internalID: -8269665381568268310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa1ec485cef73170800000000000000
+      internalID: 8158269374295055090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_105
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a3bd0d133ee2c30800000000000000
+      internalID: 4336653294301297299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_106
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a33b66dc74266490800000000000000
+      internalID: -7753469589879835737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_107
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e5b0f9efed419c0800000000000000
+      internalID: -3957292987380441557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_108
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac8bcedd0f250b60800000000000000
+      internalID: 7711621673560804522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_109
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17519953e228d5440800000000000000
+      internalID: 4926236702392522097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980f19fc4eff4bbd0800000000000000
+      internalID: -2615184125395341175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_111
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f3f23dcc58b4860800000000000000
+      internalID: 7515247517960716084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da76bd2639e703ce0800000000000000
+      internalID: -1427501910392608851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_113
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a675cd9cd003e4d10800000000000000
+      internalID: 2111678111062710122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af5f5b32760a1fa0800000000000000
+      internalID: -5829339679985541210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_115
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c9824093f1cba10800000000000000
+      internalID: 1926449070351096839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1923b39a5dbd060800000000000000
+      internalID: 6979406970360074730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_117
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7d19295e6764840800000000000000
+      internalID: 5207980747479177186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e641115d5f5d0a40800000000000000
+      internalID: 5336025987900589795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_119
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49975f5816c5e14b0800000000000000
+      internalID: -5467831323652163180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905e69e02fe69e9f0800000000000000
+      internalID: -438697502786001655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d92ac63c51f03230800000000000000
+      internalID: 3616655879137012179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_122
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e65b33d291fd9390800000000000000
+      internalID: -7809820565879171359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_123
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c5bcecd0a3c1000800000000000000
+      internalID: 7945130326318101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657b7f9e119e05600800000000000000
+      internalID: 455119825513461590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_125
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196f03924003021f0800000000000000
+      internalID: -1071803916885100911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_126
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e19d4b59c095ea90800000000000000
+      internalID: -7285257627707272727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_127
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b170119028504fda0800000000000000
+      internalID: -5912094354774620389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_128
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb807b0762063610800000000000000
+      internalID: 1600469359173602301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_129
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcebf9b0c348357d0800000000000000
+      internalID: -2930853539060138293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf479e5492751910800000000000000
+      internalID: 1807476807026823082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_131
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5828120a3402b90800000000000000
+      internalID: -7268735443539950142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_132
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa4dbbcf0f8f4690800000000000000
+      internalID: -7615711146854757645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_133
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aba44b4c9d327190800000000000000
+      internalID: -7966237049378002007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_134
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270c4e533f14d8f70800000000000000
+      internalID: 9191074927370092658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_135
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc48944d4094c0080800000000000000
+      internalID: -9219914052043963189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_136
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3625ab5e414b790800000000000000
+      internalID: -7515358901268487228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_137
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ca55a474425a9d0800000000000000
+      internalID: -2763762907713524577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_138
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e4b907369a8a1b0800000000000000
+      internalID: -5645075888352833936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_139
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9538fefab52efbb0800000000000000
+      internalID: -4900437859460696673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_140
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cfda5d84bcee400800000000000000
+      internalID: 355444934291881069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_141
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d329936b9fb175f20800000000000000
+      internalID: 3411226002074473021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_142
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be8af7d2ae3deb70800000000000000
+      internalID: 8929862505274707640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_143
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be7009bb4abcbdb0800000000000000
+      internalID: -4774736670530437449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_144
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72960cb10ab15b920800000000000000
+      internalID: 3005338700813986087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554f86bba5fd84770800000000000000
+      internalID: 8595365469620859989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_146
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e095fc5795ced60800000000000000
+      internalID: 7920804207162625615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_147
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6783ea01aa3fa80800000000000000
+      internalID: -8434210688515672344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b0680867f6b4d00800000000000000
+      internalID: 957981900499454738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_149
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee8c3f26ba321a80800000000000000
+      internalID: -8497664992743747868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9ff0612c05eb160800000000000000
+      internalID: 7043155661778057648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_151
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87be945df2ddb4520800000000000000
+      internalID: 2687484800168225656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_152
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a999a3319a5a9d0800000000000000
+      internalID: -2763616896269313490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_153
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b5d396e5366d2d0800000000000000
+      internalID: -3254304423584900260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_154
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae00a8030b6d95520800000000000000
+      internalID: 2691418304547520746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_155
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93085382c17823170800000000000000
+      internalID: 8156730430124818489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_156
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfe266dbc0b29480800000000000000
+      internalID: -8893851924581650505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_157
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a586febfe1f639700800000000000000
+      internalID: 545902158708435034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DarkTower_158
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399c98e719c258140800000000000000
+      internalID: 4721228787772672403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec5ddc61362dec348951a1c8a637bae3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

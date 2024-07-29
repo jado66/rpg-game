@@ -1,0 +1,2408 @@
+fileFormatVersion: 2
+guid: 395f53bf8d978cf4ea9d4e612cf3dce2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4433279828452356290
+    second: cat_fluffy_0
+  - first:
+      213: 896085702115868174
+    second: cat_fluffy_1
+  - first:
+      213: 8230932192571783617
+    second: cat_fluffy_2
+  - first:
+      213: 7741681519828806323
+    second: cat_fluffy_3
+  - first:
+      213: -2291215765640391626
+    second: cat_fluffy_4
+  - first:
+      213: -1631974698028222992
+    second: cat_fluffy_5
+  - first:
+      213: -4996428623755850248
+    second: cat_fluffy_6
+  - first:
+      213: 7359871999929011842
+    second: cat_fluffy_7
+  - first:
+      213: -8110991604154566802
+    second: cat_fluffy_8
+  - first:
+      213: -4447904944824498542
+    second: cat_fluffy_9
+  - first:
+      213: 3462057537124473433
+    second: cat_fluffy_10
+  - first:
+      213: -1249700952229832382
+    second: cat_fluffy_11
+  - first:
+      213: -2724233510159912208
+    second: cat_fluffy_12
+  - first:
+      213: 1779653603053585810
+    second: cat_fluffy_13
+  - first:
+      213: 728200711687325723
+    second: cat_fluffy_14
+  - first:
+      213: 4004311808041369775
+    second: cat_fluffy_15
+  - first:
+      213: 5472866227215550966
+    second: cat_fluffy_16
+  - first:
+      213: 526806453833494312
+    second: cat_fluffy_17
+  - first:
+      213: 4555760052066017093
+    second: cat_fluffy_18
+  - first:
+      213: 2774009098245496293
+    second: cat_fluffy_19
+  - first:
+      213: 1738668768447773502
+    second: cat_fluffy_20
+  - first:
+      213: -1908531304686247426
+    second: cat_fluffy_21
+  - first:
+      213: -7684755638360910395
+    second: cat_fluffy_22
+  - first:
+      213: 6888566457792374959
+    second: cat_fluffy_23
+  - first:
+      213: 5986588250004439378
+    second: cat_fluffy_24
+  - first:
+      213: 4277735018925413740
+    second: cat_fluffy_25
+  - first:
+      213: -2550304928977034607
+    second: cat_fluffy_26
+  - first:
+      213: 4105466259798647671
+    second: cat_fluffy_27
+  - first:
+      213: -395398197929232906
+    second: cat_fluffy_28
+  - first:
+      213: 6785653160929031305
+    second: cat_fluffy_29
+  - first:
+      213: 2408507883327932338
+    second: cat_fluffy_30
+  - first:
+      213: -1134060237031221940
+    second: cat_fluffy_31
+  - first:
+      213: -2142636639840315787
+    second: cat_fluffy_32
+  - first:
+      213: -2216107536179809760
+    second: cat_fluffy_33
+  - first:
+      213: 5541083583262183491
+    second: cat_fluffy_34
+  - first:
+      213: 7670297410265400594
+    second: cat_fluffy_35
+  - first:
+      213: -4409189808125204115
+    second: cat_fluffy_36
+  - first:
+      213: -6100054420075414789
+    second: cat_fluffy_37
+  - first:
+      213: 4812838387414106421
+    second: cat_fluffy_38
+  - first:
+      213: 3452467276250698141
+    second: cat_fluffy_39
+  - first:
+      213: -7536389127611047636
+    second: cat_fluffy_40
+  - first:
+      213: 7966459956526007794
+    second: cat_fluffy_41
+  - first:
+      213: -1836132160370489
+    second: cat_fluffy_42
+  - first:
+      213: 5654524357300809782
+    second: cat_fluffy_43
+  - first:
+      213: 6775250946237377278
+    second: cat_fluffy_44
+  - first:
+      213: -5271768234128092169
+    second: cat_fluffy_45
+  - first:
+      213: -678256625355840166
+    second: cat_fluffy_46
+  - first:
+      213: -599781004678812539
+    second: cat_fluffy_47
+  - first:
+      213: -568646466529233139
+    second: cat_fluffy_48
+  - first:
+      213: -1617894107952942139
+    second: cat_fluffy_49
+  - first:
+      213: 6416647991191045619
+    second: cat_fluffy_50
+  - first:
+      213: -1351838711999443206
+    second: cat_fluffy_51
+  - first:
+      213: -5071180969378053470
+    second: cat_fluffy_52
+  - first:
+      213: -4807233975284631004
+    second: cat_fluffy_53
+  - first:
+      213: 5725944022198713100
+    second: cat_fluffy_54
+  - first:
+      213: 3180870016042861055
+    second: cat_fluffy_55
+  - first:
+      213: -6852016128210544473
+    second: cat_fluffy_56
+  - first:
+      213: -4483638827317121099
+    second: cat_fluffy_57
+  - first:
+      213: -1754292424156431284
+    second: cat_fluffy_58
+  - first:
+      213: -1689492945718720334
+    second: cat_fluffy_59
+  - first:
+      213: -5329978150063192142
+    second: cat_fluffy_60
+  - first:
+      213: 54845610462316367
+    second: cat_fluffy_61
+  - first:
+      213: 2005561437265649680
+    second: cat_fluffy_62
+  - first:
+      213: -2288154268367591886
+    second: cat_fluffy_63
+  - first:
+      213: 3135594330662001328
+    second: cat_fluffy_64
+  - first:
+      213: -440509440441345638
+    second: cat_fluffy_65
+  - first:
+      213: 2175052954072874035
+    second: cat_fluffy_66
+  - first:
+      213: -7528417400261536516
+    second: cat_fluffy_67
+  - first:
+      213: -8533455066652428003
+    second: cat_fluffy_68
+  - first:
+      213: -7208537207358370571
+    second: cat_fluffy_69
+  - first:
+      213: -6762257447682749490
+    second: cat_fluffy_70
+  - first:
+      213: 9126154758584195553
+    second: cat_fluffy_71
+  - first:
+      213: -8648057669137393400
+    second: cat_fluffy_72
+  - first:
+      213: 3058191042616750172
+    second: cat_fluffy_73
+  - first:
+      213: 1333619509994233985
+    second: cat_fluffy_74
+  - first:
+      213: -2258267401525905414
+    second: cat_fluffy_75
+  - first:
+      213: -1396215441227474455
+    second: cat_fluffy_76
+  - first:
+      213: 5709164477907890001
+    second: cat_fluffy_77
+  - first:
+      213: 3511201915291668071
+    second: cat_fluffy_78
+  - first:
+      213: -1007028076172558859
+    second: cat_fluffy_79
+  - first:
+      213: 2272755730408898958
+    second: cat_fluffy_80
+  - first:
+      213: -5712317864202945751
+    second: cat_fluffy_81
+  - first:
+      213: -9189608491634124010
+    second: cat_fluffy_82
+  - first:
+      213: 8328717970022472748
+    second: cat_fluffy_83
+  - first:
+      213: 7290300378492443765
+    second: cat_fluffy_84
+  - first:
+      213: -3821833935550775320
+    second: cat_fluffy_85
+  - first:
+      213: 8301621347361848349
+    second: cat_fluffy_86
+  - first:
+      213: -3968931120171698837
+    second: cat_fluffy_87
+  - first:
+      213: 6001768289729538014
+    second: cat_fluffy_88
+  - first:
+      213: -1341550610956240587
+    second: cat_fluffy_89
+  - first:
+      213: 5382690129625233068
+    second: cat_fluffy_90
+  - first:
+      213: -6768466290867202658
+    second: cat_fluffy_91
+  - first:
+      213: -2205934610284226120
+    second: cat_fluffy_92
+  - first:
+      213: -7254968121375654868
+    second: cat_fluffy_93
+  - first:
+      213: -483751236452863157
+    second: cat_fluffy_94
+  - first:
+      213: -4810661680292927262
+    second: cat_fluffy_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cat_fluffy_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0bec4f38c268d30800000000000000
+      internalID: 4433279828452356290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 336
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e3ceac2398f6c00800000000000000
+      internalID: 896085702115868174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9719448352a3270800000000000000
+      internalID: 8230932192571783617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba2a99335aff6b60800000000000000
+      internalID: 7741681519828806323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 336
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634da398667f330e0800000000000000
+      internalID: -2291215765640391626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f53a91a8af0a59e0800000000000000
+      internalID: -1631974698028222992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd407f83ae19aab0800000000000000
+      internalID: -4996428623755850248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 336
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ecc14f694832660800000000000000
+      internalID: 7359871999929011842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67f0322c18ff6f80800000000000000
+      internalID: -8110991604154566802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2964809c40ed542c0800000000000000
+      internalID: -4447904944824498542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 336
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a944cbcf2bb0030800000000000000
+      internalID: 3462057537124473433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 336
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2499fdaea9b28aee0800000000000000
+      internalID: -1249700952229832382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f3bd5e04913ad0800000000000000
+      internalID: -2724233510159912208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 288
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295c041e58992b810800000000000000
+      internalID: 1779653603053585810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_14
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b184f4960b61b1a00800000000000000
+      internalID: 728200711687325723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa04538af5c229730800000000000000
+      internalID: 4004311808041369775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_16
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 288
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f94a6056d683fb40800000000000000
+      internalID: 5472866227215550966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_17
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fe02abda79f4700800000000000000
+      internalID: 526806453833494312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f5f4141af493f30800000000000000
+      internalID: 4555760052066017093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_19
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 288
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eddf98d3924f7620800000000000000
+      internalID: 2774009098245496293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_20
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b3565780ef02810800000000000000
+      internalID: 1738668768447773502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1a675e3e88385e0800000000000000
+      internalID: -1908531304686247426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_22
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 288
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c551d566734a5590800000000000000
+      internalID: -7684755638360910395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_23
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 288
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8a26832ba199f50800000000000000
+      internalID: 6888566457792374959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ca0a8b42a41350800000000000000
+      internalID: 5986588250004439378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 240
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c655c46d5519d5b30800000000000000
+      internalID: 4277735018925413740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192656fdd2f7b9cd0800000000000000
+      internalID: -2550304928977034607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77366a4cfcb89f830800000000000000
+      internalID: 4105466259798647671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_28
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 240
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f539931f63438af0800000000000000
+      internalID: -395398197929232906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9847e22199b7b2e50800000000000000
+      internalID: 6785653160929031305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b74d78b82dbc6120800000000000000
+      internalID: 2408507883327932338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_31
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 240
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45dbd119320340f0800000000000000
+      internalID: -1134060237031221940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576d4970453d342e0800000000000000
+      internalID: -2142636639840315787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022bfe1ffedce31e0800000000000000
+      internalID: -2216107536179809760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_34
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 240
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340571b3922e5ec40800000000000000
+      internalID: 5541083583262183491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_35
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 240
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215c77c0bde527a60800000000000000
+      internalID: 7670297410265400594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_36
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 192
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69ac6bfa396fc2c0800000000000000
+      internalID: -4409189808125204115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_37
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 192
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa7adc03d0485ba0800000000000000
+      internalID: -6100054420075414789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_38
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 192
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5318e2b8303aac240800000000000000
+      internalID: 4812838387414106421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 192
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91559f12b0a9ef20800000000000000
+      internalID: 3452467276250698141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_40
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 192
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21a0a7940e596790800000000000000
+      internalID: -7536389127611047636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_41
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 192
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f54b125f1d8e8e60800000000000000
+      internalID: 7966459956526007794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 192
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c802da2c0a79fff0800000000000000
+      internalID: -1836132160370489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_43
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 192
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63075baa1f7e87e40800000000000000
+      internalID: 5654524357300809782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_44
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 192
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efaab9ab6d6860e50800000000000000
+      internalID: 6775250946237377278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_45
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 192
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f35b9ad8bae6d6b0800000000000000
+      internalID: -5271768234128092169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_46
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 192
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a552c1b51395696f0800000000000000
+      internalID: -678256625355840166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_47
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 192
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ca711aa562da7f0800000000000000
+      internalID: -599781004678812539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_48
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d077ebf2d03cb18f0800000000000000
+      internalID: -568646466529233139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_49
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 144
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3744b71e51c89e0800000000000000
+      internalID: -1617894107952942139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_50
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f58aa3e9538c0950800000000000000
+      internalID: 6416647991191045619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_51
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afec6a19add4d3de0800000000000000
+      internalID: -1351838711999443206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_52
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 144
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a20080d6cb8f99b0800000000000000
+      internalID: -5071180969378053470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_53
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a78f65b26494db0800000000000000
+      internalID: -4807233975284631004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_54
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bfce630c3a67f40800000000000000
+      internalID: 5725944022198713100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_55
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 144
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff10de63d68b42c20800000000000000
+      internalID: 3180870016042861055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_56
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a853ca82afb8e0a0800000000000000
+      internalID: -6852016128210544473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_57
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf2d9ced3ae6c1c0800000000000000
+      internalID: -4483638827317121099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_58
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 144
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c3ff9b55087a7e0800000000000000
+      internalID: -1754292424156431284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_59
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 144
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b848effd17bd88e0800000000000000
+      internalID: -1689492945718720334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7c3e8ac1d1806b0800000000000000
+      internalID: -5329978150063192142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_61
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f478819cac9d2c000800000000000000
+      internalID: 54845610462316367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_62
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010e073508f25db10800000000000000
+      internalID: 2005561437265649680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_63
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236e7aae0d7de30e0800000000000000
+      internalID: -2288154268367591886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 96
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba56de3e6ed38b20800000000000000
+      internalID: 3135594330662001328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_65
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9999427ffef2e9f0800000000000000
+      internalID: -440509440441345638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_66
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c7d2743275f2e10800000000000000
+      internalID: 2175052954072874035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_67
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 96
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf49a800340b58790800000000000000
+      internalID: -7528417400261536516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_68
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19bc6d34d3139980800000000000000
+      internalID: -8533455066652428003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_69
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc7353a9126fb90800000000000000
+      internalID: -7208537207358370571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_70
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 96
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb4127eda2a722a0800000000000000
+      internalID: -6762257447682749490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_71
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 96
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9d6a6866d96ae70800000000000000
+      internalID: 9126154758584195553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80919f98e5debf780800000000000000
+      internalID: -8648057669137393400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_73
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 48
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50f37edc80e07a20800000000000000
+      internalID: 3058191042616750172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180acb6e0e7f18210800000000000000
+      internalID: 1333619509994233985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7343c53c509a0e0800000000000000
+      internalID: -2258267401525905414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 48
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e998b32475af9ce0800000000000000
+      internalID: -1396215441227474455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_77
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f6afd18d60b3f40800000000000000
+      internalID: 5709164477907890001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_78
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e81afe98b4ab030800000000000000
+      internalID: 3511201915291668071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_79
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 48
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdb3e8dc415602f0800000000000000
+      internalID: -1007028076172558859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8181449b437a8f10800000000000000
+      internalID: 2272755730408898958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_81
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bb01cea25c9b0b0800000000000000
+      internalID: -5712317864202945751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_82
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 48
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b1c37f3c3f77080800000000000000
+      internalID: -9189608491634124010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 48
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c1a95cddc859370800000000000000
+      internalID: 8328717970022472748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_84
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c10fd81995c2560800000000000000
+      internalID: 7290300378492443765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_85
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef76f8d84e16fac0800000000000000
+      internalID: -3821833935550775320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_86
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c7d4da1a8453370800000000000000
+      internalID: 8301621347361848349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_87
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b653c2cac268be8c0800000000000000
+      internalID: -3968931120171698837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_88
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed76885f5709a4350800000000000000
+      internalID: 6001768289729538014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_89
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539beb1c3dad16de0800000000000000
+      internalID: -1341550610956240587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_90
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca63058772823ba40800000000000000
+      internalID: 5382690129625233068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_91
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 0
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9597a2f4c39112a0800000000000000
+      internalID: -6768466290867202658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_92
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9d444d822f261e0800000000000000
+      internalID: -2205934610284226120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_93
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cfe9c9eec215b90800000000000000
+      internalID: -7254968121375654868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_94
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43329f30de5949f0800000000000000
+      internalID: -483751236452863157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_fluffy_95
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e86e8390b81d3db0800000000000000
+      internalID: -4810661680292927262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

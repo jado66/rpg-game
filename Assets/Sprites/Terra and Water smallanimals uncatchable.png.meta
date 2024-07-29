@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: 7d66ae4ce7b6d724eb090f8f614f3f42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 971778642266533627
+    second: Terra and Water smallanimals uncatchable_0
+  - first:
+      213: -8511636315153718341
+    second: Terra and Water smallanimals uncatchable_1
+  - first:
+      213: -2112165350403748259
+    second: Terra and Water smallanimals uncatchable_2
+  - first:
+      213: -6245726062935125152
+    second: Terra and Water smallanimals uncatchable_3
+  - first:
+      213: 2353517631869975448
+    second: Terra and Water smallanimals uncatchable_4
+  - first:
+      213: -6167611253254338027
+    second: Terra and Water smallanimals uncatchable_5
+  - first:
+      213: -127867953807024251
+    second: Terra and Water smallanimals uncatchable_6
+  - first:
+      213: -1411482375200721298
+    second: Terra and Water smallanimals uncatchable_7
+  - first:
+      213: -5030949697626548308
+    second: Terra and Water smallanimals uncatchable_8
+  - first:
+      213: 7903386964935855402
+    second: Terra and Water smallanimals uncatchable_9
+  - first:
+      213: -8707654189514821834
+    second: Terra and Water smallanimals uncatchable_10
+  - first:
+      213: 3183921312457450445
+    second: Terra and Water smallanimals uncatchable_11
+  - first:
+      213: -6862624658431712335
+    second: Terra and Water smallanimals uncatchable_12
+  - first:
+      213: -4297826913801682173
+    second: Terra and Water smallanimals uncatchable_13
+  - first:
+      213: 517429440069619046
+    second: Terra and Water smallanimals uncatchable_14
+  - first:
+      213: 354255124242310433
+    second: Terra and Water smallanimals uncatchable_15
+  - first:
+      213: 8947406756959299955
+    second: Terra and Water smallanimals uncatchable_16
+  - first:
+      213: 7946524292527406140
+    second: Terra and Water smallanimals uncatchable_17
+  - first:
+      213: 9043937731780462612
+    second: Terra and Water smallanimals uncatchable_18
+  - first:
+      213: 7948098340237923877
+    second: Terra and Water smallanimals uncatchable_19
+  - first:
+      213: 7275283318611279349
+    second: Terra and Water smallanimals uncatchable_20
+  - first:
+      213: -6898611709894290703
+    second: Terra and Water smallanimals uncatchable_21
+  - first:
+      213: 1793447562467142256
+    second: Terra and Water smallanimals uncatchable_22
+  - first:
+      213: 6475207376163391550
+    second: Terra and Water smallanimals uncatchable_23
+  - first:
+      213: 8731102644503086322
+    second: Terra and Water smallanimals uncatchable_24
+  - first:
+      213: -7637574664940310519
+    second: Terra and Water smallanimals uncatchable_25
+  - first:
+      213: -3428186336701241496
+    second: Terra and Water smallanimals uncatchable_26
+  - first:
+      213: -2872391035655586586
+    second: Terra and Water smallanimals uncatchable_27
+  - first:
+      213: 6197558090433412575
+    second: Terra and Water smallanimals uncatchable_28
+  - first:
+      213: 9132503189613451672
+    second: Terra and Water smallanimals uncatchable_29
+  - first:
+      213: 6339133051779377925
+    second: Terra and Water smallanimals uncatchable_30
+  - first:
+      213: 8693348125098471709
+    second: Terra and Water smallanimals uncatchable_31
+  - first:
+      213: 9105238850382397456
+    second: Terra and Water smallanimals uncatchable_32
+  - first:
+      213: 6790066522635054071
+    second: Terra and Water smallanimals uncatchable_33
+  - first:
+      213: -4080554020365807876
+    second: Terra and Water smallanimals uncatchable_34
+  - first:
+      213: -2595646224574842757
+    second: Terra and Water smallanimals uncatchable_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 144
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfeab94c6837c7d00800000000000000
+      internalID: 971778642266533627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 144
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3a2f13ed790e980800000000000000
+      internalID: -8511636315153718341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 144
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecb46fdc410b2e0800000000000000
+      internalID: -2112165350403748259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 144
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0635a5eac39b259a0800000000000000
+      internalID: -6245726062935125152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b7a3411df59a020800000000000000
+      internalID: 2353517631869975448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_5
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 144
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ac2191e3e386aa0800000000000000
+      internalID: -6167611253254338027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_6
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 150
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f1d2306c8b93ef0800000000000000
+      internalID: -127867953807024251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 144
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66bf631248696ce0800000000000000
+      internalID: -1411482375200721298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 150
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca75c16b7e97e2ab0800000000000000
+      internalID: -5030949697626548308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 96
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d447712987ead60800000000000000
+      internalID: 7903386964935855402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 96
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fe60756a2382780800000000000000
+      internalID: -8707654189514821834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 96
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc362d5809f8f2c20800000000000000
+      internalID: 3183921312457450445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 96
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3675f9b3f03c0a0800000000000000
+      internalID: -6862624658431712335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_13
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 96
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303ccb8513d0b54c0800000000000000
+      internalID: -4297826913801682173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_14
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 96
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dcda395574e2700800000000000000
+      internalID: 517429440069619046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 102
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125235898219ae400800000000000000
+      internalID: 354255124242310433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_16
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 96
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3792d714a039b2c70800000000000000
+      internalID: 8947406756959299955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 102
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cbb17ddb9b74e60800000000000000
+      internalID: 7946524292527406140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 48
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418c6814375828d70800000000000000
+      internalID: 9043937731780462612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 48
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526d0c164515d4e60800000000000000
+      internalID: 7948098340237923877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 48
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd7626d1aff6f460800000000000000
+      internalID: 7275283318611279349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_21
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 48
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2966443353340a0800000000000000
+      internalID: -6898611709894290703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 48
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ae4245e0b93e810800000000000000
+      internalID: 1793447562467142256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_23
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 48
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38453f2dce8cd950800000000000000
+      internalID: 6475207376163391550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_24
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 54
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f48417889b1b2970800000000000000
+      internalID: 8731102644503086322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 48
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900b5bece42e10690800000000000000
+      internalID: -7637574664940310519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 54
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8672319a0b2ac60d0800000000000000
+      internalID: -3428186336701241496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_27
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec7bb752973328d0800000000000000
+      internalID: -2872391035655586586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_28
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddb1274f36220650800000000000000
+      internalID: 6197558090433412575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_29
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899180fc34b2dbe70800000000000000
+      internalID: 9132503189613451672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_30
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b6f37acef19f750800000000000000
+      internalID: 6339133051779377925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_31
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d117d497f0af4a870800000000000000
+      internalID: 8693348125098471709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_32
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01001282e7e4c5e70800000000000000
+      internalID: 9105238850382397456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_33
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 5
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb2feae6892b3e50800000000000000
+      internalID: 6790066522635054071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_34
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfecd49fcb5fe57c0800000000000000
+      internalID: -4080554020365807876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra and Water smallanimals uncatchable_35
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 5
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78f1a5d2896afbd0800000000000000
+      internalID: -2595646224574842757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

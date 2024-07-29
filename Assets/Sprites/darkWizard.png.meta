@@ -1,0 +1,1256 @@
+fileFormatVersion: 2
+guid: 901fc9fbc1197da44b587ccfaf9bab99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6542235353123641116
+    second: darkWizard_0
+  - first:
+      213: 2280616012019655186
+    second: darkWizard_1
+  - first:
+      213: -2144655518058173104
+    second: darkWizard_2
+  - first:
+      213: -7859779309340725409
+    second: darkWizard_3
+  - first:
+      213: 8789894255907662187
+    second: darkWizard_4
+  - first:
+      213: -9102975208890379447
+    second: darkWizard_5
+  - first:
+      213: 7192780048628230807
+    second: darkWizard_6
+  - first:
+      213: -1183084397448408710
+    second: darkWizard_7
+  - first:
+      213: -4251984147712199301
+    second: darkWizard_8
+  - first:
+      213: -7943149324665196808
+    second: darkWizard_9
+  - first:
+      213: 6076469106174678891
+    second: darkWizard_10
+  - first:
+      213: 6381631132958219088
+    second: darkWizard_11
+  - first:
+      213: 3634014890438271815
+    second: darkWizard_12
+  - first:
+      213: -6146737824494378581
+    second: darkWizard_13
+  - first:
+      213: -5207928334735762831
+    second: darkWizard_14
+  - first:
+      213: 2910600538565365215
+    second: darkWizard_15
+  - first:
+      213: 5579704456771143867
+    second: darkWizard_16
+  - first:
+      213: -3909274748039111262
+    second: darkWizard_17
+  - first:
+      213: 4179176976034026758
+    second: darkWizard_18
+  - first:
+      213: -5172361340074374740
+    second: darkWizard_19
+  - first:
+      213: -8542797813554880593
+    second: darkWizard_20
+  - first:
+      213: 2557047315609405236
+    second: darkWizard_21
+  - first:
+      213: -9109424150676479374
+    second: darkWizard_22
+  - first:
+      213: -5847852743586950247
+    second: darkWizard_23
+  - first:
+      213: 1422794655433091840
+    second: darkWizard_24
+  - first:
+      213: 7598431629640878385
+    second: darkWizard_25
+  - first:
+      213: -6953311190635365835
+    second: darkWizard_26
+  - first:
+      213: -2769505787498190683
+    second: darkWizard_27
+  - first:
+      213: -4386255418714225034
+    second: darkWizard_28
+  - first:
+      213: -1041130149026414843
+    second: darkWizard_29
+  - first:
+      213: 406817679233023182
+    second: darkWizard_30
+  - first:
+      213: 6530400536984872882
+    second: darkWizard_31
+  - first:
+      213: 5966222311649642156
+    second: darkWizard_32
+  - first:
+      213: -268817276139998331
+    second: darkWizard_33
+  - first:
+      213: 3028909380332193441
+    second: darkWizard_34
+  - first:
+      213: 652796770494867609
+    second: darkWizard_35
+  - first:
+      213: 1436561421847505075
+    second: darkWizard_36
+  - first:
+      213: 4389561794046615546
+    second: darkWizard_37
+  - first:
+      213: -7433466956014692828
+    second: darkWizard_38
+  - first:
+      213: 8636788833745974458
+    second: darkWizard_39
+  - first:
+      213: -4782655339377317121
+    second: darkWizard_40
+  - first:
+      213: -5210459762081778546
+    second: darkWizard_41
+  - first:
+      213: 3450627493912407398
+    second: darkWizard_42
+  - first:
+      213: -7339864901083549752
+    second: darkWizard_43
+  - first:
+      213: 7882252320005849180
+    second: darkWizard_44
+  - first:
+      213: -5037463764391550745
+    second: darkWizard_45
+  - first:
+      213: 5096093086511137827
+    second: darkWizard_46
+  - first:
+      213: -7723073378395816529
+    second: darkWizard_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darkWizard_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 224
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17dfe33460baca50800000000000000
+      internalID: 6542235353123641116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 225
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212ef710e2066af10800000000000000
+      internalID: 2280616012019655186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 224
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05daf805b27ac32e0800000000000000
+      internalID: -2144655518058173104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 224
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fe7cd6c547ce290800000000000000
+      internalID: -7859779309340725409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 224
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b696f90414afbf970800000000000000
+      internalID: 8789894255907662187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 224
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943d6e2f64cbba180800000000000000
+      internalID: -9102975208890379447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 224
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79aa0026853e1d360800000000000000
+      internalID: 7192780048628230807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 224
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71d7ce3207d49fe0800000000000000
+      internalID: -1183084397448408710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 224
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75b50512faedf4c0800000000000000
+      internalID: -4251984147712199301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 224
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe627916c344c190800000000000000
+      internalID: -7943149324665196808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_10
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 224
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b675d222574f35450800000000000000
+      internalID: 6076469106174678891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_11
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 224
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b5c8f34bb109850800000000000000
+      internalID: 6381631132958219088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 160
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743ad0df94d9e6230800000000000000
+      internalID: 3634014890438271815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 160
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba12e83f38662baa0800000000000000
+      internalID: -6146737824494378581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_14
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 160
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a1268b5c8b9b7b0800000000000000
+      internalID: -5207928334735762831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 160
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddcf30d4c7846820800000000000000
+      internalID: 2910600538565365215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_16
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 160
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8028114a71f6d40800000000000000
+      internalID: 5579704456771143867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_17
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 160
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad59b134577fb9c0800000000000000
+      internalID: -3909274748039111262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_18
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 160
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605dff5415b6ff930800000000000000
+      internalID: 4179176976034026758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_19
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 160
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca947eaf3c41838b0800000000000000
+      internalID: -5172361340074374740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_20
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 160
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafd31776a2e17980800000000000000
+      internalID: -8542797813554880593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437c3c85cf47c7320800000000000000
+      internalID: 2557047315609405236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_22
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 160
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272609eaff2d49180800000000000000
+      internalID: -9109424150676479374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_23
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 160
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993d4b7b9e048dea0800000000000000
+      internalID: -5847852743586950247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_24
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 96
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00be9696338ceb310800000000000000
+      internalID: 1422794655433091840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 96
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13946d61f4d037960800000000000000
+      internalID: 7598431629640878385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_26
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 96
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a3e65ff40e08f90800000000000000
+      internalID: -6953311190635365835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_27
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 96
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a828c4e82db099d0800000000000000
+      internalID: -2769505787498190683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_28
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 96
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6760861afe3e023c0800000000000000
+      internalID: -4386255418714225034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_29
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 96
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fb45645a92d81f0800000000000000
+      internalID: -1041130149026414843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_30
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 96
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc780b168e45a500800000000000000
+      internalID: 406817679233023182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_31
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 96
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7e00850b4a0aa50800000000000000
+      internalID: 6530400536984872882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_32
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 96
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca603e005974cc250800000000000000
+      internalID: 5966222311649642156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_33
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 96
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583ff229c18f44cf0800000000000000
+      internalID: -268817276139998331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_34
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 96
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a68c879809d80a20800000000000000
+      internalID: 3028909380332193441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_35
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 96
+        width: 39
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986edf34333f0900800000000000000
+      internalID: 652796770494867609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8204f7001bfe310800000000000000
+      internalID: 1436561421847505075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 32
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff56cdd13bdaec30800000000000000
+      internalID: 4389561794046615546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_38
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 32
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426d32d003507d890800000000000000
+      internalID: -7433466956014692828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 32
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab43d734fa90cd770800000000000000
+      internalID: 8636788833745974458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_40
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 32
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa2a45fe4890adb0800000000000000
+      internalID: -4782655339377317121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_41
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 32
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8436acd37ab0b7b0800000000000000
+      internalID: -5210459762081778546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_42
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 32
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d68da6c6713ef20800000000000000
+      internalID: 3450627493912407398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_43
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 32
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfae8fb2cf832a90800000000000000
+      internalID: -7339864901083549752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_44
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 32
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5082fb19b2636d60800000000000000
+      internalID: 7882252320005849180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_45
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 32
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e02a8a5565571ab0800000000000000
+      internalID: -5037463764391550745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_46
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 32
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32402d379a5f8b640800000000000000
+      internalID: 5096093086511137827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darkWizard_47
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 32
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadf0725ea122d490800000000000000
+      internalID: -7723073378395816529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

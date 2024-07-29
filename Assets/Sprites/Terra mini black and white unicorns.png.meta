@@ -1,0 +1,1688 @@
+fileFormatVersion: 2
+guid: dbfa68aecc164ba4c89374f5d1303a6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8402816384769065317
+    second: Terra mini black and white unicorns_0
+  - first:
+      213: 5527792474702934076
+    second: Terra mini black and white unicorns_1
+  - first:
+      213: -5212968365808959615
+    second: Terra mini black and white unicorns_2
+  - first:
+      213: 472210481584168035
+    second: Terra mini black and white unicorns_3
+  - first:
+      213: 4971337511441780105
+    second: Terra mini black and white unicorns_4
+  - first:
+      213: -8582112309521833322
+    second: Terra mini black and white unicorns_5
+  - first:
+      213: -4273481416007220581
+    second: Terra mini black and white unicorns_6
+  - first:
+      213: -5689148536477475639
+    second: Terra mini black and white unicorns_7
+  - first:
+      213: -7043100135979878121
+    second: Terra mini black and white unicorns_8
+  - first:
+      213: -4780723945919101845
+    second: Terra mini black and white unicorns_9
+  - first:
+      213: 93610165741782199
+    second: Terra mini black and white unicorns_10
+  - first:
+      213: -8929056261403664990
+    second: Terra mini black and white unicorns_11
+  - first:
+      213: -4750488360034061527
+    second: Terra mini black and white unicorns_12
+  - first:
+      213: 19026624639233228
+    second: Terra mini black and white unicorns_13
+  - first:
+      213: -3063804971849236427
+    second: Terra mini black and white unicorns_14
+  - first:
+      213: 8593384580652113655
+    second: Terra mini black and white unicorns_15
+  - first:
+      213: 6909972605881697199
+    second: Terra mini black and white unicorns_16
+  - first:
+      213: -6874439440840023361
+    second: Terra mini black and white unicorns_17
+  - first:
+      213: 4068617097300546231
+    second: Terra mini black and white unicorns_18
+  - first:
+      213: 4660567704036468491
+    second: Terra mini black and white unicorns_19
+  - first:
+      213: 4046767776959695484
+    second: Terra mini black and white unicorns_20
+  - first:
+      213: 4033184073886280819
+    second: Terra mini black and white unicorns_21
+  - first:
+      213: 2268752213306135827
+    second: Terra mini black and white unicorns_22
+  - first:
+      213: 7639870209450142695
+    second: Terra mini black and white unicorns_23
+  - first:
+      213: -2391898265565645852
+    second: Terra mini black and white unicorns_24
+  - first:
+      213: -6042333775044604726
+    second: Terra mini black and white unicorns_25
+  - first:
+      213: 5349473037198694075
+    second: Terra mini black and white unicorns_26
+  - first:
+      213: 4048918908321859922
+    second: Terra mini black and white unicorns_27
+  - first:
+      213: 6920066760489051084
+    second: Terra mini black and white unicorns_28
+  - first:
+      213: -7714295948054427975
+    second: Terra mini black and white unicorns_29
+  - first:
+      213: 4141231846872077726
+    second: Terra mini black and white unicorns_30
+  - first:
+      213: -2315510102247464938
+    second: Terra mini black and white unicorns_31
+  - first:
+      213: -5680351855119050193
+    second: Terra mini black and white unicorns_32
+  - first:
+      213: -8234484556561858000
+    second: Terra mini black and white unicorns_33
+  - first:
+      213: -7515444100492872673
+    second: Terra mini black and white unicorns_34
+  - first:
+      213: 2555779433182946389
+    second: Terra mini black and white unicorns_35
+  - first:
+      213: 994468508514979357
+    second: Terra mini black and white unicorns_36
+  - first:
+      213: -7230820807435896664
+    second: Terra mini black and white unicorns_37
+  - first:
+      213: 5235646778126826702
+    second: Terra mini black and white unicorns_38
+  - first:
+      213: -6589555992227315259
+    second: Terra mini black and white unicorns_39
+  - first:
+      213: -745962390720686902
+    second: Terra mini black and white unicorns_40
+  - first:
+      213: 7460548093655746420
+    second: Terra mini black and white unicorns_41
+  - first:
+      213: -6402499900027487007
+    second: Terra mini black and white unicorns_42
+  - first:
+      213: -1594525145090593344
+    second: Terra mini black and white unicorns_43
+  - first:
+      213: 2135995687698857513
+    second: Terra mini black and white unicorns_44
+  - first:
+      213: -1830157336332658474
+    second: Terra mini black and white unicorns_45
+  - first:
+      213: -5677676779240425176
+    second: Terra mini black and white unicorns_46
+  - first:
+      213: -7638877363488564701
+    second: Terra mini black and white unicorns_47
+  - first:
+      213: -6824570233532237453
+    second: Terra mini black and white unicorns_48
+  - first:
+      213: 8486015342906513388
+    second: Terra mini black and white unicorns_49
+  - first:
+      213: -5748936176454547057
+    second: Terra mini black and white unicorns_50
+  - first:
+      213: -778294979255738163
+    second: Terra mini black and white unicorns_51
+  - first:
+      213: 8553151827642169319
+    second: Terra mini black and white unicorns_52
+  - first:
+      213: 3875124901811382846
+    second: Terra mini black and white unicorns_53
+  - first:
+      213: -8278987056283812533
+    second: Terra mini black and white unicorns_54
+  - first:
+      213: -4886311546636553778
+    second: Terra mini black and white unicorns_55
+  - first:
+      213: 4737128813459166287
+    second: Terra mini black and white unicorns_56
+  - first:
+      213: -6722627106454262856
+    second: Terra mini black and white unicorns_57
+  - first:
+      213: -2150263632523846021
+    second: Terra mini black and white unicorns_58
+  - first:
+      213: 8820854955466006823
+    second: Terra mini black and white unicorns_59
+  - first:
+      213: -2343797456834469777
+    second: Terra mini black and white unicorns_60
+  - first:
+      213: 5953557760410809160
+    second: Terra mini black and white unicorns_61
+  - first:
+      213: -878935777520488145
+    second: Terra mini black and white unicorns_62
+  - first:
+      213: -3801161553389549998
+    second: Terra mini black and white unicorns_63
+  - first:
+      213: -2389480164656096990
+    second: Terra mini black and white unicorns_64
+  - first:
+      213: -6285464816281071152
+    second: Terra mini black and white unicorns_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 28
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 336
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ef101a403336b80800000000000000
+      internalID: -8402816384769065317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 336
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30febed7f9a6bc40800000000000000
+      internalID: 5527792474702934076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 336
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fbb9a04e0d7a7b0800000000000000
+      internalID: -5212968365808959615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 335
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c5a0e5ee0ad8600800000000000000
+      internalID: 472210481584168035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 335
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dcf0c902dbdf440800000000000000
+      internalID: 4971337511441780105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 335
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 692a170135636e880800000000000000
+      internalID: -8582112309521833322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 336
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9208a44b4b81b4c0800000000000000
+      internalID: -4273481416007220581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 336
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc93d86c851c01b0800000000000000
+      internalID: -5689148536477475639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 336
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719f9650eb1e14e90800000000000000
+      internalID: -7043100135979878121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64c94a86e477adb0800000000000000
+      internalID: -4780723945919101845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_10
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 288
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4876423f19c4100800000000000000
+      internalID: 93610165741782199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad9e8f63ae951480800000000000000
+      internalID: -8929056261403664990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 287
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923ba867100e21eb0800000000000000
+      internalID: -4750488360034061527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 287
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc65e24d98934000800000000000000
+      internalID: 19026624639233228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 287
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530c9df5c9d2b75d0800000000000000
+      internalID: -3063804971849236427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe96141fb5d14770800000000000000
+      internalID: 8593384580652113655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 288
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa34245797725ef50800000000000000
+      internalID: 6909972605881697199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2abca30c51990a0800000000000000
+      internalID: -6874439440840023361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b21eab81b1a67830800000000000000
+      internalID: 4068617097300546231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0760c252a9ada040800000000000000
+      internalID: 4660567704036468491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a0e2a3ad1092830800000000000000
+      internalID: 4046767776959695484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 239
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c21c5eb8fb8f730800000000000000
+      internalID: 4033184073886280819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3155e7d1e1a3c7f10800000000000000
+      internalID: 2268752213306135827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 239
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb6d5c4a75460a60800000000000000
+      internalID: 7639870209450142695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 240
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3361643354eced0800000000000000
+      internalID: -2391898265565645852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc0f1cf171552ca0800000000000000
+      internalID: -6042333775044604726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 240
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb612c572652d3a40800000000000000
+      internalID: 5349473037198694075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_27
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25903e68b46a03830800000000000000
+      internalID: 4048918908321859922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_28
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc320f8fd04090060800000000000000
+      internalID: 6920066760489051084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_29
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 191
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b60bf315b051f490800000000000000
+      internalID: -7714295948054427975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 191
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95585d6c6c987930800000000000000
+      internalID: 4141231846872077726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_31
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61026b184d7addfd0800000000000000
+      internalID: -2315510102247464938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_32
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 192
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ad56465165b21b0800000000000000
+      internalID: -5680351855119050193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_33
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 144
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c0b98ceb39bd80800000000000000
+      internalID: -8234484556561858000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_34
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 144
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1431dcb867c3b790800000000000000
+      internalID: -7515444100492872673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5546e177ad3f77320800000000000000
+      internalID: 2555779433182946389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_36
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 143
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e095ee6df0dcd00800000000000000
+      internalID: 994468508514979357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_37
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 143
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8b74249c6f6ab90800000000000000
+      internalID: -7230820807435896664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_38
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 143
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccfaab4101c8a840800000000000000
+      internalID: 5235646778126826702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_39
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 144
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c18ebfecb13d84a0800000000000000
+      internalID: -6589555992227315259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_40
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 144
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4da4d682fc5a5f0800000000000000
+      internalID: -745962390720686902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_41
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 144
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4778118a6f0398760800000000000000
+      internalID: 7460548093655746420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec33684340c527a0800000000000000
+      internalID: -6402499900027487007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_43
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd627524db1fd9e0800000000000000
+      internalID: -1594525145090593344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_44
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e7e0fc2c494ad10800000000000000
+      internalID: 2135995687698857513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d811d46999f996e0800000000000000
+      internalID: -1830157336332658474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 95
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829f3e70d07d431b0800000000000000
+      internalID: -5677676779240425176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 95
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32add7aa2814df590800000000000000
+      internalID: -7638877363488564701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_48
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3793b9dd7814a41a0800000000000000
+      internalID: -6824570233532237453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_49
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 96
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce715785ef164c570800000000000000
+      internalID: 8486015342906513388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89c806b10da730b0800000000000000
+      internalID: -5748936176454547057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0edf607d0f235f0800000000000000
+      internalID: -778294979255738163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7389c4546e2b670800000000000000
+      internalID: 8553151827642169319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3aecb0219537c530800000000000000
+      internalID: 3875124901811382846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 47
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d7522e2212b1d80800000000000000
+      internalID: -8278987056283812533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 47
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1b6d08985503cb0800000000000000
+      internalID: -4886311546636553778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_56
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 47
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f445085be89adb140800000000000000
+      internalID: 4737128813459166287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bba162c34e64b2a0800000000000000
+      internalID: -6722627106454262856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_58
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 47
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e99f96e9ab822e0800000000000000
+      internalID: -2150263632523846021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721abcbd8d8f96a70800000000000000
+      internalID: 8820854955466006823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_60
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60eae781a8297fd0800000000000000
+      internalID: -2343797456834469777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_61
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8437e036d394f9250800000000000000
+      internalID: 5953557760410809160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_62
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21728031946dc3f0800000000000000
+      internalID: -878935777520488145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_63
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 0
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2560854e4bf8f3bc0800000000000000
+      internalID: -3801161553389549998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_64
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229d4d3437cd6ded0800000000000000
+      internalID: -2389480164656096990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra mini black and white unicorns_65
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1d9592d0b85c8a0800000000000000
+      internalID: -6285464816281071152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

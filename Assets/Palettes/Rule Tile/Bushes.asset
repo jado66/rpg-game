@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: Bushes
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: 5557140202169369083, guid: 747ccfcd33ec9324eb7bcc7285599d69,
+    type: 3}
+  m_DefaultColliderType: 1
+  RuleNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  firstExists: 1
+  These: 0
+  DefaultNumOfThese: 0
+  TheseNumberOfTiles: 00000000000000
+  NotZero: 5
+  firstExists2: 1
+  NotThese: 0
+  DefaultNumOfNotThese: 0
+  NotTheseNumberOfTiles: 000000000000
+  t1: []
+  t2: []
+  t3: []
+  t4: []
+  t5: []
+  t6: []
+  t7: []
+  n1: []
+  n2: []
+  n3: []
+  n4: []
+  n5: []
+  n6: []
+  m_TilingRules:
+  - m_Neighbors: 0000000001000000000000000100000001000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 6545382614753218560, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000000000001000000000000000100000000000000
+    m_Sprites:
+    - {fileID: -6772705360459055718, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000100000001000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 4182439252485640185, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000100000001000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 2054541795188332935, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000100000000000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 5652473628097416104, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000100000000000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 7868427244287921197, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000000000001000000000000000100000000000000
+    m_Sprites:
+    - {fileID: -2393253423863688536, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000000000001000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 5139260373090136316, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000100000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: -7209456023753950245, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000000000000000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 6662646860664512452, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000100000001000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 4493076713092915932, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000000000000000000000000000100000000000000
+    m_Sprites:
+    - {fileID: 388623386266666029, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000001000000000000000000000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 3654007725957940906, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000000000001000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 7135873915979457381, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000100000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 6718746113058432200, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000000000000000000000000000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 5557140202169369083, guid: 747ccfcd33ec9324eb7bcc7285599d69, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0

@@ -1,0 +1,2408 @@
+fileFormatVersion: 2
+guid: 1ca5d02a694482c4fa5c5e69a76463d2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5578755839929651860
+    second: Terra chickens_baby_0
+  - first:
+      213: 5655516423437044618
+    second: Terra chickens_baby_1
+  - first:
+      213: -6632835822631103358
+    second: Terra chickens_baby_2
+  - first:
+      213: -3379568767642796933
+    second: Terra chickens_baby_3
+  - first:
+      213: 8040846529820411464
+    second: Terra chickens_baby_4
+  - first:
+      213: -941186564448024825
+    second: Terra chickens_baby_5
+  - first:
+      213: -7057759394870752148
+    second: Terra chickens_baby_6
+  - first:
+      213: -4038942100376662943
+    second: Terra chickens_baby_7
+  - first:
+      213: 3209726242448147136
+    second: Terra chickens_baby_8
+  - first:
+      213: -3343496210490364458
+    second: Terra chickens_baby_9
+  - first:
+      213: 8686090442935925514
+    second: Terra chickens_baby_10
+  - first:
+      213: -1155941133328268855
+    second: Terra chickens_baby_11
+  - first:
+      213: -7724176989668103067
+    second: Terra chickens_baby_12
+  - first:
+      213: 4796790120494765857
+    second: Terra chickens_baby_13
+  - first:
+      213: 5250969093191050204
+    second: Terra chickens_baby_14
+  - first:
+      213: 1233333487858667490
+    second: Terra chickens_baby_15
+  - first:
+      213: -2791291624865069522
+    second: Terra chickens_baby_16
+  - first:
+      213: 376137590119356113
+    second: Terra chickens_baby_17
+  - first:
+      213: 7947625633187022124
+    second: Terra chickens_baby_18
+  - first:
+      213: -4772761291058079832
+    second: Terra chickens_baby_19
+  - first:
+      213: 7869259734994155807
+    second: Terra chickens_baby_20
+  - first:
+      213: 1680870959386707557
+    second: Terra chickens_baby_21
+  - first:
+      213: 1524024683832993163
+    second: Terra chickens_baby_22
+  - first:
+      213: -3707936135034886301
+    second: Terra chickens_baby_23
+  - first:
+      213: 1063778301673486882
+    second: Terra chickens_baby_24
+  - first:
+      213: -5322377251008389834
+    second: Terra chickens_baby_25
+  - first:
+      213: -8186370243540567195
+    second: Terra chickens_baby_26
+  - first:
+      213: -6049061936110929777
+    second: Terra chickens_baby_27
+  - first:
+      213: -4565852501137851711
+    second: Terra chickens_baby_28
+  - first:
+      213: 3547968526610821051
+    second: Terra chickens_baby_29
+  - first:
+      213: 5525689393463364219
+    second: Terra chickens_baby_30
+  - first:
+      213: 1562744933749308793
+    second: Terra chickens_baby_31
+  - first:
+      213: 8891920187411984405
+    second: Terra chickens_baby_32
+  - first:
+      213: 1485685637264177095
+    second: Terra chickens_baby_33
+  - first:
+      213: -2468730405419124932
+    second: Terra chickens_baby_34
+  - first:
+      213: -2729588152603652612
+    second: Terra chickens_baby_35
+  - first:
+      213: 7940070446643160934
+    second: Terra chickens_baby_36
+  - first:
+      213: -1966671261903878624
+    second: Terra chickens_baby_37
+  - first:
+      213: -5554872518347519693
+    second: Terra chickens_baby_38
+  - first:
+      213: -6368417409668063540
+    second: Terra chickens_baby_39
+  - first:
+      213: -4934955477657697344
+    second: Terra chickens_baby_40
+  - first:
+      213: -1227064808867708205
+    second: Terra chickens_baby_41
+  - first:
+      213: -6528454815200785808
+    second: Terra chickens_baby_42
+  - first:
+      213: 8302835551966169694
+    second: Terra chickens_baby_43
+  - first:
+      213: -3172468304504914560
+    second: Terra chickens_baby_44
+  - first:
+      213: -5831017675281926158
+    second: Terra chickens_baby_45
+  - first:
+      213: 5074653552871282311
+    second: Terra chickens_baby_46
+  - first:
+      213: 793782076952707495
+    second: Terra chickens_baby_47
+  - first:
+      213: 5017450279081355261
+    second: Terra chickens_baby_48
+  - first:
+      213: 172918733096776113
+    second: Terra chickens_baby_49
+  - first:
+      213: -8531444490556852353
+    second: Terra chickens_baby_50
+  - first:
+      213: -2020263004541574662
+    second: Terra chickens_baby_51
+  - first:
+      213: 8272529714587432995
+    second: Terra chickens_baby_52
+  - first:
+      213: -1564634779670962146
+    second: Terra chickens_baby_53
+  - first:
+      213: -6870815053423429686
+    second: Terra chickens_baby_54
+  - first:
+      213: -5177033267054160546
+    second: Terra chickens_baby_55
+  - first:
+      213: 7041436630802977297
+    second: Terra chickens_baby_56
+  - first:
+      213: -4483287044670715045
+    second: Terra chickens_baby_57
+  - first:
+      213: 1441446452884621627
+    second: Terra chickens_baby_58
+  - first:
+      213: 5018258499949102315
+    second: Terra chickens_baby_59
+  - first:
+      213: 1573045121430849455
+    second: Terra chickens_baby_60
+  - first:
+      213: 5795335017160662908
+    second: Terra chickens_baby_61
+  - first:
+      213: -4668297826431110632
+    second: Terra chickens_baby_62
+  - first:
+      213: -8509827241301245149
+    second: Terra chickens_baby_63
+  - first:
+      213: -1420618207287868271
+    second: Terra chickens_baby_64
+  - first:
+      213: 597296512430538975
+    second: Terra chickens_baby_65
+  - first:
+      213: -7044154424775136970
+    second: Terra chickens_baby_66
+  - first:
+      213: 5977943508312057283
+    second: Terra chickens_baby_67
+  - first:
+      213: 640147193374757276
+    second: Terra chickens_baby_68
+  - first:
+      213: -8026239469392073026
+    second: Terra chickens_baby_69
+  - first:
+      213: -3396976963799165041
+    second: Terra chickens_baby_70
+  - first:
+      213: 7843249275570403560
+    second: Terra chickens_baby_71
+  - first:
+      213: -2070997231607198474
+    second: Terra chickens_baby_72
+  - first:
+      213: 1736432644880167215
+    second: Terra chickens_baby_73
+  - first:
+      213: -2823234907305985050
+    second: Terra chickens_baby_74
+  - first:
+      213: -8633563216185881556
+    second: Terra chickens_baby_75
+  - first:
+      213: -4376289698688881767
+    second: Terra chickens_baby_76
+  - first:
+      213: 7427321381323691162
+    second: Terra chickens_baby_77
+  - first:
+      213: -1960277398742529822
+    second: Terra chickens_baby_78
+  - first:
+      213: -1552064621800421902
+    second: Terra chickens_baby_79
+  - first:
+      213: -8827891796634447566
+    second: Terra chickens_baby_80
+  - first:
+      213: -4770976103905219046
+    second: Terra chickens_baby_81
+  - first:
+      213: -7658440910343090360
+    second: Terra chickens_baby_82
+  - first:
+      213: -8429181582394343645
+    second: Terra chickens_baby_83
+  - first:
+      213: -5619404780438554189
+    second: Terra chickens_baby_84
+  - first:
+      213: -1776536835408892466
+    second: Terra chickens_baby_85
+  - first:
+      213: 5184324706431843483
+    second: Terra chickens_baby_86
+  - first:
+      213: 8825238290271471595
+    second: Terra chickens_baby_87
+  - first:
+      213: -6700508746126934376
+    second: Terra chickens_baby_88
+  - first:
+      213: -3621789965479319564
+    second: Terra chickens_baby_89
+  - first:
+      213: -1790983279838939292
+    second: Terra chickens_baby_90
+  - first:
+      213: 2997836084675026880
+    second: Terra chickens_baby_91
+  - first:
+      213: -7388823403958329228
+    second: Terra chickens_baby_92
+  - first:
+      213: 8268766183761221488
+    second: Terra chickens_baby_93
+  - first:
+      213: 4054028586591480596
+    second: Terra chickens_baby_94
+  - first:
+      213: 8140362432525023317
+    second: Terra chickens_baby_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra chickens_baby_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49294aff0e8bb6d40800000000000000
+      internalID: 5578755839929651860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 225
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b4a50193e6c7e40800000000000000
+      internalID: 5655516423437044618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284569a26fe63f3a0800000000000000
+      internalID: -6632835822631103358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c75ae8c1c5911d0800000000000000
+      internalID: -3379568767642796933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 225
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846c06f0153d69f60800000000000000
+      internalID: 8040846529820411464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70784b66ecb30f2f0800000000000000
+      internalID: -941186564448024825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c8d86593dcd0e90800000000000000
+      internalID: -7057759394870752148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 225
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ccda61f8bc2f7c0800000000000000
+      internalID: -4038942100376662943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c20f5bf20d3b8c20800000000000000
+      internalID: 3209726242448147136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd6bd149e38991d0800000000000000
+      internalID: -3343496210490364458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 225
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b7c1aac313b8870800000000000000
+      internalID: 8686090442935925514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 224
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1c4b6e9a545ffe0800000000000000
+      internalID: -1155941133328268855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c269cc3f53ec490800000000000000
+      internalID: -7724176989668103067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 193
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127913a333f919240800000000000000
+      internalID: 4796790120494765857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd32536c1903fd840800000000000000
+      internalID: 5250969093191050204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efc861d54ead1110800000000000000
+      internalID: 1233333487858667490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_16
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 193
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26056b5e075349d0800000000000000
+      internalID: -2791291624865069522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d65cb5352f483500800000000000000
+      internalID: 376137590119356113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25c6e1b763ab4e60800000000000000
+      internalID: 7947625633187022124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 193
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a79fb894eeb3cdb0800000000000000
+      internalID: -4772761291058079832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_20
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f197c9d290a353d60800000000000000
+      internalID: 7869259734994155807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566c38f5b37a35710800000000000000
+      internalID: 1680870959386707557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_22
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 193
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85eac4106c662510800000000000000
+      internalID: 1524024683832993163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 193
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367296d0bb3ca8cc0800000000000000
+      internalID: -3707936135034886301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a340faabc43ce00800000000000000
+      internalID: 1063778301673486882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 161
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d5601e61e1326b0800000000000000
+      internalID: -5322377251008389834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bbfe103ab246e80800000000000000
+      internalID: -8186370243540567195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8875c9e73a6d0ca0800000000000000
+      internalID: -6049061936110929777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 161
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca79d45755d2a0c0800000000000000
+      internalID: -4565852501137851711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf67e6b39aec3130800000000000000
+      internalID: 3547968526610821051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a078c1a313fac40800000000000000
+      internalID: 5525689393463364219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_31
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 161
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d3baacc3cffa510800000000000000
+      internalID: 1562744933749308793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_32
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510f0dd8c42766b70800000000000000
+      internalID: 8891920187411984405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_33
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7f70137373e9410800000000000000
+      internalID: 1485685637264177095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_34
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 161
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3779c2b6ce4dbdd0800000000000000
+      internalID: -2468730405419124932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_35
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 161
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdc1f4890e8e1ad0800000000000000
+      internalID: -2729588152603652612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6672ebfb00cc03e60800000000000000
+      internalID: 7940070446643160934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 129
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026004c38eaf4b4e0800000000000000
+      internalID: -1966671261903878624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_38
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339015320e029e2b0800000000000000
+      internalID: -5554872518347519693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_39
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce52537b16de97a0800000000000000
+      internalID: -6368417409668063540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_40
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 129
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c348dbb324838bb0800000000000000
+      internalID: -4934955477657697344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_41
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2ce0fbe0798fee0800000000000000
+      internalID: -1227064808867708205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_42
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ac4cf4fe44665a0800000000000000
+      internalID: -6528454815200785808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_43
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 129
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a8d67b1f8993370800000000000000
+      internalID: 8302835551966169694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d7cc0b2e029f3d0800000000000000
+      internalID: -3172468304504914560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_45
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7fbc18150141fa0800000000000000
+      internalID: -5831017675281926158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_46
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 129
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7861119058acc6640800000000000000
+      internalID: 5074653552871282311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_47
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 128
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a186d5e794140b00800000000000000
+      internalID: 793782076952707495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df724daf17091a540800000000000000
+      internalID: 5017450279081355261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_49
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 97
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b17e3deba4566200800000000000000
+      internalID: 172918733096776113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_50
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f773567ff683a9980800000000000000
+      internalID: -8531444490556852353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1af6d408596f3e0800000000000000
+      internalID: -2020263004541574662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_52
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 97
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328f8d712fdedc270800000000000000
+      internalID: 8272529714587432995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10ad7a25fc494ae0800000000000000
+      internalID: -1564634779670962146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_54
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac73a4fac16f5a0a0800000000000000
+      internalID: -6870815053423429686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_55
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 97
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e555bd63cab7728b0800000000000000
+      internalID: -5177033267054160546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_56
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1125f6ffe4538b160800000000000000
+      internalID: 7041436630802977297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_57
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b8a44bf2a28c1c0800000000000000
+      internalID: -4483287044670715045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_58
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 97
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b394fea69eb010410800000000000000
+      internalID: 1441446452884621627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_59
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 96
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be40d80948f64a540800000000000000
+      internalID: 5018258499949102315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_60
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa70c8e143494d510800000000000000
+      internalID: 1573045121430849455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_61
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 65
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f5e3c3e7a2d6050800000000000000
+      internalID: 5795335017160662908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_62
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81278dd4cdfd63fb0800000000000000
+      internalID: -4668297826431110632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_63
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3230c46063507e980800000000000000
+      internalID: -8509827241301245149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_64
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 65
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19487296443f84ce0800000000000000
+      internalID: -1420618207287868271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_65
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0800173060a4800800000000000000
+      internalID: 597296512430538975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63928484fd22e3e90800000000000000
+      internalID: -7044154424775136970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_67
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 65
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ea44c2fbe5f250800000000000000
+      internalID: 5977943508312057283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_68
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91d0111b7242e800800000000000000
+      internalID: 640147193374757276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_69
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe6aa83ab11d9090800000000000000
+      internalID: -8026239469392073026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_70
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 65
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87d09a03738bd0d0800000000000000
+      internalID: -3396976963799165041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_71
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8b63b29a1d8dc60800000000000000
+      internalID: 7843249275570403560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_72
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc4c3f8df65243e0800000000000000
+      internalID: -2070997231607198474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_73
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 33
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21797e5a4c091810800000000000000
+      internalID: 1736432644880167215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_74
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb3b885fcad1d8d0800000000000000
+      internalID: -2823234907305985050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_75
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c8c595ffb6f2880800000000000000
+      internalID: -8633563216185881556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_76
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 33
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ba273a4bb4443c0800000000000000
+      internalID: -4376289698688881767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_77
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a945676d175231760800000000000000
+      internalID: 7427321381323691162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_78
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e889b28712bbc4e0800000000000000
+      internalID: -1960277398742529822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_79
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 33
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5822d1375f57ae0800000000000000
+      internalID: -1552064621800421902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_80
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231d402ee270d7580800000000000000
+      internalID: -8827891796634447566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_81
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e2aded2861acdb0800000000000000
+      internalID: -4770976103905219046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_82
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 33
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f4ea57190c7b590800000000000000
+      internalID: -7658440910343090360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_83
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 33
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fbe12b208850b80800000000000000
+      internalID: -8429181582394343645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_84
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9f3d4002dd302b0800000000000000
+      internalID: -5619404780438554189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_85
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd6e0329297857e0800000000000000
+      internalID: -1776536835408892466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_86
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cb62f4adb62f740800000000000000
+      internalID: 5184324706431843483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_87
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be78ec5877b897a70800000000000000
+      internalID: 8825238290271471595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_88
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89eb4b4dbc20303a0800000000000000
+      internalID: -6700508746126934376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_89
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7e7882731dcbdc0800000000000000
+      internalID: -3621789965479319564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_90
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467398e22362527e0800000000000000
+      internalID: -1790983279838939292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_91
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf17e929047a9920800000000000000
+      internalID: 2997836084675026880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_92
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470a8f20340a57990800000000000000
+      internalID: -7388823403958329228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_93
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07799d9c80f80c270800000000000000
+      internalID: 8268766183761221488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_94
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b6015358dc24830800000000000000
+      internalID: 4054028586591480596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chickens_baby_95
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558b69db08068f070800000000000000
+      internalID: 8140362432525023317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

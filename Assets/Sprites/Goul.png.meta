@@ -1,0 +1,2408 @@
+fileFormatVersion: 2
+guid: d379d098b884f814a9ab4ba3a9586e27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5485827300900042678
+    second: Goul_0
+  - first:
+      213: 867770681388853408
+    second: Goul_1
+  - first:
+      213: 4314180001660462769
+    second: Goul_2
+  - first:
+      213: -2648541090231957727
+    second: Goul_3
+  - first:
+      213: -2122046040402159855
+    second: Goul_4
+  - first:
+      213: 533879337321090230
+    second: Goul_5
+  - first:
+      213: 4970399932046496012
+    second: Goul_6
+  - first:
+      213: -7558368697493165060
+    second: Goul_7
+  - first:
+      213: -1350936199753232704
+    second: Goul_8
+  - first:
+      213: -4497400692222082829
+    second: Goul_9
+  - first:
+      213: -2334399159690508980
+    second: Goul_10
+  - first:
+      213: -588686434799109936
+    second: Goul_11
+  - first:
+      213: -6861775515276513203
+    second: Goul_12
+  - first:
+      213: -2709375318088214715
+    second: Goul_13
+  - first:
+      213: 8727023317251601261
+    second: Goul_14
+  - first:
+      213: -5799841070828500934
+    second: Goul_15
+  - first:
+      213: -37173132683691156
+    second: Goul_16
+  - first:
+      213: -3544263222504881174
+    second: Goul_17
+  - first:
+      213: 4196348000807674306
+    second: Goul_18
+  - first:
+      213: -42877976879508569
+    second: Goul_19
+  - first:
+      213: 2874915625654788817
+    second: Goul_20
+  - first:
+      213: -3031860725026076683
+    second: Goul_21
+  - first:
+      213: 2217385765552289354
+    second: Goul_22
+  - first:
+      213: 2381838181432396658
+    second: Goul_23
+  - first:
+      213: -9013491679217583283
+    second: Goul_24
+  - first:
+      213: 2357151646261008816
+    second: Goul_25
+  - first:
+      213: -6523693426883807996
+    second: Goul_26
+  - first:
+      213: -7020665018608250704
+    second: Goul_27
+  - first:
+      213: 9022126891947344476
+    second: Goul_28
+  - first:
+      213: 6570778319550232315
+    second: Goul_29
+  - first:
+      213: -1967034728850419443
+    second: Goul_30
+  - first:
+      213: 4163684474173740155
+    second: Goul_31
+  - first:
+      213: -5397915924414517576
+    second: Goul_32
+  - first:
+      213: 9156537751990178294
+    second: Goul_33
+  - first:
+      213: 1026652121657176601
+    second: Goul_34
+  - first:
+      213: -8830608259169175177
+    second: Goul_35
+  - first:
+      213: -5349977157859848439
+    second: Goul_36
+  - first:
+      213: 7914338886973279919
+    second: Goul_37
+  - first:
+      213: -3832941748860830156
+    second: Goul_38
+  - first:
+      213: -144367391340878935
+    second: Goul_39
+  - first:
+      213: 4184989644086299907
+    second: Goul_40
+  - first:
+      213: 7559093041993284336
+    second: Goul_41
+  - first:
+      213: -3345622241670578635
+    second: Goul_42
+  - first:
+      213: 8085812856852053223
+    second: Goul_43
+  - first:
+      213: 6352745925655690965
+    second: Goul_44
+  - first:
+      213: 7838867664115846335
+    second: Goul_45
+  - first:
+      213: 712369466890594006
+    second: Goul_46
+  - first:
+      213: 5097386580902798310
+    second: Goul_47
+  - first:
+      213: 8943316970185395214
+    second: Goul_48
+  - first:
+      213: 5429723020935988956
+    second: Goul_49
+  - first:
+      213: 4083115244830154070
+    second: Goul_50
+  - first:
+      213: -6712599512069607615
+    second: Goul_51
+  - first:
+      213: 6871938758138579868
+    second: Goul_52
+  - first:
+      213: -3497033687850141753
+    second: Goul_53
+  - first:
+      213: -5397184914995541180
+    second: Goul_54
+  - first:
+      213: -8793256581384706117
+    second: Goul_55
+  - first:
+      213: 6348667680922193311
+    second: Goul_56
+  - first:
+      213: -1105509936895905678
+    second: Goul_57
+  - first:
+      213: 7866168458979294358
+    second: Goul_58
+  - first:
+      213: 5070860451898906590
+    second: Goul_59
+  - first:
+      213: 432550580263320550
+    second: Goul_60
+  - first:
+      213: 8528613735584848900
+    second: Goul_61
+  - first:
+      213: 2064684891230763298
+    second: Goul_62
+  - first:
+      213: 896381009777016021
+    second: Goul_63
+  - first:
+      213: -3954391183723088739
+    second: Goul_64
+  - first:
+      213: -1060757682142889667
+    second: Goul_65
+  - first:
+      213: -8474127328466341613
+    second: Goul_66
+  - first:
+      213: -8746894032118553304
+    second: Goul_67
+  - first:
+      213: 4219499323569703024
+    second: Goul_68
+  - first:
+      213: -4178388162705921642
+    second: Goul_69
+  - first:
+      213: 1413456589158665260
+    second: Goul_70
+  - first:
+      213: -5509356910105513001
+    second: Goul_71
+  - first:
+      213: 1093497738307650188
+    second: Goul_72
+  - first:
+      213: 271374249126459180
+    second: Goul_73
+  - first:
+      213: -7670305756558489290
+    second: Goul_74
+  - first:
+      213: -75400834435765847
+    second: Goul_75
+  - first:
+      213: 5609369966267163239
+    second: Goul_76
+  - first:
+      213: -791012066765405559
+    second: Goul_77
+  - first:
+      213: 809900086126092530
+    second: Goul_78
+  - first:
+      213: -4235293717742095624
+    second: Goul_79
+  - first:
+      213: -2646262725087603013
+    second: Goul_80
+  - first:
+      213: -1448035973217806792
+    second: Goul_81
+  - first:
+      213: 7408892347274178919
+    second: Goul_82
+  - first:
+      213: -2231515176633985407
+    second: Goul_83
+  - first:
+      213: -5386136137533660935
+    second: Goul_84
+  - first:
+      213: 7886163341482494572
+    second: Goul_85
+  - first:
+      213: 794943402988011315
+    second: Goul_86
+  - first:
+      213: -6754092750400220526
+    second: Goul_87
+  - first:
+      213: -6822472575952374116
+    second: Goul_88
+  - first:
+      213: 3632506176857380406
+    second: Goul_89
+  - first:
+      213: 5731970449112495205
+    second: Goul_90
+  - first:
+      213: -527991358863954441
+    second: Goul_91
+  - first:
+      213: 7538180374778649425
+    second: Goul_92
+  - first:
+      213: 2827778977689050701
+    second: Goul_93
+  - first:
+      213: -8107506380467718109
+    second: Goul_94
+  - first:
+      213: -7079134699127769784
+    second: Goul_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Goul_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 492
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b779417dd2912c40800000000000000
+      internalID: 5485827300900042678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 492
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a86eaa46d0fa0c00800000000000000
+      internalID: 867770681388853408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 492
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6e010aadb0fdb30800000000000000
+      internalID: 4314180001660462769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 492
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127c2b739ed7e3bd0800000000000000
+      internalID: -2648541090231957727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 492
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1171ecc8e5afc82e0800000000000000
+      internalID: -2122046040402159855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 492
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcc1fdbd68b86700800000000000000
+      internalID: 533879337321090230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 492
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01d14567686af440800000000000000
+      internalID: 4970399932046496012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 492
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbec7037b74b1790800000000000000
+      internalID: -7558368697493165060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 492
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce0e731fa2804de0800000000000000
+      internalID: -1350936199753232704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_9
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 492
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0c18f06e50691c0800000000000000
+      internalID: -4497400692222082829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 492
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c454daa155c8a9fd0800000000000000
+      internalID: -2334399159690508980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_11
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 492
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d835b97ec094d7f0800000000000000
+      internalID: -588686434799109936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 428
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40787b268316c0a0800000000000000
+      internalID: -6861775515276513203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 428
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547142ac08d566ad0800000000000000
+      internalID: -2709375318088214715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_14
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 428
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d633553287d9c1970800000000000000
+      internalID: 8727023317251601261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_15
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 428
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38cb836643d28fa0800000000000000
+      internalID: -5799841070828500934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 428
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b33379b3feb7ff0800000000000000
+      internalID: -37173132683691156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_17
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 428
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae38d10a06f30dec0800000000000000
+      internalID: -3544263222504881174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_18
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 428
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ef06064c6c3a30800000000000000
+      internalID: 4196348000807674306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_19
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 428
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3d86b05baa76ff0800000000000000
+      internalID: -42877976879508569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_20
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 428
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2af529780c5e720800000000000000
+      internalID: 2874915625654788817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_21
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 428
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7cc5cebbaace5d0800000000000000
+      internalID: -3031860725026076683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_22
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 428
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4670c50b9cb5ce10800000000000000
+      internalID: 2217385765552289354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 428
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b8dbcd43dfd0120800000000000000
+      internalID: 2381838181432396658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_24
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 364
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bfb42c215a9e280800000000000000
+      internalID: -9013491679217583283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_25
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 364
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b95d1dfee846b020800000000000000
+      internalID: 2357151646261008816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_26
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 364
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4053a0b646f2775a0800000000000000
+      internalID: -6523693426883807996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_27
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 364
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b018d6dc56919e90800000000000000
+      internalID: -7020665018608250704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_28
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 364
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5245016b98053d70800000000000000
+      internalID: 9022126891947344476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_29
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 364
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf631a27118103b50800000000000000
+      internalID: 6570778319550232315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_30
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 364
+        width: 29
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01930ef550b3b4e0800000000000000
+      internalID: -1967034728850419443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_31
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 364
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b745fe718f068c930800000000000000
+      internalID: 4163684474173740155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_32
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 364
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be29dde010c615b0800000000000000
+      internalID: -5397915924414517576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_33
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 364
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f114df629e821f70800000000000000
+      internalID: 9156537751990178294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_34
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 364
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912f64b4aa66f3e00800000000000000
+      internalID: 1026652121657176601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_35
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 364
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77937992390637580800000000000000
+      internalID: -8830608259169175177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 300
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f4f4dce1011c5b0800000000000000
+      internalID: -5349977157859848439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_37
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 300
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae4a16294165dd60800000000000000
+      internalID: 7914338886973279919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_38
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 300
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eb26689c7aecac0800000000000000
+      internalID: -3832941748860830156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 300
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a32af95f9a1ffdf0800000000000000
+      internalID: -144367391340878935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_40
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 300
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dc37488e1141a30800000000000000
+      internalID: 4184989644086299907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_41
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 300
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faf228621b47e860800000000000000
+      internalID: 7559093041993284336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_42
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 300
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e349c0c46f191d0800000000000000
+      internalID: -3345622241670578635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_43
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 300
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecf3fce3f3963070800000000000000
+      internalID: 8085812856852053223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_44
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 300
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de7407d2cc792850800000000000000
+      internalID: 6352745925655690965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_45
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 300
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbccbe0cb9049cc60800000000000000
+      internalID: 7838867664115846335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_46
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 300
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d629de7148d2e900800000000000000
+      internalID: 712369466890594006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_47
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 300
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3ed85961e8db640800000000000000
+      internalID: 5097386580902798310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_48
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 224
+        width: 39
+        height: 53
+      alignment: 9
+      pivot: {x: 0.54422987, y: 0.5776105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c8f91966b0d1c70800000000000000
+      internalID: 8943316970185395214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_49
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 224
+        width: 35
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5379109, y: 0.5892634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd686a3d1504a5b40800000000000000
+      internalID: 5429723020935988956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_50
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 224
+        width: 39
+        height: 53
+      alignment: 9
+      pivot: {x: 0.53742474, y: 0.5826177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d55119ea32aa830800000000000000
+      internalID: 4083115244830154070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_51
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 224
+        width: 32
+        height: 55
+      alignment: 9
+      pivot: {x: 0.49182653, y: 0.59985185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f61a30f4e08d2a0800000000000000
+      internalID: -6712599512069607615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_52
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 233
+        width: 40
+        height: 53
+      alignment: 9
+      pivot: {x: 0.40825957, y: 0.5758316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bc61534e70e5f50800000000000000
+      internalID: 6871938758138579868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_53
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 224
+        width: 32
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6352849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c73e14936a087fc0800000000000000
+      internalID: -3497033687850141753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_54
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 226
+        width: 52
+        height: 60
+      alignment: 9
+      pivot: {x: 0.69154537, y: 0.6310572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b08925ae85915b0800000000000000
+      internalID: -5397184914995541180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_55
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 233
+        width: 56
+        height: 53
+      alignment: 9
+      pivot: {x: 0.7166868, y: 0.5915804}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7e2b75ab318f580800000000000000
+      internalID: -8793256581384706117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_56
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 224
+        width: 36
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7100668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dce5e7e9ffa1850800000000000000
+      internalID: 6348667680922193311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_57
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 224
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7731845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270b7a3d19078a0f0800000000000000
+      internalID: -1105509936895905678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_58
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 224
+        width: 32
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.96648055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cb7d4698e3a2d60800000000000000
+      internalID: 7866168458979294358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_59
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 224
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 1.2426178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7d205e6b05f5640800000000000000
+      internalID: 5070860451898906590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_60
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 160
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.4160119, y: 0.5407518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebfbf3067ab00600800000000000000
+      internalID: 432550580263320550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_61
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 160
+        width: 40
+        height: 54
+      alignment: 9
+      pivot: {x: 0.3808016, y: 0.56376904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c5d088109bb5670800000000000000
+      internalID: 8528613735584848900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_62
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 160
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.40955147, y: 0.5407518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229fcea28fb37ac10800000000000000
+      internalID: 2064684891230763298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_63
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 160
+        width: 50
+        height: 54
+      alignment: 9
+      pivot: {x: 0.47351167, y: 0.5441476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3a2777c5907c00800000000000000
+      internalID: 896381009777016021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_64
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 160
+        width: 32
+        height: 58
+      alignment: 9
+      pivot: {x: 0.4634056, y: 0.5918916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94bf3f6b2e2f19c0800000000000000
+      internalID: -3954391183723088739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_65
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 167
+        width: 50
+        height: 51
+      alignment: 9
+      pivot: {x: 0.74731505, y: 0.5353594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d393b1b128e6741f0800000000000000
+      internalID: -1060757682142889667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_66
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 168
+        width: 52
+        height: 52
+      alignment: 9
+      pivot: {x: 0.72586703, y: 0.5214897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3117555b71ad56a80800000000000000
+      internalID: -8474127328466341613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_67
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 168
+        width: 52
+        height: 52
+      alignment: 9
+      pivot: {x: 0.7004641, y: 0.52564853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825e697883acc9680800000000000000
+      internalID: -8746894032118553304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_68
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 160
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.71006733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0788f57674cae8a30800000000000000
+      internalID: 4219499323569703024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_69
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 160
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7731845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6996734aa126306c0800000000000000
+      internalID: -4178388162705921642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_70
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 160
+        width: 34
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.96648055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ccc3e674b9d9310800000000000000
+      internalID: 1413456589158665260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_71
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 160
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 1.2142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d331508415da83b0800000000000000
+      internalID: -5509356910105513001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_72
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5904487, y: 0.55093944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82458e3662ec2f00800000000000000
+      internalID: 1093497738307650188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_73
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 96
+        width: 38
+        height: 54
+      alignment: 9
+      pivot: {x: 0.65335506, y: 0.55395836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27fe58117d14c300800000000000000
+      internalID: 271374249126459180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_74
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 96
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5839885, y: 0.5356576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63982bdad899d8590800000000000000
+      internalID: -7670305756558489290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_75
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 96
+        width: 48
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5251649, y: 0.55592203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a920bf275f14fef0800000000000000
+      internalID: -75400834435765847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_76
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 96
+        width: 29
+        height: 50
+      alignment: 9
+      pivot: {x: 0.52186954, y: 0.48730117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762691db34c78dd40800000000000000
+      internalID: 5609369966267163239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_77
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 96
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.3034308, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982866b57b2c505f0800000000000000
+      internalID: -791012066765405559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_78
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 96
+        width: 44
+        height: 52
+      alignment: 9
+      pivot: {x: 0.33037013, y: 0.51304847}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0aa1956d75d3b00800000000000000
+      internalID: 809900086126092530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_79
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 96
+        width: 48
+        height: 52
+      alignment: 9
+      pivot: {x: 0.54947597, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2f982adc63935c0800000000000000
+      internalID: -4235293717742095624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_80
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 96
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6938776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6dbc07216964bd0800000000000000
+      internalID: -2646262725087603013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_81
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 96
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75555557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8369d5254fa87ebe0800000000000000
+      internalID: -1448035973217806792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_82
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 96
+        width: 34
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761336af55ca1d660800000000000000
+      internalID: 7408892347274178919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_83
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 96
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 1.2142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18696d915c01801e0800000000000000
+      internalID: -2231515176633985407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_84
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 32
+        width: 39
+        height: 51
+      alignment: 9
+      pivot: {x: 0.46166876, y: 0.56839484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0696a48b99045b0800000000000000
+      internalID: -5386136137533660935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_85
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 32
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.4697996, y: 0.58969533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a85c1c6c7417d60800000000000000
+      internalID: 7886163341482494572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_86
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 32
+        width: 39
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6172483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ff3af20d4380b00800000000000000
+      internalID: 794943402988011315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_87
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 32
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.48442793, y: 0.57972926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2929a50ad64a442a0800000000000000
+      internalID: -6754092750400220526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_88
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 32
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.6440696, y: 0.59931165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96b384d655b151a0800000000000000
+      internalID: -6822472575952374116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_89
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 32
+        width: 37
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5488017, y: 0.581255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6361ffb3f11496230800000000000000
+      internalID: 3632506176857380406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_90
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 32
+        width: 33
+        height: 50
+      alignment: 9
+      pivot: {x: 0.47690836, y: 0.5863623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564f26211cc0c8f40800000000000000
+      internalID: 5731970449112495205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_91
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 32
+        width: 49
+        height: 50
+      alignment: 9
+      pivot: {x: 0.31856677, y: 0.5914424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd207218a23ca8f0800000000000000
+      internalID: -527991358863954441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_92
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 32
+        width: 36
+        height: 50
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.68}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b9083ac1ffc9860800000000000000
+      internalID: 7538180374778649425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_93
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 32
+        width: 32
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.75555557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e197c7ff94e3720800000000000000
+      internalID: 2827778977689050701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_94
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 32
+        width: 32
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9444444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328320207e95c7f80800000000000000
+      internalID: -8107506380467718109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Goul_95
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 32
+        width: 32
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 1.2142857}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845f85d7f7cd1cd90800000000000000
+      internalID: -7079134699127769784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1898398d01560fc4cac41bcb0bdada64
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

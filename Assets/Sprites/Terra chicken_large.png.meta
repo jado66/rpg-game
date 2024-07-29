@@ -1,0 +1,2408 @@
+fileFormatVersion: 2
+guid: 35e95a837365d3249a6e099e3f3ddabc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6365077876706132896
+    second: Terra chicken_large_0
+  - first:
+      213: -4737042976063456788
+    second: Terra chicken_large_1
+  - first:
+      213: -8958669271239834430
+    second: Terra chicken_large_2
+  - first:
+      213: -3277142663046120161
+    second: Terra chicken_large_3
+  - first:
+      213: -1131593954956780407
+    second: Terra chicken_large_4
+  - first:
+      213: 3972952599272817607
+    second: Terra chicken_large_5
+  - first:
+      213: 5489364128948881899
+    second: Terra chicken_large_6
+  - first:
+      213: 6373182918987765486
+    second: Terra chicken_large_7
+  - first:
+      213: -7863159802700895662
+    second: Terra chicken_large_8
+  - first:
+      213: 6196696128014257880
+    second: Terra chicken_large_9
+  - first:
+      213: -7014104278929803304
+    second: Terra chicken_large_10
+  - first:
+      213: 4888372528938796487
+    second: Terra chicken_large_11
+  - first:
+      213: -3262354432275840742
+    second: Terra chicken_large_12
+  - first:
+      213: 4254295599003563679
+    second: Terra chicken_large_13
+  - first:
+      213: -7662432167495012155
+    second: Terra chicken_large_14
+  - first:
+      213: 182775758210452211
+    second: Terra chicken_large_15
+  - first:
+      213: 1499535225656734042
+    second: Terra chicken_large_16
+  - first:
+      213: -3646001033717886729
+    second: Terra chicken_large_17
+  - first:
+      213: -1011496401902250948
+    second: Terra chicken_large_18
+  - first:
+      213: 1079926896720316895
+    second: Terra chicken_large_19
+  - first:
+      213: -3555529087941197089
+    second: Terra chicken_large_20
+  - first:
+      213: -3600490809563046570
+    second: Terra chicken_large_21
+  - first:
+      213: -2042776766036357613
+    second: Terra chicken_large_22
+  - first:
+      213: 1362629467055003246
+    second: Terra chicken_large_23
+  - first:
+      213: 1984118946054570804
+    second: Terra chicken_large_24
+  - first:
+      213: 1155167740018161168
+    second: Terra chicken_large_25
+  - first:
+      213: -2280293772331265640
+    second: Terra chicken_large_26
+  - first:
+      213: 4008681490214763066
+    second: Terra chicken_large_27
+  - first:
+      213: -1440846927873782145
+    second: Terra chicken_large_28
+  - first:
+      213: 2836370280301354177
+    second: Terra chicken_large_29
+  - first:
+      213: 3525206287296190510
+    second: Terra chicken_large_30
+  - first:
+      213: -7368755075551063332
+    second: Terra chicken_large_31
+  - first:
+      213: 7296552584641756369
+    second: Terra chicken_large_32
+  - first:
+      213: 2515152719243028180
+    second: Terra chicken_large_33
+  - first:
+      213: 5632842573104419657
+    second: Terra chicken_large_34
+  - first:
+      213: 782879477153525435
+    second: Terra chicken_large_35
+  - first:
+      213: -5982454950363665922
+    second: Terra chicken_large_36
+  - first:
+      213: -1322843950877109753
+    second: Terra chicken_large_37
+  - first:
+      213: 341789726080792263
+    second: Terra chicken_large_38
+  - first:
+      213: 8606909854231618121
+    second: Terra chicken_large_39
+  - first:
+      213: 2732794572538707417
+    second: Terra chicken_large_40
+  - first:
+      213: -1433788126704568712
+    second: Terra chicken_large_41
+  - first:
+      213: 6139576757686500484
+    second: Terra chicken_large_42
+  - first:
+      213: 3818232429611883002
+    second: Terra chicken_large_43
+  - first:
+      213: -5021521033563749185
+    second: Terra chicken_large_44
+  - first:
+      213: 525907460979738949
+    second: Terra chicken_large_45
+  - first:
+      213: -3398826638185426958
+    second: Terra chicken_large_46
+  - first:
+      213: 6836531720936286287
+    second: Terra chicken_large_47
+  - first:
+      213: 5144317912150720119
+    second: Terra chicken_large_48
+  - first:
+      213: 6223448317343064261
+    second: Terra chicken_large_49
+  - first:
+      213: -858010332121549689
+    second: Terra chicken_large_50
+  - first:
+      213: -3870974001117874962
+    second: Terra chicken_large_51
+  - first:
+      213: 4977776752743652407
+    second: Terra chicken_large_52
+  - first:
+      213: 133792795660621063
+    second: Terra chicken_large_53
+  - first:
+      213: -8632136514052086278
+    second: Terra chicken_large_54
+  - first:
+      213: 2101064873614482020
+    second: Terra chicken_large_55
+  - first:
+      213: 8007429284462676166
+    second: Terra chicken_large_56
+  - first:
+      213: -1580189516713501132
+    second: Terra chicken_large_57
+  - first:
+      213: -88585319955057269
+    second: Terra chicken_large_58
+  - first:
+      213: -4635240214148164820
+    second: Terra chicken_large_59
+  - first:
+      213: 133440001040045314
+    second: Terra chicken_large_60
+  - first:
+      213: 5865475713396664257
+    second: Terra chicken_large_61
+  - first:
+      213: 9020966157342028897
+    second: Terra chicken_large_62
+  - first:
+      213: -2827767486343403077
+    second: Terra chicken_large_63
+  - first:
+      213: 1696310602966799147
+    second: Terra chicken_large_64
+  - first:
+      213: -2580058245345440597
+    second: Terra chicken_large_65
+  - first:
+      213: 8468453107048679726
+    second: Terra chicken_large_66
+  - first:
+      213: -7939058712036866465
+    second: Terra chicken_large_67
+  - first:
+      213: 48133872586692810
+    second: Terra chicken_large_68
+  - first:
+      213: -4073419937919018560
+    second: Terra chicken_large_69
+  - first:
+      213: 7931034650923378295
+    second: Terra chicken_large_70
+  - first:
+      213: -2503909486440231372
+    second: Terra chicken_large_71
+  - first:
+      213: 2710440323392130153
+    second: Terra chicken_large_72
+  - first:
+      213: -6667860741602973457
+    second: Terra chicken_large_73
+  - first:
+      213: -2894261280805430386
+    second: Terra chicken_large_74
+  - first:
+      213: 9188040324109372067
+    second: Terra chicken_large_75
+  - first:
+      213: 9010475710843724612
+    second: Terra chicken_large_76
+  - first:
+      213: 5992500118850538004
+    second: Terra chicken_large_77
+  - first:
+      213: 1450109647537851634
+    second: Terra chicken_large_78
+  - first:
+      213: 2955240619791426905
+    second: Terra chicken_large_79
+  - first:
+      213: 7716194938524852744
+    second: Terra chicken_large_80
+  - first:
+      213: 8607828802688647460
+    second: Terra chicken_large_81
+  - first:
+      213: 1867046676523575710
+    second: Terra chicken_large_82
+  - first:
+      213: 5822663751297211918
+    second: Terra chicken_large_83
+  - first:
+      213: -3815425648362311033
+    second: Terra chicken_large_84
+  - first:
+      213: 446703464624210659
+    second: Terra chicken_large_85
+  - first:
+      213: -2650663823225974040
+    second: Terra chicken_large_86
+  - first:
+      213: 5184313156464803009
+    second: Terra chicken_large_87
+  - first:
+      213: -5313544387018476590
+    second: Terra chicken_large_88
+  - first:
+      213: 1758156353907805229
+    second: Terra chicken_large_89
+  - first:
+      213: 404621255922893044
+    second: Terra chicken_large_90
+  - first:
+      213: 6051979971379047656
+    second: Terra chicken_large_91
+  - first:
+      213: 6617125322818933503
+    second: Terra chicken_large_92
+  - first:
+      213: -6236160445329994181
+    second: Terra chicken_large_93
+  - first:
+      213: 5509183926382550678
+    second: Terra chicken_large_94
+  - first:
+      213: -1790953857869178992
+    second: Terra chicken_large_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terra chicken_large_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a344c0fa9c455850800000000000000
+      internalID: 6365077876706132896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 342
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce97afdd284a24eb0800000000000000
+      internalID: -4737042976063456788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4ca8b43c96ca380800000000000000
+      internalID: -8958669271239834430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dbbda6c104582d0800000000000000
+      internalID: -3277142663046120161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 342
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c52dc1b45cb40f0800000000000000
+      internalID: -1131593954956780407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_5
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c30f15e653c22730800000000000000
+      internalID: 3972952599272817607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_6
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be905c467932e2c40800000000000000
+      internalID: 5489364128948881899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 342
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee65ad62918127850800000000000000
+      internalID: 6373182918987765486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ae1ebf1d170e290800000000000000
+      internalID: -7863159802700895662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de04530c461ff550800000000000000
+      internalID: 6196696128014257880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_10
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 342
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d777d41255e8ae90800000000000000
+      internalID: -7014104278929803304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_11
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 341
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5cc255aecf6d340800000000000000
+      internalID: 4888372528938796487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 290
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1107c4bde9c9b2d0800000000000000
+      internalID: -3262354432275840742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_13
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 290
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f967d1c9e4b4a0b30800000000000000
+      internalID: 4254295599003563679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_14
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 290
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0feec7a8299a590800000000000000
+      internalID: -7662432167495012155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_15
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 290
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3facfad6599598200800000000000000
+      internalID: 182775758210452211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_16
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 290
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a517475c75b6fc410800000000000000
+      internalID: 1499535225656734042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_17
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 290
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0d98e806dc66dc0800000000000000
+      internalID: -3646001033717886729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 290
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34d701b16176f1f0800000000000000
+      internalID: -1011496401902250948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_19
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 290
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd987667acbacfe00800000000000000
+      internalID: 1079926896720316895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_20
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 290
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd242bce12938aec0800000000000000
+      internalID: -3555529087941197089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 290
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d9fe65fac780ec0800000000000000
+      internalID: -3600490809563046570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_22
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 290
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e4bf8ba5996a3e0800000000000000
+      internalID: -2042776766036357613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_23
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 290
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e661b40e74809e210800000000000000
+      internalID: 1362629467055003246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 242
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43384bb4ba1098b10800000000000000
+      internalID: 1984118946054570804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_25
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 242
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016f5cf60faf70010800000000000000
+      internalID: 1155167740018161168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_26
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 242
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891d8a445e4ca50e0800000000000000
+      internalID: -2280293772331265640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 242
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a3fe19392b1a730800000000000000
+      internalID: 4008681490214763066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_28
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 242
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ece506a55110ce0800000000000000
+      internalID: -1440846927873782145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_29
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 242
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc56d00ebfcc5720800000000000000
+      internalID: 2836370280301354177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_30
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 242
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e285342e07c0ce030800000000000000
+      internalID: 3525206287296190510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_31
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 242
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd21ce4dc4cecb990800000000000000
+      internalID: -7368755075551063332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_32
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 242
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcb78cbaef824560800000000000000
+      internalID: 7296552584641756369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_33
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 242
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6a652821e97e220800000000000000
+      internalID: 2515152719243028180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_34
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 242
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9431695e970eb2e40800000000000000
+      internalID: 5632842573104419657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_35
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 242
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeeda19cb85dda00800000000000000
+      internalID: 782879477153525435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9ebc64bec0afca0800000000000000
+      internalID: -5982454950363665922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_37
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 192
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70212b67f6054ade0800000000000000
+      internalID: -1322843950877109753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_38
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 192
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c67ceae1f74eb400800000000000000
+      internalID: 341789726080792263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_39
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e84b39e2e17770800000000000000
+      internalID: 8606909854231618121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 192
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddf84c4f26dce520800000000000000
+      internalID: 2732794572538707417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_41
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 192
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876f9989b492a1ce0800000000000000
+      internalID: -1433788126704568712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_42
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cf5214888243550800000000000000
+      internalID: 6139576757686500484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_43
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 192
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af994e43a261df430800000000000000
+      internalID: 3818232429611883002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_44
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 192
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4c742a939ff4ab0800000000000000
+      internalID: -5021521033563749185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_45
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 192
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549cc64ac066c4700800000000000000
+      internalID: 525907460979738949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_46
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 192
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff82d92e21f4d0d0800000000000000
+      internalID: -3398826638185426958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_47
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 192
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48e812f06d30ee50800000000000000
+      internalID: 6836531720936286287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e3c65a2e9446740800000000000000
+      internalID: 5144317912150720119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_49
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 150
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c06c3975412e5650800000000000000
+      internalID: 6223448317343064261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_50
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784b74c162cb714f0800000000000000
+      internalID: -858010332121549689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_51
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4b890c7a9874ac0800000000000000
+      internalID: -3870974001117874962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_52
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 150
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c9b7e459d941540800000000000000
+      internalID: 4977776752743652407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_53
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7059bdab6d35bd100800000000000000
+      internalID: 133792795660621063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_54
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af52f33539d743880800000000000000
+      internalID: -8632136514052086278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_55
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 150
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a97d1ee5b782d10800000000000000
+      internalID: 2101064873614482020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_56
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c84570528a102f60800000000000000
+      internalID: 8007429284462676166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_57
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ede7ab10a021ae0800000000000000
+      internalID: -1580189516713501132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_58
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 150
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85b3cfee1845cef0800000000000000
+      internalID: -88585319955057269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_59
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 149
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23d71375915cafb0800000000000000
+      internalID: -4635240214148164820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 98
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205d1d459f21ad100800000000000000
+      internalID: 133440001040045314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_61
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 98
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c760bfa51b566150800000000000000
+      internalID: 5865475713396664257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_62
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 98
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164313bcce8e03d70800000000000000
+      internalID: 9020966157342028897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_63
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 98
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb92a1d0470c1c8d0800000000000000
+      internalID: -2827767486343403077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_64
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23909681818a8710800000000000000
+      internalID: 1696310602966799147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_65
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 98
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac0e5212bac13cd0800000000000000
+      internalID: -2580058245345440597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_66
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 98
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2980baab3df58570800000000000000
+      internalID: 8468453107048679726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_67
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 98
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5682121a2cc2d190800000000000000
+      internalID: -7939058712036866465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_68
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 98
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8913980810ba000800000000000000
+      internalID: 48133872586692810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_69
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 98
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9d75bf52e4877c0800000000000000
+      internalID: -4073419937919018560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_70
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 98
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7762a9d9ef1b01e60800000000000000
+      internalID: 7931034650923378295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_71
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 98
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ecffe9693504dd0800000000000000
+      internalID: -2503909486440231372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_72
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 50
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ccea41d1b6d9520800000000000000
+      internalID: 2710440323392130153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_73
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 50
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe86bfcbbfff673a0800000000000000
+      internalID: -6667860741602973457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_74
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 50
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bdc6613b485d7d0800000000000000
+      internalID: -2894261280805430386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_75
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 50
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa01849ef9728f70800000000000000
+      internalID: 9188040324109372067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_76
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 50
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44320226be3ab0d70800000000000000
+      internalID: 9010475710843724612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_77
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 50
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a8294cb13a92350800000000000000
+      internalID: 5992500118850538004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_78
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 50
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc4cda9a03df1410800000000000000
+      internalID: 1450109647537851634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_79
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 50
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9552978afaf130920800000000000000
+      internalID: 2955240619791426905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_80
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 50
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802e0781a6e651b60800000000000000
+      internalID: 7716194938524852744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_81
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 50
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42102a790b6257770800000000000000
+      internalID: 8607828802688647460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_82
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 50
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99e24d6f0519e910800000000000000
+      internalID: 1867046676523575710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_83
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 50
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e1d9ef4d14ec050800000000000000
+      internalID: 5822663751297211918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782337a7692ec0bc0800000000000000
+      internalID: -3815425648362311033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_85
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2ccd03f62033600800000000000000
+      internalID: 446703464624210659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_86
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e213adeb43f63bd0800000000000000
+      internalID: -2650663823225974040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_87
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf77f195162f740800000000000000
+      internalID: 5184313156464803009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_88
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d33e79488f7246b0800000000000000
+      internalID: -5313544387018476590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_89
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c454683e9366810800000000000000
+      internalID: 1758156353907805229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_90
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f04bd373e08d9500800000000000000
+      internalID: 404621255922893044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_91
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eca3dd18b3fcf350800000000000000
+      internalID: 6051979971379047656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_92
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff25ddc0c60c4db50800000000000000
+      internalID: 6617125322818933503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_93
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e83c59d15b479a0800000000000000
+      internalID: -6236160445329994181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_94
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ed256979d847c40800000000000000
+      internalID: 5509183926382550678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terra chicken_large_95
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 0
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097979484f04527e0800000000000000
+      internalID: -1790953857869178992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

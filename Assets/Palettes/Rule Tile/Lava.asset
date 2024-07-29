@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: Lava
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: -6202603741019462804, guid: 5ba1b6358a5640944bd41b5e3fb844f1,
+    type: 3}
+  m_DefaultColliderType: 1
+  RuleNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  firstExists: 1
+  These: 0
+  DefaultNumOfThese: 0
+  TheseNumberOfTiles: 00000000000000
+  NotZero: 5
+  firstExists2: 1
+  NotThese: 0
+  DefaultNumOfNotThese: 0
+  NotTheseNumberOfTiles: 000000000000
+  t1: []
+  t2: []
+  t3: []
+  t4: []
+  t5: []
+  t6: []
+  t7: []
+  n1: []
+  n2: []
+  n3: []
+  n4: []
+  n5: []
+  n6: []
+  m_TilingRules:
+  - m_Neighbors: 0000000000000000000000000000000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: -6202603741019462804, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -7507662830644261481, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -7618185278921192375, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -2112856308884266731, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -4600818014996873702, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -2562125863389358945, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    - {fileID: -7268357207247524869, guid: 5ba1b6358a5640944bd41b5e3fb844f1, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 1
+    m_Output: 1
+    m_ColliderType: 1
+    m_RandomTransform: 1

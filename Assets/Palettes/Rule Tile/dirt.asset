@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: dirt
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: 4557238440473915806, guid: 922e2a4277709d74d9bfb9e85afabb65,
+    type: 3}
+  m_DefaultColliderType: 1
+  RuleNames:
+  - Click to set rule name
+  - Click to set rule name
+  - Click to set rule name
+  - 
+  - 
+  - 
+  - 
+  - Click to set rule name
+  - Click to set rule name
+  - 
+  - 
+  - 
+  - 
+  firstExists: 0
+  These: 1
+  DefaultNumOfThese: 2
+  TheseNumberOfTiles: 05020000000000
+  NotZero: 5
+  firstExists2: 0
+  NotThese: 1
+  DefaultNumOfNotThese: 2
+  NotTheseNumberOfTiles: 050200000000
+  t1:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: e8a2be71ba879a74eb356aae59937f3a, type: 2}
+  - {fileID: 11400000, guid: dae35c80ad4681549be607c63a493b23, type: 2}
+  - {fileID: 11400000, guid: 68886bbc8f2a22941a5892fe1e359aff, type: 2}
+  - {fileID: 11400000, guid: d3798e1e88e35af43ab1e5a6b4c278c4, type: 2}
+  t2:
+  - {fileID: 11400000, guid: 720986ee6c6ff9241a35a02ef12f9cf7, type: 2}
+  - {fileID: 11400000, guid: e9b1281c75d2074429a3b52c68d4fa9f, type: 2}
+  t3: []
+  t4: []
+  t5: []
+  t6: []
+  t7: []
+  n1:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: e8a2be71ba879a74eb356aae59937f3a, type: 2}
+  - {fileID: 11400000, guid: d3798e1e88e35af43ab1e5a6b4c278c4, type: 2}
+  - {fileID: 11400000, guid: 68886bbc8f2a22941a5892fe1e359aff, type: 2}
+  - {fileID: 11400000, guid: dae35c80ad4681549be607c63a493b23, type: 2}
+  n2:
+  - {fileID: 11400000, guid: 720986ee6c6ff9241a35a02ef12f9cf7, type: 2}
+  - {fileID: 11400000, guid: e9b1281c75d2074429a3b52c68d4fa9f, type: 2}
+  n3: []
+  n4: []
+  n5: []
+  n6: []
+  m_TilingRules:
+  - m_Neighbors: 000000000a0000000000000003000000030000000a000000030000000a000000
+    m_Sprites:
+    - {fileID: -1152527793094743830, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000a0000000a000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: 7129533229928427881, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000003000000000000000a0000000a000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -2975781392689221087, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a000000030000000a0000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: 3944700060771554867, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a0000000300000000000000030000000a0000000a0000000300000000000000
+    m_Sprites:
+    - {fileID: -9210010874072752449, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0300000003000000030000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -5098973513643648435, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000003000000030000000a0000000300000000000000030000000a000000
+    m_Sprites:
+    - {fileID: 2062447824901461725, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 00000000030000000a0000000a00000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: 8697143224049670877, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000003000000030000000a00000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -3718027549075554560, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000003000000000000000a0000000a000000000000000300000000000000
+    m_Sprites:
+    - {fileID: 1393152578219266946, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 03000000030000000a0000000300000003000000030000000300000003000000
+    m_Sprites:
+    - {fileID: 6524306765998001450, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 03000000030000000a00000003000000030000000a0000000300000003000000
+    m_Sprites:
+    - {fileID: 5827377570215762426, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 03000000030000000a000000030000000300000003000000030000000a000000
+    m_Sprites:
+    - {fileID: 8950881115907046486, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000a0000000a000000000000000300000000000000
+    m_Sprites:
+    - {fileID: 8543787328714310219, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -6550403363399006507, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000a0000000300000000000000030000000a000000
+    m_Sprites:
+    - {fileID: 7463704610044393537, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -6550403363399006507, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000300000003000000030000000300000003000000
+    m_Sprites:
+    - {fileID: 3547173409561275967, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a000000030000000300000003000000030000000a000000030000000a000000
+    m_Sprites:
+    - {fileID: -3331881710474224800, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a00000003000000030000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -6939602127842289224, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000a00000003000000000000000300000003000000
+    m_Sprites:
+    - {fileID: 8216349450061858985, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0000000003000000030000000a00000003000000000000000300000003000000
+    m_Sprites:
+    - {fileID: -6956646379468959804, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a000000000000000a00000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: 2887788860058196502, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a000000030000000a0000000300000003000000030000000300000003000000
+    m_Sprites:
+    - {fileID: -2227153546756740809, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 000000000a0000000000000003000000030000000a0000000300000003000000
+    m_Sprites:
+    - {fileID: -4828501760586878185, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 0a00000003000000030000000300000003000000000000000a00000000000000
+    m_Sprites:
+    - {fileID: -6939602127842289224, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
+  - m_Neighbors: 00000000030000000a0000000a00000003000000000000000300000003000000
+    m_Sprites:
+    - {fileID: 6808912221375873437, guid: 922e2a4277709d74d9bfb9e85afabb65, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 2
+    m_Output: 0
+    m_ColliderType: 1
+    m_RandomTransform: 0
