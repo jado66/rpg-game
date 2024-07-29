@@ -1387,7 +1387,7 @@ PrefabInstance:
     - target: {fileID: 4921208941183358363, guid: bfa14ab54ca265e4b9753aa86a801ed9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -69.88
+      value: -96
       objectReference: {fileID: 0}
     - target: {fileID: 4921208941183358363, guid: bfa14ab54ca265e4b9753aa86a801ed9,
         type: 3}
@@ -29642,8 +29642,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  buildMenu1: {fileID: 0}
+  buildMenu2: {fileID: 0}
+  buildMenu3: {fileID: 0}
+  buildMenu4: {fileID: 0}
+  buildMenu5: {fileID: 0}
+  buildMenuTabs: []
+  dialogBox: {fileID: 0}
+  dialogBoxText: {fileID: 0}
+  storeText: {fileID: 0}
+  customSignBox: {fileID: 0}
+  customSignText: {fileID: 0}
+  debugInventory: {fileID: 0}
   tilePallete: {fileID: 1120137483}
+  moneyText: {fileID: 0}
+  buildGui: {fileID: 0}
+  inventoryGui: {fileID: 0}
+  externalInventoryGui: {fileID: 0}
+  externalInventoryPanels: {fileID: 0}
+  buyNSellMenu: {fileID: 0}
+  buyNSellMenuPanel: {fileID: 0}
+  mainMenuGui: {fileID: 0}
+  storeUi: {fileID: 0}
   developersMode: 0
+  sunDialSun: {fileID: 0}
+  sunDialMoon: {fileID: 0}
   sunDialAngle: 0
   daytimeHours: 5
   nightTimeHours: 1
@@ -135668,7 +135691,7 @@ PrefabInstance:
     - target: {fileID: 896853669626579207, guid: 1538c5190dcfab24db83981856cc7864,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.0389957
+      value: 7.7333956
       objectReference: {fileID: 0}
     - target: {fileID: 896853670103441878, guid: 1538c5190dcfab24db83981856cc7864,
         type: 3}
