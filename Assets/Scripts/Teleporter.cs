@@ -44,7 +44,10 @@ public class Teleporter : MonoBehaviour
 
     void Disable(){
         GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<SpriteRenderer>().enabled = false;
+
+        if (GetComponent<SpriteRenderer>()){
+            GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
     
     void OnTriggerEnter2D(Collider2D collider){

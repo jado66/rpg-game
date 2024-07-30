@@ -264,8 +264,7 @@ public static class ItemDatabase{
         //     {"Wood",1}}));
         bluePrintDatabase.Add("Chest",new BluePrint("Chest","Yes indeed",new Dictionary<string, int>(){
             {"Wood",3},
-            {"Iron Ore",3},
-            {"Gold Ore",1}}));
+            {"Iron Ore",2}}));
         bluePrintDatabase.Add("Combat Dummy",new BluePrint("Combat Dummy","Violence is okay.",new Dictionary<string, int>(){
             {"Wood",3},
             {"Iron Ore",3}}));

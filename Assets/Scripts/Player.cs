@@ -213,11 +213,11 @@ public class Player : MonoBehaviour
         
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
-        // bool inventoryActiveSelf = sceneManager.inventoryGui.activeSelf;
-        // sceneManager.inventoryGui.SetActive(true);
-        // inventory.inventoryUI = GameObject.Find("InventoryPanel").GetComponent<UIInventory>();
-        // inventory.hotItemsUI = GameObject.Find("HotItemsPanel").GetComponent<UIInventory>();
-        // sceneManager.inventoryGui.SetActive(inventoryActiveSelf);
+        bool inventoryActiveSelf = sceneManager.inventoryGui.activeSelf;
+        sceneManager.inventoryGui.SetActive(true);
+        inventory.inventoryUI = GameObject.Find("InventoryPanel").GetComponent<UIInventory>();
+        inventory.hotItemsUI = GameObject.Find("HotItemsPanel").GetComponent<UIInventory>();
+        sceneManager.inventoryGui.SetActive(inventoryActiveSelf);
 
 
         int i = 0;
@@ -894,7 +894,9 @@ public class Player : MonoBehaviour
             currentState = PlayerState.run;
             position+= 2* change.normalized * speed * Time.deltaTime;
             foreach(var shadow in shadows){
-                shadow.transform.position -=  change.normalized * speed * Time.deltaTime;
+                if (shadow){
+                    shadow.transform.position -=  change.normalized * speed * Time.deltaTime;
+                }
             }
         }
         else if (animator.GetBool("swimming") != true){
@@ -902,14 +904,18 @@ public class Player : MonoBehaviour
             currentState = PlayerState.walk;
             position+= change.normalized * speed * Time.deltaTime;
             foreach(var shadow in shadows){
-                shadow.transform.position -= change.normalized * speed/2 * Time.deltaTime;
+                if (shadow){
+                    shadow.transform.position -= change.normalized * speed/2 * Time.deltaTime;
+                }
             }
         }
         else if (animator.GetBool("swimming") == true)
         {
             position+= change.normalized * .35f * speed * Time.deltaTime;
             foreach(var shadow in shadows){
-                shadow.transform.position -= change.normalized * .35f/2* speed * Time.deltaTime;
+                if (shadow){
+                    shadow.transform.position -= change.normalized * .35f/2* speed * Time.deltaTime;
+                }
             }
         }
         transform.position = position;

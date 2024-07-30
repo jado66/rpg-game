@@ -22,10 +22,16 @@ public class TutorialText : MonoBehaviour
         "Click the I key to open and close your inventory. ",
         "Move the axe into the Z box in your hotbar. Now try chopping a tree using the Z key.",
         "Take a look at your inventory! You can use your tools to chop trees, mine, etc.",
-        "You can also use E key to pick mushrooms, berries, fruit from trees and more.",
+        "You can use E to interact with lots of things. Open the fence and pick some carrots.",
         "Now put the hammer into the X key of your hotbar.",
         "Open up the build menu, and select the fence icon.",
         "Now go to an open space and click the X key to build a fence.",
+        "You can chop fences down with your axe so long as they don't belong to someone else.",
+        "Now put your axe into the C box in your hotbar.",
+        "Go follow the cobblestone path until you come across some big rocks.",
+        "Press the C key to mine stone. If you look hard enough you can find metal ores.",
+        "Now lets try building a chest of our own",
+
         "Feel free to play around in this safe space. When you are done go through the portal."
     };
 
