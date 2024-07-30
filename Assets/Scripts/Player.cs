@@ -213,11 +213,11 @@ public class Player : MonoBehaviour
         
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
-        bool inventoryActiveSelf = sceneManager.inventoryGui.activeSelf;
-        sceneManager.inventoryGui.SetActive(true);
+        bool inventoryActiveSelf = sceneManager.playerUI.inventoryGui.activeSelf;
+        sceneManager.playerUI.inventoryGui.SetActive(true);
         inventory.inventoryUI = GameObject.Find("InventoryPanel").GetComponent<UIInventory>();
         inventory.hotItemsUI = GameObject.Find("HotItemsPanel").GetComponent<UIInventory>();
-        sceneManager.inventoryGui.SetActive(inventoryActiveSelf);
+        sceneManager.playerUI.inventoryGui.SetActive(inventoryActiveSelf);
 
 
         int i = 0;

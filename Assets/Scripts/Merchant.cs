@@ -56,9 +56,9 @@ public class Merchant : NPC
         
         storeOpen = !storeOpen;
         if (storeOpen)
-           sceneManager.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = this;
+           sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = this;
         else 
-            sceneManager.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = null;
+            sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = null;
 
         sceneManager.loadAndUnloadStoreInventory(inventory,storeOpen);
         

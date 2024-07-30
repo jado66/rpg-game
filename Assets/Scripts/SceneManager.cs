@@ -36,40 +36,13 @@ public class SceneManager : MonoBehaviour
     string sceneName;
     public Player player;
 
-    public BuildMenu buildMenu1;
-    public BuildMenu buildMenu2;
-    public BuildMenu buildMenu3;
-    public BuildMenu buildMenu4;
-    public BuildMenu buildMenu5;
-
-    public List<GameObject> buildMenuTabs;
-    public GameObject dialogBox;
-
-    public Text dialogBoxText; // I need to connect this to the dialog box
-    public Text storeText;
-    public GameObject customSignBox;
-    public InputField customSignText; 
-    public GameObject debugInventory;
     public TilePallete tilePallete;
-    public Text moneyText;
-    public GameObject buildGui;
-    public GameObject inventoryGui;
-    public GameObject externalInventoryGui;
-    public GameObject externalInventoryPanels;
-    public GameObject buyNSellMenu;
-    public GameObject buyNSellMenuPanel;
-
-    public GameObject mainMenuGui;
-
-    public StoreUiInventory storeUi;
+ 
     public bool developersMode;
 
+    public GameObject playerUiGameObject;
+
     public List<PlantTileData> plantTiles = new List<PlantTileData>();
-
-    public GameObject sunDialSun;
-    public GameObject sunDialMoon;
-
-    
 
     public float sunDialAngle;
     public float daytimeHours; 
@@ -78,6 +51,8 @@ public class SceneManager : MonoBehaviour
     public float minIntensity;
     public float maxIntensity;
     public float hour;
+
+    public PlayerUI playerUI;
 
     public int day;
 
@@ -111,6 +86,7 @@ public class SceneManager : MonoBehaviour
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         // Setup Gui
         sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        playerUI = playerUiGameObject.GetComponent<PlayerUI>();
 
         //Hide GUI elements
         
@@ -141,38 +117,38 @@ public class SceneManager : MonoBehaviour
 
 
     public void toggleBuildMenuTab(int i){
-        foreach(var tab in buildMenuTabs){
+        foreach(var tab in  playerUI.buildMenuTabs){
             tab.SetActive(false);
         }
-        buildMenuTabs[i].SetActive(true);
+        playerUI.buildMenuTabs[i].SetActive(true);
 
         player.activeBlueprint = null;
 
-        foreach( var buildSlot in buildMenuTabs[i].GetComponent<BuildMenu>().bluePrintSlots){
+        foreach( var buildSlot in playerUI.buildMenuTabs[i].GetComponent<BuildMenu>().bluePrintSlots){
             buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         }
     }
     public void ToggleInventory(){
-        if (customSignBox.activeSelf)
+        if (playerUI.customSignBox.activeSelf)
             return;
 
-        if (buildGui.activeSelf){
-            buildGui.SetActive(false);
+        if (playerUI.buildGui.activeSelf){
+            playerUI.buildGui.SetActive(false);
         }
-        if (mainMenuGui.activeSelf){
-            mainMenuGui.SetActive(false);
+        if (playerUI.mainMenuGui.activeSelf){
+            playerUI.mainMenuGui.SetActive(false);
         }
         if (player.currentState== PlayerState.standby){
             // Fix me
             player.StartCoroutine(player.interact("interact"));
         }
-        inventoryGui.SetActive(!inventoryGui.activeSelf);
+        playerUI.inventoryGui.SetActive(!playerUI.inventoryGui.activeSelf);
     }
     public void ToggleBuildMenu(){
-        if (inventoryGui.activeSelf){
+        if (playerUI.inventoryGui.activeSelf){
             ToggleInventory();
         }
-        buildGui.SetActive(!buildGui.activeSelf);
+        playerUI.buildGui.SetActive(!playerUI.buildGui.activeSelf);
     }
 
     public bool isDark(){
@@ -202,11 +178,11 @@ public class SceneManager : MonoBehaviour
             Debug.Log("Player was"+player.inventory.items.Count + " items long");
             // Set inventory to be whatever state it was left in
             List<Item> newItems = new List<Item>();
-            UIInventory externalInventoryUI = externalInventoryPanels.GetComponent<UIInventory>();
-            for(int i = 0; i < externalInventoryUI.inventorySize; i++){
-                if (externalInventoryUI.uiItems[i].item != null){
-                    newItems.Add(externalInventoryUI.uiItems[i].item);
-                    player.inventory.RemoveSpecificSlot(externalInventoryUI.uiItems[i].item);
+            UIInventory externalInventoryGui = playerUI.externalInventoryPanels.GetComponent<UIInventory>();
+            for(int i = 0; i < externalInventoryGui.inventorySize; i++){
+                if (externalInventoryGui.uiItems[i].item != null){
+                    newItems.Add(externalInventoryGui.uiItems[i].item);
+                    player.inventory.RemoveSpecificSlot(externalInventoryGui.uiItems[i].item);
                 }
             }
             externalInventory.overrideInventory(newItems);
@@ -218,29 +194,29 @@ public class SceneManager : MonoBehaviour
             Debug.Log("and is now"+player.inventory.items.Count + " items long");
            
 
-            externalInventoryGui.SetActive(false);   
-            externalInventoryPanels.SetActive(false);     
+            playerUI.externalInventoryGui.SetActive(false);   
+            playerUI.externalInventoryPanels.SetActive(false);     
         }
         else{
             // Debug.Log("Opening Chest");
             player.currentState = PlayerState.standby;
-            if (!inventoryGui.activeSelf )
-                inventoryGui.SetActive(true);
-            externalInventoryGui.SetActive(true);  
-            externalInventoryPanels.SetActive(true);
+            if (!playerUI.inventoryGui.activeSelf )
+                playerUI.inventoryGui.SetActive(true);
+            playerUI.externalInventoryGui.SetActive(true);  
+            playerUI.externalInventoryPanels.SetActive(true);
 
             // Import the images
-            UIInventory externalInventoryUI = externalInventoryPanels.GetComponent<UIInventory>();
+            UIInventory externalInventoryGui = playerUI.externalInventoryPanels.GetComponent<UIInventory>();
             int externalInventoryCount = externalInventory.items.Count;
-            for(int i = 0; i < externalInventoryUI.inventorySize; i++){
-                externalInventoryUI.uiItems[i].amount.text = "";
-                externalInventoryUI.uiItems[i].item = null;
+            for(int i = 0; i < externalInventoryGui.inventorySize; i++){
+                externalInventoryGui.uiItems[i].amount.text = "";
+                externalInventoryGui.uiItems[i].item = null;
                 if (i < externalInventoryCount){
                     
-                    externalInventoryUI.uiItems[i].UpdateItem(externalInventory.items[i]);
+                    externalInventoryGui.uiItems[i].UpdateItem(externalInventory.items[i]);
                 }
                 else
-                    externalInventoryUI.uiItems[i].UpdateItem(null);
+                    externalInventoryGui.uiItems[i].UpdateItem(null);
             }
         }
     }   
@@ -253,7 +229,7 @@ public class SceneManager : MonoBehaviour
             Debug.Log("Player was"+player.inventory.items.Count + " items long");
             // Set inventory to be whatever state it was left in
             List<Item> newItems = new List<Item>();
-            StoreUiInventory storeInventoryUI = buyNSellMenuPanel.GetComponent<StoreUiInventory>();
+            StoreUiInventory storeInventoryUI = playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
             for(int i = 0; i < storeInventoryUI.inventorySize; i++){
                 if (storeInventoryUI.uiItems[i].item != null){
                     // Remove items sold (I really need to dynamically remove them as i click them)
@@ -270,19 +246,19 @@ public class SceneManager : MonoBehaviour
             Debug.Log("and is now"+player.inventory.items.Count + " items long");
            
 
-            buyNSellMenu.SetActive(false);   
-            buyNSellMenuPanel.SetActive(false);     
+            playerUI.buyNSellMenu.SetActive(false);   
+            playerUI.buyNSellMenuPanel.SetActive(false);     
         }
         else{
             // Opening Store
             player.currentState = PlayerState.standby;
-            if (!inventoryGui.activeSelf )
-                inventoryGui.SetActive(true);
-            buyNSellMenu.SetActive(true);  
-            buyNSellMenuPanel.SetActive(true);
+            if (!playerUI.inventoryGui.activeSelf )
+                playerUI.inventoryGui.SetActive(true);
+            playerUI.buyNSellMenu.SetActive(true);  
+            playerUI.buyNSellMenuPanel.SetActive(true);
 
             // Import the images
-            StoreUiInventory storeInventoryUI = buyNSellMenuPanel.GetComponent<StoreUiInventory>();
+            StoreUiInventory storeInventoryUI = playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
             int storeInventoryCount = storeInventory.items.Count;
             for(int i = 0; i < storeInventoryUI.inventorySize; i++){
                 storeInventoryUI.uiItems[i].amount.text = "";
@@ -362,8 +338,8 @@ public class SceneManager : MonoBehaviour
             if ((hour > worldLightsOutTime && worldLightsOn) || (hour > worldLightsOnTime && !worldLightsOn))
                 toggleWorldLights();
         }
-        sunDialSun.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle);
-        sunDialMoon.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle-180);         
+        playerUI.sunDialSun.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle);
+        playerUI.sunDialMoon.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle-180);         
     }
 
     void toggleWorldLights(){

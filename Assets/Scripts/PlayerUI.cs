@@ -85,6 +85,19 @@ public class PlayerUI : MonoBehaviour
         buildGui.SetActive(!buildGui.activeSelf);
     }
 
+    public void toggleBuildMenuTab(int i){
+        foreach(var tab in buildMenuTabs){
+            tab.SetActive(false);
+        }
+        buildMenuTabs[i].SetActive(true);
+
+        player.activeBlueprint = null;
+
+        foreach( var buildSlot in buildMenuTabs[i].GetComponent<BuildMenu>().bluePrintSlots){
+            buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
+        }
+    }
+
     public void LoadStartScreen(){
         LoadingData.sceneToLoad = "StartingScreen";
             
