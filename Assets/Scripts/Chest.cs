@@ -17,6 +17,12 @@ public class Chest : Interactable
         player = GameObject.Find("Character").GetComponent<Player>();
         animator = GetComponent<Animator>();
         inventory = GetComponent<Inventory>();
+
+        if (inventory.inventoryUI == null){
+            GameObject externalInventoryPanel = GameObject.Find("ExternalInventoryPanel");
+            UIInventory uiInventory = externalInventoryPanel.GetComponent<UIInventory>();
+            inventory.SetInventoryUI(uiInventory);
+        }
     }
     public override void onPlayerInteract(){
         base.onPlayerInteract();

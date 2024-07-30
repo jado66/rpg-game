@@ -468,6 +468,9 @@ public class Player : MonoBehaviour
 
 
         if (Input.GetKey(KeyCode.Z) && keyCount[1] == 0 ){
+
+            Debug.Log(inventory.hotItemsUI.uiItems[0].item);
+
             if (inventory.hotItemsUI.uiItems[0].item ==null){
                 
                 // if (inventory == null)
@@ -690,7 +693,7 @@ public class Player : MonoBehaviour
 
     void useItem(Item item, int buttonIndex = -1){
         if (item.use == Item.Uses.tool){
-            // Debug.Log("Using "+item.title);
+            Debug.Log("Using "+item.title);
             // if (item.use == Item.Uses.tool){
             switch(item.title){
                 case "Axe":
@@ -1126,92 +1129,159 @@ public class Player : MonoBehaviour
         }
 
         //Change choppable
-        else if (type == "build" && canModifyWorldAtBuildSquare){
-
+        else if (type == "build" && canModifyWorldAtBuildSquare)
+        {
+            Debug.Log("Initiating build process...");
+            
             if (tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.water)
+            {
+                Debug.LogWarning("Build square is water. Cannot build here.");
                 yield return null;
+            }
 
-            choppableHit = Physics2D.Raycast(buildSquare.transform.position,-Vector3.forward,.6f,1<<choppableLayer);
-            Debug.Log("Trying to build a "+activeBlueprint.title);
+            choppableHit = Physics2D.Raycast(buildSquare.transform.position, -Vector3.forward, .6f, 1 << choppableLayer);
+            Debug.Log($"Trying to build a {activeBlueprint.title}");
+
             bool hasAllItems = true;
             string[] keys = new string[activeBlueprint.price.Keys.Count];
             activeBlueprint.price.Keys.CopyTo(keys, 0);
-            switch(activeBlueprint.title){
+
+            TileBase currentTile = tilePallete.choppable.GetTile(buildSquareCellLocation);
+            TileBase groundTile = tilePallete.ground.GetTile(buildSquareCellLocation);
+
+            bool isTileBuildable =  tilePallete.choppable.GetTile(buildSquareCellLocation) ==null &&
+                                    tilePallete.minable.GetTile(buildSquareCellLocation) == null &&
+                                    tilePallete.collidable.GetTile(buildSquareCellLocation) == null;
+
+            switch (activeBlueprint.title)
+            {
                 case "Fence":
-                   if (tilePallete.choppable.GetTile(buildSquareCellLocation)==null){
+                    if (isTileBuildable)
+                    {
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
-                        if (hasAllItems){
-                            tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.fence);
+                        if (hasAllItems)
+                        {
+                            tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.fence);
+                            Debug.Log("Built Fence");
                         }
-                   }
-                   else if(tilePallete.choppable.GetTile(buildSquareCellLocation)==tilePallete.gateOpen||
-                           tilePallete.choppable.GetTile(buildSquareCellLocation)==tilePallete.gateClosed){
-                               tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.fence);
-                   }
-                   break;
-                case "Gate":
-                   if (tilePallete.choppable.GetTile(buildSquareCellLocation)==null){
-                        hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
-                        if (hasAllItems){
-                            tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.gateClosed);
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to build Fence");
                         }
-                   }
-                   else if(tilePallete.choppable.GetTile(buildSquareCellLocation)==tilePallete.fence){
-                               tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.gateClosed);
-                   }
-                   break;
-                case "Sack":
-                    if (tilePallete.choppable.GetTile(buildSquareCellLocation)==null &&
-                        tilePallete.minable.GetTile(buildSquareCellLocation)== null &&
-                        tilePallete.collidable.GetTile(buildSquareCellLocation)== null &&
-                        inventory.checkIfItemsExistsAndRemove(keys)){
-                        
-                        Instantiate(tilePallete.sack,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
-                        
-                        }
-                   break;
-                case "Sign":
-                    if (tilePallete.choppable.GetTile(buildSquareCellLocation)==null &&
-                        tilePallete.minable.GetTile(buildSquareCellLocation)== null &&
-                        tilePallete.collidable.GetTile(buildSquareCellLocation)== null &&
-                        inventory.checkIfItemsExistsAndRemove(keys)){
-                            GameObject sign = Instantiate(tilePallete.sign,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
-                            sign.GetComponent<Sign>().customizable = true;
                     }
-                   break;
-                case "Chest":
-                    if (tilePallete.choppable.GetTile(buildSquareCellLocation)==null &&
-                        tilePallete.minable.GetTile(buildSquareCellLocation)== null &&
-                        tilePallete.collidable.GetTile(buildSquareCellLocation)== null &&
-                        inventory.checkIfItemsExistsAndRemove(keys)){
-                            Instantiate(tilePallete.chest,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
-                        
+                    else if (currentTile == tilePallete.gateOpen || currentTile == tilePallete.gateClosed)
+                    {
+                        tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.fence);
+                        Debug.Log("Replaced Gate with Fence");
                     }
                     break;
-                case "Cobblestone Path":
-                    if (tilePallete.ground.GetTile(buildSquareCellLocation)!=tilePallete.water){
+
+                case "Gate":
+                    if (isTileBuildable)
+                    {
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
-                        if (hasAllItems){
-                            tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.cobbleStonePath);
+                        if (hasAllItems)
+                        {
+                            tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.gateClosed);
+                            Debug.Log("Built Gate");
                         }
-                   }
-                   break;
-                // case "Fence":
-                    
-                //    break;
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to build Gate");
+                        }
+                    }
+                    else if (currentTile == tilePallete.fence)
+                    {
+                        tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.gateClosed);
+                        Debug.Log("Replaced Fence with Gate");
+                    }
+                    break;
+                case "Sack":
+                   if (isTileBuildable){
+                        hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
+                        if (hasAllItems)
+                        {
+                            Instantiate(tilePallete.sack,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            Debug.Log("Built Sack");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to build Sack");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Cannot build Sack because the space isn't clear");
+                    }
+                    break;
+                case "Sign":
+                    if (isTileBuildable){
+                        hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
+                        if (hasAllItems)
+                        {
+                            GameObject sign = Instantiate(tilePallete.sign,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            sign.GetComponent<Sign>().customizable = true;
+                            Debug.Log("Built Sign");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to build Sign");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Cannot build Sign because the space isn't clear");
+                    }
+                    break;
+                case "Chest":
+                    if (isTileBuildable){
+                        hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
+                        if (hasAllItems)
+                        {
+                            Instantiate(tilePallete.chest,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            Debug.Log("Built Chest");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to Chest");
+                            
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Cannot build Chest because the space isn't clear");
+                    }
+                    break;
+
+                case "Cobblestone Path":
+                    if (groundTile != tilePallete.water)
+                    {
+                        hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
+                        if (hasAllItems)
+                        {
+                            tilePallete.ground.SetTile(buildSquareCellLocation, tilePallete.cobbleStonePath);
+                            Debug.Log("Built Cobblestone Path");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Not enough items to build Cobblestone Path");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Cannot build Cobblestone Path on water");
+                    }
+                    break;
+
+                default:
+                    Debug.LogError($"Unknown blueprint title: {activeBlueprint.title}");
+                    break;
             }
-            // if(choppableHit.collider == null && inventory.ChickIfItemExists("Wood")){ 
-                
-            //     tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.fence);
-               
-            //     inventory.RemoveItem("Wood");
-                
-            // }
-            // else{
-                
-                    
-            //     // Debug.DrawRay(playerCenter+playerFacingDirection*.75f-perpendicularDirection*.3f,perpendicularDirection*.6f,Color.green,1f);
-            // }
+
+            if (choppableHit.collider != null)
+            {
+                Debug.Log("Choppable object hit detected");
+            }
         }
         
         else if (type == "dig" && canModifyWorldAtBuildSquare){

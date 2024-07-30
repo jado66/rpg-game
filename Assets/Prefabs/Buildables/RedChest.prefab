@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 953976355970667696}
   - component: {fileID: 953976355970667699}
   - component: {fileID: 953976355970667698}
-  - component: {fileID: -2569989913187857994}
+  - component: {fileID: 6648733947560168481}
   m_Layer: 11
   m_Name: RedChest
   m_TagString: Untagged
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: chest
   inventory: {fileID: 0}
---- !u!114 &-2569989913187857994
+--- !u!114 &6648733947560168481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

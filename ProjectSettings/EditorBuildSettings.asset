@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartingScreen.unity
+    guid: be05bc73a86ff0b4299ff583decb8916
+  - enabled: 1
     path: Assets/Scenes/Terra.unity
     guid: 8c025ada5739e4449b2a50674ce91698
   - enabled: 1
@@ -19,8 +22,5 @@ EditorBuildSettings:
     guid: 3fa3354322b064746bb90fe9576fb88f
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
-    guid: c76ca6c7759f4474cb53f57c16cad8e1
-  - enabled: 1
-    path: Assets/Scenes/StartingScreen.unity
-    guid: be05bc73a86ff0b4299ff583decb8916
+    guid: 032d2f32ff42d9d4abc0dd39f05f9d2f
   m_configObjects: {}

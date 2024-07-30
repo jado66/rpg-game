@@ -17,6 +17,9 @@ public class Inventory : MonoBehaviour {
         }
     }
 
+    public void SetInventoryUI(UIInventory ui) {
+        this.inventoryUI = ui;
+    }
     public virtual void GiveItem(int id)
     {
         if (items.Count >= inventoryUI.inventorySize){
@@ -88,6 +91,14 @@ public class Inventory : MonoBehaviour {
             
         }
         
+    }
+
+    public string GetStringifiedInventory() {
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+        foreach (var item in items) {
+            sb.AppendLine($"Item: {item.title}, Amount: {item.amount}");
+        }
+        return sb.ToString();
     }
 
     public bool checkIfItemsExistsAndRemove(string[] titles, int[] amount = null){
