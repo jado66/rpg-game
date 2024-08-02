@@ -6,6 +6,8 @@ public class Animal : LivingEntity
 {
     public bool canSwim;
 
+    public Chest chest;
+
     public bool alwaysMoving;
 
     public bool canBeCarriedByPlayer;
@@ -18,7 +20,9 @@ public class Animal : LivingEntity
     // private static cat _instance;
 
     // public static cat Instance { get { return _instance; } }
-    GameObject player;
+    GameObject playerObject;
+
+    Player player;
 
     public bool afraidOfPlayer;
     public float sightRange = 5;
@@ -53,6 +57,10 @@ public class Animal : LivingEntity
     }
     void Start()
     {
+        chest = gameObject.AddComponent<Chest>();
+        chest.inventory = gameObject.GetComponent<Inventory>();
+        chest.isLocked = true;
+
         if (followingPlayer) // or player is carrying
             DontDestroyOnLoad(this);
         
@@ -73,7 +81,9 @@ public class Animal : LivingEntity
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         tempSightRange = sightRange;
         findNewWayPoint();
-        player = GameObject.Find("Character");
+        playerObject = GameObject.Find("Character");
+        player = playerObject.GetComponent<Player>();
+
         animator = gameObject.GetComponent<Animator>();
         animator.SetFloat("moveX",startingPosition.x);
         animator.SetFloat("moveY",startingPosition.y);
@@ -87,8 +97,8 @@ public class Animal : LivingEntity
         if (health <= 0)
             kill();
 
-        if (player == null)
-            player = GameObject.FindWithTag("Player");
+        if (playerObject == null)
+            playerObject = GameObject.FindWithTag("Player");
         if (tilePallete == null)
             tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         Vector3 position = transform.position;
@@ -100,16 +110,16 @@ public class Animal : LivingEntity
             findNewWayPoint();
         }
             
-        float distance = Vector3.Distance(position,player.transform.position);
+        float distance = Vector3.Distance(position,playerObject.transform.position);
 
         if (pickedUp)
-            transform.position = player.transform.position;
-        else if (afraidOfPlayer && Vector3.Distance(position,player.transform.position)<tempSightRange){
+            transform.position = playerObject.transform.position;
+        else if (afraidOfPlayer && Vector3.Distance(position,playerObject.transform.position)<tempSightRange){
             if (tempSightRange == sightRange){
                 findNewWayPoint();
             }
             tempSightRange = sightRange*1.5f;
-            direction = (position-player.transform.position);
+            direction = (position-playerObject.transform.position);
             animator.SetFloat("moveX",direction.x);
             animator.SetFloat("moveY",direction.y);
             animator.SetBool("moving",true);
@@ -149,16 +159,32 @@ public class Animal : LivingEntity
     protected override void kill(){
         animator.SetBool("moving",false);
         animator.SetTrigger("die");
+        chest.isLocked = false;
         base.kill();
     }
-    public virtual void onPlayerInteract(){
+    public override void onPlayerInteract(){
         // base.onPlayerInteract();
-        if (canBeCarriedByPlayer){
-        pickedUp = true;
-        GetComponent<BoxCollider2D>().enabled = false;
-        animator.SetFloat("moveX",0);
-        animator.SetFloat("moveY",0);
-        animator.SetBool("moving",false);
+
+        if (!alive){
+            Debug.Log("Interact with animal remains");
+            // chest.onPlayerInteract();
+            return;
+        }
+
+        Debug.Log("Interact with animal");
+        if (canBeCarriedByPlayer && !pickedUp){
+            player.SetObjectBeingCarried(this);
+            pickedUp = true;
+            GetComponent<BoxCollider2D>().enabled = false;
+            animator.SetFloat("moveX",0);
+            animator.SetFloat("moveY",0);
+            animator.SetBool("moving",false);
+        }
+        else{
+            player.SetObjectBeingCarried(null);
+            pickedUp = false;
+            GetComponent<BoxCollider2D>().enabled = true;
+            animator.SetBool("moving",true);
         }
     }
 

@@ -40,8 +40,6 @@ public class SceneManager : MonoBehaviour
  
     public bool developersMode;
 
-    public GameObject playerUiGameObject;
-
     public List<PlantTileData> plantTiles = new List<PlantTileData>();
 
     public float sunDialAngle;
@@ -86,7 +84,7 @@ public class SceneManager : MonoBehaviour
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         // Setup Gui
         sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        playerUI = playerUiGameObject.GetComponent<PlayerUI>();
+        playerUI = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
 
         //Hide GUI elements
         
@@ -148,7 +146,17 @@ public class SceneManager : MonoBehaviour
         if (playerUI.inventoryGui.activeSelf){
             ToggleInventory();
         }
-        playerUI.buildGui.SetActive(!playerUI.buildGui.activeSelf);
+        if (playerUI.mainMenuGui.activeSelf){
+            playerUI.mainMenuGui.SetActive(false);
+        }
+
+        bool isBuildGuiActive = playerUI.buildGui.activeSelf;
+
+        playerUI.buildGui.SetActive(!isBuildGuiActive);
+        player.toggleBuildSquare(!isBuildGuiActive);
+
+        playerUI.buildMenuTabs[0].SetActive(true);
+        
     }
 
     public bool isDark(){

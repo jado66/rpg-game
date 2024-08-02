@@ -9,18 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/StartingScreen.unity
     guid: be05bc73a86ff0b4299ff583decb8916
   - enabled: 1
-    path: Assets/Scenes/Terra.unity
-    guid: 8c025ada5739e4449b2a50674ce91698
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 7f4b3366d52f0ca4993194ea9010396e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 032d2f32ff42d9d4abc0dd39f05f9d2f
+  - enabled: 1
+    path: Assets/Scenes/Terra-sm.unity
+    guid: 43b89472d05815240a0b1f8d5bea6a4a
   - enabled: 1
     path: Assets/Scenes/I-Terra.unity
     guid: d134a3bcae41f9741a3123721d388386
   - enabled: 1
-    path: Assets/Scenes/LoadingScreen.unity
-    guid: 7f4b3366d52f0ca4993194ea9010396e
-  - enabled: 1
     path: Assets/Scenes/D-Terra.unity
     guid: 3fa3354322b064746bb90fe9576fb88f
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 032d2f32ff42d9d4abc0dd39f05f9d2f
   m_configObjects: {}

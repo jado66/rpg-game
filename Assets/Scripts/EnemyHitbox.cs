@@ -4,39 +4,62 @@ using UnityEngine;
 
 public class EnemyHitbox : MonoBehaviour
 {
+    public ArmedMonster enemyEntity;
+    public float knockbackForce = 5f;
+    public float knockbackDuration = 0.5f;
 
-    ArmedMonster enemy;
-    // Start is called before the first frame update
     void Start()
     {
-        enemy = transform.parent.GetComponent<ArmedMonster>();
+        if (enemyEntity == null)
+        {
+            enemyEntity = GetComponentInParent<ArmedMonster>();
+            if (enemyEntity == null)
+            {
+                Debug.LogError("EnemyHitbox: LivingEntity component not found!");
+            }
+        }
     }
 
-    // Update is called once per frame
-    
-    
-    void OnTriggerEnter2D(Collider2D collision){
-        if ((collision.gameObject.GetComponent("Player") as Player) != null){
-            Debug.Log("hit from enemy");
-            Player player = collision.gameObject.GetComponent<Player>();
-            
-            int force = enemy.recoilForce;
-            Vector3 direction = (collision.transform.position-enemy.transform.position).normalized;
-            Rigidbody2D otherBody = collision.gameObject.GetComponent<Rigidbody2D>();
-            otherBody.isKinematic = false;
-            otherBody.AddForce(direction*force,ForceMode2D.Impulse);
-            StartCoroutine(KnockbackCo(otherBody));
-            player.takeDamage(enemy.damageDealt);
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log($"EnemyHitbox: Collision detected with {collision.gameObject.name}");
+
+        if (collision.CompareTag("Player"))
+        {
+            ApplyKnockbackToPlayer(collision.gameObject);
+        }
+    }
+
+    private void ApplyKnockbackToPlayer(GameObject player)
+    {
+        if (player.TryGetComponent(out Rigidbody2D playerRb) && player.TryGetComponent(out Player playerScript))
+        {
+            Vector2 direction = (player.transform.position - transform.position).normalized;
+            playerRb.velocity = Vector2.zero;
+            playerRb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+            StartCoroutine(KnockbackResetRoutine(playerRb));
+
+            // Apply damage to the player
+            playerScript.takeDamage(enemyEntity.damageDealt);
+
+            Debug.Log($"EnemyHitbox: Applied knockback and {enemyEntity.damageDealt} damage to player");
+        }
+    }
+
+    private IEnumerator KnockbackResetRoutine(Rigidbody2D rb)
+    {
+        yield return new WaitForSeconds(knockbackDuration);
+        
+        float reductionTime = 0.2f;
+        Vector2 initialVelocity = rb.velocity;
+        
+        for (float t = 0; t < reductionTime; t += Time.deltaTime)
+        {
+            rb.velocity = Vector2.Lerp(initialVelocity, Vector2.zero, t / reductionTime);
+            yield return null;
         }
         
-    }
-
-    private IEnumerator KnockbackCo(Rigidbody2D otherBody){
-        if (otherBody != null){
-            yield return new WaitForSeconds(.2f);
-            otherBody.velocity = Vector2.zero;
-            otherBody.bodyType = RigidbodyType2D.Dynamic;
-
-        }
+        rb.velocity = Vector2.zero;
+        Debug.Log($"EnemyHitbox: Finished knockback reset for player");
     }
 }

@@ -1,13 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using System.Text;
 
 public class PlayerUI : MonoBehaviour
 {
     public Player player;
+
+    private static PlayerUI _instance;
+
+    public static PlayerUI Instance { get { return _instance; } }
 
     public SceneManager sceneManager;
     public BuildMenu buildMenu1;
@@ -15,6 +20,7 @@ public class PlayerUI : MonoBehaviour
     public BuildMenu buildMenu3;
     public BuildMenu buildMenu4;
     public BuildMenu buildMenu5;
+    
 
     public List<GameObject> buildMenuTabs;
     public GameObject dialogBox;
@@ -23,7 +29,7 @@ public class PlayerUI : MonoBehaviour
     public Text storeText;
     public GameObject customSignBox;
     public InputField customSignText; 
-    public GameObject debugInventory;
+    public Text debugInventoryText;
     public Text moneyText;
     public GameObject buildGui;
     public GameObject inventoryGui;
@@ -48,9 +54,26 @@ public class PlayerUI : MonoBehaviour
     public GameObject loadingScreen;
 
     public GameObject gameSaver;
+
+
+
+  
+
     // Start is called before the first frame update
+
+    void Awake(){
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+    }
+
     void Start()
     {
+        DontDestroyOnLoad(this);
+
         player = GameObject.Find("Character").GetComponent<Player>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         AddStartingBlueprints();
@@ -78,11 +101,24 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
-    public void ToggleBuildMenu(){
-        if (inventoryGui.activeSelf){
-            ToggleInventory();
+     void UpdateDebugInventoryText()
+    {
+        StringBuilder sb = new StringBuilder("Inventory: ");
+        bool firstItem = true;
+        foreach (var item in player.inventory.items)
+        {
+            if (!firstItem)
+            {
+                sb.Append(", ");
+            }
+            sb.Append($"{item.title} x {item.amount}");
+            firstItem = false;
         }
-        buildGui.SetActive(!buildGui.activeSelf);
+        debugInventoryText.text = sb.ToString();
+    }
+
+    public void ToggleBuildMenu(){
+        sceneManager.ToggleBuildMenu();
     }
 
     public void toggleBuildMenuTab(int i){
@@ -112,6 +148,12 @@ public class PlayerUI : MonoBehaviour
     public void SaveGame(){
         Debug.Log("Saving Game");
         Instantiate(gameSaver);
+    }
+
+    void Update()
+    {
+        UpdateGui();
+        UpdateDebugInventoryText(); // Add this line to continually update inventory text
     }
 
     void UpdateGui(){

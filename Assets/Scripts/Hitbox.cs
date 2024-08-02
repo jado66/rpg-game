@@ -4,56 +4,91 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
-
-    Player player;
-    // Start is called before the first frame update
+     public Player player;
+    
     void Start()
     {
-        player = GameObject.Find("Character").GetComponent<Player>();
+        if (player == null)
+        {
+            player = GetComponentInParent<Player>();
+            if (player == null)
+            {
+                Debug.LogError("PlayerHitbox: Player component not found!");
+            }
+        }
     }
 
-    // Update is called once per frame
-    
-    
-    void OnTriggerEnter2D(Collider2D collision){
-        if ((collision.gameObject.GetComponent("LivingEntity") as LivingEntity) != null){
-            
-            LivingEntity livingEntity = collision.gameObject.GetComponent<LivingEntity>();
-            
-            int force = player.recoilForce;
-            Vector3 direction = (collision.transform.position-player.transform.position).normalized;
-            Rigidbody2D otherBody = collision.gameObject.GetComponent<Rigidbody2D>();
-            otherBody.isKinematic = false;
-            otherBody.AddForce(direction*force,ForceMode2D.Impulse);
-            StartCoroutine(KnockbackCo(otherBody));
-            livingEntity.takeDamage(player.damageDealt);
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log($"PlayerHitbox: Collision detected with {collision.gameObject.name}");
+
+        if (collision.TryGetComponent(out LivingEntity livingEntity))
+        {
+            ApplyKnockbackToEnemy(collision.gameObject, livingEntity);
         }
-        else if (collision.gameObject.name == "CombatDummy"){
-            Debug.Log("hit from player");
-            CombatDummy dummy = collision.gameObject.GetComponent<CombatDummy>();
-            dummy.health -= player.damageDealt;
-            int force = player.recoilForce;
-            Vector3 direction = (collision.transform.position-player.transform.position).normalized;
-            Rigidbody2D otherBody = collision.gameObject.GetComponent<Rigidbody2D>();
-            otherBody.isKinematic = false;
-            otherBody.AddForce(direction*force,ForceMode2D.Impulse);
-            StartCoroutine(KnockbackCo(otherBody));
+        else if (collision.gameObject.name == "CombatDummy")
+        {
+            ApplyKnockbackToDummy(collision.gameObject);
         }
-        else if ((collision.gameObject.GetComponent("Pot") as Pot) != null){
-            
-            collision.gameObject.GetComponent<Pot>().OnHit();
+        else if (collision.TryGetComponent(out Pot pot))
+        {
+            pot.OnHit();
         }
-            
-        
-    
     }
 
-    private IEnumerator KnockbackCo(Rigidbody2D otherBody){
-        if (otherBody != null){
+    private void ApplyKnockbackToEnemy(GameObject target, LivingEntity livingEntity)
+    {
+        Vector2 direction = (target.transform.position - transform.position).normalized;
+        float force = player.recoilForce;
+
+        if (target.TryGetComponent(out Rigidbody2D rb))
+        {
+            rb.velocity = Vector2.zero;
+            rb.AddForce(direction * force, ForceMode2D.Impulse);
+            StartCoroutine(KnockbackResetRoutine(rb));
+            Debug.Log($"PlayerHitbox: Applied force {direction * force} to {target.name}");
+        }
+
+        livingEntity.takeDamage(player.damageDealt);
+        Debug.Log($"PlayerHitbox: Dealt {player.damageDealt} damage to {target.name}");
+    }
+
+    private void ApplyKnockbackToDummy(GameObject dummy)
+    {
+        Debug.Log("hit from player");
+        if (dummy.TryGetComponent(out CombatDummy combatDummy))
+        {
+            combatDummy.health -= player.damageDealt;
+        }
+
+        Vector2 direction = (dummy.transform.position - player.transform.position).normalized;
+        float force = player.recoilForce;
+
+        if (dummy.TryGetComponent(out Rigidbody2D rb))
+        {
+            rb.velocity = Vector2.zero; // Reset velocity before applying new force
+            rb.AddForce(direction * force, ForceMode2D.Impulse);
+            StartCoroutine(KnockbackResetRoutine(rb));
+        }
+    }
+
+    private IEnumerator KnockbackResetRoutine(Rigidbody2D rb)
+    {
+        if (rb != null)
+        {
             yield return new WaitForSeconds(player.knockTime);
-            otherBody.velocity = Vector2.zero;
-            otherBody.bodyType = RigidbodyType2D.Dynamic;
-
+            
+            // Gradually reduce velocity instead of setting it to zero instantly
+            float reductionTime = 0.5f; // Time over which to reduce velocity
+            Vector2 initialVelocity = rb.velocity;
+            
+            for (float t = 0; t < reductionTime; t += Time.deltaTime)
+            {
+                rb.velocity = Vector2.Lerp(initialVelocity, Vector2.zero, t / reductionTime);
+                yield return null;
+            }
+            
+            rb.velocity = Vector2.zero;
         }
     }
 }

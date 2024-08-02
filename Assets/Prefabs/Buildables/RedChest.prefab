@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: chest
-  inventory: {fileID: 0}
+  inventory: {fileID: 6648733947560168481}
 --- !u!114 &6648733947560168481
 MonoBehaviour:
   m_ObjectHideFlags: 0

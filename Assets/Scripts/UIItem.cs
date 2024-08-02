@@ -184,8 +184,26 @@ public class UIItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, 
         }
     }
 
+    public void UpdateItemFromString(string itemTitle)
+    {
+        Item item = ItemDatabase.GetItem(itemTitle);
+        if (item != null)
+        {
+            Debug.Log($"Updating item to {item.title}");
+            UpdateItem(item);
+        }
+        else
+        {
+            Debug.LogWarning($"Item with title '{itemTitle}' not found in database.");
+        }
+    }
+
     public void OnPointerExit(PointerEventData eventData)
     {
         tooltip.gameObject.SetActive(false);
+    }
+
+    public override string ToString() {
+        return $"UIItem: {item?.title ?? "None"}, Amount: {item?.amount ?? 0}";
     }
 }

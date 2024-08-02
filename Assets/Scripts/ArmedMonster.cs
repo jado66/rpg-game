@@ -12,10 +12,15 @@ public class ArmedMonster  : Monster
 
     int swingTimer;
 
+    private SpriteRenderer spriteRenderer;
 
 
     // Start is called before the first frame update
-
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        // healthbarObject.SetActive(false);
+    }
     
     void Update(){
 
@@ -110,8 +115,9 @@ public class ArmedMonster  : Monster
 
         if (checkForGround.collider == null)
         {
+            // This isn't working. Green things are everywhere random
             Debug.DrawRay(newWayPoint+new Vector3(0,0,.5f),Vector3.down,Color.green,1f);
-            Debug.Log("Waypoint at "+newWayPoint.ToString()+" is inaccessible");
+            // Debug.Log("Waypoint at "+newWayPoint.ToString()+" is inaccessible");
             return;
         }
         else
@@ -151,11 +157,37 @@ public class ArmedMonster  : Monster
         healthbarObject.SetActive(false);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameObject.layer = LayerMask.NameToLayer("Interactable");
-        animators[0].SetTrigger("die");
         alive = false;
-        
-        StartCoroutine(WaitAndDestroy());
+        animators[0].SetTrigger("die");
+        if (spriteRenderer != null)
+        {
+            StartCoroutine(FadeAndDestroy());
+        }
+        else
+        {
+            StartCoroutine(WaitAndDestroy());
+        }
     }
+
+    private IEnumerator FadeAndDestroy()
+    {
+        Debug.Log("Fading");
+        float elapsedTime = 0f;
+        yield return new WaitForSeconds(deathVanishDelay);
+
+        Color originalColor = spriteRenderer.color;
+
+        while (elapsedTime < 5.0f)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, elapsedTime / 5.0f);
+            spriteRenderer.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
+
+        Destroy(this.gameObject);
+    }
+
 
     void OnTriggerEnter2D(Collider2D collision){
         if (!alive)

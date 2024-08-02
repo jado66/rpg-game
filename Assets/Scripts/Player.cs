@@ -43,6 +43,13 @@ public enum CloneState
 
 public class Player : MonoBehaviour
 {
+    
+    private Interactable objectBeingCarried;
+
+    public void SetObjectBeingCarried(Interactable newObject)
+    {
+        objectBeingCarried = newObject;
+    }
     public int lightCount;
     bool staminaBoosted;
     public Item attackWeapon;
@@ -81,6 +88,8 @@ public class Player : MonoBehaviour
     Color rayColor = Color.green;
 
     RaycastHit2D interactableHit;
+
+    RaycastHit2D defaultHit;
     RaycastHit2D choppableHit;
     RaycastHit2D interactableHit2;
     RaycastHit2D choppableHit2;
@@ -94,6 +103,8 @@ public class Player : MonoBehaviour
     int choppableLayer; // Ray will only hit objects on the interact layer
 
     int groundLayer;
+
+    int defaultLayer;
     GridLayout grid;
 
     
@@ -176,6 +187,14 @@ public class Player : MonoBehaviour
 
     public string playerName = "Player";
 
+    public GameObject upHitBox;
+    public GameObject downHitBox;
+
+    public GameObject rightHitBox;
+
+    public GameObject leftHitBox;
+
+
     void Awake(){
         if (_instance != null && _instance != this)
         {
@@ -192,7 +211,8 @@ public class Player : MonoBehaviour
             PlayerPrefs.Save();
         }
 
-        
+        inventory = GetComponent<PlayerInventory>();
+
     }
 
     public bool hasPlayerStartedTheGame(){return playerHasStartedTheGame;}
@@ -209,7 +229,7 @@ public class Player : MonoBehaviour
         }
     }
     public void LinkPlayerToUI(){
-        // Debug.Log("Attempting to fix connections");
+        Debug.Log("Attempting to fix connections");
         
         tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
@@ -221,6 +241,8 @@ public class Player : MonoBehaviour
 
 
         int i = 0;
+        Debug.Log($"Item Count: {inventory.items.Count}");
+
         foreach(var item in inventory.items){
             if (i<10){
                 inventory.inventoryUI.uiItems[i].UpdateItem(item);
@@ -229,7 +251,7 @@ public class Player : MonoBehaviour
             {
                 inventory.hotItemsUI.uiItems[i].UpdateItem(item);
             }
-            
+            i++;
         }
     }
 
@@ -244,12 +266,12 @@ public class Player : MonoBehaviour
         currentState = PlayerState.walk;
 
         buildSquare.SetActive(false);
-        inventory = GetComponent<PlayerInventory>();
         // buildSquare = GameObject.Find("BuildSquare");
         // Make it so the raycast doesn't collide with player
         interactLayer = LayerMask.NameToLayer("Interactable");
         choppableLayer = LayerMask.NameToLayer("Choppable");
         groundLayer = LayerMask.NameToLayer("Ground");
+        defaultLayer = LayerMask.NameToLayer("Default");
 
        
 
@@ -458,7 +480,9 @@ public class Player : MonoBehaviour
             sceneManager.ToggleBuildMenu();
             keyCount[1]+=1;
         }
-        if (Input.GetKey(KeyCode.P) && keyCount[1] == 0 && currentState == PlayerState.walk){
+        if (Input.GetKey(KeyCode.P) && keyCount[1] == 0){ 
+            // == 0 && currentState == PlayerState.walk
+            Debug.Log("PPP");
             buttonsPressed.Add(KeyCode.P);
             keyCount[1]+=1;
         }
@@ -637,7 +661,12 @@ public class Player : MonoBehaviour
 
     
     private IEnumerator handleButtonPressesCo(){
+
+
+
         foreach (var button in buttonsPressed){
+            // Debug.Log("button pressed");
+
             switch(button){
                 case KeyCode.T:
                     Debug.Log("torch");
@@ -663,14 +692,8 @@ public class Player : MonoBehaviour
                 case KeyCode.M:
                     StartCoroutine(interact("mine"));
                     break;
-                case KeyCode.B:
-                    showBuildSquare = !showBuildSquare;
-                    if (!showBuildSquare){
-                        buildSquare.SetActive(false);
-                        noBuildSquare.SetActive(false);
-                    }
-                    break;
                 case KeyCode.P:
+                    Debug.Log("astralProjecting");
                     if (!astralProjecting){
                        astralProject(); 
                     }
@@ -689,6 +712,18 @@ public class Player : MonoBehaviour
         }
 
         yield return null;
+    }
+
+    public void toggleBuildSquare(bool isToggleOn){
+        showBuildSquare = isToggleOn;
+        if (!showBuildSquare){
+            buildSquare.SetActive(false);
+            noBuildSquare.SetActive(false);
+        }
+        else{
+            buildSquare.SetActive(true);
+            noBuildSquare.SetActive(true);
+        }
     }
 
     void useItem(Item item, int buttonIndex = -1){
@@ -950,6 +985,7 @@ public class Player : MonoBehaviour
     }
 
     void returnProjectionToBody(){
+        
         astralProjecting = false;
         projection.transform.position = transform.position;
         projection.SetActive(false);
@@ -993,12 +1029,38 @@ public class Player : MonoBehaviour
     
     
     private IEnumerator AttackCo(){
-        animator.SetTrigger("attack");
-        currentState = PlayerState.attack;
-        yield return null; //Wait a frame
-        yield return new WaitForSeconds(.2f);
-        currentState = PlayerState.walk;
+    animator.SetTrigger("attack");
+
+    // Deactivate all hitboxes first
+    upHitBox.SetActive(false);
+    rightHitBox.SetActive(false);
+    downHitBox.SetActive(false);
+    leftHitBox.SetActive(false);
+
+    // Activate the appropriate hitbox based on playerFacingDirection
+    if (playerFacingDirection.x > 0) {
+        rightHitBox.SetActive(true);
+    } else if (playerFacingDirection.x < 0) {
+        leftHitBox.SetActive(true);
+    } else if (playerFacingDirection.y > 0) {
+        upHitBox.SetActive(true);
+    } else if (playerFacingDirection.y < 0) {
+        downHitBox.SetActive(true);
     }
+
+    currentState = PlayerState.attack;
+    yield return null; //Wait a frame
+    yield return new WaitForSeconds(.2f);
+    currentState = PlayerState.walk;
+    yield return new WaitForSeconds(.5f); // Adjust this value to your needs
+
+    // Deactivate all hitboxes after attack
+    upHitBox.SetActive(false);
+    rightHitBox.SetActive(false);
+    downHitBox.SetActive(false);
+    leftHitBox.SetActive(false);
+}
+
 
     
 
@@ -1011,6 +1073,10 @@ public class Player : MonoBehaviour
     public IEnumerator interact(string type){
         // Debug.Log("interact");
         //Start with four playerFacingDirections
+        if (objectBeingCarried != null){
+            objectBeingCarried.onPlayerInteract();
+            yield break;  // This signals the end of the IEnumerator
+        }
         
         playerCenter = gameObject.GetComponent<BoxCollider2D>().bounds.center;
         Vector3 perpendicularDirection = new Vector3(playerFacingDirection.y,-playerFacingDirection.x,0);
@@ -1018,16 +1084,19 @@ public class Player : MonoBehaviour
 
         // combine the layers later
         if (type == "interact"){
-            
-            
+            // Debug.Log("Interact");
 
             interactableHit = Physics2D.Raycast(playerCenter+playerFacingDirection*.5f-perpendicularDirection*.3f,perpendicularDirection,.6f,1<<interactLayer);
             
+
             if(interactableHit.collider != null){ 
-                // Debug.Log("We hit something");
+                Debug.Log("We hit something");
                 try{
-                    // Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
-                    interactableHit.collider.gameObject.GetComponent<Interactable>().onPlayerInteract();
+                    Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
+                    var interactables = interactableHit.collider.gameObject.GetComponents<Interactable>();
+                    foreach (var interactable in interactables) {
+                        interactable.onPlayerInteract();
+                    }
                 }
                 catch {
                     // Check for mushrooms
@@ -1380,7 +1449,7 @@ public class Player : MonoBehaviour
     }
 
     public void setEnabledShadows(bool enabled){
-        Debug.Log("Setting the shadows "+(enabled?"on":"off"));
+        // Debug.Log("Setting the shadows "+(enabled?"on":"off"));
         bool turnOn = enabled;
         if (torch.activeSelf && enabled)  
             turnOn = false;

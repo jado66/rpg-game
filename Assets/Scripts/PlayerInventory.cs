@@ -3,12 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
+public class InventoryCategory
+{
+    public string categoryName;
+    public List<string> items;
+}
 public class PlayerInventory : Inventory {
     public UIInventory hotItemsUI;
 
     public UIInventory externalInventory;
 
     public StoreUiInventory storeUiInventory;
+
+    [SerializeField]
+    public List<InventoryCategory> inventoryMap = new List<InventoryCategory>();
 
     void Start()
     {

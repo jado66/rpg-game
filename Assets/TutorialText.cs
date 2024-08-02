@@ -4,7 +4,7 @@ using TMPro;
 
 public class TutorialText : MonoBehaviour
 {
-    public TMP_Text  textField; // Reference to the Text component
+    public TMP_Text textField; // Reference to the Text component
     public Button backButton; // Reference to the Back button
     public Button nextButton; // Reference to the Next button
 
@@ -12,7 +12,7 @@ public class TutorialText : MonoBehaviour
 
     public GameObject tutorialGameObject; // Reference to the entire tutorial object
 
-    private string[] tutorialTexts = new string[]
+    public string[] tutorialTexts = new string[]
     {
         "Welcome to the Rift tutorial!",
         "Press the arrow keys or WASD keys to move.",
@@ -23,16 +23,21 @@ public class TutorialText : MonoBehaviour
         "Move the axe into the Z box in your hotbar. Now try chopping a tree using the Z key.",
         "Take a look at your inventory! You can use your tools to chop trees, mine, etc.",
         "You can use E to interact with lots of things. Open the fence and pick some carrots.",
-        "Now put the hammer into the X key of your hotbar.",
-        "Open up the build menu, and select the fence icon.",
-        "Now go to an open space and click the X key to build a fence.",
-        "You can chop fences down with your axe so long as they don't belong to someone else.",
+        // "Now put the hammer into the X key of your hotbar.",
+        // "Open up the build menu, and select the fence icon.",
+        // "Now go to an open space and click the X key to build a fence.",
+        // "You can chop fences down with your axe so long as they don't belong to someone else.",
         "Now put your pickaxe into the C box in your hotbar.",
         "Go follow the cobblestone path until you come across some big rocks.",
         "Press the C key to mine stone. If you look hard enough you can find metal ores.",
-        "Now lets try building a chest of our own",
-
-        "Feel free to play around in this safe space. When you are done go through the portal."
+        // "Now lets try building a chest of our own",
+        "You can do a lot more that isn't covered in this tutorial. Feel free to explore.",
+        "There are signs nearby that provide additional instruction.",
+        "You can learn how to grow and cultivate crops, construct fences and chests, or combat.",
+        // "When it gets dark you'll want to use the T key for your torch.",
+        // "As development on this game continues you'll unlock magic powers and capabilities.",
+        // "You can try one of them out now. Press P to Astral Project your character.",
+        "Feel free to play around in this safe space. When you are done go through the spinning portal."
     };
 
     private int currentIndex = 0;
@@ -40,7 +45,6 @@ public class TutorialText : MonoBehaviour
     void Start()
     {
         UpdateUI();
-       
     }
 
     void UpdateUI()
@@ -68,7 +72,7 @@ public class TutorialText : MonoBehaviour
         }
     }
 
-    public  void OnNextClicked()
+    public void OnNextClicked()
     {
         if (currentIndex < tutorialTexts.Length - 1)
         {
@@ -79,5 +83,11 @@ public class TutorialText : MonoBehaviour
         {
             tutorialGameObject.SetActive(false); // Disable the tutorial game object
         }
+    }
+
+    public void ResetTutorial()
+    {
+        currentIndex = 0;
+        UpdateUI();
     }
 }

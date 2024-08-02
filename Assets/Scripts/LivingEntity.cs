@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LivingEntity : MonoBehaviour
+public class LivingEntity : Interactable
 {
     public bool alive;
     public GameObject healthbarObject;
     public Image healthbar;
+
+    public float deathVanishDelay = 5.0f;
+
     public int health;
 
     public int maxHealth;
@@ -24,21 +27,24 @@ public class LivingEntity : MonoBehaviour
 
         
         health -= amount;
-        healthbar.fillAmount = (float)(health)/(float)(maxHealth);
 
         if (health <= 0){
             kill();
         }
         else{
-            if (!healthbarObject.activeSelf)
+            if (healthbarObject != null && !healthbarObject.activeSelf){
+                healthbar.fillAmount = (float)(health)/(float)(maxHealth);
                 healthbarObject.SetActive(true);
+            }
         }
     }
 
     protected virtual void kill(){
         Debug.Log("Killing "+ name);
-        healthbarObject.SetActive(false);
-        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        if (healthbarObject != null){
+            healthbarObject.SetActive(false);
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        }
         gameObject.layer = LayerMask.NameToLayer("Interactable");
         alive = false;
         
@@ -46,7 +52,7 @@ public class LivingEntity : MonoBehaviour
     }
 
     protected IEnumerator WaitAndDestroy(){
-        yield return new WaitForSeconds(150);
+        yield return new WaitForSeconds(deathVanishDelay);
         Destroy(this.gameObject);
     }
 }

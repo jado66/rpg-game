@@ -97,13 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Mouse
+  alive: 1
+  healthbarObject: {fileID: 0}
+  healthbar: {fileID: 0}
+  deathVanishDelay: 0
+  health: 1
+  maxHealth: 1
   canSwim: 1
+  chest: {fileID: 0}
   alwaysMoving: 1
   canBeCarriedByPlayer: 0
   afraidOfPlayer: 1
   sightRange: 5
   runSpeed: 5
   walkSpeed: 5
+  followingPlayer: 0
+  id: 0
   startingPosition: {x: 0, y: -1}
 --- !u!95 &914938447890622636
 Animator:
