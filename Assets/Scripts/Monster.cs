@@ -9,7 +9,7 @@ public class Monster : LivingEntity
 
     public bool alwaysMoving;
 
-    protected  TilePallete tilePallete;
+    protected  TilePalette tilePalette;
     protected Vector3 wayPoint;
     private float timer;
 
@@ -34,7 +34,7 @@ public class Monster : LivingEntity
 
     public bool followingPlayer;
 
-    public int id;
+    public string id;
 
     public Vector2 startingPosition = new Vector3(0,-1);
 
@@ -61,16 +61,24 @@ public class Monster : LivingEntity
     }
     void Start()
     {
+
+        if (string.IsNullOrEmpty(id))
+        {
+            id = System.Guid.NewGuid().ToString();
+        }
+
+
         if (followingPlayer) // or player is carrying
             DontDestroyOnLoad(this);
 
         healthbarObject.SetActive(false);
         // If following through portal delete if there is a clone (useful for going through and back from a portal)
         // This will be done away with when we have a saved state function for portal hopping.
-        Animal[] animals = (Animal[]) FindObjectsOfType(typeof(Animal));
-        foreach(var animal in animals){
-            if (animal.id == this.id && animal !=this) {
+        Monster[] monsters = (Monster[]) FindObjectsOfType(typeof(Monster));
+        foreach(var monster in monsters){
+            if (monster.id == this.id && monster !=this) {
                 if (!this.followingPlayer){
+                    Debug.Log("Destroying duplicate monster " + this.gameObject.name + "!");
                     Destroy(this.gameObject);
                 }
             }
@@ -79,7 +87,7 @@ public class Monster : LivingEntity
 
         grid = GameObject.Find("Grid").GetComponent<GridLayout>(); 
         
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         tempSightRange = sightRange;
         findNewWayPoint();
         player = GameObject.Find("Character");
@@ -99,8 +107,8 @@ public class Monster : LivingEntity
 
         if (player == null)
             player = GameObject.FindWithTag("Player");
-        if (tilePallete == null)
-            tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        if (tilePalette == null)
+            tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         Vector3 position = transform.position;
                 
         if (Random.Range(0,1000) <=6){
@@ -183,10 +191,10 @@ public class Monster : LivingEntity
         
         // try{
         // Vector3 newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        // if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water ||tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water ||tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
         //     newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
         // }
-        // if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water || tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water || tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
         //     return;
         // }
         // else

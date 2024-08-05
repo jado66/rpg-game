@@ -7,19 +7,19 @@ public class Boat : Interactable
 {
     Player player;
 
-    TilePallete tilePallete;
+    TilePalette tilePalette;
     void Start(){
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         player = GameObject.Find("Character").GetComponent<Player>();
     }
     // Start is called before the first frame update
-    public override void onPlayerInteract(){
+    public override void onCharacterInteract(){
         player.boat = this;
         player.onBoat = !player.onBoat;
         // On boat
         if (player.currentState != PlayerState.standby){
             GetComponent<BoxCollider2D>().isTrigger = false;
-            tilePallete.ground.GetComponent<TilemapCollider2D>().isTrigger = false;
+            tilePalette.ground.GetComponent<TilemapCollider2D>().isTrigger = false;
             player.currentState = PlayerState.standby;
             if (player.inWater)
                 player.animator.SetBool("swimming",false);
@@ -31,7 +31,7 @@ public class Boat : Interactable
             // needs to be coroutine
             GetComponent<BoxCollider2D>().isTrigger = true;
 
-            tilePallete.ground.GetComponent<TilemapCollider2D>().isTrigger = true;
+            tilePalette.ground.GetComponent<TilemapCollider2D>().isTrigger = true;
 
             if (player.inWater){
                 player.currentState = PlayerState.swim;

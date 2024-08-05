@@ -15,7 +15,7 @@ public class TutorialSign : Interactable
         tutorialTextScript = tutorialGameObject.GetComponent<TutorialText>();
     }
 
-    public override void onPlayerInteract()
+    public override void onCharacterInteract()
     {
         if (tutorialGameObject.activeSelf) // Check if the tutorialGameObject is currently active
         {

@@ -22,8 +22,8 @@ public class Sign : Interactable
         playerUi = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
         
     }
-    public override void onPlayerInteract(){
-        base.onPlayerInteract();
+    public override void onCharacterInteract(){
+        base.onCharacterInteract();
         
         Debug.Log("Interacted with sign");
         if (playerUi.customSignBox.activeSelf && playerUi.customSignBox.GetComponent<InputField>().isFocused){

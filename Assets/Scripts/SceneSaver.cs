@@ -23,13 +23,13 @@ public class SceneSaver : MonoBehaviour
 {
     public bool MasterSave; 
     public SceneManager sceneManager;
-    public TilePallete tilePallete;
+    public TilePalette tilePalette;
 
     int keyCount = 0;
 
     void Start(){
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
-        tilePallete = sceneManager.tilePallete;
+        tilePalette = sceneManager.tilePalette;
 
         if (MasterSave){
             SaveMasterScene();
@@ -49,7 +49,7 @@ public class SceneSaver : MonoBehaviour
     }
 
     private IEnumerator SaveLocalScene(){
-        string playerName = sceneManager.player.playerName;
+        string playerName = sceneManager.player1.playerName;
         string filePath = Application.persistentDataPath + "/SavedGames"+
                             string.Format("/{0}/{1}-Data.save",playerName,sceneManager.getSceneName());
         
@@ -81,7 +81,7 @@ public class SceneSaver : MonoBehaviour
         int col;
         int tileIndex;
 
-        foreach (var modification in tilePallete.modifications)
+        foreach (var modification in tilePalette.modifications)
         {
             
 
@@ -146,13 +146,13 @@ public class SceneSaver : MonoBehaviour
         yield return new WaitForSeconds(1);
         Debug.Log("Saving Master Scene");
 
-        BoundsInt choppableBounds = tilePallete.choppable.cellBounds;
-        TileBase[] choppableTiles = tilePallete.choppable.GetTilesBlock(choppableBounds);
+        BoundsInt choppableBounds = tilePalette.choppable.cellBounds;
+        TileBase[] choppableTiles = tilePalette.choppable.GetTilesBlock(choppableBounds);
         TileMapData choppableTileMap = new TileMapData();
 
         Debug.Log("Trying to save choppable");
-        choppableTileMap.startX = tilePallete.choppable.cellBounds.xMin;
-        choppableTileMap.startY = tilePallete.choppable.cellBounds.yMin;
+        choppableTileMap.startX = tilePalette.choppable.cellBounds.xMin;
+        choppableTileMap.startY = tilePalette.choppable.cellBounds.yMin;
         choppableTileMap.lengthX = choppableBounds.size.x;
         string[] tileNames = new string[choppableTiles.Length];
 
@@ -167,11 +167,11 @@ public class SceneSaver : MonoBehaviour
         }
 
         // Collidable
-        BoundsInt collidableBounds = tilePallete.collidable.cellBounds;
-        TileBase[] collidableTiles = tilePallete.collidable.GetTilesBlock(collidableBounds);
+        BoundsInt collidableBounds = tilePalette.collidable.cellBounds;
+        TileBase[] collidableTiles = tilePalette.collidable.GetTilesBlock(collidableBounds);
         TileMapData collidableTileMap = new TileMapData();
-        collidableTileMap.startX = tilePallete.collidable.cellBounds.xMin;
-        collidableTileMap.startY = tilePallete.collidable.cellBounds.yMin;
+        collidableTileMap.startX = tilePalette.collidable.cellBounds.xMin;
+        collidableTileMap.startY = tilePalette.collidable.cellBounds.yMin;
         collidableTileMap.lengthX = collidableBounds.size.x;
         tileNames = new string[collidableTiles.Length];
 
@@ -187,11 +187,11 @@ public class SceneSaver : MonoBehaviour
         }
 
         // Ground
-        BoundsInt groundBounds = tilePallete.ground.cellBounds;
-        TileBase[] groundTiles = tilePallete.ground.GetTilesBlock(groundBounds);
+        BoundsInt groundBounds = tilePalette.ground.cellBounds;
+        TileBase[] groundTiles = tilePalette.ground.GetTilesBlock(groundBounds);
         TileMapData groundTileMap = new TileMapData();
-        groundTileMap.startX = tilePallete.ground.cellBounds.xMin;
-        groundTileMap.startY = tilePallete.ground.cellBounds.yMin;
+        groundTileMap.startX = tilePalette.ground.cellBounds.xMin;
+        groundTileMap.startY = tilePalette.ground.cellBounds.yMin;
         groundTileMap.lengthX = groundBounds.size.x;
         tileNames = new string[groundTiles.Length];
 
@@ -207,11 +207,11 @@ public class SceneSaver : MonoBehaviour
         }
 
         // minable
-        BoundsInt minableBounds = tilePallete.minable.cellBounds;
-        TileBase[] minableTiles = tilePallete.minable.GetTilesBlock(minableBounds);
+        BoundsInt minableBounds = tilePalette.minable.cellBounds;
+        TileBase[] minableTiles = tilePalette.minable.GetTilesBlock(minableBounds);
         TileMapData minableTileMap = new TileMapData();
-        minableTileMap.startX = tilePallete.minable.cellBounds.xMin;
-        minableTileMap.startY = tilePallete.minable.cellBounds.yMin;
+        minableTileMap.startX = tilePalette.minable.cellBounds.xMin;
+        minableTileMap.startY = tilePalette.minable.cellBounds.yMin;
         minableTileMap.lengthX = minableBounds.size.x;
         tileNames = new string[minableTiles.Length];
 
@@ -226,11 +226,11 @@ public class SceneSaver : MonoBehaviour
         }
 
         //Decor
-        BoundsInt decorBounds = tilePallete.decor.cellBounds;
-        TileBase[] decorTiles = tilePallete.decor.GetTilesBlock(decorBounds);
+        BoundsInt decorBounds = tilePalette.decor.cellBounds;
+        TileBase[] decorTiles = tilePalette.decor.GetTilesBlock(decorBounds);
         TileMapData decorTileMap = new TileMapData();
-        decorTileMap.startX = tilePallete.decor.cellBounds.xMin;
-        decorTileMap.startY = tilePallete.decor.cellBounds.yMin;
+        decorTileMap.startX = tilePalette.decor.cellBounds.xMin;
+        decorTileMap.startY = tilePalette.decor.cellBounds.yMin;
         decorTileMap.lengthX = decorBounds.size.x;
         tileNames = new string[decorTiles.Length];
 
@@ -245,11 +245,11 @@ public class SceneSaver : MonoBehaviour
         }
 
         // interactable
-        BoundsInt interactableBounds = tilePallete.interactable.cellBounds;
-        TileBase[] interactableTiles = tilePallete.interactable.GetTilesBlock(interactableBounds);
+        BoundsInt interactableBounds = tilePalette.interactable.cellBounds;
+        TileBase[] interactableTiles = tilePalette.interactable.GetTilesBlock(interactableBounds);
         TileMapData interactableTileMap = new TileMapData();
-        interactableTileMap.startX = tilePallete.interactable.cellBounds.xMin;
-        interactableTileMap.startY = tilePallete.interactable.cellBounds.yMin;
+        interactableTileMap.startX = tilePalette.interactable.cellBounds.xMin;
+        interactableTileMap.startY = tilePalette.interactable.cellBounds.yMin;
         interactableTileMap.lengthX = interactableBounds.size.x;
         tileNames = new string[interactableTiles.Length];
 
@@ -264,11 +264,11 @@ public class SceneSaver : MonoBehaviour
         }
         
         // noBuildZone
-        BoundsInt noBuildZoneBounds = tilePallete.noBuildZone.cellBounds;
-        TileBase[] noBuildZoneTiles = tilePallete.noBuildZone.GetTilesBlock(noBuildZoneBounds);
+        BoundsInt noBuildZoneBounds = tilePalette.noBuildZone.cellBounds;
+        TileBase[] noBuildZoneTiles = tilePalette.noBuildZone.GetTilesBlock(noBuildZoneBounds);
         TileMapData noBuildZoneTileMap = new TileMapData();
-        noBuildZoneTileMap.startX = tilePallete.noBuildZone.cellBounds.xMin;
-        noBuildZoneTileMap.startY = tilePallete.noBuildZone.cellBounds.yMin;
+        noBuildZoneTileMap.startX = tilePalette.noBuildZone.cellBounds.xMin;
+        noBuildZoneTileMap.startY = tilePalette.noBuildZone.cellBounds.yMin;
         noBuildZoneTileMap.lengthX = noBuildZoneBounds.size.x;
         tileNames = new string[noBuildZoneTiles.Length];
 

@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
     public CloneState cloneState;
     
 
-    public TilePallete tilePallete;
+    public TilePalette tilePalette;
     public Animator animator;
 
     Animator projectionAnimator;
@@ -231,7 +231,7 @@ public class Player : MonoBehaviour
     public void LinkPlayerToUI(){
         Debug.Log("Attempting to fix connections");
         
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         bool inventoryActiveSelf = sceneManager.playerUI.inventoryGui.activeSelf;
         sceneManager.playerUI.inventoryGui.SetActive(true);
@@ -281,12 +281,12 @@ public class Player : MonoBehaviour
             Debug.Log("Problem finding grid in TilePallet");
         }
         
-        // try{ tilePallete.choppable = GameObject.Find("Choppable").GetComponent<Tilemap>(); } 
+        // try{ tilePalette.choppable = GameObject.Find("Choppable").GetComponent<Tilemap>(); } 
         // catch (Exception e){
         //     Debug.LogException(e,this);
         //     Debug.Log("Problem finding choppable in TilePallet"); 
         // }
-        // try{ tilePallete.ground = GameObject.Find("Ground").GetComponent<Tilemap>(); } 
+        // try{ tilePalette.ground = GameObject.Find("Ground").GetComponent<Tilemap>(); } 
         // catch (Exception e){
         //     Debug.LogException(e,this);
         //     Debug.LogError("Problem finding ground in TilePallet");
@@ -296,7 +296,7 @@ public class Player : MonoBehaviour
         //     Debug.LogException(e,this);
         //     Debug.LogError("Problem finding grid in TilePallet");
         // }
-        // try{ tilePallete.dirt = GameObject.Find("Dirt").GetComponent<Tilemap>(); } 
+        // try{ tilePalette.dirt = GameObject.Find("Dirt").GetComponent<Tilemap>(); } 
         // catch (Exception e){
         //     Debug.LogException(e,this);
         //     Debug.LogError("Problem finding dirt in TilePallet");
@@ -405,16 +405,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public void FixInventory(){
-        
-        foreach(var uiItem in inventory.inventoryUI.uiItems){
-            uiItem.TryFixItem();
-        }
-        foreach(var uiItem in inventory.hotItemsUI.uiItems){
-            uiItem.TryFixItem();
-        }
-        inventory.inventoryUI.uiItems[0].selectedItem.TryFixItem();
-    }
+   
     void FixedUpdate(){
         if (currentState == PlayerState.run && ! staminaBoosted)
             stamina -= .1f;
@@ -598,9 +589,9 @@ public class Player : MonoBehaviour
         playerMoves.Enqueue(playerMoveData);
 
         try{
-        buildSquareCellLocation = tilePallete.grid.WorldToCell(playerCenter+playerFacingDirection);
-        buildSquare.transform.position = tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
-        noBuildSquare.transform.position = tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
+            buildSquareCellLocation = tilePalette.grid.WorldToCell(playerCenter+playerFacingDirection);
+            buildSquare.transform.position = tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
+            noBuildSquare.transform.position = tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
         }
         catch{
             Debug.Log("Grid missing");
@@ -611,7 +602,16 @@ public class Player : MonoBehaviour
 
     }
     // Update is called once per frame
-
+    public void FixInventory(){
+        
+        foreach(var uiItem in inventory.inventoryUI.uiItems){
+            uiItem.TryFixItem();
+        }
+        foreach(var uiItem in inventory.hotItemsUI.uiItems){
+            uiItem.TryFixItem();
+        }
+        inventory.inventoryUI.uiItems[0].selectedItem.TryFixItem();
+    }
     
     void Update()
     {
@@ -642,7 +642,7 @@ public class Player : MonoBehaviour
 
         
         
-        if (tilePallete.noBuildZone.GetTile(buildSquareCellLocation)== null){
+        if (tilePalette.noBuildZone.GetTile(buildSquareCellLocation)== null){
             if (showBuildSquare){
                 buildSquare.SetActive(true);
                 noBuildSquare.SetActive(false);
@@ -675,7 +675,7 @@ public class Player : MonoBehaviour
                     break;
                 case KeyCode.E:
                     if (onBoat){
-                        boat.onPlayerInteract();
+                        boat.onCharacterInteract();
                     }
                     else
                         StartCoroutine(interact("interact"));
@@ -908,7 +908,7 @@ public class Player : MonoBehaviour
         yield return null;
     }
     bool checkIfCanPlant(){
-        return ( tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.dirt);
+        return ( tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.dirt);
     }
 
     void moveBoat(){
@@ -1074,7 +1074,7 @@ public class Player : MonoBehaviour
         // Debug.Log("interact");
         //Start with four playerFacingDirections
         if (objectBeingCarried != null){
-            objectBeingCarried.onPlayerInteract();
+            objectBeingCarried.onCharacterInteract();
             yield break;  // This signals the end of the IEnumerator
         }
         
@@ -1095,7 +1095,7 @@ public class Player : MonoBehaviour
                     Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
                     var interactables = interactableHit.collider.gameObject.GetComponents<Interactable>();
                     foreach (var interactable in interactables) {
-                        interactable.onPlayerInteract();
+                        interactable.onCharacterInteract();
                     }
                 }
                 catch {
@@ -1112,28 +1112,28 @@ public class Player : MonoBehaviour
             else{
                 // Debug.Log("Nothing on the interact layer");
                 // Check for fence
-                if (tilePallete.interactable.GetTile(buildSquareCellLocation)==tilePallete.mushroomTile){
-                        tilePallete.interactable.SetTile(buildSquareCellLocation,null);
+                if (tilePalette.interactable.GetTile(buildSquareCellLocation)==tilePalette.mushroomTile){
+                        tilePalette.interactable.SetTile(buildSquareCellLocation,null);
                         inventory.GiveItem("Mushroom");;
                     }
-                else if (tilePallete.decor.GetTile(buildSquareCellLocation)==tilePallete.forestFlower)
-                    tilePallete.decor.SetTile(buildSquareCellLocation,null);
-                else if (tilePallete.choppable.GetTile(buildSquareCellLocation) == tilePallete.gateOpen)
-                    tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.gateClosed);
-                else if (tilePallete.choppable.GetTile(buildSquareCellLocation) == tilePallete.gateClosed)
-                    tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.gateOpen);
-                else if (tilePallete.choppable.GetTile(buildSquareCellLocation)==tilePallete.appleTree){
-                    tilePallete.choppable.SetTile(buildSquareCellLocation,tilePallete.appleTreeEmpty);
+                else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlower)
+                    tilePalette.decor.SetTile(buildSquareCellLocation,null);
+                else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateOpen)
+                    tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.gateClosed);
+                else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateClosed)
+                    tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.gateOpen);
+                else if (tilePalette.choppable.GetTile(buildSquareCellLocation)==tilePalette.appleTree){
+                    tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.appleTreeEmpty);
                     inventory.GiveItem("Apple");
                 }
-                else if (tilePallete.ground.GetTile(buildSquareCellLocation)==tilePallete.tomato)
+                else if (tilePalette.ground.GetTile(buildSquareCellLocation)==tilePalette.tomato)
                 {
-                    tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.dirt);
+                    tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.dirt);
                     inventory.GiveItem("Tomato");
                 }
-                else if (tilePallete.ground.GetTile(buildSquareCellLocation)==tilePallete.carrot)
+                else if (tilePalette.ground.GetTile(buildSquareCellLocation)==tilePalette.carrot)
                 {
-                    tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.dirt);
+                    tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.dirt);
                     inventory.GiveItem("Carrot");
                 }
 
@@ -1148,18 +1148,18 @@ public class Player : MonoBehaviour
         if (type == "chop" && canModifyWorldAtBuildSquare){
             // choppableHit = Physics2D.Raycast(buildSquare.transform.position,-Vector3.forward,.6f,1<<choppableLayer);
             
-            if(tilePallete.choppable.GetTile(buildSquareCellLocation)!=null){ 
+            if(tilePalette.choppable.GetTile(buildSquareCellLocation)!=null){ 
                 
                 // Debug.Log("We hit a tree tile at " + buildSquareCellLocation.ToString());
 
                 // if (Random.Range(0,5) == 4){
                     
-                    tilePallete.choppable.SetTile(buildSquareCellLocation,null);
-                    // tilePallete.choppable.GetComponent<TilemapCollider2D>().enabled = false;
-                    // tilePallete.choppable.GetComponent<TilemapCollider2D>().enabled = true;
+                    tilePalette.choppable.SetTile(buildSquareCellLocation,null);
+                    // tilePalette.choppable.GetComponent<TilemapCollider2D>().enabled = false;
+                    // tilePalette.choppable.GetComponent<TilemapCollider2D>().enabled = true;
                     inventory.GiveItem("Wood");
                 // }
-                // interactableHit.collider.gameObject.GetComponent<Interactable>().onPlayerInteract();
+                // interactableHit.collider.gameObject.GetComponent<Interactable>().onCharacterInteract();
                 // Debug.DrawRay(playerCenter+playerFacingDirection*.75f-perpendicularDirection*.3f,perpendicularDirection*.6f,Color.red,1f);
             }
             else{
@@ -1171,25 +1171,25 @@ public class Player : MonoBehaviour
         else if (type == "mine" && canModifyWorldAtBuildSquare){
             // choppableHit = Physics2D.Raycast(buildSquare.transform.position,-Vector3.forward,.6f,1<<choppableLayer);
             
-            if(tilePallete.minable.GetTile(buildSquareCellLocation)==tilePallete.forestRock ||
-               tilePallete.minable.GetTile(buildSquareCellLocation)==tilePallete.minableRock)
+            if(tilePalette.minable.GetTile(buildSquareCellLocation)==tilePalette.forestRock ||
+               tilePalette.minable.GetTile(buildSquareCellLocation)==tilePalette.minableRock)
                {
-                    tilePallete.minable.SetTile(buildSquareCellLocation,null);
+                    tilePalette.minable.SetTile(buildSquareCellLocation,null);
                     inventory.GiveItem("Rock");
 
                } 
-            else if (tilePallete.minable.GetTile(buildSquareCellLocation)==tilePallete.minableIron){
-                tilePallete.minable.SetTile(buildSquareCellLocation,null);
+            else if (tilePalette.minable.GetTile(buildSquareCellLocation)==tilePalette.minableIron){
+                tilePalette.minable.SetTile(buildSquareCellLocation,null);
                 inventory.GiveItem("Iron Ore");
 
             }   
-            else if (tilePallete.minable.GetTile(buildSquareCellLocation)==tilePallete.minableGold){
-                tilePallete.minable.SetTile(buildSquareCellLocation,null);
+            else if (tilePalette.minable.GetTile(buildSquareCellLocation)==tilePalette.minableGold){
+                tilePalette.minable.SetTile(buildSquareCellLocation,null);
                 inventory.GiveItem("Gold Ore");
 
             }
-            else if (tilePallete.ground.GetTile(buildSquareCellLocation)==tilePallete.cobbleStonePath){
-                tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.grass);
+            else if (tilePalette.ground.GetTile(buildSquareCellLocation)==tilePalette.cobbleStonePath){
+                tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.grass);
                 inventory.GiveItem("Rock");
 
             }
@@ -1202,7 +1202,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Initiating build process...");
             
-            if (tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.water)
+            if (tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.water)
             {
                 Debug.LogWarning("Build square is water. Cannot build here.");
                 yield return null;
@@ -1215,12 +1215,12 @@ public class Player : MonoBehaviour
             string[] keys = new string[activeBlueprint.price.Keys.Count];
             activeBlueprint.price.Keys.CopyTo(keys, 0);
 
-            TileBase currentTile = tilePallete.choppable.GetTile(buildSquareCellLocation);
-            TileBase groundTile = tilePallete.ground.GetTile(buildSquareCellLocation);
+            TileBase currentTile = tilePalette.choppable.GetTile(buildSquareCellLocation);
+            TileBase groundTile = tilePalette.ground.GetTile(buildSquareCellLocation);
 
-            bool isTileBuildable =  tilePallete.choppable.GetTile(buildSquareCellLocation) ==null &&
-                                    tilePallete.minable.GetTile(buildSquareCellLocation) == null &&
-                                    tilePallete.collidable.GetTile(buildSquareCellLocation) == null;
+            bool isTileBuildable =  tilePalette.choppable.GetTile(buildSquareCellLocation) ==null &&
+                                    tilePalette.minable.GetTile(buildSquareCellLocation) == null &&
+                                    tilePalette.collidable.GetTile(buildSquareCellLocation) == null;
 
             switch (activeBlueprint.title)
             {
@@ -1230,7 +1230,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.fence);
+                            tilePalette.choppable.SetTile(buildSquareCellLocation, tilePalette.fence);
                             Debug.Log("Built Fence");
                         }
                         else
@@ -1238,9 +1238,9 @@ public class Player : MonoBehaviour
                             Debug.LogWarning("Not enough items to build Fence");
                         }
                     }
-                    else if (currentTile == tilePallete.gateOpen || currentTile == tilePallete.gateClosed)
+                    else if (currentTile == tilePalette.gateOpen || currentTile == tilePalette.gateClosed)
                     {
-                        tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.fence);
+                        tilePalette.choppable.SetTile(buildSquareCellLocation, tilePalette.fence);
                         Debug.Log("Replaced Gate with Fence");
                     }
                     break;
@@ -1251,7 +1251,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.gateClosed);
+                            tilePalette.choppable.SetTile(buildSquareCellLocation, tilePalette.gateClosed);
                             Debug.Log("Built Gate");
                         }
                         else
@@ -1259,9 +1259,9 @@ public class Player : MonoBehaviour
                             Debug.LogWarning("Not enough items to build Gate");
                         }
                     }
-                    else if (currentTile == tilePallete.fence)
+                    else if (currentTile == tilePalette.fence)
                     {
-                        tilePallete.choppable.SetTile(buildSquareCellLocation, tilePallete.gateClosed);
+                        tilePalette.choppable.SetTile(buildSquareCellLocation, tilePalette.gateClosed);
                         Debug.Log("Replaced Fence with Gate");
                     }
                     break;
@@ -1270,7 +1270,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            Instantiate(tilePallete.sack,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            Instantiate(tilePalette.sack,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
                             Debug.Log("Built Sack");
                         }
                         else
@@ -1288,7 +1288,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            GameObject sign = Instantiate(tilePallete.sign,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            GameObject sign = Instantiate(tilePalette.sign,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
                             sign.GetComponent<Sign>().customizable = true;
                             Debug.Log("Built Sign");
                         }
@@ -1307,7 +1307,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            Instantiate(tilePallete.chest,tilePallete.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            Instantiate(tilePalette.chest,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
                             Debug.Log("Built Chest");
                         }
                         else
@@ -1323,12 +1323,12 @@ public class Player : MonoBehaviour
                     break;
 
                 case "Cobblestone Path":
-                    if (groundTile != tilePallete.water)
+                    if (groundTile != tilePalette.water)
                     {
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            tilePallete.ground.SetTile(buildSquareCellLocation, tilePallete.cobbleStonePath);
+                            tilePalette.ground.SetTile(buildSquareCellLocation, tilePalette.cobbleStonePath);
                             Debug.Log("Built Cobblestone Path");
                         }
                         else
@@ -1354,12 +1354,12 @@ public class Player : MonoBehaviour
         }
         
         else if (type == "dig" && canModifyWorldAtBuildSquare){
-            // tilePallete.ground.GetComponent<TilemapCollider2D>().enabled = false;
+            // tilePalette.ground.GetComponent<TilemapCollider2D>().enabled = false;
             groundHit = Physics2D.Raycast(buildSquare.transform.position,-Vector3.forward,1f,1<<groundLayer);
             // Debug.Log("We are attempting to dig at "+buildSquareCellLocation.ToString());
-            if (tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.grass ||
-                tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.dirt ||
-                tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.ploughedDirt){
+            if (tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.grass ||
+                tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.dirt ||
+                tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.ploughedDirt){
                 // Debug.Log("Grass is here");
                 //For now lets make sure it's a center grass piece because we don't have the art
                 Vector3Int checkPosition = buildSquareCellLocation + new Vector3Int(-1,-1,0);
@@ -1368,21 +1368,16 @@ public class Player : MonoBehaviour
                     
                 
                 
-                tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.dirt);
+                tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.dirt);
 
 
-                    // tilePallete.ground.GetComponent<TilemapCollider2D>().enabled = false;
-                    // tilePallete.ground.GetComponent<TilemapCollider2D>().enabled = true;
                 }
             }
-            // else{
-            //     Debug.Log("Trying to swap make nice dirt");
-            //     tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.ploughedDirt); 
-            // }
+            
         else if (type == "plant" && canModifyWorldAtBuildSquare){
             // Debug.Log("Trying to plant");
-            if (tilePallete.ground.GetTile(buildSquareCellLocation) == tilePallete.dirt)
-                tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.ploughedDirt);
+            if (tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.dirt)
+                tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.ploughedDirt);
         }
 
         else if (type == "irrigate" && canModifyWorldAtBuildSquare){
@@ -1392,18 +1387,18 @@ public class Player : MonoBehaviour
             // Vector for NESW we currently have the diagonals 
             
             for (int i = 0; i < 4; i++){
-                if (tilePallete.ground.GetTile(buildSquareCellLocation+directionalPointers[i])==tilePallete.water){
+                if (tilePalette.ground.GetTile(buildSquareCellLocation+directionalPointers[i])==tilePalette.water){
                     thereWaterAtNESW = true;
                 }
             }
             
             if (!thereWaterAtNESW){
-                // tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.hole);
-                // tilePallete.decor.SetTile(buildSquareCellLocation,null);
+                // tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.hole);
+                // tilePalette.decor.SetTile(buildSquareCellLocation,null);
             }
             else{
-                tilePallete.ground.SetTile(buildSquareCellLocation,tilePallete.water);
-                tilePallete.decor.SetTile(buildSquareCellLocation,null);
+                tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.water);
+                tilePalette.decor.SetTile(buildSquareCellLocation,null);
             }
         }
         yield return null;
@@ -1416,7 +1411,7 @@ public class Player : MonoBehaviour
     public void die(){
         Debug.Log("Player died from natural causes");
     }
-    public void takeDamage(float damage = 1){
+    public void TakeDamage(float damage = 1){
         health -= damage;
         if (health <= 0)
             die();

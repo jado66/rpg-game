@@ -51,7 +51,7 @@ public class Merchant : NPC
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
     }
 
-    public override void onPlayerInteract(){
+    public override void onCharacterInteract(){
         // Open dialog box
         
         storeOpen = !storeOpen;

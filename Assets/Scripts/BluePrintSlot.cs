@@ -10,22 +10,20 @@ public class BluePrintSlot: MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     public string description;
     public Image icon;
 
-    private Tooltip tooltip;
+    public TooltipUI tooltip;
                                     
     public Dictionary<string, int> price = new Dictionary<string, int>();
 
     public BluePrint bluePrint;
 
-    public BuildMenu buildMenu;
     void Awake()
     {
-        tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        tooltip = GameObject.Find("Tooltip").GetComponent<TooltipUI>();
         icon = GetComponent<Image>();
         // Debug.Log("Setting item to null");
         this.bluePrint = null;
         LoadBluePrint(this.bluePrint);
         
-        buildMenu = GameObject.Find("BuildMenu").GetComponent<BuildMenu>();
 
     }
 
@@ -109,7 +107,7 @@ public class BluePrintSlot: MonoBehaviour, IPointerDownHandler, IPointerEnterHan
             return;
         }
         if (tooltip==null)
-            tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+            tooltip = GameObject.Find("Tooltip").GetComponent<TooltipUI>();
 
         
         tooltip.GenerateTooltip(bluePrint);
@@ -122,7 +120,7 @@ public class BluePrintSlot: MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         if (bluePrint == null){
             return;
         }
-        tooltip.gameObject.SetActive(false);
+        tooltip.HideTooltip();
         Debug.Log("Exit");
         // transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f);
     }

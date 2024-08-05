@@ -191,6 +191,6 @@ public class UIArmourItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        tooltip.gameObject.SetActive(false);
+        tooltip.HideTooltip();
     }
 }

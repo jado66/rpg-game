@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Bed : Interactable
 {   
-    public override void onPlayerInteract(){
-        base.onPlayerInteract();
+    public override void onCharacterInteract(){
+        base.onCharacterInteract();
         
         SceneManager sceneManagerScript = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         sceneManagerScript.playerSleeps();

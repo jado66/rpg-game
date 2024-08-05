@@ -11,16 +11,21 @@ public class LivingEntity : Interactable
 
     public float deathVanishDelay = 5.0f;
 
-    public int health;
+    public float health;
 
-    public int maxHealth;
+    public float maxHealth;
 
     void Start(){
         alive = true;
         // healthbarObject.SetActive(false);
     }
 
-    public virtual void takeDamage(int amount){
+    public virtual void TakeDamage(int amount){
+    // Cast int to float and call the float version of the method
+        TakeDamage((float)amount);
+    }
+
+    public virtual void TakeDamage(float amount){
         Debug.Log("Taking damage from player");
         // if (!alive)
         //     return;

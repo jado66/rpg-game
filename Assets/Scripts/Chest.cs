@@ -20,6 +20,10 @@ public class Chest : Interactable
         animator = GetComponent<Animator>();
         inventory = GetComponent<Inventory>();
 
+        if (inventory == null){
+            return;
+        }
+
         if (inventory.inventoryUI == null){
             PlayerUI playerUi = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
             GameObject externalInventoryPanels = playerUi.externalInventoryPanels;
@@ -27,8 +31,8 @@ public class Chest : Interactable
             inventory.SetInventoryUI(uiInventory);
         }
     }
-    public override void onPlayerInteract(){
-        base.onPlayerInteract();
+    public override void onCharacterInteract(){
+        base.onCharacterInteract();
         Debug.Log("Interact with chest.");
 
         animator.SetBool("IsOpen",!isOpen);

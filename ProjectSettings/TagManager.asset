@@ -9,6 +9,7 @@ TagManager:
   - Teleport
   - Hitbox
   - Light
+  - Character
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3937295653015116631
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 8839554933233272726}
   - component: {fileID: 8837562828594342370}
   - component: {fileID: 8657757668261425362}
-  - component: {fileID: 8979061393324595563}
+  - component: {fileID: 2741804054839001752}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8979061393324595563
+--- !u!114 &2741804054839001752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,14 +161,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8769932156140928286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3de2cfab7d8d204baf06e69c78ccfce, type: 3}
+  m_Script: {fileID: 11500000, guid: 5de0d68d8529ba640bed32a705e1212b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriteImage: {fileID: 0}
-  selectedItem: {fileID: 0}
+  amountText: {fileID: 1076985446791981288}
   tooltip: {fileID: 0}
-  textAmount: {fileID: 6082734621502440966}
-  amount: {fileID: 1076985446791981288}
 --- !u!1 &8770695011391524446
 GameObject:
   m_ObjectHideFlags: 0

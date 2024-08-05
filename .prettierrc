@@ -1,0 +1,5 @@
+{
+  "plugins": ["prettier-plugin-csharp"],
+  "semi": true,
+  "tabWidth": 4
+}

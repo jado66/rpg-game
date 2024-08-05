@@ -17,7 +17,7 @@ public class DamageInducer : MonoBehaviour
             catch{}
             
             Debug.Log("Collision");
-            collision.gameObject.GetComponent<Player>().takeDamage(damageDealt);
+            collision.gameObject.GetComponent<Player>().TakeDamage(damageDealt);
             collision.gameObject.GetComponent<Player>().recoil(recoilForce,transform.position);
         }
     }

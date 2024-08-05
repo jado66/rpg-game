@@ -44,8 +44,8 @@ public class ArmedMonster  : Monster
             animators[0].SetBool("attacking",false);
         if (player == null)
             player = GameObject.FindWithTag("Player");
-        if (tilePallete == null)
-            tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        if (tilePalette == null)
+            tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         Vector3 position = transform.position;
                 
         if (Random.Range(0,1000) <=6){
@@ -127,10 +127,10 @@ public class ArmedMonster  : Monster
         
         // try{
         // Vector3 newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        // if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water ||tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water ||tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
         //     newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
         // }
-        // if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water || tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water || tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
         //     return;
         // }
         // else
@@ -200,7 +200,7 @@ public class ArmedMonster  : Monster
 
                 
             // Debug.Log("Collision");
-            // collision.gameObject.GetComponent<Player>().takeDamage(damageDealt);
+            // collision.gameObject.GetComponent<Player>().TakeDamage(damageDealt);
             // collision.gameObject.GetComponent<Player>().recoil(recoilForce,transform.position);
         }
         

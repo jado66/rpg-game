@@ -6,10 +6,24 @@ using UnityEngine.UI;
 public class Tooltip : MonoBehaviour {
     private Text tooltipText;
 
+    private Image tooltipImage;
 	void Start () {
         tooltipText = GetComponentInChildren<Text>();
-        gameObject.SetActive(false);
+        tooltipImage = GetComponentInChildren<Image>();
+
+
 	}
+
+    public void HideTooltip(){
+        tooltipText.enabled = false;
+        tooltipImage.enabled = false;
+    }
+
+    public void ShowTooltip(){
+        tooltipText.enabled = true;
+        tooltipImage.enabled = true;
+    }
+
 
     public void GenerateTooltip(GameData savedGame){
         
@@ -42,6 +56,7 @@ public class Tooltip : MonoBehaviour {
         tooltipText.text = tooltip;
         gameObject.SetActive(true);
     }
+
 
     public void GenerateBuyTooltip(Item item)
     {

@@ -49,7 +49,7 @@ public class Hitbox : MonoBehaviour
             Debug.Log($"PlayerHitbox: Applied force {direction * force} to {target.name}");
         }
 
-        livingEntity.takeDamage(player.damageDealt);
+        livingEntity.TakeDamage(player.damageDealt);
         Debug.Log($"PlayerHitbox: Dealt {player.damageDealt} damage to {target.name}");
     }
 

@@ -11,7 +11,7 @@ public class Animal : LivingEntity
     public bool alwaysMoving;
 
     public bool canBeCarriedByPlayer;
-    private TilePallete tilePallete;
+    private TilePalette tilePalette;
     Vector3 wayPoint;
     private float timer;
 
@@ -43,7 +43,7 @@ public class Animal : LivingEntity
 
     public bool followingPlayer;
 
-    public int id;
+    public string id;
 
     public Vector2 startingPosition = new Vector3(0,-1);
 
@@ -53,16 +53,25 @@ public class Animal : LivingEntity
     // Start is called before the first frame update
     void Awake(){
         animator = gameObject.GetComponent<Animator>();
+
+
         
     }
     void Start()
     {
+        if (string.IsNullOrEmpty(id))
+        {
+            id = System.Guid.NewGuid().ToString();
+        }
+
         chest = gameObject.AddComponent<Chest>();
         chest.inventory = gameObject.GetComponent<Inventory>();
         chest.isLocked = true;
 
-        if (followingPlayer) // or player is carrying
+
+        if (followingPlayer){ // or player is carrying
             DontDestroyOnLoad(this);
+        }
         
         // If following through portal delete if there is a clone (useful for going through and back from a portal)
         // This will be done away with when we have a saved state function for portal hopping.
@@ -70,6 +79,7 @@ public class Animal : LivingEntity
         foreach(var animal in animals){
             if (animal.id == this.id && animal !=this) {
                 if (!this.followingPlayer){
+                    Debug.Log("Destroying duplicate animal " + this.gameObject.name + "!");
                     Destroy(this.gameObject);
                 }
             }
@@ -78,7 +88,7 @@ public class Animal : LivingEntity
 
         grid = GameObject.Find("Grid").GetComponent<GridLayout>(); 
         
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         tempSightRange = sightRange;
         findNewWayPoint();
         playerObject = GameObject.Find("Character");
@@ -99,8 +109,8 @@ public class Animal : LivingEntity
 
         if (playerObject == null)
             playerObject = GameObject.FindWithTag("Player");
-        if (tilePallete == null)
-            tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        if (tilePalette == null)
+            tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         Vector3 position = transform.position;
                 
         if (Random.Range(0,1000) <=6){
@@ -162,12 +172,12 @@ public class Animal : LivingEntity
         chest.isLocked = false;
         base.kill();
     }
-    public override void onPlayerInteract(){
-        // base.onPlayerInteract();
+    public override void onCharacterInteract(){
+        // base.onCharacterInteract();
 
         if (!alive){
             Debug.Log("Interact with animal remains");
-            // chest.onPlayerInteract();
+            // chest.onCharacterInteract();
             return;
         }
 
@@ -193,10 +203,10 @@ public class Animal : LivingEntity
 
         try{
         Vector3 newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water ||tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water ||tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
             newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
         }
-        if (tilePallete.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePallete.water || tilePallete.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
+        if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water || tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
             return;
         }
         else

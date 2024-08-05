@@ -24,7 +24,7 @@ public class LogMonster : Monster
 
         grid = GameObject.Find("Grid").GetComponent<GridLayout>(); 
         
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         tempSightRange = sightRange;
         findNewWayPoint();
         player = GameObject.Find("Character");
@@ -45,8 +45,8 @@ public class LogMonster : Monster
 
         if (player == null)
             player = GameObject.FindWithTag("Player");
-        if (tilePallete == null)
-            tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        if (tilePalette == null)
+            tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         Vector3 position = transform.position;
                 
         if (Random.Range(0,1000) <=6){
@@ -104,7 +104,7 @@ public class LogMonster : Monster
         }
     }
 
-    public override void takeDamage(int amount)
+    public override void TakeDamage(int amount)
     {
         if (health <= 0){
             kill();
@@ -114,7 +114,7 @@ public class LogMonster : Monster
             animators[0].SetTrigger("awake");
         }
         else
-            base.takeDamage(amount);
+            base.TakeDamage(amount);
 
     }
 

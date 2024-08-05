@@ -49,7 +49,7 @@ public static class ItemDatabase{
         BuildDatabase();
         BuildPlantDatabase();
         BuildBluePrintDatabase();
-        BuildStoreSellItems();
+        BuildStoreSellItems(); 
     }
 
     public static Item GetItem(int id)

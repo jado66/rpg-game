@@ -34,9 +34,11 @@ public class SceneManager : MonoBehaviour
 {
     //Change to scene manager
     string sceneName;
-    public Player player;
+    // public Character character;
 
-    public TilePallete tilePallete;
+    public Character player1;
+
+    public TilePalette tilePalette;
  
     public bool developersMode;
 
@@ -50,7 +52,9 @@ public class SceneManager : MonoBehaviour
     public float maxIntensity;
     public float hour;
 
-    public PlayerUI playerUI;
+    public CharacterUI characterUI;
+    public PlayerUI playerUI; //TODO remove me
+
 
     public int day;
 
@@ -78,13 +82,24 @@ public class SceneManager : MonoBehaviour
 
     public bool isMajorRealm;
 
-    void Start()
+    private void Start()
     {
-        player = GameObject.Find("Character").GetComponent<Player>();
-        tilePallete = GameObject.Find("TilePallete").GetComponent<TilePallete>();
+        InitializeComponents();
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        InitializeComponents();
+    }
+
+    void InitializeComponents()
+    {
+        // character = GameObject.Find("Character").GetComponent<Character>();
+        player1 = GameObject.Find("Player1").GetComponent<Character>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         // Setup Gui
         sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        playerUI = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
+        characterUI = GameObject.Find("PlayerUI").GetComponent<CharacterUI>();
 
         //Hide GUI elements
         
@@ -99,10 +114,10 @@ public class SceneManager : MonoBehaviour
         if (developersMode)
             worldLight.intensity = maxIntensity/2;
 
-        player.LinkPlayerToUI();
+        // character.LinkPlayerToUI();
 
         try{
-            GameObject.Find("PlayerName").GetComponent<Text>().text = player.playerName;
+            GameObject.Find("PlayerName").GetComponent<Text>().text = player1.playerName;
         }
         catch{
 
@@ -113,49 +128,50 @@ public class SceneManager : MonoBehaviour
         return sceneName;
     }
 
-
-    public void toggleBuildMenuTab(int i){
-        foreach(var tab in  playerUI.buildMenuTabs){
+    public void ToggleBuildMenuTab(int i){
+        foreach(var tab in  characterUI.buildMenuTabs){
             tab.SetActive(false);
         }
-        playerUI.buildMenuTabs[i].SetActive(true);
+        characterUI.buildMenuTabs[i].SetActive(true);
 
-        player.activeBlueprint = null;
+        player1.activeBlueprint = null;
 
-        foreach( var buildSlot in playerUI.buildMenuTabs[i].GetComponent<BuildMenu>().bluePrintSlots){
+        foreach( var buildSlot in characterUI.buildMenuTabs[i].GetComponent<BuildMenu>().bluePrintSlots){
             buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         }
     }
+
+    
     public void ToggleInventory(){
-        if (playerUI.customSignBox.activeSelf)
+        if (characterUI.customSignBox.activeSelf)
             return;
 
-        if (playerUI.buildGui.activeSelf){
-            playerUI.buildGui.SetActive(false);
+        if (characterUI.buildGui.activeSelf){
+            characterUI.buildGui.SetActive(false);
         }
-        if (playerUI.mainMenuGui.activeSelf){
-            playerUI.mainMenuGui.SetActive(false);
+        if (characterUI.mainMenuGui.activeSelf){
+            characterUI.mainMenuGui.SetActive(false);
         }
-        if (player.currentState== PlayerState.standby){
-            // Fix me
-            player.StartCoroutine(player.interact("interact"));
-        }
-        playerUI.inventoryGui.SetActive(!playerUI.inventoryGui.activeSelf);
+        // if (character.currentState== PlayerState.standby){
+        //     // Fix me
+        //     // character.StartCoroutine(character.interact("interact"));
+        // }
+        characterUI.inventoryGui.SetActive(!characterUI.inventoryGui.activeSelf);
     }
     public void ToggleBuildMenu(){
-        if (playerUI.inventoryGui.activeSelf){
+        if (characterUI.inventoryGui.activeSelf){
             ToggleInventory();
         }
-        if (playerUI.mainMenuGui.activeSelf){
-            playerUI.mainMenuGui.SetActive(false);
+        if (characterUI.mainMenuGui.activeSelf){
+            characterUI.mainMenuGui.SetActive(false);
         }
 
-        bool isBuildGuiActive = playerUI.buildGui.activeSelf;
+        bool isBuildGuiActive = characterUI.buildGui.activeSelf;
 
-        playerUI.buildGui.SetActive(!isBuildGuiActive);
-        player.toggleBuildSquare(!isBuildGuiActive);
+        characterUI.buildGui.SetActive(!isBuildGuiActive);
+        player1.ToggleBuilding(true); 
 
-        playerUI.buildMenuTabs[0].SetActive(true);
+        characterUI.buildMenuTabs[0].SetActive(true);
         
     }
 
@@ -164,121 +180,110 @@ public class SceneManager : MonoBehaviour
             worldLight = GetComponent<Light>();
         return (worldLight.intensity < .5f);
     }
-    
-
-    // Update is called once per frame
-
-    void FixedUpdate(){
-        if (Input.GetKey(KeyCode.I) && keyCount[1] == 0){
-            ToggleInventory();
-            keyCount[1]+=1;
-        }
-        StartCoroutine("handleButtonPressesCo");
-    }
 
 
     
     public void loadAndUnloadChest(Inventory externalInventory, bool isOpen){
-        if (! isOpen || player.currentState == PlayerState.standby)
-            {
-            // Debug.Log("Closing chest");
-            player.currentState = PlayerState.walk;
-            Debug.Log("Player was"+player.inventory.items.Count + " items long");
-            // Set inventory to be whatever state it was left in
-            List<Item> newItems = new List<Item>();
-            UIInventory externalInventoryGui = playerUI.externalInventoryPanels.GetComponent<UIInventory>();
-            for(int i = 0; i < externalInventoryGui.inventorySize; i++){
-                if (externalInventoryGui.uiItems[i].item != null){
-                    newItems.Add(externalInventoryGui.uiItems[i].item);
-                    player.inventory.RemoveSpecificSlot(externalInventoryGui.uiItems[i].item);
-                }
-            }
-            externalInventory.overrideInventory(newItems);
+        // if (! isOpen || character.currentState == PlayerState.standby)
+        //     {
+        //     // Debug.Log("Closing chest");
+        //     character.currentState = PlayerState.walk;
+        //     Debug.Log("Character was"+character.inventory.items.Count + " items long");
+        //     // Set inventory to be whatever state it was left in
+        //     List<Item> newItems = new List<Item>();
+        //     UIInventory externalInventoryGui = characterUI.externalInventoryPanels.GetComponent<UIInventory>();
+        //     for(int i = 0; i < externalInventoryGui.inventorySize; i++){
+        //         if (externalInventoryGui.uiItems[i].item != null){
+        //             newItems.Add(externalInventoryGui.uiItems[i].item);
+        //             character.inventory.RemoveSpecificSlot(externalInventoryGui.uiItems[i].item);
+        //         }
+        //     }
+        //     externalInventory.overrideInventory(newItems);
             
             
-            player.inventory.items.Clear();
-            player.getInventoryFromGui();
+        //     character.inventory.items.Clear();
+        //     character.getInventoryFromGui();
 
-            Debug.Log("and is now"+player.inventory.items.Count + " items long");
+        //     Debug.Log("and is now"+character.inventory.items.Count + " items long");
            
 
-            playerUI.externalInventoryGui.SetActive(false);   
-            playerUI.externalInventoryPanels.SetActive(false);     
-        }
-        else{
-            // Debug.Log("Opening Chest");
-            player.currentState = PlayerState.standby;
-            if (!playerUI.inventoryGui.activeSelf )
-                playerUI.inventoryGui.SetActive(true);
-            playerUI.externalInventoryGui.SetActive(true);  
-            playerUI.externalInventoryPanels.SetActive(true);
+        //     characterUI.externalInventoryGui.SetActive(false);   
+        //     characterUI.externalInventoryPanels.SetActive(false);     
+        // }
+        // else{
+        //     // Debug.Log("Opening Chest");
+        //     character.currentState = PlayerState.standby;
+        //     if (!characterUI.inventoryGui.activeSelf )
+        //         characterUI.inventoryGui.SetActive(true);
+        //     characterUI.externalInventoryGui.SetActive(true);  
+        //     characterUI.externalInventoryPanels.SetActive(true);
 
-            // Import the images
-            UIInventory externalInventoryGui = playerUI.externalInventoryPanels.GetComponent<UIInventory>();
-            int externalInventoryCount = externalInventory.items.Count;
-            for(int i = 0; i < externalInventoryGui.inventorySize; i++){
-                externalInventoryGui.uiItems[i].amount.text = "";
-                externalInventoryGui.uiItems[i].item = null;
-                if (i < externalInventoryCount){
+        //     // Import the images
+        //     UIInventory externalInventoryGui = characterUI.externalInventoryPanels.GetComponent<UIInventory>();
+        //     int externalInventoryCount = externalInventory.items.Count;
+        //     for(int i = 0; i < externalInventoryGui.inventorySize; i++){
+        //         externalInventoryGui.uiItems[i].amount.text = "";
+        //         externalInventoryGui.uiItems[i].item = null;
+        //         if (i < externalInventoryCount){
                     
-                    externalInventoryGui.uiItems[i].UpdateItem(externalInventory.items[i]);
-                }
-                else
-                    externalInventoryGui.uiItems[i].UpdateItem(null);
-            }
-        }
+        //             externalInventoryGui.uiItems[i].UpdateItem(externalInventory.items[i]);
+        //         }
+        //         else
+        //             externalInventoryGui.uiItems[i].UpdateItem(null);
+        //     }
+        // }
     }   
 
     public void loadAndUnloadStoreInventory(Inventory storeInventory, bool isOpen){
-        if (! isOpen || player.currentState == PlayerState.standby)
-            {
-            // Closing store
-            player.currentState = PlayerState.walk;
-            Debug.Log("Player was"+player.inventory.items.Count + " items long");
-            // Set inventory to be whatever state it was left in
-            List<Item> newItems = new List<Item>();
-            StoreUiInventory storeInventoryUI = playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
-            for(int i = 0; i < storeInventoryUI.inventorySize; i++){
-                if (storeInventoryUI.uiItems[i].item != null){
-                    // Remove items sold (I really need to dynamically remove them as i click them)
-                    newItems.Add(storeInventoryUI.uiItems[i].item);
-                    player.inventory.RemoveSpecificSlot(storeInventoryUI.uiItems[i].item);
-                }
-            }
-            storeInventory.overrideInventory(newItems);
+        // if (! isOpen || character.currentState == PlayerState.standby)
+        //     {
+        //     // Closing store
+        //     character.currentState = PlayerState.walk;
+        //     Debug.Log("Character was"+character.inventory.items.Count + " items long");
+        //     // Set inventory to be whatever state it was left in
+        //     List<Item> newItems = new List<Item>();
+        //     StoreUiInventory storeInventoryUI = characterUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
+        //     for(int i = 0; i < storeInventoryUI.inventorySize; i++){
+        //         if (storeInventoryUI.uiItems[i].item != null){
+        //             // Remove items sold (I really need to dynamically remove them as i click them)
+        //             newItems.Add(storeInventoryUI.uiItems[i].item);
+        //             character.inventory.RemoveSpecificSlot(storeInventoryUI.uiItems[i].item);
+        //         }
+        //     }
+        //     storeInventory.overrideInventory(newItems);
             
             
-            player.inventory.items.Clear();
-            player.getInventoryFromGui();
+        //     // character.inventory.items.Clear();
+        //     // character.getInventoryFromGui();
 
-            Debug.Log("and is now"+player.inventory.items.Count + " items long");
+        //     // Debug.Log("and is now"+character.inventory.items.Count + " items long");
            
 
-            playerUI.buyNSellMenu.SetActive(false);   
-            playerUI.buyNSellMenuPanel.SetActive(false);     
-        }
-        else{
-            // Opening Store
-            player.currentState = PlayerState.standby;
-            if (!playerUI.inventoryGui.activeSelf )
-                playerUI.inventoryGui.SetActive(true);
-            playerUI.buyNSellMenu.SetActive(true);  
-            playerUI.buyNSellMenuPanel.SetActive(true);
+        //     characterUI.buyNSellMenu.SetActive(false);   
+        //     characterUI.buyNSellMenuPanel.SetActive(false);     
+        // }
+        // else{
+        //     // Opening Store
+        //     character.currentState = PlayerState.standby;
+        //     if (!characterUI.inventoryGui.activeSelf )
+        //         characterUI.inventoryGui.SetActive(true);
+        //     characterUI.buyNSellMenu.SetActive(true);  
+        //     characterUI.buyNSellMenuPanel.SetActive(true);
 
-            // Import the images
-            StoreUiInventory storeInventoryUI = playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
-            int storeInventoryCount = storeInventory.items.Count;
-            for(int i = 0; i < storeInventoryUI.inventorySize; i++){
-                storeInventoryUI.uiItems[i].amount.text = "";
-                storeInventoryUI.uiItems[i].item = null;
-                if (i < storeInventoryCount){
+        //     // Import the images
+        //     StoreUiInventory storeInventoryUI = characterUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>();
+        //     int storeInventoryCount = storeInventory.items.Count;
+        //     for(int i = 0; i < storeInventoryUI.inventorySize; i++){
+        //         storeInventoryUI.uiItems[i].amount.text = "";
+        //         storeInventoryUI.uiItems[i].item = null;
+        //         if (i < storeInventoryCount){
                     
-                    storeInventoryUI.uiItems[i].UpdateItem(storeInventory.items[i]);
-                }
-                else
-                    storeInventoryUI.uiItems[i].UpdateItem(null);
-            }
-        }
+        //             storeInventoryUI.uiItems[i].UpdateItem(storeInventory.items[i]);
+        //         }
+        //         else
+        //             storeInventoryUI.uiItems[i].UpdateItem(null);
+        //     }
+        // }
     }   
     
     
@@ -287,7 +292,7 @@ public class SceneManager : MonoBehaviour
         
         // string debugInventoryText = "";
         
-        // foreach(var item in player.inventory.items){
+        // foreach(var item in character.inventory.items){
         //     debugInventoryText+=string.Format("{0},    ",item.title);
         // }
         // if (debugInventory == null)
@@ -302,8 +307,8 @@ public class SceneManager : MonoBehaviour
 
         if (!developersMode){
             if (hour < daytimeHours * gameHoursToRealSecs/4){
-                if (!isDark() && player.shadowsFollowing)
-                    player.setEnabledShadows(false);
+                // if (!isDark() && character.shadowsFollowing)
+                //     character.setEnabledShadows(false);
                 sunRising = true;
                 if (minIntensity!= maxIntensity)
                     worldLight.intensity = (maxIntensity-minIntensity)/2* (Mathf.Sin((2*Mathf.PI)/(daytimeHours*gameHoursToRealSecs) * (hour)-Mathf.PI/2)+1)+minIntensity;}
@@ -324,8 +329,8 @@ public class SceneManager : MonoBehaviour
             else if (hour > daytimeHours * gameHoursToRealSecs && hour < gameHoursToRealSecs* (daytimeHours+nightTimeHours))
                 if (minIntensity!= maxIntensity)
                     worldLight.intensity = minIntensity;
-                    if (isDark() && !player.shadowsFollowing)
-                        player.setEnabledShadows(true);
+                    // if (isDark() && !character.shadowsFollowing)
+                    //     character.setEnabledShadows(true);
             else if (hour > (daytimeHours+nightTimeHours )*gameHoursToRealSecs){
                 Debug.Log("new day");
                 
@@ -344,13 +349,13 @@ public class SceneManager : MonoBehaviour
 
         if (worldLightsOutTime != 0 && worldLightsOutTime != 0){
             if ((hour > worldLightsOutTime && worldLightsOn) || (hour > worldLightsOnTime && !worldLightsOn))
-                toggleWorldLights();
+                ToggleWorldLights();
         }
-        playerUI.sunDialSun.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle);
-        playerUI.sunDialMoon.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle-180);         
+        characterUI.sunDialSun.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle);
+        characterUI.sunDialMoon.transform.rotation = Quaternion.Euler(0,0,-sunDialAngle-180);         
     }
 
-    void toggleWorldLights(){
+    void ToggleWorldLights(){
         foreach(var worldLight in GameObject.FindGameObjectsWithTag("WordLight")){
             worldLight.SetActive(worldLightsOn);
         }
@@ -385,8 +390,8 @@ public class SceneManager : MonoBehaviour
             Debug.Log("Moving time to "+ (daytimeHours*.95f*gameHoursToRealSecs).ToString());
         }
 
-        // Heal player
-        player.health = player.healthMax;
+        // Heal character
+        // character.health = character.healthMax;
 
         
 
@@ -492,7 +497,7 @@ public class SceneManager : MonoBehaviour
                             int distanceNeededToWater = ItemDatabase.plantDatabase[plantTiles[i].name].howFarFromWaterToGrow;
                             for (int k = 0; k < distanceNeededToWater;k++){
                                 for (int l = 0; l < distanceNeededToWater;l++){
-                                    if (tilePallete.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePallete.water){
+                                    if (tilePalette.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePalette.water){
                                         waterIsNear = true;
                                         Debug.Log("We've water");
                                         break;
@@ -505,11 +510,11 @@ public class SceneManager : MonoBehaviour
 
                         if (waterIsNear){
                             Debug.Log("Turning "+ plantTiles[i].name + " to sapling");
-                            tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.sapling);
+                            tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.sapling);
                         }
                         else{
                             indeciesToRemove.Add(i);
-                            tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.dirt);
+                            tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
                         }
                         //Sapling
                     }
@@ -523,7 +528,7 @@ public class SceneManager : MonoBehaviour
 
                             for (int k = 0; k < distanceNeededToWater;k++){
                                 for (int l = 0; l < distanceNeededToWater;l++){
-                                    if (tilePallete.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePallete.water){
+                                    if (tilePalette.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePalette.water){
                                         waterIsNear = true;
                                         break;
                                     }
@@ -538,36 +543,36 @@ public class SceneManager : MonoBehaviour
                             // Debug.Log(plantTiles[i].name + " is now ripe");
                             switch (plantTiles[i].name){
                                 case "carrot":
-                                    tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.carrot);
+                                    tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.carrot);
                                     break;
                                 case "tomato":
-                                    tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.tomato);
+                                    tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.tomato);
                                     break;
                                 case "appleTreeSapling":
-                                    tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.grass);
-                                    tilePallete.choppable.SetTile(plantTiles[i].location,tilePallete.appleTreeEmpty);
+                                    tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.grass);
+                                    tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.appleTreeEmpty);
                                     // Add apple tree to list
                                     break;
                                 case "bushSapling":
-                                    tilePallete.choppable.SetTile(plantTiles[i].location,tilePallete.bush);
+                                    tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.bush);
                                     break;
                                 case "treeSapling":
-                                    tilePallete.choppable.SetTile(plantTiles[i].location,tilePallete.tree);
+                                    tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.tree);
                                     break;
                             }
                             if (ItemDatabase.plantDatabase[plantTiles[i].name].isPermanent){
                                 indeciesToRemove.Add(i);
-                                tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.grass);
+                                tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.grass);
                             }
                         }
                         else{
                             indeciesToRemove.Add(i);
-                            tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.dirt);
+                            tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
                         }
                     } 
                     else if (j == 2){
 
-                        tilePallete.ground.SetTile(plantTiles[i].location,tilePallete.dirt);
+                        tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
                         indeciesToRemove.Add(i);
                         //Dead
                         
@@ -639,17 +644,4 @@ public class SceneManager : MonoBehaviour
         // }
     }
 
-    private IEnumerator handleButtonPressesCo(){
-        
-
-        // reset button presses
-        for (int i = 0; i <10; i++){
-            if (keyCount[i] != 0)
-                keyCount[i]+=1;
-            if (keyCount[i]>=15)
-                keyCount[i] = 0;
-        }
-
-        yield return null;
-    }
 }

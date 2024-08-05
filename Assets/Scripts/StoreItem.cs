@@ -179,6 +179,6 @@ public class StoreItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        tooltip.gameObject.SetActive(false);
+        tooltip.HideTooltip();
     }
 }

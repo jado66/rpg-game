@@ -49,7 +49,7 @@ public class Door : Interactable
     }
 
     // Update is called once per frame
-    public override void onPlayerInteract(){
+    public override void onCharacterInteract(){
         if (!isLocked || isOpen ){
             toggleDoor();
         }

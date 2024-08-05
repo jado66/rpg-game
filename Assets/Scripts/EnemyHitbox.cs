@@ -40,7 +40,7 @@ public class EnemyHitbox : MonoBehaviour
             StartCoroutine(KnockbackResetRoutine(playerRb));
 
             // Apply damage to the player
-            playerScript.takeDamage(enemyEntity.damageDealt);
+            playerScript.TakeDamage(enemyEntity.damageDealt);
 
             Debug.Log($"EnemyHitbox: Applied knockback and {enemyEntity.damageDealt} damage to player");
         }

@@ -34,11 +34,11 @@ public struct TileMapData{
         this.tileNames = tileNames;
     }
 }
-public class TilePallete : MonoBehaviour
+public class TilePalette : MonoBehaviour
 {
-    private static TilePallete _instance;
+    private static TilePalette _instance;
 
-    public static TilePallete Instance { get { return _instance; } }
+    public static TilePalette Instance { get { return _instance; } }
     
     public List<TileModification> modifications = new List<TileModification>();
     int interactLayer; 

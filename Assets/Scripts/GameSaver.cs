@@ -8,12 +8,12 @@ using System.IO;
 
 public class GameSaver : MonoBehaviour
 {
-    Player player;
+    Character character;
     SceneManager sceneManager;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Character").GetComponent<Player>(); 
+        character = GameObject.Find("Player1").GetComponent<Character>(); 
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>(); 
         // SaveGame();
     }
@@ -23,23 +23,23 @@ public class GameSaver : MonoBehaviour
 
     GameData collectGameData(){
 
-        string playerName = player.playerName;
-        int realGameSecondsPlayed = player.realGameSecondsPlayed;
+        string characterName = character.playerName;
+        // int realGameSecondsPlayed = character.realGameSecondsPlayed;
 
-        int characterLevel = player.level;
+        // int characterLevel = character.level;
 
-        string currentRealm = sceneManager.realmName;
+        // string currentRealm = sceneManager.realmName;
 
-        int numberOfRealmsDiscovered = player.howManyRealmsHasPlayerDiscovered(true);
-        int numberOfMiniRealmsDiscovered = player.howManyRealmsHasPlayerDiscovered(false);
+        // int numberOfRealmsDiscovered = character.howManyRealmsHasCharacterDiscovered(true);
+        // int numberOfMiniRealmsDiscovered = character.howManyRealmsHasCharacterDiscovered(false);
 
-        GameData gameData = new GameData(playerName, realGameSecondsPlayed, characterLevel, currentRealm, numberOfMiniRealmsDiscovered, numberOfRealmsDiscovered);
+        GameData gameData = new GameData(characterName, 0, 0, "", 0, 0);
 
         return gameData;
     }
 
     void SaveGame(){
-        string playerName = player.playerName;
+        string characterName = character.playerName;
 
         GameData gameData =  collectGameData();
 
@@ -50,15 +50,15 @@ public class GameSaver : MonoBehaviour
         
         }
 
-        if(!Directory.Exists(Application.persistentDataPath + "/SavedGames/"+playerName))
+        if(!Directory.Exists(Application.persistentDataPath + "/SavedGames/"+characterName))
         {    
             //if it doesn't, create it
-            Directory.CreateDirectory(Application.persistentDataPath + "/SavedGames/"+playerName);
+            Directory.CreateDirectory(Application.persistentDataPath + "/SavedGames/"+characterName);
         
         }
 
         string filePath = Application.persistentDataPath + "/SavedGames"+
-                          string.Format("/{0}/gameData.save",playerName);
+                          string.Format("/{0}/gameData.save",characterName);
 
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(filePath);

@@ -68,7 +68,7 @@ public class ShadowMonster : MonoBehaviour
             return;
         // Debug.Log("Collided with "+collision.gameObject.name);
         if ((collision.gameObject.GetComponent("Player") as Player) != null){
-            collision.gameObject.GetComponent<Player>().takeDamage(8);
+            collision.gameObject.GetComponent<Player>().TakeDamage(8);
         } 
     }
 
@@ -84,7 +84,7 @@ public class ShadowMonster : MonoBehaviour
         }
         // Debug.Log("Collided with "+collision.gameObject.name);
         if ((collision.gameObject.GetComponent("Player") as Player) != null){
-            collision.gameObject.GetComponent<Player>().takeDamage(.1f);
+            collision.gameObject.GetComponent<Player>().TakeDamage(.1f);
         } 
     }
 }

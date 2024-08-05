@@ -23,8 +23,8 @@ public class Lever : Interactable
         }
 
     }
-    public override void onPlayerInteract(){
-        base.onPlayerInteract();
+    public override void onCharacterInteract(){
+        base.onCharacterInteract();
         
         toggleLever();
     }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item {
+
+    string Name { get; }
     public int id;
     public string title;
     public string titleToDisplay;
@@ -63,5 +65,9 @@ public class Item {
         foreach(var name in weakConsumers){
             this.weakConsumers.Add(name);
         }
+    }
+
+    public virtual void Use(){
+
     }
 }

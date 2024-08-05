@@ -25,7 +25,7 @@ public class Chicken : Animal
         if (collisionCounts >= makeABabyCount){
             collisionCounts =0;
             GameObject clone = Instantiate(babyChick,transform.position+new Vector3(Random.Range(-1,1),Random.Range(-1,1),0),Quaternion.identity);
-            clone.GetComponent<Animal>().id = Random.Range(0,100000);
+            clone.GetComponent<Animal>().id = System.Guid.NewGuid().ToString();
         }
 
     }
