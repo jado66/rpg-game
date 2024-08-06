@@ -41,51 +41,51 @@ public class TooltipUI : MonoBehaviour {
         gameObject.SetActive(true);
     }
 
-     public void GenerateTooltip(GameItem item)
+     public void GenerateTooltip(InventoryItem item)
     {
         string statText = "";
-        if (item.stats.Count > 0)
+        if (item.Stats.Count > 0)
         {
-            foreach(var stat in item.stats)
+            foreach(var stat in item.Stats)
             {
                 statText += stat.Key.ToString() + ": " + stat.Value + "\n";
             }
         }
 
-        string tooltip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b>", item.Name, item.description, statText);
+        string tooltip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText);
         tooltipText.text = tooltip;
         gameObject.SetActive(true);
     }
 
 
-    public void GenerateBuyTooltip(GameItem item)
+    public void GenerateBuyTooltip(InventoryItem item)
     {
         string statText = "";
-        if (item.stats.Count > 0)
+        if (item.Stats.Count > 0)
         {
-            foreach(var stat in item.stats)
+            foreach(var stat in item.Stats)
             {
                 statText += stat.Key.ToString() + ": " + stat.Value + "\n";
             }
         }
 
-        string tooltip = string.Format("<b>{0}</b> - Buy:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.description, statText,item.value);
+        string tooltip = string.Format("<b>{0}</b> - Buy:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText,item.Value);
         tooltipText.text = tooltip;
         gameObject.SetActive(true);
     }
 
-    public void GenerateSellTooltip(GameItem item)
+    public void GenerateSellTooltip(InventoryItem item)
     {
         string statText = "";
-        if (item.stats.Count > 0)
+        if (item.Stats.Count > 0)
         {
-            foreach(var stat in item.stats)
+            foreach(var stat in item.Stats)
             {
                 statText += stat.Key.ToString() + ": " + stat.Value + "\n";
             }
         }
 
-        string tooltip = string.Format("<b>{0}</b> - Sell:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.description, statText,item.value);
+        string tooltip = string.Format("<b>{0}</b> - Sell:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText,item.Value);
         tooltipText.text = tooltip;
         gameObject.SetActive(true);
     }

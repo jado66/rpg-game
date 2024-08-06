@@ -159,7 +159,7 @@ public class CharacterUI : MonoBehaviour
             {
                 sb.Append(", ");
             }
-            sb.Append($"{item.Name} x {item.amount}");
+            sb.Append($"{item.Name} x {item.Amount}");
             firstItem = false;
         }
         debugInventoryText.text = sb.ToString();

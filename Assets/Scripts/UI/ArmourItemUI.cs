@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class ArmourItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
     private CharacterInventoryUI characterInventoryUI;
-    public GameItem gameItem;
+    public InventoryItem gameItem;
     public Image spriteImage;
     public Text amountText;
     public TooltipUI tooltip;
@@ -26,15 +26,15 @@ public class ArmourItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         UpdateGameItem(null);
     }
 
-    public void UpdateGameItem(GameItem item)
+    public void UpdateGameItem(InventoryItem item)
     {
         this.gameItem = item;
         if (this.gameItem != null)
         {
             spriteImage.color = Color.white;
-            spriteImage.sprite = item.icon;
-            amountText.text = this.gameItem.amount.ToString();
-            amountText.gameObject.SetActive(this.gameItem.amount > 1);
+            spriteImage.sprite = item.Icon;
+            amountText.text = this.gameItem.Amount.ToString();
+            amountText.gameObject.SetActive(this.gameItem.Amount > 1);
         }
         else
         {
@@ -56,7 +56,7 @@ public class ArmourItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     {
         if (gameItem != null)
         {
-            tooltip.GenerateTooltip(gameItem); // Assuming GenerateTooltip method works with GameItem object
+            tooltip.GenerateTooltip(gameItem); // Assuming GenerateTooltip method works with InventoryItem object
         }
     }
 
@@ -68,19 +68,19 @@ public class ArmourItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     // Methods to set up the UIItem based on data from CharacterInventoryUI
     public void SetHotbarSlot(KeyCode key)
     {
-        GameItem item = characterInventoryUI.GetHotbarItem(key);
+        InventoryItem item = characterInventoryUI.GetHotbarItem(key);
         UpdateGameItem(item);
     }
 
     public void SetInventorySlot(int slotIndex)
     {
-        GameItem item = characterInventoryUI.GetInventorySlotItem(slotIndex);
+        InventoryItem item = characterInventoryUI.GetInventorySlotItem(slotIndex);
         UpdateGameItem(item);
     }
 
     public void SetEquipmentSlot(string slot)
     {
-        GameItem item = characterInventoryUI.GetEquipmentSlotItem(slot);
+        InventoryItem item = characterInventoryUI.GetEquipmentSlotItem(slot);
         UpdateGameItem(item);
     }
 }

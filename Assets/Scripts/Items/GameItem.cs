@@ -3,49 +3,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public abstract class GameItem : IItem
+public abstract class GameItem
 {
-    public string Name; // Removed 'protected set' to make it serializable
-    public string id; // Removed 'protected set' to make it serializable
-    public string description; // Removed 'protected set' to make it serializable
-    public int amount; // Removed 'protected set' to make it serializable
-    public int value; // Removed 'protected set' to make it serializable
-    public Sprite icon; // Removed 'protected set' to make it serializable
-    
-    [Serializable]
-    public enum Uses {
-        tool,
-        interactable,
-        consumable,
-        wearable,
-        regularItem
-    };
+    public string Id;
+    public string Name;
+    public string Description;
+    public Uses UseType;
+    public Dictionary<string, int> Stats;
+    public int Value;
+    public List<string> StrongConsumers;
+    public List<string> WeakConsumers;
+    public int Amount;
+    public Sprite Icon;
 
-    public Uses use; // Removed 'protected set' to make it serializable
-    public Dictionary<string, int> stats = new Dictionary<string, int>(); // Removed 'protected set' to make it serializable
-    public List<string> strongConsumers = new List<string>(); // Removed 'protected set' to make it serializable
-    public List<string> weakConsumers = new List<string>(); // Removed 'protected set' to make it serializable
 
-    protected GameItem(string id, string name, string description, Uses use, 
-                        Dictionary<string, int> stats, int value, 
-                        List<string> strongConsumers, List<string> weakConsumers, int amount = 1)
+    public GameItem(string id, string name, string description, Uses useType,
+                    Dictionary<string, int> stats, int value, 
+                    List<string> strongConsumers, List<string> weakConsumers, int amount = 1)
     {
-        this.id = id;
-        this.Name = name;
-        this.description = description;
-        this.icon = Resources.Load<Sprite>("Sprites/Items/" + name);
-        this.use = use;
-        this.stats = stats ?? new Dictionary<string, int>();
-        this.value = value;
-        this.amount = amount;
-        this.strongConsumers = new List<string>(strongConsumers ?? new List<string>());
-        this.weakConsumers = new List<string>(weakConsumers ?? new List<string>());
+        Id = id;
+        Name = name;
+        Description = description;
+        UseType = useType;
+        Stats = stats;
+        Value = value;
+        StrongConsumers = strongConsumers;
+        WeakConsumers = weakConsumers;
+        Amount = amount;
+        Icon = Resources.Load<Sprite>("Sprites/Items/" + name);
+
     }
 
-    public abstract void Use();
-
-    public virtual void Use(Character character)
+    public enum Uses
     {
-        // Implement default use logic here, if necessary.
+        RegularItem,
+        Tool,
+        Interactable,
+        Consumable,
+        Wearable,
+        // Add other uses here
     }
 }

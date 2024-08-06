@@ -88,7 +88,7 @@ public class CharacterActions : MonoBehaviour
         }
     }
 
-    private void HandleButtonPresses(List<KeyCode> buttonsPressed, List<GameItem> usedItems) {
+    private void HandleButtonPresses(List<KeyCode> buttonsPressed, List<InventoryItem> usedItems) {
         // Check if Keycode.E exists in the buttonsPressed list and remove it if it does
         if (buttonsPressed.Contains(KeyCode.E)) {
             buttonsPressed.Remove(KeyCode.E);
@@ -100,7 +100,7 @@ public class CharacterActions : MonoBehaviour
         var hotbarButtons = buttonsPressed.Where(button => hotbarKeys.Contains(button)).ToList();
         
         foreach (var button in hotbarButtons){
-            GameItem item = inventoryUI.GetHotbarItem(button);
+            InventoryItem item = inventoryUI.GetHotbarItem(button);
             if (item != null){
                 item.Use(character);
                 usedItems.Add(item);
@@ -108,7 +108,7 @@ public class CharacterActions : MonoBehaviour
         }
     }
 
-    private void ReplayItemUsages(List<GameItem> usedItems){
+    private void ReplayItemUsages(List<InventoryItem> usedItems){
         if(usedItems != null) {
             foreach(var item in usedItems) {
                 if (item != null){

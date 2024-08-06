@@ -10,5 +10,5 @@ public struct CharacterMoveData{
     public List<KeyCode> buttonsPressed;
     public CharacterState cloneState; 
 
-    public List<GameItem> itemsUsed; //TODO change to item
+    public List<InventoryItem> itemsUsed; //TODO change to item
 }

@@ -9,16 +9,16 @@ public class CharacterInventoryUI : MonoBehaviour
     private Character character;
     private CharacterInventory inventory;
 
-    [SerializeField] private Dictionary<KeyCode, GameItem> hotbarSlots = new Dictionary<KeyCode, GameItem>();
-    [SerializeField] private Dictionary<string, GameItem> equipmentSlots = new Dictionary<string, GameItem>();
-    [SerializeField] private Dictionary<int, GameItem> inventorySlots = new Dictionary<int, GameItem>();
+    [SerializeField] private Dictionary<KeyCode, InventoryItem> hotbarSlots = new Dictionary<KeyCode, InventoryItem>();
+    [SerializeField] private Dictionary<string, InventoryItem> equipmentSlots = new Dictionary<string, InventoryItem>();
+    [SerializeField] private Dictionary<int, InventoryItem> inventorySlots = new Dictionary<int, InventoryItem>();
 
     public void InitializeComponents(Character characterRef){
         character = characterRef;
         // Initialize equipment slots
         if (equipmentSlots == null)
         {
-            equipmentSlots = new Dictionary<string, GameItem>();
+            equipmentSlots = new Dictionary<string, InventoryItem>();
         }
 
         // Initialize equipment slots only if they don't already exist
@@ -42,7 +42,7 @@ public class CharacterInventoryUI : MonoBehaviour
 
     }
 
-    public void AssignHotbarSlotsItem(KeyCode key, GameItem item)
+    public void AssignHotbarSlotsItem(KeyCode key, InventoryItem item)
     {
         if (hotbarSlots.ContainsKey(key))
             hotbarSlots[key] = item;
@@ -50,7 +50,7 @@ public class CharacterInventoryUI : MonoBehaviour
             hotbarSlots.Add(key, item);
     }
 
-    public GameItem GetHotbarItem(KeyCode key)
+    public InventoryItem GetHotbarItem(KeyCode key)
     {
         if (hotbarSlots.ContainsKey(key))
         {
@@ -59,7 +59,7 @@ public class CharacterInventoryUI : MonoBehaviour
         return null;
     }
 
-    public void EquipItem(string slot, GameItem item)
+    public void EquipItem(string slot, InventoryItem item)
     {
         if (equipmentSlots.ContainsKey(slot))
         {
@@ -73,7 +73,7 @@ public class CharacterInventoryUI : MonoBehaviour
     {
         if (equipmentSlots.ContainsKey(slot))
         {
-            GameItem currentItem = equipmentSlots[slot];
+            InventoryItem currentItem = equipmentSlots[slot];
             if (currentItem != null)
             {
                 RemoveEquipmentProperties(currentItem);
@@ -82,17 +82,17 @@ public class CharacterInventoryUI : MonoBehaviour
         }
     }
 
-    private void ApplyEquipmentProperties(GameItem item)
+    private void ApplyEquipmentProperties(InventoryItem item)
     {
         Debug.Log("Unequipting");
     }
 
-    private void RemoveEquipmentProperties(GameItem item)
+    private void RemoveEquipmentProperties(InventoryItem item)
     {
         Debug.Log("Equipting");
     }
 
-    public GameItem GetInventorySlotItem(int slotIndex)
+    public InventoryItem GetInventorySlotItem(int slotIndex)
     {
         if (inventorySlots.ContainsKey(slotIndex))
         {
@@ -108,7 +108,7 @@ public class CharacterInventoryUI : MonoBehaviour
         foreach (var kvp in inventorySlots)
         {
             PlayerPrefs.SetInt("SlotIndex" + index, kvp.Key);
-            PlayerPrefs.SetString("SlotItem" + index, kvp.Value.id); // Assuming GameItem has an ItemID property
+            PlayerPrefs.SetString("SlotItem" + index, kvp.Value.Id); // Assuming InventoryItem has an ItemID property
             index++;
         }
         PlayerPrefs.Save();
@@ -122,12 +122,12 @@ public class CharacterInventoryUI : MonoBehaviour
         {
             int slotIndex = PlayerPrefs.GetInt("SlotIndex" + i);
             string itemId = PlayerPrefs.GetString("SlotItem" + i);
-            GameItem item = GameItemDatabase.GetItemByID(itemId); // Assuming you have a way to get a GameItem by ID
+            InventoryItem item = InventoryItemDatabase.GetItemByID(itemId); // Assuming you have a way to get a InventoryItem by ID
             inventorySlots[slotIndex] = item;
         }
     }
 
-    public GameItem GetEquipmentSlotItem(string slot)
+    public InventoryItem GetEquipmentSlotItem(string slot)
     {
         if (equipmentSlots.ContainsKey(slot))
         {

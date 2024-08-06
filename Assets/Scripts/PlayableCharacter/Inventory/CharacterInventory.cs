@@ -4,27 +4,32 @@ using System.Collections.Generic;
 public class CharacterInventory : MonoBehaviour
 {
     [SerializeField] 
-    private List<GameItem> items = new List<GameItem>();
+    private List<InventoryItem> items = new List<InventoryItem>();
 
     // Public getter for Items list
-    public List<GameItem> Items => items;
+    public List<InventoryItem> Items => items;
+
+    public event System.Action OnInventoryChanged;
 
     public void InitializeComponents(Character character)
     {
         // Initialization logic here
     }
 
-    public void AddItem(GameItem item)
+    public void AddItem(InventoryItem item)
     {
         items.Add(item);
+        Debug.Log("Item added, invoking OnInventoryChanged.");
+        OnInventoryChanged?.Invoke();
     }
 
     public void AddItem(string itemName)
     {
-        GameItem itemToAdd = GameItemDatabase.GetItem(itemName);
+        InventoryItem itemToAdd = InventoryItemDatabase.GetItem(itemName);
         if (itemToAdd != null)
         {
             AddItem(itemToAdd);
+            OnInventoryChanged?.Invoke();
         }
         else
         {
@@ -32,9 +37,10 @@ public class CharacterInventory : MonoBehaviour
         }
     }
 
-    public bool RemoveItem(GameItem item)
+    public bool RemoveItem(InventoryItem item)
     {
         return items.Remove(item);
+        
     }
 
     public Item GetEquippedItem()
@@ -78,11 +84,11 @@ public class CharacterInventory : MonoBehaviour
             int amountToRemove = (amounts != null && amounts.Length > i) ? amounts[i] : 1;
 
             // Using a list to collect items to be removed first
-            List<GameItem> itemsToRemove = new List<GameItem>();
+            List<InventoryItem> itemsToRemove = new List<InventoryItem>();
 
             for (int j = 0; j < amountToRemove; j++)
             {
-                GameItem itemToRemove = items.Find(item => item.Name == title);
+                InventoryItem itemToRemove = items.Find(item => item.Name == title);
                 if (itemToRemove != null)
                 {
                     itemsToRemove.Add(itemToRemove);
@@ -92,10 +98,12 @@ public class CharacterInventory : MonoBehaviour
             // Now actually removing the items
             foreach (var item in itemsToRemove)
             {
+
                 RemoveItem(item);
             }
         }
 
+        OnInventoryChanged?.Invoke();
         return true;
     }
 
