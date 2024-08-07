@@ -30,7 +30,7 @@ public class CharacterActions : MonoBehaviour
 
     private List<KeyCode> buttonsPressed = new List<KeyCode>();
 
-    private CharacterInventoryUI inventoryUI;
+    private CharacterHotbar hotbar;
 
     Vector2 change;
 
@@ -40,6 +40,7 @@ public class CharacterActions : MonoBehaviour
         building = character.GetBuilding();
         worldInteraction = character.GetWorldInteraction();
         sceneManager = character.GetSceneManager();
+        hotbar = character.GetHotbar();
     }
 
     public void FixedUpdate(){
@@ -89,24 +90,44 @@ public class CharacterActions : MonoBehaviour
     }
 
     private void HandleButtonPresses(List<KeyCode> buttonsPressed, List<InventoryItem> usedItems) {
-        // Check if Keycode.E exists in the buttonsPressed list and remove it if it does
+    // Check if Keycode.E exists in the buttonsPressed list and remove it if it does
+        
+        if (buttonsPressed == null || buttonsPressed.Count == 0) {
+            return;
+        }
+
+        // Debug.Log("Handling buttons");
+
         if (buttonsPressed.Contains(KeyCode.E)) {
             buttonsPressed.Remove(KeyCode.E);
             Interact();
         }
 
-        var hotbarKeys = new HashSet<KeyCode> { KeyCode.Z, KeyCode.X, KeyCode.C, KeyCode.V };
+        var hotbarKeys = new Dictionary<KeyCode, int> {
+            { KeyCode.Z, 0 },
+            { KeyCode.X, 1 },
+            { KeyCode.C, 2 },
+            { KeyCode.V, 3 }
+        };
 
-        var hotbarButtons = buttonsPressed.Where(button => hotbarKeys.Contains(button)).ToList();
+        var hotbarButtons = buttonsPressed.Where(button => hotbarKeys.ContainsKey(button)).ToList();
         
-        foreach (var button in hotbarButtons){
-            InventoryItem item = inventoryUI.GetHotbarItem(button);
-            if (item != null){
+        foreach (var button in hotbarButtons) {
+            // Debug.Log($"Handling {button} buttons");
+
+            int index = hotbarKeys[button];
+            InventoryItem item = hotbar.GetHotbarItem(index);
+            if (item != null) {
+                Debug.Log($"Using {item.Name}");
+                // usedItems.Add(item.Clone()); //TODO fix me
                 item.Use(character);
-                usedItems.Add(item);
+            }
+            else{
+                Debug.Log($"No item in slot {index}");
             }
         }
     }
+
 
     private void ReplayItemUsages(List<InventoryItem> usedItems){
         if(usedItems != null) {
@@ -139,8 +160,32 @@ public class CharacterActions : MonoBehaviour
             keyCount[0]++;
         }
 
-        if (Input.GetKey(KeyCode.E) && keyCount[1] == 0) {
-            newButtonsPressed.Add(KeyCode.E);
+        if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+            newButtonsPressed.Add(KeyCode.T);
+            // Debug.Log("torch");
+            keyCount[0]++;
+        }
+
+        if (Input.GetKey(KeyCode.Z) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+            newButtonsPressed.Add(KeyCode.Z);
+            // Debug.Log("torch");
+            keyCount[0]++;
+        }
+
+        if (Input.GetKey(KeyCode.X) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+            newButtonsPressed.Add(KeyCode.X);
+            // Debug.Log("torch");
+            keyCount[0]++;
+        }
+
+        if (Input.GetKey(KeyCode.C) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+            newButtonsPressed.Add(KeyCode.C);
+            // Debug.Log("torch");
+            keyCount[0]++;
+        }
+
+        if (Input.GetKey(KeyCode.V) && keyCount[1] == 0) {
+            newButtonsPressed.Add(KeyCode.V);
             keyCount[1]++;
         }
 

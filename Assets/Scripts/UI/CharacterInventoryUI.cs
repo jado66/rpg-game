@@ -122,7 +122,7 @@ public class CharacterInventoryUI : MonoBehaviour
         {
             int slotIndex = PlayerPrefs.GetInt("SlotIndex" + i);
             string itemId = PlayerPrefs.GetString("SlotItem" + i);
-            InventoryItem item = InventoryItemDatabase.GetItemByID(itemId); // Assuming you have a way to get a InventoryItem by ID
+            InventoryItem item = InventoryItemDatabase.GetItemByID(itemId).Clone(); // Assuming you have a way to get a InventoryItem by ID
             inventorySlots[slotIndex] = item;
         }
     }

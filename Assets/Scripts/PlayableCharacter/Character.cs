@@ -18,6 +18,9 @@ public class Character : MonoBehaviour
 
     [SerializeField] private CharacterWorldInteraction worldInteraction;
     [SerializeField] private CharacterInventory inventory; 
+
+    [SerializeField] private CharacterHotbar hotbar; 
+
     [SerializeField] private CharacterInventoryUI inventoryUI;
 
 
@@ -74,7 +77,19 @@ public class Character : MonoBehaviour
         movement = GetComponent<CharacterMovement>();
         actions = GetComponent<CharacterActions>();
         worldInteraction = GetComponent<CharacterWorldInteraction>();
-        inventory = GetComponent<CharacterInventory>();
+
+        CharacterInventory[] inventories = GetComponents<CharacterInventory>();
+
+        // Grab inventories
+        foreach (CharacterInventory inv in inventories)
+        {
+            if (inv.inventoryIdentifier == "Primary")
+            {
+                inventory = inv;
+            }
+        }
+        hotbar = GetComponent<CharacterHotbar>(); 
+
         inventoryUI = GetComponent<CharacterInventoryUI>(); 
         combat = GetComponent<CharacterCombat>();
         boxCollider2D = GetComponent<BoxCollider2D>();
@@ -115,6 +130,10 @@ public class Character : MonoBehaviour
     public CharacterInventory GetInventory(){
         return inventory;
     }
+
+    public CharacterHotbar GetHotbar(){
+        return hotbar;
+    }
     public CharacterCombat GetCombat(){
         return combat;
     }
@@ -129,8 +148,6 @@ public class Character : MonoBehaviour
     public void ToggleBuilding(bool callFromSceneManager){
         building.ToggleBuilding(callFromSceneManager);
     }
-    
-
 
     public void TakeDamage(float damage)
     {
@@ -149,5 +166,25 @@ public class Character : MonoBehaviour
     public void Die()
     {
         Debug.Log("Character died");
+    }
+
+    public void Chop()
+    {
+        StartCoroutine(worldInteraction.Chop());
+    }
+
+    public void Mine()
+    {
+        StartCoroutine(worldInteraction.Mine());
+    }
+
+    public void IrrigateGround()
+    {
+        StartCoroutine(worldInteraction.IrrigateGround());
+    }
+
+    public void TillGround()
+    {
+        StartCoroutine(worldInteraction.TillGround());
     }
 }

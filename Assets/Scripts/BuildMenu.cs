@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BuildMenu : MonoBehaviour
 {
-    public List<BluePrintSlot> bluePrintSlots;
+    public List<BluePrintUI> bluePrintSlots;
     
     public GameObject bluePrintSlotPrefab;
     public Transform bluePrintPanel;
@@ -25,7 +25,7 @@ public class BuildMenu : MonoBehaviour
             GameObject instance = Instantiate(bluePrintSlotPrefab,bluePrintPanel);
             // instance.GetComponent<BluePrintSlot>().buildMenu = this;
 
-            bluePrintSlots.Add(instance.transform.GetChild(1).GetComponent<BluePrintSlot>());
+            bluePrintSlots.Add(instance.transform.GetChild(1).GetComponent<BluePrintUI>());
         }      
 
     }
@@ -55,5 +55,5 @@ public class BuildMenu : MonoBehaviour
 
 public class Assignment
 {
-    public BluePrintSlot slot;
+    public BluePrintUI slot;
 }

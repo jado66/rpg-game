@@ -4,46 +4,143 @@ using System.Collections.Generic;
 public class CharacterInventory : MonoBehaviour
 {
     [SerializeField] 
-    private List<InventoryItem> items = new List<InventoryItem>();
+    private Dictionary<int, InventoryItem> items = new Dictionary<int, InventoryItem>();
 
-    // Public getter for Items list
-    public List<InventoryItem> Items => items;
+    // Public getter for Items dictionary
+    public Dictionary<int, InventoryItem> Items => items;
 
-    public event System.Action OnInventoryChanged;
+    public int inventorySize;
+
+    public string inventoryIdentifier;
+
+    public event System.Action<string> OnInventoryChanged; // Changed to include identifier
+
+    [SerializeField]
+    private List<string> debugStartingItems; // List to hold starting item names
+
 
     public void InitializeComponents(Character character)
     {
         // Initialization logic here
     }
 
-    public void AddItem(InventoryItem item)
+    void Start()
     {
-        items.Add(item);
+        PopulateStartingItems();
+    }
+
+    private void PopulateStartingItems()
+    {
+        foreach (var itemName in debugStartingItems)
+        {
+            TryAddItem(itemName);
+        }
+    }
+
+    public void AddItem(int slot, InventoryItem item)
+    {
+        if (items.ContainsKey(slot))
+        {
+            Debug.LogWarning($"Slot {slot} is already occupied.");
+            return;
+        }
+        items[slot] = item;
         Debug.Log("Item added, invoking OnInventoryChanged.");
-        OnInventoryChanged?.Invoke();
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
     }
 
-    public void AddItem(string itemName)
+    public bool TryAddItem(string itemName)
     {
-        InventoryItem itemToAdd = InventoryItemDatabase.GetItem(itemName);
-        if (itemToAdd != null)
+        InventoryItem item = InventoryItemDatabase.GetItem(itemName).Clone();
+
+        if (item == null)
         {
-            AddItem(itemToAdd);
-            OnInventoryChanged?.Invoke();
+            Debug.Log($"Item {itemName} does not exist.");
+            return false;
         }
-        else
-        {
-            Debug.LogWarning($"Item '{itemName}' not found in database.");
-        }
+
+        return TryAddItemToInventory(item);
     }
 
-    public bool RemoveItem(InventoryItem item)
+    public bool TryAddItem(InventoryItem item)
     {
-        return items.Remove(item);
-        
+        return TryAddItemToInventory(item);
     }
 
-    public Item GetEquippedItem()
+    private bool TryAddItemToInventory(InventoryItem item)
+    {
+        // Check for existing stackable items
+        foreach (var kvp in items)
+        {
+            if (kvp.Value.Name == item.Name && kvp.Value.Amount < kvp.Value.StackAmount)
+            {
+                var remainingSpace = kvp.Value.StackAmount - kvp.Value.Amount;
+                if (remainingSpace >= item.Amount)
+                {
+                    kvp.Value.Amount += item.Amount;
+                    Debug.Log("Item stacked, invoking OnInventoryChanged.");
+                    OnInventoryChanged?.Invoke(inventoryIdentifier);
+                    return true;
+                }
+                else
+                {
+                    kvp.Value.Amount += remainingSpace;
+                    item.Amount -= remainingSpace;
+                }
+            }
+        }
+
+        // If no available stack was found or couldn't fully stack, find an empty slot.
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (!items.ContainsKey(i))
+            {
+                items[i] = item;
+                Debug.Log("Item added in first available slot, invoking OnInventoryChanged.");
+                OnInventoryChanged?.Invoke(inventoryIdentifier);
+                return true;
+            }
+        }
+
+        Debug.LogWarning("No empty slot available to add the item.");
+        return false;
+    }
+
+    public bool RemoveItem(int slot)
+    {
+        if (items.Remove(slot))
+        {
+            OnInventoryChanged?.Invoke(inventoryIdentifier);
+            return true;
+        }
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
+
+        return false;
+    }
+
+   public bool RemoveItem(InventoryItem item)
+    {
+        int slot = -1;
+        foreach (var kvp in items)
+        {
+            if (kvp.Value == item)
+            {
+                slot = kvp.Key;
+                break;
+            }
+        }
+
+        if (slot != -1)
+        {
+            items.Remove(slot);
+            OnInventoryChanged?.Invoke(inventoryIdentifier);
+            return true;
+        }
+
+        return false;
+    }
+
+    public InventoryItem GetEquippedItem()
     {
         return null;  // Return equipped item logic here
     }
@@ -53,7 +150,7 @@ public class CharacterInventory : MonoBehaviour
         Dictionary<string, int> itemCount = new Dictionary<string, int>();
 
         // Initialize item count dictionary
-        foreach (var item in items)
+        foreach (var item in items.Values)
         {
             if (itemCount.ContainsKey(item.Name))
             {
@@ -84,26 +181,28 @@ public class CharacterInventory : MonoBehaviour
             int amountToRemove = (amounts != null && amounts.Length > i) ? amounts[i] : 1;
 
             // Using a list to collect items to be removed first
-            List<InventoryItem> itemsToRemove = new List<InventoryItem>();
+            List<int> slotsToRemove = new List<int>();
 
             for (int j = 0; j < amountToRemove; j++)
             {
-                InventoryItem itemToRemove = items.Find(item => item.Name == title);
-                if (itemToRemove != null)
+                foreach (var kvp in items)
                 {
-                    itemsToRemove.Add(itemToRemove);
+                    if (kvp.Value.Name == title)
+                    {
+                        slotsToRemove.Add(kvp.Key);
+                        break;
+                    }
                 }
             }
 
             // Now actually removing the items
-            foreach (var item in itemsToRemove)
+            foreach (var slot in slotsToRemove)
             {
-
-                RemoveItem(item);
+                RemoveItem(slot);
             }
         }
 
-        OnInventoryChanged?.Invoke();
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
         return true;
     }
 

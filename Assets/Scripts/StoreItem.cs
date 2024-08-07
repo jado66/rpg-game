@@ -16,7 +16,7 @@ public class StoreItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
     private StoreUiInventory storeUiInventory;
 
     public List<Item> parentList;
-    public Tooltip tooltip;
+    public TooltipUI tooltip;
 
     public GameObject textAmount;
 
@@ -29,7 +29,7 @@ public class StoreItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         selectedStoreItem = GameObject.Find("SelectedStoreItem").GetComponent<StoreItem>();
         storeUiInventory = GameObject.Find("BuyNSellPanel").GetComponent<StoreUiInventory>();
-        tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        tooltip = GameObject.Find("TooltipUI").GetComponent<TooltipUI>();
         spriteImage = GetComponent<Image>();
         // Debug.Log("Setting item to null");
         UpdateItem(null);
@@ -173,7 +173,7 @@ public class StoreItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
         //        TryFixItem();
         //    }
            //Generate buy tooltip
-           tooltip.GenerateBuyTooltip(this.item);
+        //    tooltip.GenerateBuyTooltip(this.item);
        }
     }
 

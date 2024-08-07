@@ -43,30 +43,42 @@ public static class InventoryItemDatabase
         var regularItem = InventoryItem.Uses.RegularItem;
 
         items = new List<InventoryItem> {
-            new RegularItem("0", "Wood", "Not the morning kind", 99, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            new RegularItem("1", "Rock", "Not the morning kind", 99, regularItem, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
-            new RegularItem("2", "Iron Ore", "Let's pump some", 99, regularItem, new Dictionary<string, int>(), 350, new List<string>(), new List<string>()),
-            new RegularItem("3", "Gold Ore", "Oooh ahh", 99, regularItem, new Dictionary<string, int>(), 750, new List<string>(), new List<string>()),
+                           // id, name, description, useType, stats,  value, strongConsumers,  weakConsumers,   amount = 1,  stackAmount = 0)
+            new RegularItem("0", "Wood", "Not the morning kind", 10, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new RegularItem("1", "Rock", "Not the morning kind", 10, regularItem, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
+            new RegularItem("2", "Iron Ore", "Let's pump some", 10, regularItem, new Dictionary<string, int>(), 350, new List<string>(), new List<string>()),
+            new RegularItem("3", "Gold Ore", "Oooh ahh", 10, regularItem, new Dictionary<string, int>(), 750, new List<string>(), new List<string>()),
             new RegularItem("4", "Coins", "Mooooooneeey", 999, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            new InteractableItem("5", "Tree Sapling", "A baby tree", 99, interactable, new Dictionary<string, int>(), 16, new List<string>(), new List<string>()),
-            new InteractableItem("7", "Bush Sapling", "A baby bush", 99, interactable, new Dictionary<string, int>(), 13, new List<string>(), new List<string>()),
+            new InteractableItem("5", "Tree Sapling", "A baby tree", 25, interactable, new Dictionary<string, int>(), 16, new List<string>(), new List<string>()),
+            new InteractableItem("7", "Bush Sapling", "A baby bush", 25, interactable, new Dictionary<string, int>(), 13, new List<string>(), new List<string>()),
             new InteractableItem("8", "Tomato Seed", "A baby tomato", 99, interactable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
             new InteractableItem("9", "Carrot Seed", "A baby carrot", 99, interactable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
             // new ConsumableItem("20", "Carrot", "For horses.", 20, consumable, new Dictionary<string, int>(), 4, new List<string>(), new List<string>()),
             // new ConsumableItem("21", "Tomato", "Ripe from the vine", 20, consumable, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
             // new ConsumableItem("22", "Mushroom", "Don't get high", 40, consumable, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
             // new ConsumableItem("23", "Apple", "You know what they say", 20, consumable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
-            // new ConsumableItem("24", "Health Potion L1", "Heals you right up", 5, consumable, new Dictionary<string, int>{{"Heals:", 15}}, 150, new List<string>(), new List<string>(), 1,"Health Remedy"),
+            HealthPotion.SmallPotion(),
+            HealthPotion.MediumPotion(),
+            HealthPotion.LargePotion(),
+            HealthPotion.FullPotion(),
+            StaminaPotion.SmallPotion(),
+            StaminaPotion.MediumPotion(),
+            StaminaPotion.LargePotion(),
+            StaminaPotion.FullPotion(),
+            ManaPotion.SmallPotion(),
+            ManaPotion.MediumPotion(),
+            ManaPotion.LargePotion(),
+            ManaPotion.FullPotion(),
             // new ConsumableItem("26", "Mana Potion L1", "A what?", 5, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Magic Elixir"),
             // new ConsumableItem("27", "Stamina Potion L1", "Juicing isn't good for you.", 20, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Stamina Booster"),
             // new ConsumableItem("28", "Meat", "Yum yum", 10, consumable, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
             // new ConsumableItem("29", "Egg", "Yum yum", 525, consumable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
             new RegularItem("30", "Feather", "Really light", 999, regularItem, new Dictionary<string, int>(), 1, new List<string>(), new List<string>()),
-            new ToolItem("33", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
-            new ToolItem("34", "Garden Shovel", "For digging gardens", 1, tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>()),
-            new ToolItem("35", "Trench Shovel", "For digging trenches", 1, tool, new Dictionary<string, int>(), 350, new List<string>(), new List<string>()),
-            new ToolItem("36", "Axe", "For chopping all things choppable", 1, tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>()),
-            new ToolItem("37", "Pickaxe", "It's off to work", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
+            new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>(), 1),
+            new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
+            new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
+            new ShovelItem("34", "Shovel", "For digging gardens", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
+            new ToolItem("35", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("38", "Sword", "A sword", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
             new ToolItem("39", "Shield", "Block attacks", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
             new ToolItem("40", "Fishpole", "Catches fish", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
@@ -115,11 +127,11 @@ public static class InventoryItemDatabase
     static void BuildStoreSellItems()
     {
         // Blacksmith
-        blacksmithItems.Add(GetItemByID("36")); // Axe
-        blacksmithItems.Add(GetItemByID("33")); // Hammer
-        blacksmithItems.Add(GetItemByID("34")); // Garden Shovel
-        blacksmithItems.Add(GetItemByID("35")); // Trench Shovel
-        blacksmithItems.Add(GetItemByID("37")); // Pickaxe
+        blacksmithItems.Add(GetItemByID("33")); // Axe
+        blacksmithItems.Add(GetItemByID("35")); // Hammer
+        blacksmithItems.Add(GetItemByID("32")); // Garden Shovel
+        blacksmithItems.Add(GetItemByID("34")); // Trench Shovel
+        blacksmithItems.Add(GetItemByID("31")); // Pickaxe
 
         // Alchemist: Fill in as needed
 
@@ -151,55 +163,40 @@ public static class InventoryItemDatabase
 // Definitions for InventoryItem subclasses
 public class RegularItem : InventoryItem
 {
-    public RegularItem(string id, string name, string description, int amount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, amount) { }
+    public RegularItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
 
-    public override void Use()
-    {
-        // Implement regular item usage logic here
-    }
+    
 }
 
 public class InteractableItem : InventoryItem
 {
-    public InteractableItem(string id, string name, string description, int amount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, amount) { }
+    public InteractableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
 
-    public override void Use()
-    {
-        // Implement interactable item usage logic here
-    }
+   
 }
 
 public class ConsumableItem : InventoryItem
 {
-    public ConsumableItem(string id, string name, string description, int amount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, amount) { }
+    public ConsumableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
 
-    public override void Use()
-    {
-        // Implement consumable item usage logic here
-    }
+   
 }
 
 public class ToolItem : InventoryItem
 {
-    public ToolItem(string id, string name, string description, int amount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, amount) { }
+    public ToolItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
 
-    public override void Use()
-    {
-        // Implement tool item usage logic here
-    }
+   
 }
 
 public class WearableItem : InventoryItem
 {
-    public WearableItem(string id, string name, string description, int amount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, amount) { }
+    public WearableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
 
-    public override void Use()
-    {
-        // Implement wearable item usage logic here
-    }
+    
 }

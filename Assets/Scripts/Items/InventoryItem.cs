@@ -8,23 +8,48 @@ public class InventoryItem : GameItem
     public InventoryItem(string id, string name, string description, Uses useType,
                          Dictionary<string, int> stats, int value, 
                          List<string> strongConsumers, List<string> weakConsumers,
-                         int amount = 1, int stackAmount = 0)
+                         int amount = 1, int stackAmount = 1)
         : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount)
     {
         StackAmount = stackAmount;
     }
     
-    public virtual void Use()
-    {
-        Debug.Log($"{Name} is used.");
-    }
+    
 
     public virtual void Use(Character character)
     {
-        Debug.Log($"{character.playerName} used {Name}.");
+        // Perform the item's effect on the character here
+
+        Debug.Log($"{Name} is used.");
+
+        // If the item is consumable, reduce its amount
+        if (UseType == Uses.Consumable && Amount > 0)
+        {
+            Amount--;
+            if (Amount <= 0)
+            {
+                // Remove the item from the character's inventory if its amount is zero
+                RemoveFromInventory(character);
+            }
+        }
     }
 
-    public InventoryItem Clone()
+    private void ApplyEffect(Character character)
+    {
+        // Define what happens when the item is used on the character here
+        Debug.Log($"Applying {Name}'s effect on {character.name}");
+    }
+
+    protected void RemoveFromInventory(Character character)
+    {
+        CharacterInventory inventory = character.GetHotbar();
+        if (inventory != null)
+        {
+            inventory.RemoveItem(this);
+        }
+    }
+
+    public virtual InventoryItem Clone()
     {
         // Creating deep copies of lists and dictionary to ensure the cloned item is fully independent
         var clonedStats = new Dictionary<string, int>(Stats);

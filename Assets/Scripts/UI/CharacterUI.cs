@@ -12,6 +12,8 @@ public class CharacterUI : MonoBehaviour
     public Character character;
 
     public CharacterInventory inventory;
+    public CharacterInventory hotbar;
+
 
     private static CharacterUI _instance;
 
@@ -52,6 +54,8 @@ public class CharacterUI : MonoBehaviour
 
     public Image characterHealth; 
     public Image staminaBar;   
+    public Image manaBar;   
+
 
     // Start is called before the first frame update
     private float[] keyCount = new float[10];
@@ -93,6 +97,19 @@ public class CharacterUI : MonoBehaviour
     private void InitializeComponents()
     {
 
+        CharacterInventory[] inventories = character.GetComponents<CharacterInventory>();
+        // Grab inventories
+        foreach (CharacterInventory inv in inventories)
+        {
+            if (inv.inventoryIdentifier == "Primary")
+            {
+                inventory = inv;
+            }
+            else if (inv.inventoryIdentifier == "Hotbar")
+            {
+                hotbar = inv;
+            }
+        }
 
        
 
@@ -149,21 +166,39 @@ public class CharacterUI : MonoBehaviour
         }
     }
 
-     void UpdateDebugInventoryText()
+    void UpdateDebugInventoryText()
     {
         StringBuilder sb = new StringBuilder("Inventory: ");
         bool firstItem = true;
-        foreach (var item in inventory.Items)
+        
+        // Append inventory items
+        foreach (var kvp in inventory.Items)
         {
             if (!firstItem)
             {
                 sb.Append(", ");
             }
+            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
             sb.Append($"{item.Name} x {item.Amount}");
             firstItem = false;
         }
+
+        // Append hotbar items
+        foreach (var kvp in hotbar.Items)
+        {
+            if (!firstItem)
+            {
+                sb.Append(", ");
+            }
+            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
+            sb.Append($"{item.Name} x {item.Amount}");
+            firstItem = false;
+        }
+
         debugInventoryText.text = sb.ToString();
     }
+
+
 
     public void ToggleBuildMenu(){
         sceneManager.ToggleBuildMenu();
@@ -213,6 +248,7 @@ public class CharacterUI : MonoBehaviour
         moneyText.text = stats.Money.ToString()+ "$";
         characterHealth.fillAmount = (float)(stats.Health)/(float)(stats.MaxHealth);
         staminaBar.fillAmount = (float)(stats.Stamina)/(float)(stats.MaxStamina);
+        manaBar.fillAmount = (float)(stats.Mana)/(float)(stats.MaxMana);
 
     }
 

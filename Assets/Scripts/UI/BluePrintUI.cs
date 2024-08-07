@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class BluePrintSlot: MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler  {
+public class BluePrintUI: MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler  {
     public string title;
     public string description;
     public Image icon;
@@ -127,7 +127,7 @@ public class BluePrintSlot: MonoBehaviour, IPointerDownHandler, IPointerEnterHan
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        BluePrintSlot[] buildSlots = FindObjectsOfType<BluePrintSlot>();
+        BluePrintUI[] buildSlots = FindObjectsOfType<BluePrintUI>();
         foreach( var buildSlot in buildSlots){
             buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         }

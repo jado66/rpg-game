@@ -18,7 +18,7 @@ public class UIArmourItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     private StoreItem selectedStoreItem;
 
     public List<Item> parentList;
-    public Tooltip tooltip;
+    public TooltipUI tooltip;
 
     public GameObject textAmount;
 
@@ -33,7 +33,7 @@ public class UIArmourItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         player = GameObject.Find("Character").GetComponent<Player>();
         selectedItem = GameObject.Find("SelectedItem").GetComponent<UIItem>();
         selectedStoreItem = GameObject.Find("SelectedStoreItem").GetComponent<StoreItem>();
-        tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        tooltip = GameObject.Find("TooltipUI").GetComponent<TooltipUI>();
         spriteImage = GetComponent<Image>();
         // Debug.Log("Setting item to null");
         UpdateItem(null);
@@ -178,14 +178,14 @@ public class UIArmourItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     {
         if (this.spriteImage.color != Color.clear)
         {
-            if (this.item == null){
-                TryFixItem();
-                player.FixInventory();
-            }
-            if (playerUi.buyNSellMenu.activeSelf) // if store is open generate sell tooltip
-                tooltip.GenerateSellTooltip(this.item);
-            else
-                tooltip.GenerateTooltip(this.item);
+            // if (this.item == null){
+            //     TryFixItem();
+            //     player.FixInventory();
+            // }
+            // if (playerUi.buyNSellMenu.activeSelf) // if store is open generate sell tooltip
+            //     tooltip.GenerateSellTooltip(this.item);
+            // else
+            //     tooltip.GenerateTooltipUI(this.item);
         }
     }
 

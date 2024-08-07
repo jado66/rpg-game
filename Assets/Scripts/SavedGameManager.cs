@@ -17,7 +17,7 @@ public class SavedGameManager: MonoBehaviour
 
     GameData[] savedGames;
 
-    public Tooltip tooltip;
+    public TooltipUI tooltip;
     void Start(){
         // Load up saved gamesDatabase
         savedGames = loadSavedGames();

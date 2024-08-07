@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 138230859635714844}
   - component: {fileID: 4781247588083117410}
   - component: {fileID: 4781247588083117407}
-  - component: {fileID: 4781247588083117406}
   - component: {fileID: 4781247588083117401}
+  - component: {fileID: 1163309138093213800}
+  - component: {fileID: 4781247588083117406}
   - component: {fileID: 4781247588083117400}
   - component: {fileID: 4781247588083117403}
   - component: {fileID: 4781247588083117402}
@@ -159,6 +160,34 @@ MonoBehaviour:
   swimSpeed: 1.5
   runSpeedMultiplier: 1.5
   fastSwimSpeedMultiplier: 1.2
+--- !u!114 &4781247588083117401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138230859635714838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa136980a1978547961f1311192fd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 10
+  inventoryIdentifier: Hotbar
+--- !u!114 &1163309138093213800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138230859635714838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa136980a1978547961f1311192fd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 4
+  inventoryIdentifier: Tests
 --- !u!114 &4781247588083117406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,18 +206,6 @@ MonoBehaviour:
   playerFacingDirection: {x: 0, y: 0, z: 0}
   onBoat: 0
   inWater: 0
---- !u!114 &4781247588083117401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138230859635714838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfa136980a1978547961f1311192fd17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4781247588083117400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +275,7 @@ MonoBehaviour:
   building: {fileID: 4781247588083117403}
   worldInteraction: {fileID: 4781247588083117410}
   inventory: {fileID: 4781247588083117401}
+  hotbar: {fileID: 0}
   inventoryUI: {fileID: 4781247588083117396}
   combat: {fileID: 4781247588083117400}
   boxCollider2D: {fileID: 8347772855092102672}

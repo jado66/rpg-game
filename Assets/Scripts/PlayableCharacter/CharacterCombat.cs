@@ -31,7 +31,7 @@ public class CharacterCombat : MonoBehaviour
 
     private void Attack()
     {
-        Item equippedItem = inventory.GetEquippedItem();
+        GameItem equippedItem = inventory.GetEquippedItem();
         if (equippedItem != null && equippedItem is IWeapon weapon)
         {
             weapon.Use();

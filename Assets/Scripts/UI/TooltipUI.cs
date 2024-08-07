@@ -38,7 +38,9 @@ public class TooltipUI : MonoBehaviour {
         
         
         tooltipText.text = tooltip;
-        gameObject.SetActive(true);
+
+        ShowTooltip();
+
     }
 
      public void GenerateTooltip(InventoryItem item)
@@ -54,7 +56,8 @@ public class TooltipUI : MonoBehaviour {
 
         string tooltip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText);
         tooltipText.text = tooltip;
-        gameObject.SetActive(true);
+
+        ShowTooltip();
     }
 
 
@@ -71,7 +74,9 @@ public class TooltipUI : MonoBehaviour {
 
         string tooltip = string.Format("<b>{0}</b> - Buy:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText,item.Value);
         tooltipText.text = tooltip;
-        gameObject.SetActive(true);
+
+        ShowTooltip();
+
     }
 
     public void GenerateSellTooltip(InventoryItem item)
@@ -87,7 +92,9 @@ public class TooltipUI : MonoBehaviour {
 
         string tooltip = string.Format("<b>{0}</b> - Sell:{3}\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText,item.Value);
         tooltipText.text = tooltip;
-        gameObject.SetActive(true);
+
+        ShowTooltip();
+
     }
 
     public void GenerateTooltip(BluePrint bluePrint)

@@ -47,7 +47,7 @@ public class CharacterWorldInteraction: MonoBehaviour
         grid = GameObject.Find("Grid").GetComponent<GridLayout>();
 
     }
-    private IEnumerator Chop()
+    public IEnumerator Chop()
     {
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 
@@ -56,8 +56,12 @@ public class CharacterWorldInteraction: MonoBehaviour
             Debug.Log("We hit a tree tile at " + buildSquareCellLocation.ToString());
             // These need to be params of the object if (Random.Range(0,5) == 4){ 
             tilePalette.choppable.SetTile(buildSquareCellLocation,null);
-            inventory.AddItem("Wood");
+            inventory.TryAddItem("Wood");
                 // Debug.DrawRay(movement.characterCenter+movement.playerFacingDirection*.75f-perpendicularDirection*.3f,perpendicularDirection*.6f,Color.red,1f);
+            if (Random.Range(0, 10) == 0)
+            {
+                inventory.TryAddItem("Tree Sapling");
+            }
         }
         else{
             Debug.Log("Nothing to chop");
@@ -66,7 +70,7 @@ public class CharacterWorldInteraction: MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator Mine()
+    public IEnumerator Mine()
     {
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 
@@ -84,18 +88,18 @@ public class CharacterWorldInteraction: MonoBehaviour
         if (minableItemMap.ContainsKey(minableTile))
         {
             tilePalette.minable.SetTile(buildSquareCellLocation, null);
-            inventory.AddItem(minableItemMap[minableTile]);
+            inventory.TryAddItem(minableItemMap[minableTile]);
         }
         else if (groundTile == tilePalette.cobbleStonePath)
         {
             tilePalette.ground.SetTile(buildSquareCellLocation, tilePalette.grass);
-            inventory.AddItem("Rock");
+            inventory.TryAddItem("Rock");
         }
 
         yield return null;
     }
 
-    private IEnumerator Dig()
+    public IEnumerator TillGround()
     {
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 
@@ -119,7 +123,7 @@ public class CharacterWorldInteraction: MonoBehaviour
             tile == tilePalette.ploughedDirt;
     }
 
-    private IEnumerator Plant()
+    public IEnumerator Plant()
     {
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 
@@ -129,7 +133,7 @@ public class CharacterWorldInteraction: MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator Irrigate()
+    public IEnumerator IrrigateGround()
     {            
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 

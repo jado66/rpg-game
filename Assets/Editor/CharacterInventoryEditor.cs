@@ -30,7 +30,7 @@ public class CharacterInventoryEditor : Editor
             int randomIndex = random.Next(toolItems.Count);
             ToolItem randomToolItem = toolItems[randomIndex];
 
-            inventory.AddItem(randomToolItem);
+            inventory.TryAddItem(randomToolItem);
             EditorUtility.SetDirty(inventory);
         }
     }

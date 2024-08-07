@@ -11,11 +11,11 @@ public class SavedGameButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public Text textBox;
 
-    public Tooltip tooltip;
+    public TooltipUI tooltip;
     // Start is called before the first frame update
     void Awake()
     {
-        // tooltip = GameObject.Find("Tooltip").GetComponent<Tooltip>();
+        // tooltip = GameObject.Find("TooltipUI").GetComponent<TooltipUI>();
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class SavedGameButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Enter");
-        tooltip.GenerateTooltip(gameData);
+        // tooltip.GenerateTooltip(gameData);
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -70,28 +70,25 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     }
 
     public void SelectItem(){
-        selectedGameItemUI = this;
-        selectedInventoryItem = Item;
+
+        if (Item == null){
+            return;
+        }
 
         isSelected = true;
-
-        if (spriteImage != null){
-                Color imageColor = spriteImage.color;
-                imageColor.a = 0.5f; // Set alpha to 0.5 (slightly transparent)
-                spriteImage.color = imageColor;
-        }
+        transform.parent.GetComponent<Image>().color = new Color(0.89f,0.6747f,0.4685f);   
     }
 
     public void UnselectItem(){
-        
-
         isSelected = false;
+        transform.parent.GetComponent<Image>().color = new Color(0.3867f,0.3867f,0.3867f);   
+    }
 
-        if (spriteImage != null)
-        {
-            Color imageColor = spriteImage.color;
-            imageColor.a = 1.0f; // Set alpha to 1 (fully opaque)
-            spriteImage.color = imageColor;
+    public void ToggleSelected(){
+        if (isSelected){
+            UnselectItem();
+        } else {
+            SelectItem();
         }
     }
 
@@ -105,30 +102,32 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (Item != null){
-            SelectItem();
+        // BluePrintUI[] buildSlots = FindObjectsOfType<BluePrintUI>();
+        // foreach( var buildSlot in buildSlots){
+            // buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
+        // }231, 144, 105
+        ToggleSelected();   
+
+        // GameObject.Find("Character").GetComponent<Player>().activeBlueprint = this.bluePrint;E79069
+        
         }
-        else if (ReferenceEquals(Item, selectedGameItemUI)){
-            selectedGameItemUI = null;
-            selectedInventoryItem = null;
-            UnselectItem();
-        }
-        else if (Item == null && selectedInventoryItem != null){
-            PlaceSelectedItem();
-        }
-    }
    
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (Item != null)
         {
+            Debug.Log("generating tooltip");
             tooltip.GenerateTooltip(Item); // Assuming GenerateTooltip method works with GameItem object
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        tooltip.HideTooltip();
+        if (Item != null)
+        {
+            tooltip.HideTooltip();
+        }
+        
     }
 
     // Methods to set up the UIItem based on data from CharacterInventoryUI
