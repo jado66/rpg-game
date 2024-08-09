@@ -36,6 +36,8 @@ public class Character : MonoBehaviour
 
     public BluePrint activeBlueprint;
 
+    public GameItemUI selectedItem;
+
     public Animator animator;
 
     public List<GameObject> followingObjects = new List<GameObject>();
@@ -104,7 +106,7 @@ public class Character : MonoBehaviour
         building.InitializeComponents(this);
         movement.InitializeComponents(this);
         worldInteraction.InitializeComponents(this);
-        inventory.InitializeComponents(this);
+        // inventory.InitializeComponents(this);
         combat.InitializeComponents(this);
 
         if (characterIsInControl){
@@ -170,21 +172,43 @@ public class Character : MonoBehaviour
 
     public void Chop()
     {
+        if (stats.Stamina < 2f){
+            return;
+        }
+
         StartCoroutine(worldInteraction.Chop());
+        stats.DepleteStamina(2f);
     }
 
     public void Mine()
     {
+        if (stats.Stamina < 2f){
+            return;
+        }
+
         StartCoroutine(worldInteraction.Mine());
+        stats.DepleteStamina(2f);
     }
 
     public void IrrigateGround()
     {
+        if (stats.Stamina < 2f){
+            return;
+        }
+
         StartCoroutine(worldInteraction.IrrigateGround());
+        stats.DepleteStamina(2f);
+
     }
 
     public void TillGround()
     {
+        if (stats.Stamina < 2f){
+            return;
+        }
+
         StartCoroutine(worldInteraction.TillGround());
+        stats.DepleteStamina(2f);
+
     }
 }

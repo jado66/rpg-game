@@ -5,7 +5,7 @@ public class HoeItem : InventoryItem
 {
     public HoeItem(string id, string name, string description, Uses useType,
                    Dictionary<string, int> stats, int value, List<string> strongConsumers,
-                   List<string> weakConsumers, int amount = 1, int stackAmount = 0)
+                   List<string> weakConsumers, int amount = 1, int stackAmount = 1)
         : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount, stackAmount)
     {
         // Initialize specific tool properties if needed

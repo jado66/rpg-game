@@ -7,7 +7,7 @@ public class HealthPotion : InventoryItem
     // Constructor with all parameters
     public HealthPotion(string id, string name, string description, Uses useType,
                         Dictionary<string, int> stats, int value, List<string> strongConsumers,
-                        List<string> weakConsumers, int amount = 1, int stackAmount = 0)
+                        List<string> weakConsumers, int amount = 1, int stackAmount = 5)
         : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount, stackAmount)
     {
     }

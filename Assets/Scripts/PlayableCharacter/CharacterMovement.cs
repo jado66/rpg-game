@@ -53,7 +53,7 @@ public class CharacterMovement : MonoBehaviour
 
         HandleAnimation(isSprinting);
 
-         if (movement != Vector2.zero){
+         if (movement == Vector2.zero){
             stats.RegainStamina(stats.StaminaDrainPerSecond/2 * Time.deltaTime);
         }
         

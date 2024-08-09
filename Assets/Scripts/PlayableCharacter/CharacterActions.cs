@@ -117,10 +117,18 @@ public class CharacterActions : MonoBehaviour
 
             int index = hotbarKeys[button];
             InventoryItem item = hotbar.GetHotbarItem(index);
+            // We need to assign the hotbar slot
+            // if (character.selectedItem != null){ //TODO this needs fixing
+            //     HandleHobarItemAssignement(index);
+            //     break;
+            // }
+
             if (item != null) {
                 Debug.Log($"Using {item.Name}");
                 // usedItems.Add(item.Clone()); //TODO fix me
                 item.Use(character);
+                hotbar.SyncInventory();
+
             }
             else{
                 Debug.Log($"No item in slot {index}");
@@ -128,12 +136,31 @@ public class CharacterActions : MonoBehaviour
         }
     }
 
+    // private void HandleHobarItemAssignement(int index){
+    //     InventoryItem selectedItem;
+    //     GameItemUI selectItemUI = character.selectedItem;
+        
+    //     if (selectItemUI != null){
+    //         selectedItem = selectItemUI.Item;
+        
+        
+    //         InventoryItem oldItem = hotbar.SetHotbarItem(index, selectedItem);
 
+            
+    //         selectItemUI.UpdateGameItem(oldItem);
+    //         selectItemUI.UnselectItem();
+            
+    //         // Debug.Log($"Setting {selectedItem.Name} to slot {index}");
+
+    //     }
+
+    // }
     private void ReplayItemUsages(List<InventoryItem> usedItems){
         if(usedItems != null) {
             foreach(var item in usedItems) {
                 if (item != null){
                     item.Use(character);
+                    hotbar.SyncInventory();
                 }
             }
         }

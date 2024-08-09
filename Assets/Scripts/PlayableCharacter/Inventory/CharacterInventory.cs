@@ -37,17 +37,69 @@ public class CharacterInventory : MonoBehaviour
         }
     }
 
+    public InventoryItem AddOrSwapItem(int slot, InventoryItem item)
+    {
+        // Cloning the old item before replacement
+        InventoryItem oldItem = null;
+
+        if (items.ContainsKey(slot))
+        {
+            oldItem = items[slot].Clone();
+            Debug.Log($"Replacing item in slot {slot}. Old Item: {oldItem}, New Item: {item}");
+        }
+        else
+        {
+            Debug.Log($"Adding new item in slot {slot}. New Item: {item}");
+        }
+
+        // Adding or swapping the item
+        items[slot] = item;
+
+        // Triggering any relevant events
+        Debug.Log("Triggering OnInventoryChanged event.");
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
+
+        // Returning the old item
+        return oldItem;
+    }
+
     public void AddItem(int slot, InventoryItem item)
     {
         if (items.ContainsKey(slot))
         {
-            Debug.LogWarning($"Slot {slot} is already occupied.");
+            Debug.Log($"Slot {slot} is already occupied.");
             return;
         }
         items[slot] = item;
         Debug.Log("Item added, invoking OnInventoryChanged.");
         OnInventoryChanged?.Invoke(inventoryIdentifier);
     }
+
+    // public InventoryItem AddItemOrSwap(int slot, InventoryItem item)
+    // {
+    //     if (items.ContainsKey(slot))
+    //     {
+    //         Debug.Log($"Slot {slot} is occupied. Swapping items.");
+    //         InventoryItem oldItem = items[slot].Clone();
+    //         items[slot] = item.Clone();
+
+    //         // Handle the old item if necessary
+    //         return oldItem;
+
+    //         Debug.Log("Item swapped, invoking OnInventoryChanged.");
+    //         OnInventoryChanged?.Invoke(inventoryIdentifier);
+
+    //     }
+    //     else
+    //     {
+    //         items[slot] = item.Clone();
+    //         return null;
+    //         OnInventoryChanged?.Invoke(inventoryIdentifier);
+
+    //     }
+
+    //     Debug.Log("Item added or swapped, invoking OnInventoryChanged.");
+    // }
 
     public bool TryAddItem(string itemName)
     {
@@ -67,7 +119,7 @@ public class CharacterInventory : MonoBehaviour
         return TryAddItemToInventory(item);
     }
 
-    private bool TryAddItemToInventory(InventoryItem item)
+    public bool TryAddItemToInventory(InventoryItem item)
     {
         // Check for existing stackable items
         foreach (var kvp in items)
@@ -96,7 +148,7 @@ public class CharacterInventory : MonoBehaviour
             if (!items.ContainsKey(i))
             {
                 items[i] = item;
-                Debug.Log("Item added in first available slot, invoking OnInventoryChanged.");
+                // Debug.Log("Item added in first available slot, invoking OnInventoryChanged.");
                 OnInventoryChanged?.Invoke(inventoryIdentifier);
                 return true;
             }
@@ -104,6 +156,10 @@ public class CharacterInventory : MonoBehaviour
 
         Debug.LogWarning("No empty slot available to add the item.");
         return false;
+    }
+
+    public void SyncInventory(){
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
     }
 
     public bool RemoveItem(int slot)

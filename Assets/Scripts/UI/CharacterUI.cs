@@ -183,6 +183,9 @@ public class CharacterUI : MonoBehaviour
             firstItem = false;
         }
 
+        sb.Append("\nHotbar: ");
+        firstItem = true;
+
         // Append hotbar items
         foreach (var kvp in hotbar.Items)
         {

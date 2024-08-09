@@ -21,6 +21,8 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     public GameItemUI selectedGameItemUI;
     public InventoryItem selectedInventoryItem;
 
+    public Character character;
+
     // public GameItemUI selectedStoreItem;
 
 
@@ -71,17 +73,88 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
 
     public void SelectItem(){
 
-        if (Item == null){
-            return;
+        if (character == null){
+            character = GameObject.FindWithTag("Character").GetComponent<Character>();
         }
 
-        isSelected = true;
-        transform.parent.GetComponent<Image>().color = new Color(0.89f,0.6747f,0.4685f);   
+
+        if (character.selectedItem == null){
+            if (Item == null){
+                return;
+            }
+
+            isSelected = true;
+
+            
+            
+            if (character.selectedItem != null){
+                character.selectedItem.UnselectItem();
+            }
+            character.selectedItem = this;
+
+
+            transform.parent.GetComponent<Image>().color = new Color(0.89f,0.6747f,0.4685f);
+        }
+        else{
+            SwapItem();
+        }
+
+           
+    }
+
+    public void SwapItem()
+    {
+        InventoryItem selectedItem = character.selectedItem.Item != null ? character.selectedItem.Item.Clone() : null;
+        GameItemUI selectedItemUI = character.selectedItem;
+
+        if (Item != null && selectedItem != null && Item.Id == selectedItem.Id)
+        {
+            // Items are the same type, attempt to stack
+            int totalAmount = Item.Amount + selectedItem.Amount;
+            int maxStackSize = Item.StackAmount; // Using the StackAmount property
+
+
+
+            if (totalAmount <= maxStackSize)
+            {
+                // Full stack in current slot
+                Item.Amount = totalAmount;
+                UpdateGameItem(Item);
+                selectedItemUI.UpdateGameItem(null);
+            }
+            else
+            {
+                // Partial stack
+                Item.Amount = maxStackSize;
+                UpdateGameItem(Item);
+                selectedItem.Amount = totalAmount - maxStackSize;
+                selectedItemUI.UpdateGameItem(selectedItem);
+            }
+        }
+        else
+        {
+            // Different items or one slot is empty, perform regular swap
+            InventoryItem tempItem = Item != null ? Item.Clone() : null;
+            UpdateGameItem(selectedItem != null ? selectedItem.Clone() : null);
+            selectedItemUI.UpdateGameItem(tempItem);
+        }
+
+        selectedItemUI.UnselectItem();
+        
+        // Update character's selected item reference
+        if (character != null)
+        {
+            character.selectedItem = null;
+        }
+
+        UnselectItem();
     }
 
     public void UnselectItem(){
         isSelected = false;
-        transform.parent.GetComponent<Image>().color = new Color(0.3867f,0.3867f,0.3867f);   
+        transform.parent.GetComponent<Image>().color = new Color(0.3867f,0.3867f,0.3867f);  
+        character.selectedItem = null;
+ 
     }
 
     public void ToggleSelected(){
@@ -116,7 +189,7 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     {
         if (Item != null)
         {
-            Debug.Log("generating tooltip");
+            // Debug.Log("generating tooltip");
             tooltip.GenerateTooltip(Item); // Assuming GenerateTooltip method works with GameItem object
         }
     }

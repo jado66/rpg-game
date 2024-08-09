@@ -18,6 +18,7 @@ public class CharacterHotbar : CharacterInventory
 
     public void SetHotbarItem(int slot, InventoryItem item)
     {
-        AddItem(slot, item);
+        AddOrSwapItem(slot, item);
+        
     }
 }
