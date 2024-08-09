@@ -63,6 +63,11 @@ public class CharacterInventory : MonoBehaviour
         return oldItem;
     }
 
+    public void SetItem(int slot, InventoryItem item){
+        items[slot] = item;
+        OnInventoryChanged?.Invoke(inventoryIdentifier);
+    }
+
     public void AddItem(int slot, InventoryItem item)
     {
         if (items.ContainsKey(slot))
@@ -124,6 +129,11 @@ public class CharacterInventory : MonoBehaviour
         // Check for existing stackable items
         foreach (var kvp in items)
         {
+            InventoryItem slotItem = kvp.Value;
+
+            if (slotItem == null){
+                continue;
+            }
             if (kvp.Value.Name == item.Name && kvp.Value.Amount < kvp.Value.StackAmount)
             {
                 var remainingSpace = kvp.Value.StackAmount - kvp.Value.Amount;

@@ -174,11 +174,14 @@ public class CharacterUI : MonoBehaviour
         // Append inventory items
         foreach (var kvp in inventory.Items)
         {
+            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
+            if (item == null){
+                continue;
+            }
             if (!firstItem)
             {
                 sb.Append(", ");
             }
-            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
             sb.Append($"{item.Name} x {item.Amount}");
             firstItem = false;
         }
@@ -189,11 +192,14 @@ public class CharacterUI : MonoBehaviour
         // Append hotbar items
         foreach (var kvp in hotbar.Items)
         {
+            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
+            if (item == null){
+                continue;
+            }
             if (!firstItem)
             {
                 sb.Append(", ");
             }
-            var item = kvp.Value; // Get InventoryItem from the KeyValuePair
             sb.Append($"{item.Name} x {item.Amount}");
             firstItem = false;
         }

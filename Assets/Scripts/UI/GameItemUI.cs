@@ -6,10 +6,14 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
 {
     private CharacterInventoryUI characterInventoryUI;
 
+    public CharacterInventory parentInventory;
+
     public string gameItemName = "New";
 
     public bool isGhostItem = false; 
     public InventoryItem Item { get; private set; }
+
+    public int slotIndex;
 
     public Image spriteImage;
 
@@ -43,13 +47,15 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             amountText.gameObject.SetActive(false);
         }
 
-        UpdateGameItem(null);
+        UpdateGameItem(null, true);
     }
 
 
-    public void UpdateGameItem(InventoryItem item)
+    public void UpdateGameItem(InventoryItem item, bool topDown = false)
     {
         Item = item;
+
+
 
         if (item != null)
         {
@@ -68,6 +74,10 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             Color imageColor = spriteImage.color;
             imageColor.a = 0.0f; // Set alpha to 0 (fully transparent)
             spriteImage.color = imageColor;
+        }
+
+        if (topDown && parentInventory != null){
+            parentInventory.SetItem(slotIndex,item);
         }
     }
 
@@ -119,24 +129,24 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             {
                 // Full stack in current slot
                 Item.Amount = totalAmount;
-                UpdateGameItem(Item);
+                UpdateGameItem(Item, true);
                 selectedItemUI.UpdateGameItem(null);
             }
             else
             {
                 // Partial stack
                 Item.Amount = maxStackSize;
-                UpdateGameItem(Item);
+                UpdateGameItem(Item, true);
                 selectedItem.Amount = totalAmount - maxStackSize;
-                selectedItemUI.UpdateGameItem(selectedItem);
+                selectedItemUI.UpdateGameItem(selectedItem, true);
             }
         }
         else
         {
             // Different items or one slot is empty, perform regular swap
             InventoryItem tempItem = Item != null ? Item.Clone() : null;
-            UpdateGameItem(selectedItem != null ? selectedItem.Clone() : null);
-            selectedItemUI.UpdateGameItem(tempItem);
+            UpdateGameItem(selectedItem != null ? selectedItem.Clone() : null, true);
+            selectedItemUI.UpdateGameItem(tempItem, true);
         }
 
         selectedItemUI.UnselectItem();
@@ -166,8 +176,8 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     }
 
     public void PlaceSelectedItem(){
-        UpdateGameItem(selectedInventoryItem);
-        selectedGameItemUI.UpdateGameItem(null);        
+        UpdateGameItem(selectedInventoryItem, true);
+        selectedGameItemUI.UpdateGameItem(null, true);        
         selectedGameItemUI.UnselectItem();
 
         SelectItem();
@@ -179,6 +189,7 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         // foreach( var buildSlot in buildSlots){
             // buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         // }231, 144, 105
+        Debug.Log("TEST");
         ToggleSelected();   
 
         // GameObject.Find("Character").GetComponent<Player>().activeBlueprint = this.bluePrint;E79069
@@ -207,19 +218,19 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     public void SetHotbarSlot(KeyCode key)
     {
         InventoryItem item = characterInventoryUI.GetHotbarItem(key);
-        UpdateGameItem(item);
+        UpdateGameItem(item, true);
     }
 
     public void SetInventorySlot(int slotIndex)
     {
         InventoryItem item = characterInventoryUI.GetInventorySlotItem(slotIndex);
-        UpdateGameItem(item);
+        UpdateGameItem(item, true);
     }
 
     public void SetEquipmentSlot(string slot)
     {
         InventoryItem item = characterInventoryUI.GetEquipmentSlotItem(slot);
-        UpdateGameItem(item);
+        UpdateGameItem(item, true);
     }
 
     public void UpdateItemAmount()

@@ -112,6 +112,9 @@ public class InventoryUI : MonoBehaviour
             // Get the GameItemUI component
             GameItemUI uiItem = slotGO.GetComponentInChildren<GameItemUI>();
 
+            uiItem.slotIndex = i;
+            uiItem.parentInventory = parentInventory;
+
             // Add to the list of UI items
             uiItems.Add(uiItem);
         }
@@ -130,6 +133,9 @@ public class InventoryUI : MonoBehaviour
             {
                 if (uiItems[i] != null)
                 {
+                    if (item == null){
+                        continue;
+                    }
                     if (item.Amount <= 0)
                     {
                         uiItems[i].UpdateGameItem(null);
