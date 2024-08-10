@@ -97,7 +97,7 @@ public class StaminaPotion : InventoryItem
         if (Amount <= 0)
         {
             // Remove the item from the character's inventory if its amount is zero
-            Debug.Log("Removing potion from inventory");
+            Debug.Log("Removing stamina potion from inventory");
             RemoveFromInventory(character);
         }
     }

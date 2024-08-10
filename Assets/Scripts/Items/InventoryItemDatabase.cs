@@ -49,14 +49,15 @@ public static class InventoryItemDatabase
             new RegularItem("2", "Iron Ore", "Let's pump some", 10, regularItem, new Dictionary<string, int>(), 350, new List<string>(), new List<string>()),
             new RegularItem("3", "Gold Ore", "Oooh ahh", 10, regularItem, new Dictionary<string, int>(), 750, new List<string>(), new List<string>()),
             new RegularItem("4", "Coins", "Mooooooneeey", 999, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            new InteractableItem("5", "Tree Sapling", "A baby tree", 25, interactable, new Dictionary<string, int>(), 16, new List<string>(), new List<string>()),
-            new InteractableItem("7", "Bush Sapling", "A baby bush", 25, interactable, new Dictionary<string, int>(), 13, new List<string>(), new List<string>()),
-            new InteractableItem("8", "Tomato Seed", "A baby tomato", 99, interactable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
-            new InteractableItem("9", "Carrot Seed", "A baby carrot", 99, interactable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
-            // new ConsumableItem("20", "Carrot", "For horses.", 20, consumable, new Dictionary<string, int>(), 4, new List<string>(), new List<string>()),
-            // new ConsumableItem("21", "Tomato", "Ripe from the vine", 20, consumable, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
-            // new ConsumableItem("22", "Mushroom", "Don't get high", 40, consumable, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
-            // new ConsumableItem("23", "Apple", "You know what they say", 20, consumable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
+            new RegularItem("gem", "Gem", "Gem gem ", 10, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            
+            // Seeds
+            TerraSeeds.TreeSapling(),
+            TerraSeeds.BushSapling(),
+            TerraSeeds.TomatoSeed(),
+            TerraSeeds.CarrotSeed(),
+
+            // Potions
             HealthPotion.SmallPotion(),
             HealthPotion.MediumPotion(),
             HealthPotion.LargePotion(),
@@ -69,6 +70,19 @@ public static class InventoryItemDatabase
             ManaPotion.MediumPotion(),
             ManaPotion.LargePotion(),
             ManaPotion.FullPotion(),
+
+            // Plants
+            GardenPlant.Carrot(),
+            GardenPlant.Tomato(),
+            GardenPlant.RedMushroom(),
+            GardenPlant.PinkMushroom(),
+            GardenPlant.GreenMushroom(),
+            GardenPlant.Apple(),
+            GardenPlant.UnripeApple(),
+            GardenPlant.UnripeApple(),
+            new AstralProjectionScroll(),
+            MysteriousPotion.MysteriousPotion1(),
+
             // new ConsumableItem("26", "Mana Potion L1", "A what?", 5, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Magic Elixir"),
             // new ConsumableItem("27", "Stamina Potion L1", "Juicing isn't good for you.", 20, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Stamina Booster"),
             // new ConsumableItem("28", "Meat", "Yum yum", 10, consumable, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
@@ -78,6 +92,7 @@ public static class InventoryItemDatabase
             new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
             new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
             new ShovelItem("34", "Shovel", "For digging gardens", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
+            new ToolItem("astral-scroll", "Astral Projection Scroll", "Used to temporarily separate your spirit from body.", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("35", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("38", "Sword", "A sword", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
             new ToolItem("39", "Shield", "Block attacks", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),

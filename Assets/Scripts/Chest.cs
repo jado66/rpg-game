@@ -7,7 +7,7 @@ public class Chest : Interactable
     private Animator animator;
 
     SceneManager sceneManager;
-    public Inventory inventory;
+    public ExternalInventory inventory;
 
     Player player;
     bool isOpen;
@@ -18,7 +18,7 @@ public class Chest : Interactable
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         player = GameObject.Find("Character").GetComponent<Player>();
         animator = GetComponent<Animator>();
-        inventory = GetComponent<Inventory>();
+        inventory = GetComponent<ExternalInventory>();
 
         if (inventory == null){
             return;
@@ -44,21 +44,19 @@ public class Chest : Interactable
         }
 
         isOpen = !isOpen;
-        StartCoroutine(playerInteract());
+
+        if (isOpen){
+            inventory.OpenExternalInventory();
+        }
+        else{
+            inventory.CloseExternalInventory();
+        }
+        
+        
         // animator.SetBool("IsOpen",!isOpen);
     }
 
-    public IEnumerator playerInteract(){
-        sceneManager.loadAndUnloadChest(inventory,isOpen);
-        yield return null;
-    }
 
-    void OnDestroy()
-    {
-        // Ensure chest is unloaded if it was open
-        if (isOpen)
-        {
-            sceneManager.loadAndUnloadChest(inventory, false);
-        }
-    }
+
+    
 }

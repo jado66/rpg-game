@@ -84,7 +84,7 @@ public class ManaPotion : InventoryItem
 
     public override void Use(Character character)
     {
-        Debug.Log($"{Name} used by {character.playerName}.");
+        Debug.Log($"{Name} mana potion used by {character.playerName}.");
         CharacterStats stats = character.GetStats();
 
         if (Stats.ContainsKey("RegainMana"))
@@ -97,7 +97,7 @@ public class ManaPotion : InventoryItem
         if (Amount <= 0)
         {
             // Remove the item from the character's inventory if its amount is zero
-            Debug.Log("Removing potion from inventory");
+            Debug.Log("Removing mana  potion from inventory");
             RemoveFromInventory(character);
         }
     }

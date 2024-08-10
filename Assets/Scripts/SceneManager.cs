@@ -364,7 +364,9 @@ public class SceneManager : MonoBehaviour
 
     }
 
-    
+    public void UnpauseTime(){
+        timeIsPaused = false;
+    }
 
     public void pauseTimeSpell(float time){
         if (timeIsPaused){

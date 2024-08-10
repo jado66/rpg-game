@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class TutorialText : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class TutorialText : MonoBehaviour
     public TMP_Text nextButtonText; // Reference to the Next button
 
     public GameObject tutorialGameObject; // Reference to the entire tutorial object
+
+    public UnityEvent onFinish; // UnityEvent that gets invoked when the tutorial finishes
 
     public string[] tutorialTexts = new string[]
     {
@@ -82,6 +85,7 @@ public class TutorialText : MonoBehaviour
         else
         {
             tutorialGameObject.SetActive(false); // Disable the tutorial game object
+            onFinish.Invoke();
         }
     }
 

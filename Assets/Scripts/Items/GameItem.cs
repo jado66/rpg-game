@@ -40,6 +40,7 @@ public abstract class GameItem
         Tool,
         Interactable,
         Consumable,
+        Spell,
         Wearable,
         // Add other uses here
     }

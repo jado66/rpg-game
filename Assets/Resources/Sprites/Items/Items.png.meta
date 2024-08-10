@@ -412,7 +412,7 @@ TextureImporter:
     second: Items_135
   - first:
       213: -1814876521868782674
-    second: Items_136
+    second: Gem
   - first:
       213: -3224567509497340782
     second: Items_137
@@ -575,6 +575,39 @@ TextureImporter:
   - first:
       213: 28515020324067502
     second: Items_190
+  - first:
+      213: 1639714833014005578
+    second: Items_191
+  - first:
+      213: 1814758128664756136
+    second: Items_192
+  - first:
+      213: 1098583446058645073
+    second: Items_193
+  - first:
+      213: 9143473242509385418
+    second: Items_194
+  - first:
+      213: -6306470306001642412
+    second: Items_195
+  - first:
+      213: 8572349494349839169
+    second: Items_196
+  - first:
+      213: -7273641490423319792
+    second: Items_197
+  - first:
+      213: -1957245851641671758
+    second: Items_198
+  - first:
+      213: -2380429478831832492
+    second: Items_199
+  - first:
+      213: -5058336934511865606
+    second: Items_200
+  - first:
+      213: -828586755290806555
+    second: Items_201
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -3516,7 +3549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Items_136
+      name: Gem
       rect:
         serializedVersion: 2
         x: 385
@@ -4066,9 +4099,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 292
-        y: 128
+        y: 192
         width: 24
-        height: 96
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4108,9 +4141,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 128
-        width: 16
-        height: 64
+        y: 160
+        width: 17
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4129,9 +4162,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 69
-        y: 96
-        width: 23
-        height: 96
+        y: 160
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4149,10 +4182,10 @@ TextureImporter:
       name: Items_166
       rect:
         serializedVersion: 2
-        x: 100
-        y: 96
-        width: 24
-        height: 96
+        x: 99
+        y: 160
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4171,9 +4204,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 133
-        y: 128
+        y: 160
         width: 23
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4192,9 +4225,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 165
-        y: 128
+        y: 160
         width: 22
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4276,9 +4309,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 325
-        y: 128
+        y: 160
         width: 20
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4297,9 +4330,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 356
-        y: 128
+        y: 160
         width: 24
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4318,9 +4351,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 389
-        y: 128
+        y: 160
         width: 23
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4339,9 +4372,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 421
-        y: 128
+        y: 160
         width: 22
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4359,10 +4392,10 @@ TextureImporter:
       name: Items_176
       rect:
         serializedVersion: 2
-        x: 451
-        y: 155
+        x: 452
+        y: 160
         width: 26
-        height: 37
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4468,8 +4501,8 @@ TextureImporter:
         y: 129
         width: 30
         height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4829483}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4488,7 +4521,7 @@ TextureImporter:
         x: 453
         y: 128
         width: 24
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4528,9 +4561,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4666,6 +4699,237 @@ TextureImporter:
       bones: []
       spriteID: ea8dd29824e456000800000000000000
       internalID: 28515020324067502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_191
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 128
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f1dbaf3ff61c610800000000000000
+      internalID: 1639714833014005578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_192
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 128
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afb05c27e05f2910800000000000000
+      internalID: 1814758128664756136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_193
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 128
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156337ad2d3fe3f00800000000000000
+      internalID: 1098583446058645073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_194
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace9f09487424ee70800000000000000
+      internalID: 9143473242509385418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_195
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 127
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c19387baaea78a0800000000000000
+      internalID: -6306470306001642412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_196
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bb835627a17f670800000000000000
+      internalID: 8572349494349839169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_197
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 128
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01376c31a95de0b90800000000000000
+      internalID: -7273641490423319792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_198
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 127
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf8ac2944776d4e0800000000000000
+      internalID: -1957245851641671758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_199
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 128
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4524c55400407fed0800000000000000
+      internalID: -2380429478831832492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_200
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 128
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af09e28bb5d2dc9b0800000000000000
+      internalID: -5058336934511865606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_201
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 128
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e64c417cb44084f0800000000000000
+      internalID: -828586755290806555
       vertices: []
       indices: 
       edges: []

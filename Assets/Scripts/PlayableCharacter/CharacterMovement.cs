@@ -33,15 +33,21 @@ public class CharacterMovement : MonoBehaviour
 
     public void FixedUpdate(){
         characterCenter = collider.bounds.center;        
+
+
+
     } 
     public void HandleMovement(Vector2 change, bool isLeftShiftPressed)
     {
         movement = Vector2.zero;
         movement.x = change.x;
         movement.y = change.y;
-        playerFacingDirection.x = change.x;
-        playerFacingDirection.y = change.y;
-        playerFacingDirection.Normalize();
+
+        if (change != Vector2.zero){
+            playerFacingDirection.x = change.x;
+            playerFacingDirection.y = change.y;
+            playerFacingDirection.Normalize();
+        }
 
         bool isSprinting = isLeftShiftPressed && stats.Stamina > 0;
 
@@ -83,7 +89,7 @@ public class CharacterMovement : MonoBehaviour
         float currentSpeed = isSprinting ? stats.RunSpeedMultiplier * stats.Speed : stats.Speed;
         rigidbody.MovePosition(rigidbody.position + movement.normalized * currentSpeed * Time.fixedDeltaTime);
     
-        if (isSprinting){
+        if (isSprinting && movement != Vector2.zero){
             stats.DepleteStamina(stats.StaminaDrainPerSecond * Time.deltaTime);
         }
     }
@@ -99,8 +105,24 @@ public class CharacterMovement : MonoBehaviour
         }
         else{
             animator.SetBool("moving", false);
+            animator.SetBool("running", false);
+
         }
 
+    }
+
+     private void OnDrawGizmos()
+    {
+        if (collider != null)
+        {
+            // Draw character center as a red sphere
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(collider.bounds.center, 0.1f);
+
+            // Draw player facing direction as a green line
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(characterCenter, characterCenter + playerFacingDirection);
+        }
     }
 
     // if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.standby 

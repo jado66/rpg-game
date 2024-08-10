@@ -96,10 +96,10 @@ public class CharacterActions : MonoBehaviour
             return;
         }
 
-        // Debug.Log("Handling buttons");
 
         if (buttonsPressed.Contains(KeyCode.E)) {
             buttonsPressed.Remove(KeyCode.E);
+
             Interact();
         }
 
@@ -166,11 +166,7 @@ public class CharacterActions : MonoBehaviour
         }
     }
 
-    // public IEnumerator HandleInteractionRoutine() {
-    //     Vector2 perpendicularDirection = new Vector2(transform.up.y, -transform.up.x);
-    //     Debug.DrawRay(characterCenter + transform.up * 0.5f, perpendicularDirection * 0.5f, Color.red);
-    //     yield return null; // Assuming you want to yield something for the coroutine
-    // }
+    
 
     public List<KeyCode> GatherButtonsInputs(){
         List<KeyCode> newButtonsPressed = new List<KeyCode>();
@@ -211,6 +207,11 @@ public class CharacterActions : MonoBehaviour
             keyCount[0]++;
         }
 
+        if (Input.GetKey(KeyCode.E) && keyCount[1] == 0) {
+            newButtonsPressed.Add(KeyCode.E);
+            keyCount[1]++;
+        }
+
         if (Input.GetKey(KeyCode.V) && keyCount[1] == 0) {
             newButtonsPressed.Add(KeyCode.V);
             keyCount[1]++;
@@ -237,16 +238,11 @@ public class CharacterActions : MonoBehaviour
 
     private void Interact()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, interactionRange);
-        foreach (Collider2D collider in colliders)
-        {
-            Interactable interactable = collider.GetComponent<Interactable>();
-            if (interactable != null)
-            {
-                interactable.onCharacterInteract(this);
-                break;
-            }
-        }
+        StartCoroutine(worldInteraction.Interact());
+
+       
+        
+                
     }
 
     private void HandleKeyCounts(){

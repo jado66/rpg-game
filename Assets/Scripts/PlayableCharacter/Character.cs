@@ -190,6 +190,17 @@ public class Character : MonoBehaviour
         stats.DepleteStamina(2f);
     }
 
+    public void Plant()
+    {
+        Debug.Log("Character is planting");
+        // if (stats.Stamina < .25f){
+        //     return;
+        // }
+
+        StartCoroutine(worldInteraction.Plant());
+        stats.DepleteStamina(.25f);
+    }
+
     public void IrrigateGround()
     {
         if (stats.Stamina < 2f){

@@ -16,7 +16,7 @@ public class CharacterInventory : MonoBehaviour
     public event System.Action<string> OnInventoryChanged; // Changed to include identifier
 
     [SerializeField]
-    private List<string> debugStartingItems; // List to hold starting item names
+    private List<ItemEntry> startingItems; // List to hold starting item names
 
 
     public void InitializeComponents(Character character)
@@ -31,9 +31,9 @@ public class CharacterInventory : MonoBehaviour
 
     private void PopulateStartingItems()
     {
-        foreach (var itemName in debugStartingItems)
+        foreach (var entry in startingItems)
         {
-            TryAddItem(itemName);
+            TryAddItem(entry.itemName, entry.amount);
         }
     }
 
@@ -80,35 +80,10 @@ public class CharacterInventory : MonoBehaviour
         OnInventoryChanged?.Invoke(inventoryIdentifier);
     }
 
-    // public InventoryItem AddItemOrSwap(int slot, InventoryItem item)
-    // {
-    //     if (items.ContainsKey(slot))
-    //     {
-    //         Debug.Log($"Slot {slot} is occupied. Swapping items.");
-    //         InventoryItem oldItem = items[slot].Clone();
-    //         items[slot] = item.Clone();
-
-    //         // Handle the old item if necessary
-    //         return oldItem;
-
-    //         Debug.Log("Item swapped, invoking OnInventoryChanged.");
-    //         OnInventoryChanged?.Invoke(inventoryIdentifier);
-
-    //     }
-    //     else
-    //     {
-    //         items[slot] = item.Clone();
-    //         return null;
-    //         OnInventoryChanged?.Invoke(inventoryIdentifier);
-
-    //     }
-
-    //     Debug.Log("Item added or swapped, invoking OnInventoryChanged.");
-    // }
-
-    public bool TryAddItem(string itemName)
+    public bool TryAddItem(string itemName, int amount = 1)
     {
         InventoryItem item = InventoryItemDatabase.GetItem(itemName).Clone();
+        item.Amount = amount;
 
         if (item == null)
         {
@@ -273,4 +248,17 @@ public class CharacterInventory : MonoBehaviour
     }
 
     // Other inventory-related methods...
+}
+
+[System.Serializable]
+public class ItemEntry
+{
+    public string itemName;
+    public int amount;
+
+    public ItemEntry(string itemName, int amount)
+    {
+        this.itemName = itemName;
+        this.amount = amount;
+    }
 }
