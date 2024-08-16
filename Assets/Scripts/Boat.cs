@@ -13,7 +13,7 @@ public class Boat : Interactable
         player = GameObject.Find("Character").GetComponent<Player>();
     }
     // Start is called before the first frame update
-    public override void onCharacterInteract(){
+    public override void OnCharacterInteract(){
         player.boat = this;
         player.onBoat = !player.onBoat;
         // On boat

@@ -20,14 +20,14 @@ public class SavedGameManager: MonoBehaviour
     public TooltipUI tooltip;
     void Start(){
         // Load up saved gamesDatabase
-        savedGames = loadSavedGames();
+        // savedGames = loadSavedGames();
 
-        foreach (var gameData in savedGames)
-        {
-            SavedGameButton newButton = Instantiate(savedGameButton,Vector3.zero,Quaternion.identity,savedGamesGrid.transform).GetComponent<SavedGameButton>();
-            newButton.loadGameData(gameData);
-            newButton.tooltip = tooltip;
-        }
+        // foreach (var gameData in savedGames)
+        // {
+        //     SavedGameButton newButton = Instantiate(savedGameButton,Vector3.zero,Quaternion.identity,savedGamesGrid.transform).GetComponent<SavedGameButton>();
+        //     newButton.loadGameData(gameData);
+        //     newButton.tooltip = tooltip;
+        // }
     }
 
     GameData[] loadSavedGames(){

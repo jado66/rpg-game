@@ -112,8 +112,8 @@ GameObject:
   - component: {fileID: 8267732297196556184}
   - component: {fileID: 8922142196050683009}
   - component: {fileID: 6154550905417815136}
-  - component: {fileID: 2660540374773158820}
   - component: {fileID: 7530606794751361215}
+  - component: {fileID: 1364322782426393475}
   m_Layer: 11
   m_Name: Chicken
   m_TagString: Untagged
@@ -215,7 +215,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 4854726702802851968}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 25ce9bd88b615284eb5db79c7ae990ca, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -245,32 +245,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 25ce9bd88b615284eb5db79c7ae990ca, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2660540374773158820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4854726702802851968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9900135df40782248ae5c52a1d08874f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 0}
-  startingItems:
-  - Meat
-  - Feather
-  - Egg
-  startingAmounts: 010000000a00000003000000
 --- !u!114 &7530606794751361215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +269,7 @@ MonoBehaviour:
   alive: 1
   healthbarObject: {fileID: 9178726915049565905}
   healthbar: {fileID: 2271935261646401556}
-  deathVanishDelay: 15
+  deathVanishDelay: 30
   health: 15
   maxHealth: 15
   canSwim: 0
@@ -304,6 +286,31 @@ MonoBehaviour:
   babyChick: {fileID: 4854726702802851968, guid: 1665fd03091b4ad4a832f3e2289a76ed,
     type: 3}
   makeABabyCount: 25
+--- !u!114 &1364322782426393475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854726702802851968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c72ad7e0c653ae248960bf389b05ca1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 3
+  inventoryIdentifier: ckn1
+  isDebug: 0
+  startingItems:
+  - itemName: Meat
+    amount: 1
+  - itemName: Feather
+    amount: 10
+  - itemName: Egg
+    amount: 2
+  ExternalInventoryGui: {fileID: 0}
+  ExternalInventoryPanel: {fileID: 0}
+  inventoryUI: {fileID: 0}
 --- !u!1 &4956906246309008479
 GameObject:
   m_ObjectHideFlags: 0

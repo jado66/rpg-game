@@ -32,7 +32,7 @@ public class BluePrintUI: MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         
         icon = GetComponent<Image>();
         
-        this.bluePrint = ItemDatabase.bluePrintDatabase[key];
+        this.bluePrint = InventoryItemDatabase.bluePrintDatabase[key];
         // Debug.Log("Updating blueprint to"+(this.bluePrint== null?" null":this.bluePrint.title));
         if (this.bluePrint != null)
         {
@@ -43,6 +43,7 @@ public class BluePrintUI: MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         }
         else
         {
+            Debug.Log($"could not find item {key}");
             icon.color = Color.clear;
             
         }
@@ -87,7 +88,7 @@ public class BluePrintUI: MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
                 Debug.Log("Fixing item"+spriteName);
             
             
-                this.bluePrint = ItemDatabase.bluePrintDatabase[spriteName];
+                this.bluePrint = InventoryItemDatabase.bluePrintDatabase[spriteName];
                 
                 
                 // item.amount = (amount.text != "1" ?int.Parse(amount.text):1);
@@ -132,7 +133,7 @@ public class BluePrintUI: MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
             buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         }
         transform.parent.GetComponent<Image>().color = new Color(.549f,.549f,.549f);   
-        GameObject.Find("Character").GetComponent<Player>().activeBlueprint = this.bluePrint;
+        GameObject.Find("Player1").GetComponent<CharacterBuilding>().activeBlueprint = this.bluePrint;
         
         }
 

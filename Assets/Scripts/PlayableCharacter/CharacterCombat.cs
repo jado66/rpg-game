@@ -1,13 +1,12 @@
 using UnityEngine;
-using System.Collections.Generic;
+using System.Collections;
 
 public class CharacterCombat : MonoBehaviour
 {
-    [SerializeField] private float attackRange = 1.5f;
-    [SerializeField] private LayerMask enemyLayer;
+    private Animator animator;
 
     private Character character;
-    private CharacterInventory inventory;
+    private CharacterMovement movement;
 
     public GameObject upHitBox;
     public GameObject downHitBox;
@@ -16,31 +15,48 @@ public class CharacterCombat : MonoBehaviour
 
     public GameObject leftHitBox;
 
+    public float recoilForce = .5f; // This needs to be a property of the weapon
+    
+
+    public int damageDealt = 5;
+
+    public float knockTime = .01f;
+
     public void InitializeComponents(Character characterRef){
         character = characterRef;
-        inventory = character.GetInventory();
+        movement = character.GetMovement();
+        animator = character.GetAnimator();
+
     }
 
-    public void HandleCombat()
+    public IEnumerator Attack()
     {
-        if (Input.GetMouseButtonDown(0)) // Left mouse button
-        {
-            Attack();
-        }
-    }
+        animator.SetTrigger("attack");
 
-    private void Attack()
-    {
-        GameItem equippedItem = inventory.GetEquippedItem();
-        if (equippedItem != null && equippedItem is IWeapon weapon)
-        {
-            weapon.Use();
-            
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<Enemy>()?.TakeDamage(weapon.Damage);
-            }
+        // Deactivate all hitboxes first
+        upHitBox.SetActive(false);
+        rightHitBox.SetActive(false);
+        downHitBox.SetActive(false);
+        leftHitBox.SetActive(false);
+
+        // Activate the appropriate hitbox based on movement.playerFacingDirection
+        if (movement.playerFacingDirection.x > 0) {
+            rightHitBox.SetActive(true);
+        } else if (movement.playerFacingDirection.x < 0) {
+            leftHitBox.SetActive(true);
+        } else if (movement.playerFacingDirection.y > 0) {
+            upHitBox.SetActive(true);
+        } else if (movement.playerFacingDirection.y < 0) {
+            downHitBox.SetActive(true);
         }
+        yield return new WaitForSeconds(.5f); // Adjust this value to your needs
+
+        // Deactivate all hitboxes after attack
+        upHitBox.SetActive(false);
+        rightHitBox.SetActive(false);
+        downHitBox.SetActive(false);
+        leftHitBox.SetActive(false);
+
+        yield return null;
     }
 }

@@ -233,11 +233,11 @@ public class Player : MonoBehaviour
         
         tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
-        bool inventoryActiveSelf = sceneManager.playerUI.inventoryGui.activeSelf;
-        sceneManager.playerUI.inventoryGui.SetActive(true);
+        // bool inventoryActiveSelf = sceneManager.playerUI.inventoryGui.activeSelf;
+        // sceneManager.playerUI.inventoryGui.SetActive(true);
         inventory.inventoryUI = GameObject.Find("InventoryPanel").GetComponent<UIInventory>();
         inventory.hotItemsUI = GameObject.Find("HotItemsPanel").GetComponent<UIInventory>();
-        sceneManager.playerUI.inventoryGui.SetActive(inventoryActiveSelf);
+        // sceneManager.playerUI.inventoryGui.SetActive(inventoryActiveSelf);
 
 
         int i = 0;
@@ -336,7 +336,7 @@ public class Player : MonoBehaviour
 
         if (inventory.items.Count == 0){
             if (!inventoryEmpty ){
-                Debug.Log("Fixed inventory at "+sceneManager.hour.ToString());
+                Debug.Log("Fixed inventory at "+sceneManager.normalizedHour.ToString());
                 // fix inventory and update amounts
                 foreach(var uiItem in inventory.inventoryUI.uiItems){
                     uiItem.TryFixItem();
@@ -468,7 +468,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.B) && keyCount[1] == 0){
             buttonsPressed.Add(KeyCode.B);
-            sceneManager.ToggleBuildMenu();
+            // sceneManager.ToggleBuildMenu();
             keyCount[1]+=1;
         }
         if (Input.GetKey(KeyCode.P) && keyCount[1] == 0){ 
@@ -675,7 +675,7 @@ public class Player : MonoBehaviour
                     break;
                 case KeyCode.E:
                     if (onBoat){
-                        boat.onCharacterInteract();
+                        boat.OnCharacterInteract();
                     }
                     else
                         StartCoroutine(interact("interact"));
@@ -796,28 +796,28 @@ public class Player : MonoBehaviour
                 case "Carrot Seed":
                     if (checkIfCanPlant()){
                         StartCoroutine(interact("plant"));
-                        StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"carrot"));
+                        // StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"carrot"));
                         inventory.RemoveItem(item.title);
                     }
                     break;
                 case "Tomato Seed":
                     if (checkIfCanPlant()){
                         StartCoroutine(interact("plant"));
-                        StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"tomato"));
+                        // StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"tomato"));
                         inventory.RemoveItem(item.title);
                     }
                     break;
                 case "Bush Sapling":
                     if (checkIfCanPlant()){
                     StartCoroutine(interact("plant"));
-                    StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"bushSapling"));
+                    // StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"bushSapling"));
                     inventory.RemoveItem(item.title);
                     }
                     break;
                 case "Tree Sapling":
                     if (checkIfCanPlant()){
                     StartCoroutine(interact("plant"));
-                    StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"treeSapling"));
+                    // StartCoroutine(sceneManager.addPlantTile(buildSquareCellLocation,"treeSapling"));
                     inventory.RemoveItem(item.title);
                     }
                     break;
@@ -1052,7 +1052,6 @@ public class Player : MonoBehaviour
     yield return null; //Wait a frame
     yield return new WaitForSeconds(.2f);
     currentState = PlayerState.walk;
-    yield return new WaitForSeconds(.5f); // Adjust this value to your needs
 
     // Deactivate all hitboxes after attack
     upHitBox.SetActive(false);
@@ -1074,7 +1073,7 @@ public class Player : MonoBehaviour
         // Debug.Log("interact");
         //Start with four playerFacingDirections
         if (objectBeingCarried != null){
-            objectBeingCarried.onCharacterInteract();
+            objectBeingCarried.OnCharacterInteract();
             yield break;  // This signals the end of the IEnumerator
         }
         
@@ -1095,7 +1094,7 @@ public class Player : MonoBehaviour
                     Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
                     var interactables = interactableHit.collider.gameObject.GetComponents<Interactable>();
                     foreach (var interactable in interactables) {
-                        interactable.onCharacterInteract();
+                        interactable.OnCharacterInteract();
                     }
                 }
                 catch {
@@ -1159,7 +1158,7 @@ public class Player : MonoBehaviour
                     // tilePalette.choppable.GetComponent<TilemapCollider2D>().enabled = true;
                     inventory.GiveItem("Wood");
                 // }
-                // interactableHit.collider.gameObject.GetComponent<Interactable>().onCharacterInteract();
+                // interactableHit.collider.gameObject.GetComponent<Interactable>().OnCharacterInteract();
                 // Debug.DrawRay(playerCenter+playerFacingDirection*.75f-perpendicularDirection*.3f,perpendicularDirection*.6f,Color.red,1f);
             }
             else{
@@ -1270,7 +1269,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            Instantiate(tilePalette.sack,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            // Instantiate(tilePalette.sack,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
                             Debug.Log("Built Sack");
                         }
                         else
@@ -1288,9 +1287,9 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            GameObject sign = Instantiate(tilePalette.sign,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
-                            sign.GetComponent<Sign>().customizable = true;
-                            Debug.Log("Built Sign");
+                            // GameObject sign = Instantiate(tilePalette.sign,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            // sign.GetComponent<Sign>().customizable = true;
+                            // Debug.Log("Built Sign");
                         }
                         else
                         {
@@ -1307,7 +1306,7 @@ public class Player : MonoBehaviour
                         hasAllItems = inventory.checkIfItemsExistsAndRemove(keys);
                         if (hasAllItems)
                         {
-                            Instantiate(tilePalette.chest,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                            // Instantiate(tilePalette.chest,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
                             Debug.Log("Built Chest");
                         }
                         else

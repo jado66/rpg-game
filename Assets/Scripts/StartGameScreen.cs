@@ -126,23 +126,23 @@ public class StartGameScreen : MonoBehaviour
 
 
     public void loadSavedGameNames(){
-        string path = Application.persistentDataPath + string.Format("/savedGames.fun");
-        if (File.Exists(path)){
-            // Debug.Log("Load successful");
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+        // string path = Application.persistentDataPath + string.Format("/savedGames.fun");
+        // if (File.Exists(path)){
+        //     // Debug.Log("Load successful");
+        //     BinaryFormatter formatter = new BinaryFormatter();
+        //     FileStream stream = new FileStream(path, FileMode.Open);
 
-            // SavedGamesDatabase savedGameDatabase = formatter.Deserialize(stream) as SavedGamesDatabase;
-            // stream.Close();
+        //     // SavedGamesDatabase savedGameDatabase = formatter.Deserialize(stream) as SavedGamesDatabase;
+        //     // stream.Close();
 
-            // savedGameNames = savedGameDatabase.savedGameNames;
-            // numberOfSavedGames = savedGameDatabase.numberOfSavedGames;
+        //     // savedGameNames = savedGameDatabase.savedGameNames;
+        //     // numberOfSavedGames = savedGameDatabase.numberOfSavedGames;
 
             
-        }
-        else{
-            Debug.Log("File does not exist");
-        }
+        // }
+        // else{
+        //     Debug.Log("File does not exist");
+        // }
     }
 
     public void loadTutorial(){

@@ -18,12 +18,12 @@ public class Sign : Interactable
     public string message = "Hello world";
 
     void Start(){
-        player = GameObject.Find("Character").GetComponent<Player>();
+        player = GameObject.Find("player1").GetComponent<Player>();
         playerUi = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
         
     }
-    public override void onCharacterInteract(){
-        base.onCharacterInteract();
+    public override void OnCharacterInteract(){
+        base.OnCharacterInteract();
         
         Debug.Log("Interacted with sign");
         if (playerUi.customSignBox.activeSelf && playerUi.customSignBox.GetComponent<InputField>().isFocused){

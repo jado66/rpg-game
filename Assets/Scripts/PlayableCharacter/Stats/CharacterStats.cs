@@ -105,6 +105,11 @@ public class CharacterStats : MonoBehaviour
     {
         Mana += amount; // This will use the property setter, including clamping
     }
+
+    public void UseMana(float amount)
+    {
+        Mana -= amount; // This will use the property setter, including clamping
+    }
     
 
     public float MaxMana

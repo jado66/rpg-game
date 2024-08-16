@@ -23,7 +23,7 @@ public class CharacterActions : MonoBehaviour
 
     static Queue<CharacterMoveData> characterMoves = new Queue<CharacterMoveData>();
 
-    private CharacterBuilding building;
+    public CharacterBuilding building;
     private CharacterWorldInteraction worldInteraction;
 
     private float[] keyCount = new float[10];
@@ -100,7 +100,13 @@ public class CharacterActions : MonoBehaviour
         if (buttonsPressed.Contains(KeyCode.E)) {
             buttonsPressed.Remove(KeyCode.E);
 
-            Interact();
+            if (building.isBuilding){
+                Debug.Log("Try build from Chr actions");
+                TryBuild();
+            }
+            else{
+                Interact();
+            }
         }
 
         var hotbarKeys = new Dictionary<KeyCode, int> {
@@ -236,13 +242,12 @@ public class CharacterActions : MonoBehaviour
         return newButtonsPressed;
     }
 
+    private void TryBuild(){
+        StartCoroutine(building.TryBuild());         
+    }
     private void Interact()
     {
-        StartCoroutine(worldInteraction.Interact());
-
-       
-        
-                
+        StartCoroutine(worldInteraction.Interact());         
     }
 
     private void HandleKeyCounts(){

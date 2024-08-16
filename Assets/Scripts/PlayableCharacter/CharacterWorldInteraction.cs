@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using PlantSystem; 
 
 // This class deal with world manipulation and building
 public class CharacterWorldInteraction: MonoBehaviour
 {
-    [SerializeField] private bool isBuilding = false;
-
     private bool canModifyWorldAtBuildSquare = false;
 
     private CharacterStats stats;
@@ -74,7 +73,7 @@ public class CharacterWorldInteraction: MonoBehaviour
                 Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
                 var interactables = interactableHit.collider.gameObject.GetComponents<Interactable>();
                 foreach (var interactable in interactables) {
-                    interactable.onCharacterInteract();
+                    interactable.OnCharacterInteract();
                 }
             }
             catch {
@@ -112,6 +111,7 @@ public class CharacterWorldInteraction: MonoBehaviour
                 tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.gateOpen);
             else if (tilePalette.choppable.GetTile(buildSquareCellLocation)==tilePalette.appleTree){
                 if (stats.Stamina < .5f){
+                    character.ToastStaminaMessage();
                     yield return null;
                 }
                 tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.appleTreeEmpty);
@@ -140,6 +140,7 @@ public class CharacterWorldInteraction: MonoBehaviour
     public void PickUpCrop(string itemName, Vector3Int location){
 
         if (stats.Stamina < .5f){
+            character.ToastStaminaMessage();
             return;
         }
 
@@ -148,8 +149,12 @@ public class CharacterWorldInteraction: MonoBehaviour
             inventory.TryAddItem($"{itemName} Seed");
         }
 
-        inventory.TryAddItem(itemName);
-        tilePalette.ground.SetTile(location,tilePalette.dirt);
+        bool success = inventory.TryAddItem(itemName);
+        
+        if (success){
+           PlantTileManager.Instance.HarvestPlant(buildSquareCellLocation);
+        }
+
         stats.DepleteStamina(.5f);
     
     }
@@ -232,7 +237,12 @@ public class CharacterWorldInteraction: MonoBehaviour
         {
             tilePalette.minable.SetTile(buildSquareCellLocation, null);
             inventory.TryAddItem(minableItemMap[minableTile]);
-            inventory.TryAddItem("Gem");
+            
+            float randomChance = Random.value; // Returns a value between 0.0 and 1.0
+            if (randomChance < 0.01f) // 1% chance for Green Mushroom
+            {
+                inventory.TryAddItem("Gem");
+            }
 
         }
         else if (groundTile == tilePalette.cobbleStonePath)
@@ -269,19 +279,35 @@ public class CharacterWorldInteraction: MonoBehaviour
             tile == tilePalette.ploughedDirt;
     }
 
-    public IEnumerator Plant()
+    public IEnumerator Plant(string plantName, System.Action<bool> callback)
     {
+        buildSquareCellLocation = grid.WorldToCell(movement.characterCenter + movement.playerFacingDirection);
+        Debug.Log($"Attempting to plant {plantName}");
 
-        buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
-        Debug.Log("Attempting to plant");
-
-        if (tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.dirt){
-            Debug.Log("Planting seeds");
-            tilePalette.ground.SetTile(buildSquareCellLocation,tilePalette.ploughedDirt);
+        if (tilePalette.ground.GetTile(buildSquareCellLocation) == tilePalette.dirt)
+        {
+            Debug.Log("Suitable location for planting");
+            bool planted = PlantTileManager.Instance.TryPlantSeed(buildSquareCellLocation, plantName);
+            
+            if (planted)
+            {
+                Debug.Log($"Successfully planted {plantName}");
+                callback(true);
+            }
+            else
+            {
+                Debug.Log($"Failed to plant {plantName}. Location might be occupied.");
+                callback(false);
+            }
         }
+        else
+        {
+            Debug.Log("Cannot plant here. Need ploughable dirt.");
+            callback(false);
+        }
+
         yield return null;
     }
-
     public IEnumerator IrrigateGround()
     {            
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);

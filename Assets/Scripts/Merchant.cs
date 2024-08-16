@@ -51,16 +51,16 @@ public class Merchant : NPC
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
     }
 
-    public override void onCharacterInteract(){
+    public override void OnCharacterInteract(){
         // Open dialog box
         
-        storeOpen = !storeOpen;
-        if (storeOpen)
-           sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = this;
-        else 
-            sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = null;
+        // storeOpen = !storeOpen;
+        // if (storeOpen)
+        //    sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = this;
+        // else 
+        //     sceneManager.playerUI.buyNSellMenuPanel.GetComponent<StoreUiInventory>().merchant = null;
 
-        sceneManager.loadAndUnloadStoreInventory(inventory,storeOpen);
+        // sceneManager.loadAndUnloadStoreInventory(inventory,storeOpen);
         
     }
     // Types off NPC's

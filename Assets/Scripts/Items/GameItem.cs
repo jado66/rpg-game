@@ -39,6 +39,7 @@ public abstract class GameItem
         RegularItem,
         Tool,
         Interactable,
+        Weapon,
         Consumable,
         Spell,
         Wearable,

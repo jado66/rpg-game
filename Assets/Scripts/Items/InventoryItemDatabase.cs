@@ -71,6 +71,9 @@ public static class InventoryItemDatabase
             ManaPotion.LargePotion(),
             ManaPotion.FullPotion(),
 
+            // Torches
+            Torch.SmallTorch(),
+
             // Plants
             GardenPlant.Carrot(),
             GardenPlant.Tomato(),
@@ -80,21 +83,34 @@ public static class InventoryItemDatabase
             GardenPlant.Apple(),
             GardenPlant.UnripeApple(),
             GardenPlant.UnripeApple(),
-            new AstralProjectionScroll(),
-            MysteriousPotion.MysteriousPotion1(),
+            new MysteriousPotion(),    // Creating instance of MysteriousPotion
+            new NightSpell(),          // Creating instance of NightSpell
+            new DaySpell(),
+            new GrowthSpell(),
+            new IlluminationSpell(),
+
+
+            // new AstralProjectionScroll(),
 
             // new ConsumableItem("26", "Mana Potion L1", "A what?", 5, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Magic Elixir"),
             // new ConsumableItem("27", "Stamina Potion L1", "Juicing isn't good for you.", 20, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Stamina Booster"),
-            // new ConsumableItem("28", "Meat", "Yum yum", 10, consumable, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
-            // new ConsumableItem("29", "Egg", "Yum yum", 525, consumable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
-            new RegularItem("30", "Feather", "Really light", 999, regularItem, new Dictionary<string, int>(), 1, new List<string>(), new List<string>()),
+            // new ConsumableItem("28", "Meat", "Yum yum", 10, consumable, new Dictionary<string, int>(), 15, new List<string>(), new List<string>(), 5),
+            // new ConsumableItem("29", "Egg", "Yum yum", 525, consumable, new Dictionary<string, int>(), 5, new List<string>(), new List<string>(), 10),
+            Ingredient.Egg(),
+            Ingredient.Meat(),
+            Ingredient.Feather(),
+            FertileEgg.ChickenEgg(),
+
+            // new RegularItem("30", "Feather", "Really light", 999, regularItem, new Dictionary<string, int>(), 1, new List<string>(), new List<string>(), 99),
             new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>(), 1),
             new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
             new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
             new ShovelItem("34", "Shovel", "For digging gardens", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
             new ToolItem("astral-scroll", "Astral Projection Scroll", "Used to temporarily separate your spirit from body.", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("35", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
-            new ToolItem("38", "Sword", "A sword", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
+            
+            // Weapons
+            Weapon.Sword(),
             new ToolItem("39", "Shield", "Block attacks", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
             new ToolItem("40", "Fishpole", "Catches fish", 1, tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
             new WearableItem("41", "Iron Helmet", "Protects your head", 1, wearable, new Dictionary<string, int>(), 650, new List<string>(), new List<string>()),
@@ -116,13 +132,15 @@ public static class InventoryItemDatabase
             { "Sack", new BluePrint("Sack", "For potatoes", new Dictionary<string, int> { { "Wood", 1 } }) },
             { "Chest", new BluePrint("Chest", "Yes indeed", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 2 } }) },
             { "Combat Dummy", new BluePrint("Combat Dummy", "Violence is okay.", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
-            { "Torch x 3", new BluePrint("Torch x 3", "Helps with the dark.", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
-            { "Single Bed", new BluePrint("Single Bed", "I'm so lonely.", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
-            { "Double Bed", new BluePrint("Double Bed", "I'm so happy.", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
+            { "Torch x 3", new BluePrint("Torch x 3", "Helps with the dark.", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 1 } }) },
+            { "Tan Single Bed", new BluePrint("Tan Single Bed", "I'm so lonely.", new Dictionary<string, int> { { "Wood", 8 } }) },
+            { "Tan Double Bed", new BluePrint("Tan Double Bed", "I'm so happy.", new Dictionary<string, int> { { "Wood", 15 } }) },
+            { "Lavender Single Bed", new BluePrint("Lavender Single Bed", "I'm so lonely.", new Dictionary<string, int> { { "Wood", 8 } }) },
+            { "Lavender Double Bed", new BluePrint("Lavender Double Bed", "I'm so happy.", new Dictionary<string, int> { { "Wood", 15 } }) },
             { "Rug", new BluePrint("Rug", "So soft", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
-            { "Chair", new BluePrint("Chair", "Sit on me please", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
+            { "Chair", new BluePrint("Chair", "Sit on me please", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 1 } }) },
             { "Table", new BluePrint("Table", "Sit on me please", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) },
-            { "Decorated Table", new BluePrint("Decorated Table", "Sit on me please", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 3 } }) }
+            { "Covered Table", new BluePrint("Covered Table", "Sit on me please", new Dictionary<string, int> { { "Wood", 3 }, { "Iron Ore", 1 } }) }
         };
     }
 

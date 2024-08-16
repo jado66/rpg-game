@@ -189,7 +189,7 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         // foreach( var buildSlot in buildSlots){
             // buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         // }231, 144, 105
-        Debug.Log("TEST");
+        // Debug.Log("TEST");
         ToggleSelected();   
 
         // GameObject.Find("Character").GetComponent<Player>().activeBlueprint = this.bluePrint;E79069

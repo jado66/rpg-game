@@ -4,23 +4,25 @@ using UnityEngine;
 
 public class Hitbox : MonoBehaviour
 {
-     public Player player;
+    public CharacterCombat character;
     
     void Start()
     {
-        if (player == null)
+        if (character == null)
         {
-            player = GetComponentInParent<Player>();
-            if (player == null)
+            Transform parentOfParent = transform.parent.parent;
+
+            character = parentOfParent.GetComponent<CharacterCombat>();
+            if (character == null)
             {
-                Debug.LogError("PlayerHitbox: Player component not found!");
+                Debug.LogError("CharacterHitbox: Character component not found!");
             }
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"PlayerHitbox: Collision detected with {collision.gameObject.name}");
+        Debug.Log($"CharacterHitbox: Collision detected with {collision.gameObject.name}");
 
         if (collision.TryGetComponent(out LivingEntity livingEntity))
         {
@@ -39,30 +41,30 @@ public class Hitbox : MonoBehaviour
     private void ApplyKnockbackToEnemy(GameObject target, LivingEntity livingEntity)
     {
         Vector2 direction = (target.transform.position - transform.position).normalized;
-        float force = player.recoilForce;
+        float force = character.recoilForce;
 
         if (target.TryGetComponent(out Rigidbody2D rb))
         {
             rb.velocity = Vector2.zero;
             rb.AddForce(direction * force, ForceMode2D.Impulse);
             StartCoroutine(KnockbackResetRoutine(rb));
-            Debug.Log($"PlayerHitbox: Applied force {direction * force} to {target.name}");
+            Debug.Log($"CharacterHitbox: Applied force {direction * force} to {target.name}");
         }
 
-        livingEntity.TakeDamage(player.damageDealt);
-        Debug.Log($"PlayerHitbox: Dealt {player.damageDealt} damage to {target.name}");
+        livingEntity.TakeDamage(character.damageDealt);
+        Debug.Log($"CharacterHitbox: Dealt {character.damageDealt} damage to {target.name}");
     }
 
     private void ApplyKnockbackToDummy(GameObject dummy)
     {
-        Debug.Log("hit from player");
+        Debug.Log("hit from character");
         if (dummy.TryGetComponent(out CombatDummy combatDummy))
         {
-            combatDummy.health -= player.damageDealt;
+            combatDummy.health -= character.damageDealt;
         }
 
-        Vector2 direction = (dummy.transform.position - player.transform.position).normalized;
-        float force = player.recoilForce;
+        Vector2 direction = (dummy.transform.position - character.transform.position).normalized;
+        float force = character.recoilForce;
 
         if (dummy.TryGetComponent(out Rigidbody2D rb))
         {
@@ -76,7 +78,7 @@ public class Hitbox : MonoBehaviour
     {
         if (rb != null)
         {
-            yield return new WaitForSeconds(player.knockTime);
+            yield return new WaitForSeconds(character.knockTime);
             
             // Gradually reduce velocity instead of setting it to zero instantly
             float reductionTime = 0.5f; // Time over which to reduce velocity

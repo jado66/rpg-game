@@ -24,9 +24,10 @@ public class EnemyHitbox : MonoBehaviour
     {
         Debug.Log($"EnemyHitbox: Collision detected with {collision.gameObject.name}");
 
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Character"))
         {
             ApplyKnockbackToPlayer(collision.gameObject);
+            collision.GetComponent<CharacterStats>().TakeDamage(2f);
         }
     }
 

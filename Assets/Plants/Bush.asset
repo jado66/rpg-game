@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Bush
+  m_EditorClassIdentifier: Assembly-CSharp:PlantSystem:PlantType
+  data:
+    plantName: Bush
+    growthStages:
+    - stageName: seed
+      daysToNextStage: 3
+      tile: {fileID: 11400000, guid: e8a2be71ba879a74eb356aae59937f3a, type: 2}
+    - stageName: sapling
+      daysToNextStage: 4
+      tile: {fileID: 11400000, guid: 6f44f04d408c59c4e959a1a2c55df87a, type: 2}
+    - stageName: mature
+      daysToNextStage: 0
+      tile: {fileID: 11400000, guid: 6f44f04d408c59c4e959a1a2c55df87a, type: 2}
+    isTree: 1

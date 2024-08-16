@@ -22,7 +22,7 @@ public class Animal : LivingEntity
     // public static cat Instance { get { return _instance; } }
     GameObject playerObject;
 
-    Player player;
+    Character player;
 
     public bool afraidOfPlayer;
     public float sightRange = 5;
@@ -65,7 +65,7 @@ public class Animal : LivingEntity
         }
 
         chest = gameObject.AddComponent<Chest>();
-        chest.inventory = gameObject.GetComponent<Inventory>();
+        chest.inventory = gameObject.GetComponent<ExternalInventory>();
         chest.isLocked = true;
 
 
@@ -91,8 +91,8 @@ public class Animal : LivingEntity
         tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         tempSightRange = sightRange;
         findNewWayPoint();
-        playerObject = GameObject.Find("Character");
-        player = playerObject.GetComponent<Player>();
+        playerObject = GameObject.Find("Player1");
+        player = playerObject.GetComponent<Character>();
 
         animator = gameObject.GetComponent<Animator>();
         animator.SetFloat("moveX",startingPosition.x);
@@ -108,7 +108,7 @@ public class Animal : LivingEntity
             kill();
 
         if (playerObject == null)
-            playerObject = GameObject.FindWithTag("Player");
+            playerObject = GameObject.FindWithTag("Character");
         if (tilePalette == null)
             tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         Vector3 position = transform.position;
@@ -172,30 +172,30 @@ public class Animal : LivingEntity
         chest.isLocked = false;
         base.kill();
     }
-    public override void onCharacterInteract(){
-        // base.onCharacterInteract();
+    public override void OnCharacterInteract(){
+        // base.OnCharacterInteract();
 
-        if (!alive){
-            Debug.Log("Interact with animal remains");
-            // chest.onCharacterInteract();
-            return;
-        }
+        // if (!alive){
+        //     Debug.Log("Interact with animal remains");
+        //     chest.OnCharacterInteract();
+        //     return;
+        // }
 
         Debug.Log("Interact with animal");
-        if (canBeCarriedByPlayer && !pickedUp){
-            player.SetObjectBeingCarried(this);
-            pickedUp = true;
-            GetComponent<BoxCollider2D>().enabled = false;
-            animator.SetFloat("moveX",0);
-            animator.SetFloat("moveY",0);
-            animator.SetBool("moving",false);
-        }
-        else{
-            player.SetObjectBeingCarried(null);
-            pickedUp = false;
-            GetComponent<BoxCollider2D>().enabled = true;
-            animator.SetBool("moving",true);
-        }
+        // if (canBeCarriedByPlayer && !pickedUp){
+        //     // player.SetObjectBeingCarried(this);
+        //     pickedUp = true;
+        //     GetComponent<BoxCollider2D>().enabled = false;
+        //     animator.SetFloat("moveX",0);
+        //     animator.SetFloat("moveY",0);
+        //     animator.SetBool("moving",false);
+        // }
+        // else{
+        //     player.SetObjectBeingCarried(null);
+        //     pickedUp = false;
+        //     GetComponent<BoxCollider2D>().enabled = true;
+        //     animator.SetBool("moving",true);
+        // }
     }
 
     private void findNewWayPoint(){ 

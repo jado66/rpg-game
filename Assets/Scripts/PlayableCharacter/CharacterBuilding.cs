@@ -1,19 +1,23 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
 public class CharacterBuilding : MonoBehaviour
 {
-    [SerializeField] private bool isBuilding = false;
+    [SerializeField] public bool isBuilding = false;
 
     public GameObject buildSquare;
     public GameObject noBuildSquare;
+
 
     private CharacterMovement movement;
     private Character character;
     private CharacterInventory inventory;
     private TilePalette tilePalette;
+
+    private BuildablePrefabs prefabs;
 
     // World variables 
     private Vector3Int buildSquareCellLocation;
@@ -38,6 +42,8 @@ public class CharacterBuilding : MonoBehaviour
         sceneManager = character.GetSceneManager();
 
         tilePalette = FindObjectOfType<TilePalette>();
+        prefabs = FindObjectOfType<BuildablePrefabs>();
+
         interactLayer = LayerMask.NameToLayer("Interactable");
         choppableLayer = LayerMask.NameToLayer("Choppable");
 
@@ -58,16 +64,16 @@ public class CharacterBuilding : MonoBehaviour
         noBuildSquare.transform.position = squareWorldPos;
     }
     
-    public void ToggleBuilding(bool callFromSceneManager = false)
-    {
+    public void ToggleBuilding()
+    {   
         isBuilding = !isBuilding;
-
-        if (!callFromSceneManager){
-            sceneManager.ToggleBuildMenu();
-        }
+        sceneManager.ToggleBuildMenu(isBuilding);
 
         if (isBuilding){
             UpdateBuildSquareVisibility();
+        }
+        else{
+            HideBuildSquare();
         }
     }
 
@@ -92,7 +98,7 @@ public class CharacterBuilding : MonoBehaviour
         }
     }
 
-    private IEnumerator Build()
+    public IEnumerator TryBuild()
     {
         Debug.Log("Initiating build process...");
 
@@ -104,8 +110,6 @@ public class CharacterBuilding : MonoBehaviour
         }
 
         HandleChoppableDetection();
-
-        Debug.Log($"Trying to build a {activeBlueprint.title}");
 
         string[] requiredItemTitles = new string[activeBlueprint.price.Count];
         int[] requiredItemAmounts = new int[activeBlueprint.price.Count];
@@ -121,6 +125,7 @@ public class CharacterBuilding : MonoBehaviour
         // Call the CheckIfItemsExistAndRemove method with the required parameters
         if (!inventory.CheckIfItemsExistAndRemove(requiredItemTitles, requiredItemAmounts))
         {
+            ToastNotification.Instance.Toast("need-items-building", "You need more resources.");
             Debug.LogWarning($"Not enough items to build {activeBlueprint.title}");
             yield break;
         }
@@ -154,7 +159,7 @@ public class CharacterBuilding : MonoBehaviour
     {
         TileBase currentTile = tilePalette.choppable.GetTile(buildSquareCellLocation);
         bool isTileBuildable = CheckIfSpaceIsClearForBuilding();
-
+ 
         switch (activeBlueprint.title)
         {
             case "Fence":
@@ -166,10 +171,22 @@ public class CharacterBuilding : MonoBehaviour
             case "Sack":
             case "Sign":
             case "Chest":
+            case "Tan Single Bed": //TODO remove duplicate code
+            case "Tan Double Bed": //TODO remove duplicate code
+            case "Lavender Single Bed": //TODO remove duplicate code
+            case "Lavender Double Bed": //TODO remove duplicate code
+            case "Table": //TODO remove duplicate code
+            case "Covered Table": //TODO remove duplicate code
                 BuildObject(activeBlueprint.title);
+                break;
+            case "Torch":
+                BuildItem(activeBlueprint.title);
                 break;
             case "Cobblestone Path":
                 BuildPath();
+                break;
+            case "Torch x 3":
+                BuildItem(activeBlueprint.title);
                 break;
             default:
                 Debug.LogError($"Unknown blueprint title: {activeBlueprint.title}");
@@ -188,7 +205,7 @@ public class CharacterBuilding : MonoBehaviour
     {
         if (isTileBuildable)
         {
-            BuildTile("Fence", tilePalette.fence);
+            BuildChoppableTile("Fence", tilePalette.fence);
         }
         else if (currentTile == tilePalette.gateOpen || currentTile == tilePalette.gateClosed)
         {
@@ -200,7 +217,7 @@ public class CharacterBuilding : MonoBehaviour
     {
         if (isTileBuildable)
         {
-            BuildTile("Gate", tilePalette.gateClosed);
+            BuildChoppableTile("Gate", tilePalette.gateClosed);
         }
         else if (currentTile == tilePalette.fence)
         {
@@ -213,7 +230,7 @@ public class CharacterBuilding : MonoBehaviour
         TileBase groundTile = tilePalette.ground.GetTile(buildSquareCellLocation);
         if (groundTile != tilePalette.water)
         {
-            BuildTile("Cobblestone Path", tilePalette.cobbleStonePath);
+            BuildGroundTile("Cobblestone Path", tilePalette.cobbleStonePath);
         }
         else
         {
@@ -221,30 +238,88 @@ public class CharacterBuilding : MonoBehaviour
         }
     }
 
+    private void BuildItem(string itemName){
+        string[] parts = itemName.Split(new string[] { " x " }, StringSplitOptions.None);
+    
+        string item;
+        int amount;
+
+        if (parts.Length == 2 && int.TryParse(parts[1], out amount)) {
+            item = parts[0];
+        } else {
+            // If the split did not result in two parts, use the original itemName and set amount to 1
+            item = itemName;
+            amount = 1;
+        }
+
+        inventory.TryAddItem(item, amount);
+        ToastNotification.Instance.Toast($"Added-{item}", $"Added {amount} {item}(s) to inventory.");
+    }
+
     private void BuildObject(string itemName)
     {
-        GameObject prefab = GetPrefabForItem(itemName);
-        if (prefab != null)
+        CharacterUI characterUI = character.GetSceneManager().characterUI; 
+
+        Debug.Log($"trying to build {itemName}");
+
+        switch (itemName)
         {
-            Instantiate(prefab, tilePalette.grid.CellToWorld(buildSquareCellLocation) + new Vector3(.5f, .5f, 0), Quaternion.identity);
-            Debug.Log($"Built {itemName}");
+            case "Chest":
+                GameObject newChest = Instantiate(prefabs.chest,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                ExternalInventory newChestScript = newChest.GetComponent<ExternalInventory>();
+
+                newChestScript.inventoryIdentifier = "red-chest"+Guid.NewGuid().ToString();
+                newChestScript.ExternalInventoryGui = characterUI.externalInventoryGui;
+                newChestScript.ExternalInventoryPanel = characterUI.externalInventoryPanels;
+                newChestScript.inventoryUI = characterUI.externalInventoryPanels.GetComponent<InventoryUI>();
+                
+                return ;
+            case "Sack": //TODO remove duplicate code
+                GameObject newSack = Instantiate(prefabs.sack,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                ExternalInventory newSackScript = newSack.GetComponent<ExternalInventory>();
+                newSackScript.inventoryIdentifier = "red-chest"+Guid.NewGuid().ToString();
+                newSackScript.ExternalInventoryGui = characterUI.externalInventoryGui;
+                newSackScript.ExternalInventoryPanel = characterUI.externalInventoryPanels;
+                newSackScript.inventoryUI = characterUI.externalInventoryPanels.GetComponent<InventoryUI>();
+
+                return;
+            case "Tan Single Bed": //TODO remove duplicate code
+                Instantiate(prefabs.tanSingleBed,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Tan Double Bed": //TODO remove duplicate code
+                Instantiate(prefabs.tanDoubleBed,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Lavender Single Bed": //TODO remove duplicate code
+                Instantiate(prefabs.lavenderSingleBed,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Lavender Double Bed": //TODO remove duplicate code
+                Instantiate(prefabs.lavenderDoubleBed,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Table": //TODO remove duplicate code
+                Instantiate(prefabs.table,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Covered Table": //TODO remove duplicate code
+                Instantiate(prefabs.coveredTable,tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,0),Quaternion.identity);
+                return;
+            case "Sign":
+                return ;
+            default:
+                ToastNotification.Instance.Toast("debug", "No prefab =(");
+                return;
         }
     }
 
-    private GameObject GetPrefabForItem(string itemName)
-{
-    switch (itemName)
-    {
-        case "Chest":
-            return tilePalette.chest;
-        default:
-            return null;
-    }
-}
+   
 
-    private void BuildTile(string itemName, TileBase targetTile)
+    private void BuildChoppableTile(string itemName, TileBase targetTile)
     {
         tilePalette.choppable.SetTile(buildSquareCellLocation, targetTile);
+        Debug.Log($"Built {itemName}");
+    }
+
+    private void BuildGroundTile(string itemName, TileBase targetTile)
+    {
+        tilePalette.ground.SetTile(buildSquareCellLocation, targetTile);
         Debug.Log($"Built {itemName}");
     }
 

@@ -24,7 +24,6 @@ public class Character : MonoBehaviour
     [SerializeField] private CharacterInventoryUI inventoryUI;
 
 
-
     [SerializeField] private CharacterCombat combat;
 
     [SerializeField] private BoxCollider2D boxCollider2D;
@@ -34,11 +33,19 @@ public class Character : MonoBehaviour
     public bool characterIsInControl = false;
     public string playerName = "Player";
 
+    public bool isIndoors = false;
+
     public BluePrint activeBlueprint;
 
     public GameItemUI selectedItem;
 
     public Animator animator;
+
+    public GameObject torch;
+
+    public bool hasPlayerStartedTheGame;
+
+
 
     public List<GameObject> followingObjects = new List<GameObject>();
 
@@ -147,8 +154,8 @@ public class Character : MonoBehaviour
         return sceneManager;
     }
 
-    public void ToggleBuilding(bool callFromSceneManager){
-        building.ToggleBuilding(callFromSceneManager);
+    public void ToggleBuilding(){
+        building.ToggleBuilding();
     }
 
     public void TakeDamage(float damage)
@@ -170,9 +177,15 @@ public class Character : MonoBehaviour
         Debug.Log("Character died");
     }
 
+    public void Attack()
+    {
+        StartCoroutine(combat.Attack());
+    }
+
     public void Chop()
     {
         if (stats.Stamina < 2f){
+            ToastStaminaMessage();
             return;
         }
 
@@ -183,6 +196,7 @@ public class Character : MonoBehaviour
     public void Mine()
     {
         if (stats.Stamina < 2f){
+            ToastStaminaMessage();
             return;
         }
 
@@ -190,20 +204,34 @@ public class Character : MonoBehaviour
         stats.DepleteStamina(2f);
     }
 
-    public void Plant()
+    public IEnumerator Plant(string plantName, System.Action<bool> callback)
     {
-        Debug.Log("Character is planting");
-        // if (stats.Stamina < .25f){
-        //     return;
-        // }
+        Debug.Log($"Character is attempting to plant {plantName}");
+        
+        if (stats.Stamina < 0.25f)
+        {
+            Debug.Log("Not enough stamina to plant");
+            ToastNotification.Instance.Toast("low-stamina", "Not enough stamina to plant.");
+            callback(false);
+            yield break;
+        }
 
-        StartCoroutine(worldInteraction.Plant());
-        stats.DepleteStamina(.25f);
+        bool plantingSuccess = false;
+        yield return StartCoroutine(worldInteraction.Plant(plantName, success => plantingSuccess = success));
+        
+        if (plantingSuccess)
+        {
+            stats.DepleteStamina(0.25f);
+            Debug.Log($"Successfully planted {plantName}. Stamina depleted.");
+        }
+
+        callback(plantingSuccess);
     }
 
     public void IrrigateGround()
     {
         if (stats.Stamina < 2f){
+            ToastStaminaMessage();
             return;
         }
 
@@ -215,11 +243,35 @@ public class Character : MonoBehaviour
     public void TillGround()
     {
         if (stats.Stamina < 2f){
+            ToastStaminaMessage();
             return;
         }
 
         StartCoroutine(worldInteraction.TillGround());
         stats.DepleteStamina(2f);
 
+    }
+
+    public bool ToggleTorch(bool isOn)
+    {
+        if (torch.activeSelf == isOn)
+        {
+            return false;
+        }
+
+        torch.SetActive(isOn);
+        return true;
+    }
+
+    public void GiveItem(string itemInfo) //item:amount its annoying
+    {
+        Debug.Log("Made it here");
+        inventory.GiveItem(itemInfo);
+    }
+
+    public void ToastStaminaMessage(){
+        if (!characterIsInControl)
+            return;
+        ToastNotification.Instance.Toast("no-stamina", "You are out of stamina!");
     }
 }

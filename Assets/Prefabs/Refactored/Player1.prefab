@@ -133,7 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d63e231317c8947ae99a14af3ea52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBuilding: 0
   buildSquare: {fileID: 8401570768351327793}
   noBuildSquare: {fileID: 2826240731650149695}
 --- !u!114 &4781247588083117407
@@ -174,6 +173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventorySize: 10
   inventoryIdentifier: Hotbar
+  isDebug: 0
+  startingItems: []
 --- !u!114 &1163309138093213800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventorySize: 4
   inventoryIdentifier: Tests
+  isDebug: 0
+  startingItems: []
 --- !u!114 &4781247588083117406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,14 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a3d5fb74c83bc4bb8da6c0e5fb5f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.5
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
   upHitBox: {fileID: 4781247587989857057}
   downHitBox: {fileID: 4781247586401873710}
   rightHitBox: {fileID: 4781247586709542413}
   leftHitBox: {fileID: 4781247587229044801}
+  recoilForce: 0.5
+  damageDealt: 5
+  knockTime: 0.01
 --- !u!114 &4781247588083117403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionRange: 2
   character: {fileID: 4781247588083117397}
+  building: {fileID: 0}
 --- !u!114 &4781247588083117397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +285,11 @@ MonoBehaviour:
   rigidbody: {fileID: 138230859635714844}
   characterIsInControl: 1
   playerName: Player
+  isIndoors: 0
+  selectedItem: {fileID: 0}
   animator: {fileID: 6383252244864378724}
+  torch: {fileID: 0}
+  hasPlayerStartedTheGame: 0
   followingObjects: []
 --- !u!114 &4781247588083117396
 MonoBehaviour:
@@ -557,7 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98db5869394b93e458cff529ef07f42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  character: {fileID: 4781247588083117400}
 --- !u!1 &4781247586709542413
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98db5869394b93e458cff529ef07f42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  character: {fileID: 4781247588083117400}
 --- !u!1 &4781247587229044801
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98db5869394b93e458cff529ef07f42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  character: {fileID: 4781247588083117400}
 --- !u!1 &4781247587989857057
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98db5869394b93e458cff529ef07f42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  character: {fileID: 4781247588083117400}
 --- !u!1 &8229323654346056055
 GameObject:
   m_ObjectHideFlags: 0

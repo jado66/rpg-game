@@ -110,9 +110,9 @@ GameObject:
   - component: {fileID: 4854726702802851974}
   - component: {fileID: 4854726702802851969}
   - component: {fileID: 8267732297196556184}
-  - component: {fileID: 594714513247717440}
   - component: {fileID: 8922142196050683009}
   - component: {fileID: 6154550905417815136}
+  - component: {fileID: 3257036134378581051}
   m_Layer: 0
   m_Name: Chick
   m_TagString: Untagged
@@ -205,33 +205,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &594714513247717440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4854726702802851968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b44107ca64823ce46adb0a4d1805d0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alive: 1
-  healthbarObject: {fileID: 9178726915049565905}
-  healthbar: {fileID: 2271935261646401556}
-  health: 15
-  maxHealth: 15
-  canSwim: 0
-  alwaysMoving: 0
-  canBeCarriedByPlayer: 0
-  afraidOfPlayer: 1
-  sightRange: 5
-  runSpeed: 3
-  walkSpeed: 1
-  followingPlayer: 0
-  id: 0
-  startingPosition: {x: 0, y: -1}
 --- !u!61 &8922142196050683009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -279,6 +252,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3257036134378581051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854726702802851968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0460684467f41b4286355556726cf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 
+  alive: 1
+  healthbarObject: {fileID: 0}
+  healthbar: {fileID: 2271935261646401556}
+  deathVanishDelay: 5
+  health: 1
+  maxHealth: 1
+  canSwim: 0
+  chest: {fileID: 0}
+  alwaysMoving: 0
+  canBeCarriedByPlayer: 0
+  afraidOfPlayer: 1
+  sightRange: 5
+  runSpeed: 3
+  walkSpeed: 1
+  followingPlayer: 0
+  id: 
+  startingPosition: {x: 0, y: -1}
+  chickenPrefab: {fileID: 4854726702802851968, guid: a5276b83fa7f8104d96bd7068f557ec4,
+    type: 3}
+  henPrefab: {fileID: 1597494556751081540, guid: eaf4a63100f87314892ffc8700c4747a,
+    type: 3}
 --- !u!1 &4956906246309008479
 GameObject:
   m_ObjectHideFlags: 0

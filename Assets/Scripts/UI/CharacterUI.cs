@@ -29,6 +29,8 @@ public class CharacterUI : MonoBehaviour
     public BuildMenu buildMenu4;
     public BuildMenu buildMenu5;
     
+    public GameObject menuBackground;
+
 
     private GameObject dialogBox;
 
@@ -64,7 +66,7 @@ public class CharacterUI : MonoBehaviour
 
     public GameObject gameSaver;
 
-
+    public Text pauseMenuButtonText;
 
   
 
@@ -113,7 +115,7 @@ public class CharacterUI : MonoBehaviour
 
        
 
-        dialogBox = GameObject.Find("DialogBox");
+        dialogBox = GameObject.Find("Dialog");
         dialogBoxText = GameObject.Find("DialogText").GetComponent<Text>();
         storeText = GameObject.Find("StoreTitle").GetComponent<Text>();
         customSignBox = GameObject.Find("CustomSign");
@@ -123,11 +125,22 @@ public class CharacterUI : MonoBehaviour
         externalInventoryGui.SetActive(false);
         mainMenuGui.SetActive(false);
         externalInventoryPanels.SetActive(false);
-        dialogBox.SetActive(false);
+        // dialogBox.SetActive(false);
         customSignBox.SetActive(false);
         buyNSellMenu.SetActive(false);
         buyNSellMenuPanel.SetActive(false);
 
+    }
+
+    public void TogglePause(){
+        if (sceneManager.isPaused){
+            sceneManager.ResumeGame();
+            pauseMenuButtonText.text = "PAUSE";
+        }
+        else{
+            sceneManager.PauseGame();
+            pauseMenuButtonText.text = "UNPAUSE";
+        }
     }
 
     // public void AddStartingBlueprints(){
@@ -210,7 +223,7 @@ public class CharacterUI : MonoBehaviour
 
 
     public void ToggleBuildMenu(){
-        sceneManager.ToggleBuildMenu();
+        character.ToggleBuilding();
     }
 
     public void ToggleBuildMenuTab(int i){
@@ -276,5 +289,106 @@ public class CharacterUI : MonoBehaviour
         //     // character.StartCoroutine(character.interact("interact"));
         // }
         inventoryGui.SetActive(!inventoryGui.activeSelf);
+    }
+
+    public void ClearAllPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+        Debug.Log("All PlayerPrefs have been deleted.");
+    }
+
+    public void TriggerDay(float transitionTime, bool isInstant){
+
+        Debug.Log($"Trigger Day {(isInstant?"Instant":"Fade")}");
+
+        Color dayColorPrimary = new Color32(135, 116, 79, 255); // 5A513F
+        Color dayColorSecondary = Color.white;
+
+        ChangeColor(mainMenuGui, dayColorPrimary,transitionTime, isInstant);
+        ChangeColor(buildGui, dayColorPrimary,transitionTime, isInstant);
+
+        foreach (var tab in buildMenuTabs)
+        {
+            ChangeColor(tab, dayColorPrimary,transitionTime, isInstant);
+        }
+    
+
+        ChangeColor(inventoryGui, dayColorSecondary,transitionTime, isInstant);
+        ChangeColor(externalInventoryGui, dayColorSecondary,transitionTime, isInstant);
+        ChangeColor(menuBackground, dayColorSecondary,transitionTime, isInstant);
+
+        ChangeColor(characterHealth, new Color32(255, 0, 0, 255),transitionTime, isInstant);
+        ChangeColor(staminaBar, new Color32(122, 255, 0, 255),transitionTime, isInstant);
+        ChangeColor(manaBar, new Color32(0, 255, 237, 255),transitionTime, isInstant);
+    }
+
+    public void TriggerNight(float transitionTime, bool isInstant){
+
+        Debug.Log($"Trigger Night {(isInstant?"Instant":"Fade")}");
+
+        Color nightColorPrimary = new Color32(66, 56, 36, 255); // 3A3A3A
+        Color nightColorSecondary = new Color32(130, 130, 130, 255); // 5E5E5E
+
+        ChangeColor(mainMenuGui, nightColorPrimary,transitionTime, isInstant);
+        ChangeColor(buildGui, nightColorPrimary,transitionTime, isInstant);
+
+        foreach (var tab in buildMenuTabs)
+        {
+            ChangeColor(tab, nightColorPrimary,transitionTime, isInstant);
+        }
+        ChangeColor(inventoryGui, nightColorSecondary,transitionTime, isInstant);
+        ChangeColor(externalInventoryGui, nightColorSecondary,transitionTime, isInstant);
+        ChangeColor(menuBackground, nightColorSecondary,transitionTime, isInstant);
+
+        
+        ChangeColor(characterHealth, new Color32(106, 0, 0, 255),transitionTime, isInstant);
+        ChangeColor(staminaBar, new Color32(60, 124, 0, 255),transitionTime, isInstant);
+        ChangeColor(manaBar, new Color32(31, 94, 103, 255),transitionTime, isInstant);
+    }
+
+    private void ChangeColor(GameObject obj, Color targetColor, float duration, bool isInstant)
+    {
+        Image img = obj.GetComponent<Image>();
+        if (img != null)
+        {
+            if (isInstant)
+            {
+                img.color = targetColor;
+            }
+            else
+            {
+                StartCoroutine(FadeColor(img, targetColor, duration));
+            }
+        }
+    }
+
+    private void ChangeColor(Image img, Color targetColor, float duration, bool isInstant)
+    {
+        if (img != null)
+        {
+            if (isInstant)
+            {
+                img.color = targetColor;
+            }
+            else
+            {
+                StartCoroutine(FadeColor(img, targetColor, duration));
+            }
+        }
+    }
+
+    private IEnumerator FadeColor(Image img, Color targetColor, float duration)
+    {
+        Color startColor = img.color;
+        float time = 0;
+
+        while (time < duration)
+        {
+            img.color = Color.Lerp(startColor, targetColor, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        img.color = targetColor;
     }
 }

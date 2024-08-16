@@ -12,7 +12,7 @@ public class SavedGame
     int[] charLocation = new int[3];
 
     int day = 0;
-    int hour = 0;
+    int normalizedHour = 0;
 
     int realGameSecondsPlayed;
 
@@ -30,7 +30,7 @@ public class SavedGame
     
         SceneManager sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         this.day = sceneManager.day;
-        this.hour = (int)(sceneManager.hour);
+        this.normalizedHour = (int)(sceneManager.normalizedHour);
 
         saveCharacterData(); 
     }
@@ -38,7 +38,7 @@ public class SavedGame
     public void LoadGame(){
         SceneManager sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
         sceneManager.day = this.day;
-        sceneManager.hour = this.hour;
+        sceneManager.normalizedHour = this.normalizedHour;
         currentRealm = sceneManager.realmName;
 
         loadCharacterData(); 

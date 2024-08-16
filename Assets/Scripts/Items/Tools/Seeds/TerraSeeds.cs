@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class TerraSeeds : InventoryItem
 {
+    public string PlantName { get; private set; }
+
     // Constructor with all parameters
     public TerraSeeds(string id, string name, string description, Uses useType,
-                        Dictionary<string, int> stats, int value, List<string> strongConsumers,
-                        List<string> weakConsumers, int amount = 1, int stackAmount = 99)
+                      Dictionary<string, int> stats, int value, List<string> strongConsumers,
+                      List<string> weakConsumers, string plantName, int amount = 1, int stackAmount = 99)
         : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount, stackAmount)
     {
+        PlantName = plantName;
     }
 
     public override InventoryItem Clone()
@@ -19,10 +22,10 @@ public class TerraSeeds : InventoryItem
         var clonedWeakConsumers = new List<string>(WeakConsumers);
 
         return new TerraSeeds(
-            Id, Name, Description, UseType, clonedStats, Value, clonedStrongConsumers, clonedWeakConsumers, Amount, StackAmount);
+            Id, Name, Description, UseType, clonedStats, Value, clonedStrongConsumers, clonedWeakConsumers, PlantName, Amount, StackAmount);
     }
 
-    // Simplified constructor for a small health potion
+    // Simplified constructor for a tree sapling
     public static TerraSeeds TreeSapling() 
     {
         return new TerraSeeds(
@@ -34,6 +37,7 @@ public class TerraSeeds : InventoryItem
             150, 
             new List<string>(), 
             new List<string>(),
+            "Tree",
             1,
             25
         );
@@ -51,6 +55,7 @@ public class TerraSeeds : InventoryItem
             13, 
             new List<string>(), 
             new List<string>(),
+            "Bush",
             1,
             25
         );
@@ -68,6 +73,7 @@ public class TerraSeeds : InventoryItem
             5, 
             new List<string>(), 
             new List<string>(),
+            "Tomato",
             1,
             99
         );
@@ -85,6 +91,7 @@ public class TerraSeeds : InventoryItem
             5, 
             new List<string>(), 
             new List<string>(),
+            "Carrot",
             1,
             99
         );
@@ -92,18 +99,36 @@ public class TerraSeeds : InventoryItem
 
     public override void Use(Character character)
     {
-        Debug.Log($"Sapling used by {character.playerName}.");
+        Debug.Log($"{Name} used by {character.playerName}.");
+        character.StartCoroutine(UseSeedCoroutine(character));
+    }
 
-        Amount--;
+    private IEnumerator UseSeedCoroutine(Character character)
+    {
+        bool plantingSuccess = false;
+        yield return character.StartCoroutine(PlantAndGetResult(character, result => plantingSuccess = result));
 
-        character.Plant();
-
-        
-        if (Amount <= 0)
+        if (plantingSuccess)
         {
-            // Remove the item from the character's inventory if its amount is zero
-            Debug.Log("Removing sapling from inventory");
-            RemoveFromInventory(character);
+            Amount--;
+            Debug.Log($"{PlantName} planted successfully. Remaining {Name}: {Amount}");
+
+            if (Amount <= 0)
+            {
+                Debug.Log($"Removing {Name} from inventory");
+                RemoveFromInventory(character);
+            }
         }
+        else
+        {
+            Debug.Log($"Failed to plant {PlantName}. No {Name} consumed.");
+        }
+    }
+
+    private IEnumerator PlantAndGetResult(Character character, System.Action<bool> callback)
+    {
+        bool result = false;
+        yield return character.StartCoroutine(character.Plant(PlantName, success => result = success));
+        callback(result);
     }
 }

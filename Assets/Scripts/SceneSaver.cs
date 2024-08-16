@@ -51,7 +51,7 @@ public class SceneSaver : MonoBehaviour
     private IEnumerator SaveLocalScene(){
         string playerName = sceneManager.player1.playerName;
         string filePath = Application.persistentDataPath + "/SavedGames"+
-                            string.Format("/{0}/{1}-Data.save",playerName,sceneManager.getSceneName());
+                            string.Format("/{0}/{1}-Data.save",playerName,sceneManager.GetSceneName());
         
 
         SceneData sceneData = null;
@@ -67,7 +67,7 @@ public class SceneSaver : MonoBehaviour
             }
         else{
             string masterFilePath = Application.persistentDataPath + "/SavedGames"+
-                        string.Format("/{0}/{1}-Data.save",playerName,sceneManager.getSceneName());
+                        string.Format("/{0}/{1}-Data.save",playerName,sceneManager.GetSceneName());
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(masterFilePath, FileMode.Open);
             // save = new GameData("FileNotFound",0,0,"Error",0,0);
@@ -294,7 +294,7 @@ public class SceneSaver : MonoBehaviour
             }
 
             string filePath = Application.persistentDataPath + "/MasterSceneData"+
-                            string.Format("/{0}MasterData.save",sceneManager.getSceneName());
+                            string.Format("/{0}MasterData.save",sceneManager.GetSceneName());
 
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(filePath);

@@ -9,6 +9,8 @@ public class ArmedMonster  : Monster
     public int damageDealt;
     public int recoilForce;
     public int timeBetweenSwings;
+        public Chest chest;
+
 
     int swingTimer;
 
@@ -19,6 +21,9 @@ public class ArmedMonster  : Monster
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        chest = gameObject.AddComponent<Chest>();
+        chest.inventory = gameObject.GetComponent<ExternalInventory>();
+        chest.isLocked = true;
         // healthbarObject.SetActive(false);
     }
     
@@ -95,7 +100,7 @@ public class ArmedMonster  : Monster
         }
     }
 
-    private IEnumerator AttackCo(Collider2D collision){
+    private IEnumerator AttackCo(){
         Debug.Log("Attacking");
         yield return null; //Wait a frame
         animators[0].SetTrigger("attack");
@@ -143,21 +148,26 @@ public class ArmedMonster  : Monster
     //  Debug.Log(wayPoint + " and " + (transform.position - wayPoint).magnitude);
     }
 
-    // public void attack(){
-    //     StartCoroutine(AttackCo());
-    // }
-    // void OnCollisionEnter2D(Collision2D collision){
-    //     Debug.Log("Collision");
-    //     if (collision.gameObject.tag == "Player"){
-    //         StartCoroutine(AttackCo());
-    //     }
-    // }
+    public void attack(){
+        StartCoroutine(AttackCo());
+    }
+    void OnCollisionEnter2D(Collision2D collision){
+        if (!alive){
+            return;
+        }
+        Debug.Log("Collision");
+        if (collision.gameObject.tag == "Character"){
+            StartCoroutine(AttackCo());
+        }
+    }
     protected override void kill(){
         Debug.Log("Killing "+ name);
         healthbarObject.SetActive(false);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameObject.layer = LayerMask.NameToLayer("Interactable");
         alive = false;
+        chest.isLocked = false;
+
         animators[0].SetTrigger("die");
         if (spriteRenderer != null)
         {
@@ -194,7 +204,7 @@ public class ArmedMonster  : Monster
             return;
         if (collision.gameObject.tag == "Player"){
             if (swingTimer <=0){
-                StartCoroutine(AttackCo(collision));
+                StartCoroutine(AttackCo());
                 swingTimer++;
                 }
 

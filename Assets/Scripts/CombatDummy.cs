@@ -6,7 +6,7 @@ public class CombatDummy : MonoBehaviour
 {
     public int health;
     public int maxHealth;
-    public Player player;
+    public Character player;
 
     Vector3 hitPoint;
 
@@ -14,7 +14,7 @@ public class CombatDummy : MonoBehaviour
 
 
     void Start(){
-        player = GameObject.Find("Character").GetComponent<Player>();
+        player = GameObject.Find("Player1").GetComponent<Character>();
         health = maxHealth;    
     }
     /*

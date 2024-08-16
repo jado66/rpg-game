@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[System.Serializable]
 public class CharacterInventory : MonoBehaviour
 {
     [SerializeField] 
@@ -12,6 +13,8 @@ public class CharacterInventory : MonoBehaviour
     public int inventorySize;
 
     public string inventoryIdentifier;
+
+    public bool isDebug;
 
     public event System.Action<string> OnInventoryChanged; // Changed to include identifier
 
@@ -26,7 +29,11 @@ public class CharacterInventory : MonoBehaviour
 
     void Start()
     {
+        // This needs save game names for this to work
+        // bool loadSuccess = LoadInventory();
+        // if (!loadSuccess){
         PopulateStartingItems();
+        // }
     }
 
     private void PopulateStartingItems()
@@ -57,7 +64,7 @@ public class CharacterInventory : MonoBehaviour
 
         // Triggering any relevant events
         Debug.Log("Triggering OnInventoryChanged event.");
-        OnInventoryChanged?.Invoke(inventoryIdentifier);
+        SyncInventory();
 
         // Returning the old item
         return oldItem;
@@ -65,7 +72,7 @@ public class CharacterInventory : MonoBehaviour
 
     public void SetItem(int slot, InventoryItem item){
         items[slot] = item;
-        OnInventoryChanged?.Invoke(inventoryIdentifier);
+        SyncInventory();
     }
 
     public void AddItem(int slot, InventoryItem item)
@@ -77,7 +84,7 @@ public class CharacterInventory : MonoBehaviour
         }
         items[slot] = item;
         Debug.Log("Item added, invoking OnInventoryChanged.");
-        OnInventoryChanged?.Invoke(inventoryIdentifier);
+        SyncInventory();
     }
 
     public bool TryAddItem(string itemName, int amount = 1)
@@ -116,7 +123,7 @@ public class CharacterInventory : MonoBehaviour
                 {
                     kvp.Value.Amount += item.Amount;
                     Debug.Log("Item stacked, invoking OnInventoryChanged.");
-                    OnInventoryChanged?.Invoke(inventoryIdentifier);
+                    SyncInventory();
                     return true;
                 }
                 else
@@ -134,7 +141,7 @@ public class CharacterInventory : MonoBehaviour
             {
                 items[i] = item;
                 // Debug.Log("Item added in first available slot, invoking OnInventoryChanged.");
-                OnInventoryChanged?.Invoke(inventoryIdentifier);
+                SyncInventory();
                 return true;
             }
         }
@@ -143,18 +150,21 @@ public class CharacterInventory : MonoBehaviour
         return false;
     }
 
+   
+
     public void SyncInventory(){
         OnInventoryChanged?.Invoke(inventoryIdentifier);
+        SaveInventory();
     }
 
     public bool RemoveItem(int slot)
     {
         if (items.Remove(slot))
         {
-            OnInventoryChanged?.Invoke(inventoryIdentifier);
+            SyncInventory();
             return true;
         }
-        OnInventoryChanged?.Invoke(inventoryIdentifier);
+        SyncInventory();
 
         return false;
     }
@@ -195,11 +205,11 @@ public class CharacterInventory : MonoBehaviour
         {
             if (itemCount.ContainsKey(item.Name))
             {
-                itemCount[item.Name]++;
+                itemCount[item.Name] += item.Amount;
             }
             else
             {
-                itemCount[item.Name] = 1;
+                itemCount[item.Name] = item.Amount;
             }
         }
 
@@ -221,34 +231,97 @@ public class CharacterInventory : MonoBehaviour
             string title = titles[i];
             int amountToRemove = (amounts != null && amounts.Length > i) ? amounts[i] : 1;
 
-            // Using a list to collect items to be removed first
-            List<int> slotsToRemove = new List<int>();
-
-            for (int j = 0; j < amountToRemove; j++)
+            // Collect list of slots and how much to remove from each.
+            List<(int slot, int amount)> slotsToModify = new List<(int slot, int amount)>();
+            
+            foreach (var kvp in items)
             {
-                foreach (var kvp in items)
+                if (kvp.Value.Name == title)
                 {
-                    if (kvp.Value.Name == title)
-                    {
-                        slotsToRemove.Add(kvp.Key);
+                    if (amountToRemove <= 0)
                         break;
-                    }
+
+                    int removableAmount = Mathf.Min(amountToRemove, kvp.Value.Amount);
+                    slotsToModify.Add((kvp.Key, removableAmount));
+                    amountToRemove -= removableAmount;
                 }
             }
 
-            // Now actually removing the items
-            foreach (var slot in slotsToRemove)
+            // Now actually removing the items or reducing their amount
+            foreach (var entry in slotsToModify)
             {
-                RemoveItem(slot);
+                if (items[entry.slot].Amount <= entry.amount)
+                {
+                    items.Remove(entry.slot);
+                }
+                else
+                {
+                    items[entry.slot].Amount -= entry.amount;
+                }
             }
         }
 
         OnInventoryChanged?.Invoke(inventoryIdentifier);
         return true;
     }
+    public void SaveInventory()
+    {
+        string jsonString = JsonHelper.ToJson(items);
+        PlayerPrefs.SetString($"chest-{inventoryIdentifier}", jsonString);
+        PlayerPrefs.Save();
+    }
 
-    // Other inventory-related methods...
+    // Load the inventory from PlayerPrefs
+    public bool LoadInventory()
+    {
+        if (PlayerPrefs.HasKey($"chest-{inventoryIdentifier}"))
+        {
+            string jsonString = PlayerPrefs.GetString($"chest-{inventoryIdentifier}");
+            items = JsonHelper.FromJson<Dictionary<int, InventoryItem>>(jsonString);
+            SyncInventory();
+            Debug.Log("load success");
+            return true;
+        }
+        return false;
+    }
+
+    void OnDisable()
+    {
+        SaveInventory();
+    }
+
+    // void OnApplicationQuit()
+    // {
+    //     SaveInventory();
+    // }
+    public void GiveItem(string itemInfo) //item:amount its annoying
+    {
+        string[] parts = itemInfo.Split(':');
+        if (parts.Length != 2 || !int.TryParse(parts[1], out int amount))
+        {
+            Debug.LogError("Invalid item info format. Use 'ItemName:Amount'");
+            return;
+        }
+
+        string itemName = parts[0];
+        bool success = TryAddItem(itemName, amount);
+        if (success)
+        {
+            ToastNotification.Instance.Toast("got-item", $"You received {amount} {itemName}");
+
+            Debug.Log($"Successfully added {amount} of {itemName} to inventory.");
+        }
+        else
+        {
+            ToastNotification.Instance.Toast("no-space", "Not enough space in your inventory");
+
+            Debug.LogError($"Failed to add {itemName} to inventory.");
+        }
+    }
+    
 }
+
+
 
 [System.Serializable]
 public class ItemEntry

@@ -47,7 +47,7 @@ public static class ItemDatabase{
     static ItemDatabase()
     {
         BuildDatabase();
-        BuildPlantDatabase();
+        // BuildPlantDatabase();
         BuildBluePrintDatabase();
         BuildStoreSellItems(); 
     }
@@ -290,16 +290,16 @@ public static class ItemDatabase{
             {"Wood",3},
             {"Iron Ore",3}}));
     }
-    static void BuildPlantDatabase(){
-        plantDatabase = new Dictionary<string, PlantData>();
+    // static void BuildPlantDatabase(){
+    //     plantDatabase = new Dictionary<string, PlantData>();
 
-        plantDatabase.Add("tomato",new PlantData("Tomato",new int[]{1,2,3},false,false,4));
-        plantDatabase.Add("carrot",new PlantData("Carrot",new int[]{1,2,3},false,false));
-        plantDatabase.Add("bushSapling",new PlantData("Bush",new int[]{1,2,3},false,true,0));
-        plantDatabase.Add("appleTreeSapling",new PlantData("AppleTreeSapling",new int[]{1,2,3},false,true,0));
-        plantDatabase.Add("treeSapling",new PlantData("TreeSapling",new int[]{1,2,3},false,true,0));
-        plantDatabase.Add("appleTree",new PlantData("AppleTree",new int[]{-1,3,-1,},true,true,0));
-    }
+    //     plantDatabase.Add("tomato",new PlantData("Tomato",new int[]{1,2,3},false,false,4));
+    //     plantDatabase.Add("carrot",new PlantData("Carrot",new int[]{1,2,3},false,false));
+    //     plantDatabase.Add("bushSapling",new PlantData("Bush",new int[]{1,2,3},false,true,0));
+    //     plantDatabase.Add("appleTreeSapling",new PlantData("AppleTreeSapling",new int[]{1,2,3},false,true,0));
+    //     plantDatabase.Add("treeSapling",new PlantData("TreeSapling",new int[]{1,2,3},false,true,0));
+    //     plantDatabase.Add("appleTree",new PlantData("AppleTree",new int[]{-1,3,-1,},true,true,0));
+    // }
 
     static void BuildStoreSellItems(){
         

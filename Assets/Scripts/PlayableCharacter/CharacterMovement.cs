@@ -22,6 +22,10 @@ public class CharacterMovement : MonoBehaviour
 
     public bool inWater;
 
+    public float timeSinceLastTeleport = 0f;
+    public float teleportCooldown = 2f; // Adjust this value as needed
+
+
     public void InitializeComponents(Character characterRef){
         character = characterRef;
         rigidbody =  GetComponent<Rigidbody2D>();
@@ -32,11 +36,21 @@ public class CharacterMovement : MonoBehaviour
     }
 
     public void FixedUpdate(){
-        characterCenter = collider.bounds.center;        
-
-
-
+        characterCenter = collider.bounds.center; 
+        timeSinceLastTeleport += Time.fixedDeltaTime; // Update the timer
     } 
+
+    public void ResetTeleportTimer()
+    {
+        timeSinceLastTeleport = 0f; // Reset the timer
+    }
+
+    public bool CanTeleport()
+    {
+        return timeSinceLastTeleport >= teleportCooldown; // Check cooldown
+    }
+
+
     public void HandleMovement(Vector2 change, bool isLeftShiftPressed)
     {
         movement = Vector2.zero;
@@ -66,6 +80,7 @@ public class CharacterMovement : MonoBehaviour
     }
 
     public void EnterWater(){
+        Debug.Log("Enter water");
         inWater = true;
         animator.SetBool("swimming", false); //TODO only works backwards??
     }
@@ -201,7 +216,7 @@ public class CharacterMovement : MonoBehaviour
     //                 break;
     //             case KeyCode.E:
     //                 if (onBoat){
-    //                     boat.onCharacterInteract();
+    //                     boat.OnCharacterInteract();
     //                 }
     //                 else
     //                     StartCoroutine(interact("interact"));

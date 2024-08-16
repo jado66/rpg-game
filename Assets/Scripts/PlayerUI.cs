@@ -55,8 +55,7 @@ public class PlayerUI : MonoBehaviour
 
     public GameObject gameSaver;
 
-
-
+    public Text pauseMenuButtonText;
   
 
     // Start is called before the first frame update
@@ -83,7 +82,7 @@ public class PlayerUI : MonoBehaviour
         externalInventoryGui.SetActive(false);
         mainMenuGui.SetActive(false);
         externalInventoryPanels.SetActive(false);
-        dialogBox.SetActive(false);
+        // dialogBox.SetActive(false);
         // Debug.Log("Dialog box is "+(dialogBox.activeSelf?"still on":"turned off"));
         customSignBox.SetActive(false);
         // Debug.Log("Custom sign box is "+(customSignBox.activeSelf?"still on":"turned off"));
@@ -98,6 +97,17 @@ public class PlayerUI : MonoBehaviour
             inventoryGui.SetActive(false);
             externalInventoryGui.SetActive(false); // I should change these to functions that handle the shut downs
             buildGui.SetActive(false);
+        }
+    }
+
+    public void TogglePause(){
+        if (sceneManager.isPaused){
+            sceneManager.ResumeGame();
+            pauseMenuButtonText.text = "Pause";
+        }
+        else{
+            sceneManager.PauseGame();
+            pauseMenuButtonText.text = "Unpause";
         }
     }
 
@@ -118,7 +128,7 @@ public class PlayerUI : MonoBehaviour
     }
 
     public void ToggleBuildMenu(){
-        sceneManager.ToggleBuildMenu();
+        // player.ToggleBuilding();
     }
 
     public void toggleBuildMenuTab(int i){
@@ -180,10 +190,11 @@ public class PlayerUI : MonoBehaviour
         buildMenu2.bluePrintSlots[4].LoadBluePrint("Cobblestone Path");
         buildMenu2.bluePrintSlots[5].LoadBluePrint("Chest");
         buildMenu2.bluePrintSlots[6].LoadBluePrint("Combat Dummy");
-        buildMenu3.bluePrintSlots[0].LoadBluePrint("Single Bed");
-        buildMenu3.bluePrintSlots[1].LoadBluePrint("Double Bed");
-        buildMenu3.bluePrintSlots[2].LoadBluePrint("Table");
-        buildMenu3.bluePrintSlots[3].LoadBluePrint("Decorated Table");  
+        buildMenu3.bluePrintSlots[0].LoadBluePrint("Chest");
+        buildMenu3.bluePrintSlots[1].LoadBluePrint("Tan Single Bed");
+        buildMenu3.bluePrintSlots[2].LoadBluePrint("Tan Double Bed");
+        buildMenu3.bluePrintSlots[3].LoadBluePrint("Lavender Single Bed");
+        buildMenu3.bluePrintSlots[4].LoadBluePrint("Lavender Double Bed");  
         buildMenu3.bluePrintSlots[4].LoadBluePrint("Rug");
         buildMenu3.bluePrintSlots[5].LoadBluePrint("Chair");
         buildMenu3.bluePrintSlots[6].LoadBluePrint("Chest");

@@ -14,7 +14,7 @@ public class NPC : Interactable
 
     
 
-    public override void onCharacterInteract(){
+    public override void OnCharacterInteract(){
         // Open dialog box
         player = GameObject.Find("Character").GetComponent<Player>();
     }

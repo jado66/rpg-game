@@ -87,8 +87,8 @@ public class cat : Interactable
         }
     }
 
-    public override void onCharacterInteract(){
-        base.onCharacterInteract();
+    public override void OnCharacterInteract(){
+        base.OnCharacterInteract();
         playerWantsToFollow = !playerWantsToFollow;
         player.GetComponent<Player>().addOrRemoveFollower(this.gameObject,playerWantsToFollow);
     }

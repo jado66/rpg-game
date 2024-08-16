@@ -2,51 +2,28 @@ using UnityEngine;
 
 public class ExternalInventory : CharacterInventory
 {
+    public GameObject ExternalInventoryGui;
     public GameObject ExternalInventoryPanel;
-    private InventoryUI inventoryUI;
-
-    public string inventoryIdentifier;
-
-    void Start()
-    {
-        if (ExternalInventoryPanel != null)
-        {
-            inventoryUI = ExternalInventoryPanel.GetComponent<InventoryUI>();
-            if (inventoryUI == null)
-            {
-                Debug.LogError("The ExternalInventoryPanel does not have an InventoryUI component.");
-            }
-        }
-        else
-        {
-            Debug.LogError("ExternalInventoryPanel is not assigned.");
-        }
-        
-    }
+    public InventoryUI inventoryUI;
 
     public void OpenExternalInventory()
     {
-        if (inventoryUI == null)
-        {
-            Debug.LogError("InventoryUI component is not found.");
-            return;
-        }
-
-        inventoryUI.parentInventory = this;
-        inventoryUI.inventoryIdentifier = inventoryIdentifier;
+        Debug.Log("external inv = open inv");
+        ExternalInventoryGui.SetActive(true);
         ExternalInventoryPanel.SetActive(true);
+
+        // Store the current inventory and set this as the new current inventory
+        inventoryUI.SetInventory(this);
     }
 
     public void CloseExternalInventory()
     {
-        if (inventoryUI == null)
-        {
-            Debug.LogError("InventoryUI component is not found.");
-            return;
-        }
-
-        inventoryUI.parentInventory = null;
-        inventoryUI.inventoryIdentifier = null;
+        ExternalInventoryGui.SetActive(false);
         ExternalInventoryPanel.SetActive(false);
+
+        // Restore the previous inventory
+       
+        // inventoryUI.SetInventory(previousInventory);
+        
     }
 }

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2170642206223021466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2045583584073876648, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3874311911916224442, guid: 7283f41ca04d70645a38a6be7b9b58e1,
+        type: 3}
+    - target: {fileID: 2045583584073876652, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_Name
+      value: Lavender Single Bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.45283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -132.2344
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.565046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876654, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876655, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0020179749
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876655, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045583584073876655, guid: 6e21475679dd7d74183460514427031f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.96551514
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e21475679dd7d74183460514427031f, type: 3}

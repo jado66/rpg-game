@@ -99,17 +99,6 @@ public class TilePalette : MonoBehaviour
     public AdvancedRuleTile sapling;
 
     public AdvancedRuleTile cobbleStonePath;
-
-    public GameObject sack;
-
-    public GameObject chest;
-    public GameObject sign;
-    
-
-    
-
-    
-
     
     // Start is called before the first frame update
     void Start()

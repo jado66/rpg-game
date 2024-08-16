@@ -6,79 +6,88 @@ public class InventoryUI : MonoBehaviour
     public List<GameItemUI> uiItems = new List<GameItemUI>();
     public GameObject slotPrefab;
     public Transform slotPanel;
-    public string inventoryIdentifier;  // Add this line
+    public string inventoryIdentifier;
 
     public GameObject parent;
-    public CharacterInventory parentInventory;
-    public int inventorySize = 10;
+    private CharacterInventory currentInventory;
+    private int currentInventorySize = 0;
 
     private Dictionary<int, InventoryItem> localItems = new Dictionary<int, InventoryItem>();
 
-    public bool subscribeToChanges = false;
-
-    private float[,] inventoryGuiTransformPoints = new float[4, 4]
-    {
-        {134.44f, -87.1f, 38.36f, 186.75f}, // Stores 5
-        {148.34f, -87.1f, 73.12f, 186.75f}, // Stores 10
-        {0.1f, 0.1f, 0.1f, 0.1f},
-        {0.1f, 0.1f, 0.1f, 0.1f}
-    };
+    public bool subscribeToChanges = true;
 
     private void Start()
     {
-        if (parentInventory == null)
+        if (currentInventory == null && parent != null)
         {
-            // Debug.LogWarning("Parent inventory is null on start.");
-        }
-        SetupInventoryUI();
-    }
-
-    private void Awake()
-    {
-        CharacterInventory[] inventories = parent.GetComponents<CharacterInventory>();
-        foreach (CharacterInventory inv in inventories)
-        {
-            if (inv.inventoryIdentifier == inventoryIdentifier)
+            CharacterInventory[] inventories = parent.GetComponents<CharacterInventory>();
+            foreach (CharacterInventory inv in inventories)
             {
-                Debug.Log($"{inv.inventoryIdentifier} synced with {inventoryIdentifier}");
-                parentInventory = inv;
-                break;
+                if (inv.inventoryIdentifier == inventoryIdentifier)
+                {
+                    SetInventory(inv);
+                    break;
+                }
             }
-        }
-
-        // Call Initialize during Awake
-        if (parentInventory != null)
-        {
-            Debug.Log($"Initializing InventoryUI in Awake for {inventoryIdentifier}");
-            Initialize(parentInventory);
-        }
-        else
-        {
-            Debug.LogWarning($"Parent inventory is null in Awake for {inventoryIdentifier}.");
         }
     }
 
-    public void Initialize(CharacterInventory inventory = null)
+    public void SetInventory(CharacterInventory newInventory)
     {
-        if (inventory != null)
+        if (currentInventory != null && subscribeToChanges)
         {
-            parentInventory = inventory;
-            if (subscribeToChanges)
-            {
-                Debug.Log("Subscribing to OnInventoryChanged.");
-                parentInventory.OnInventoryChanged += OnInventoryChangedHandler;
-            }
+            currentInventory.OnInventoryChanged -= OnInventoryChangedHandler;
         }
-        else
+
+        currentInventory = newInventory;
+        inventoryIdentifier = currentInventory.inventoryIdentifier;
+
+        if (subscribeToChanges)
         {
-            Debug.LogWarning("Passed inventory is null during initialization.");
+            currentInventory.OnInventoryChanged += OnInventoryChangedHandler;
         }
+
+        UpdateInventorySize();
         UpdateUI();
+    }
+
+    private void UpdateInventorySize()
+    {
+        int newSize = currentInventory.inventorySize;
+
+        if (newSize != currentInventorySize)
+        {
+            currentInventorySize = newSize;
+            ResizeUISlots();
+        }
+    }
+
+    private void ResizeUISlots()
+    {
+        // Clear all existing slots
+        foreach (Transform child in slotPanel)
+        {
+            Destroy(child.gameObject);
+        }
+        uiItems.Clear();
+
+        // Create new slots
+        for (int i = 0; i < currentInventorySize; i++)
+        {
+            GameObject slotGO = Instantiate(slotPrefab, slotPanel);
+            slotGO.transform.localPosition = Vector3.zero;
+
+            GameItemUI uiItem = slotGO.GetComponentInChildren<GameItemUI>();
+            uiItem.slotIndex = i;
+            uiItem.parentInventory = currentInventory;
+
+            uiItems.Add(uiItem);
+        }
     }
 
     private void OnInventoryChangedHandler(string identifier)
     {
-        if (parentInventory.inventoryIdentifier == identifier)
+        if (currentInventory.inventoryIdentifier == identifier)
         {
             UpdateUI();
         }
@@ -86,46 +95,15 @@ public class InventoryUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (parentInventory != null)
+        if (currentInventory != null && subscribeToChanges)
         {
-            Debug.Log("Unsubscribing from OnInventoryChanged.");
-            parentInventory.OnInventoryChanged -= OnInventoryChangedHandler;
+            currentInventory.OnInventoryChanged -= OnInventoryChangedHandler;
         }
-    }
-
-    private void SetupInventoryUI()
-    {
-        foreach (var uiItem in uiItems)
-        {
-            Destroy(uiItem.gameObject);
-        }
-        uiItems.Clear();
-
-        for (int i = 0; i < inventorySize; i++)
-        {
-            // Instantiate the slot prefab and set its parent to slotPanel
-            GameObject slotGO = Instantiate(slotPrefab, slotPanel);
-
-            // Adjust the local position if necessary:
-            slotGO.transform.localPosition = Vector3.zero;
-
-            // Get the GameItemUI component
-            GameItemUI uiItem = slotGO.GetComponentInChildren<GameItemUI>();
-
-            uiItem.slotIndex = i;
-            uiItem.parentInventory = parentInventory;
-
-            // Add to the list of UI items
-            uiItems.Add(uiItem);
-        }
-
-        UpdateUI();
     }
 
     private void UpdateUI()
     {
-        Debug.Log("Items being updated");
-        Dictionary<int, InventoryItem> itemsToDisplay = parentInventory != null ? parentInventory.Items : localItems;
+        Dictionary<int, InventoryItem> itemsToDisplay = currentInventory != null ? currentInventory.Items : localItems;
 
         for (int i = 0; i < uiItems.Count; i++)
         {
@@ -133,10 +111,7 @@ public class InventoryUI : MonoBehaviour
             {
                 if (uiItems[i] != null)
                 {
-                    if (item == null){
-                        continue;
-                    }
-                    if (item.Amount <= 0)
+                    if (item == null || item.Amount <= 0)
                     {
                         uiItems[i].UpdateGameItem(null);
                         itemsToDisplay.Remove(i);
@@ -197,7 +172,7 @@ public class InventoryUI : MonoBehaviour
         {
             uiItems[slot].UpdateGameItem(item);
 
-            if (parentInventory == null)
+            if (currentInventory == null)
             {
                 if (item != null)
                 {
@@ -210,20 +185,20 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                parentInventory.AddItem(slot, item);
+                currentInventory.AddItem(slot, item);
             }
         }
     }
 
     public void AddNewItem(int slot, InventoryItem item)
     {
-        if (parentInventory != null)
+        if (currentInventory != null)
         {
-            parentInventory.AddItem(slot, item);
+            currentInventory.AddItem(slot, item);
         }
         else
         {
-            if (!localItems.ContainsKey(slot) && localItems.Count < inventorySize)
+            if (!localItems.ContainsKey(slot) && localItems.Count < currentInventory.inventorySize)
             {
                 UpdateSlot(slot, item);
             }
@@ -232,9 +207,9 @@ public class InventoryUI : MonoBehaviour
 
     public void RemoveItem(int slot)
     {
-        if (parentInventory != null)
+        if (currentInventory != null)
         {
-            parentInventory.RemoveItem(slot);
+            currentInventory.RemoveItem(slot);
         }
         else
         {
@@ -247,6 +222,6 @@ public class InventoryUI : MonoBehaviour
 
     public Dictionary<int, InventoryItem> GetItems()
     {
-        return parentInventory != null ? parentInventory.Items : localItems;
+        return currentInventory != null ? currentInventory.Items : localItems;
     }
 }

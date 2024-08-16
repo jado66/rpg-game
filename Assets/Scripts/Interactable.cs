@@ -5,13 +5,13 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public string type;
-    public virtual void onCharacterInteract(){
+    public virtual void OnCharacterInteract(){
         // Debug.Log("Player interacted with a "+type);
     }
 
    
 
-     public virtual void onCharacterInteract(CharacterActions interaction){
+     public virtual void OnCharacterInteract(CharacterActions interaction){
         // Debug.Log("Player interacted with a "+type);
     }
 }
