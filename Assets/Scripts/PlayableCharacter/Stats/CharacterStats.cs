@@ -73,8 +73,10 @@ public class CharacterStats : MonoBehaviour
 
     public void TakeDamage(float amount){
         Health -= amount;
+
         if (Health <= 0)
         {
+            Debug.Log("Stats killing character");
             character.Die();
         }
     }
@@ -214,5 +216,27 @@ public class CharacterStats : MonoBehaviour
 
     public void InitializeComponents(Character characterRef){
         character = characterRef;
+    }
+
+    public void Respawn()
+    {
+        // Reset basic stats
+        // Money = defaultMoney;
+        Health = MaxHealth;
+        Mana = MaxMana;
+        Stamina = MaxStamina;
+
+        // Reset speed values to their default serialized values
+        // speed = swimSpeed = runSpeedMultiplier = fastSwimSpeedMultiplier = 1f;
+
+        // Remove all active effects
+        foreach (Effect effect in activeEffects)
+        {
+            effect.Remove(this);
+        }
+        activeEffects.Clear();
+        StopAllCoroutines(); // Stop any ongoing effect removal coroutines
+
+        // Debug.Log("Character respawned with reset stats");
     }
 }

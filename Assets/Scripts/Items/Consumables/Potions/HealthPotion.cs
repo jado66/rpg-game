@@ -85,11 +85,21 @@ public class HealthPotion : InventoryItem
 
     public override void Use(Character character)
     {
+        AddressableAudioPlayer player = Object.FindObjectOfType<AddressableAudioPlayer>();
+
+
         Debug.Log($"{Name} used by {character.playerName}.");
         CharacterStats stats = character.GetStats();
 
+        if (stats.Health >= stats.MaxHealth)
+        {
+            Debug.Log("Health is already at maximum. No need to use the item.");
+            return;
+        }
+
         if (Stats.ContainsKey("Heals"))
         {
+            player.PlayAddressableSound("Assets/SFX/Effects/inventory/bottle.wav");
             stats.Heal(Stats["Heals"]);
         }
 

@@ -84,12 +84,21 @@ public class ManaPotion : InventoryItem
 
     public override void Use(Character character)
     {
+        AddressableAudioPlayer player = Object.FindObjectOfType<AddressableAudioPlayer>();
+
         Debug.Log($"{Name} mana potion used by {character.playerName}.");
         CharacterStats stats = character.GetStats();
+
+        if (stats.Mana >= stats.MaxMana)
+        {
+            Debug.Log("Mana is already at maximum. No need to use the item.");
+            return;
+        }
 
         if (Stats.ContainsKey("RegainMana"))
         {
             stats.RegainMana(Stats["RegainMana"]);
+            player.PlayAddressableSound("Assets/SFX/Effects/inventory/bottle.wav");
         }
 
         Amount--;

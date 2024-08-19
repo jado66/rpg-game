@@ -172,9 +172,33 @@ public class Character : MonoBehaviour
         }
     }
 
+    private IEnumerator Respawn() {
+        
+        RespawnPoint respawn = Object.FindObjectOfType<RespawnPoint>();
+
+        if (respawn != null){
+            sceneManager.StartFakeLoading();
+            yield return new WaitForSeconds(0.2f); // Wait for 0.2 second
+            sceneManager.minIntensity = 20;
+
+            transform.position = respawn.transform.position;
+            stats.Respawn();
+
+            MusicChanger musicChanger = FindObjectOfType<MusicChanger>();
+            musicChanger.OnPlayerLocationChange(true, false);
+
+            ToastNotification.Instance.Toast("respawn", "You died!");
+        } else
+        {
+            Debug.LogWarning("No RepawnPoint found in the scene!");
+        }
+    }
+
+
     public void Die()
     {
-        Debug.Log("Character died");
+        // get difficulty
+        StartCoroutine(Respawn());
     }
 
     public void Attack()

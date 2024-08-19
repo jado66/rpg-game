@@ -28,6 +28,9 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
     public Character character;
 
     // public GameItemUI selectedStoreItem;
+    AddressableAudioPlayer effectsPlayer;
+
+    private string ClickSoundUrl = "Assets/SFX/Effects/UI/click3.wav";
 
 
     void Awake()
@@ -48,6 +51,13 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
         }
 
         UpdateGameItem(null, true);
+
+
+        // Sound effects 
+        effectsPlayer = Object.FindObjectOfType<AddressableAudioPlayer>();
+        effectsPlayer.PreloadSound(ClickSoundUrl);
+
+
     }
 
 
@@ -185,13 +195,14 @@ public class GameItemUI : MonoBehaviour, IPointerDownHandler, IPointerEnterHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
+
         // BluePrintUI[] buildSlots = FindObjectsOfType<BluePrintUI>();
         // foreach( var buildSlot in buildSlots){
             // buildSlot.transform.parent.GetComponent<Image>().color = new Color(.2627f,.2627f,.2627f); 
         // }231, 144, 105
         // Debug.Log("TEST");
         ToggleSelected();   
-
+        effectsPlayer.PlayAddressableSound(ClickSoundUrl);
         // GameObject.Find("Character").GetComponent<Player>().activeBlueprint = this.bluePrint;E79069
         
         }

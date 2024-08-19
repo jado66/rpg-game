@@ -24,6 +24,9 @@ public class SceneManager : MonoBehaviour
 
     public bool timeIsPaused;
 
+    public string difficulty;
+
+    public NighttimeMonsterManager nighttimeMonsterManager;
 
     [Header("Music")]
     public MusicChanger musicChanger;
@@ -162,6 +165,7 @@ public class SceneManager : MonoBehaviour
 
             case DayNightState.Day:
                 characterUI.TriggerDay(gameHoursToRealSecs, false);
+                DisableNighttimeMonsters();
                 Debug.Log("Switching to Day");
                 musicChanger.OnDayChange(true);
                 break;
@@ -175,9 +179,12 @@ public class SceneManager : MonoBehaviour
             case DayNightState.Night:
                 Debug.Log("Switching to Night");
                 musicChanger.OnDayChange(false);
+                EnableNighttimeMonsters();
                 break;
         }
     }
+
+
 
     public void ResumeGame()
     {
@@ -285,7 +292,7 @@ public class SceneManager : MonoBehaviour
         float currentTime = normalizedHour * totalDayLength;
         return currentTime < daytimeHours * 0.05f || currentTime >= daytimeHours * 0.95f;
     }
-   public void PlayerSleeps()
+    public void PlayerSleeps()
     {
         bool success = TryTransitionToDay();
 
@@ -297,6 +304,17 @@ public class SceneManager : MonoBehaviour
         // player1.health = player1.healthMax;
     }
     
+    private void EnableNighttimeMonsters(){
+
+        if (difficulty == "creative"){
+            return;
+        }
+        nighttimeMonsterManager.EnableNighttimeMonsters();
+    }
+
+    private void DisableNighttimeMonsters(){
+        nighttimeMonsterManager.DisableNighttimeMonsters();
+    }
 
     private IEnumerator TransitionTimeForward(float targetHour)
     {
@@ -475,195 +493,14 @@ public class SceneManager : MonoBehaviour
         fauxLoadingScreen.StartFade();
     }
 
-
-    // private IEnumerator advancePlants(){
-    //     // Debug.Log("Advancing plants");
-    //     System.Random _random = new System.Random (); // change this to a seeded value
-
-    //     // Shuffle the list of plants so they pop advance in a fun order
-    //     PlantTileData myGO;
- 
-    //     int n = plantTiles.Count;
-    //     for (int i = 0; i < n; i++)
-    //     {
-    //          // NextDouble returns a random number between 0 and 1.
-    //          // ... It is equivalent to Math.random() in Java.
-    //         int r = i + (int)(_random.NextDouble() * (n - i));
-    //         myGO = plantTiles[r];
-    //         plantTiles[r] = plantTiles[i];
-    //         plantTiles[i] = myGO;
-    //     }
-
-    //     List<int> indeciesToRemove = new List<int>();
-
-    //     // Now advance the plants
-    //     for (int i = 0; i < n; i++)
-    //     {
-    //         plantTiles[i].AdvanceAge();
-    //         int[] growthProgression = ItemDatabase.plantDatabase[plantTiles[i].name].growthProgression;
-            
-    //         for (int j = 0; j< growthProgression.Length;j++){
-    //             // Debug.Log("Plant age ="+plantTiles[i].age.ToString() +" and sapling stage is " + growthProgression[0]);
-    //             if (plantTiles[i].age == growthProgression[j]){
-    //                 // Debug.Log("We have a plant growing up");
-    //                 if (j == 0){
-
-    //                     // Check for if we are close to water
-    //                     // bool waterIsNear = itemDatabase.plantDatabase[plantTiles[i].name].howFarFromWaterToGrow != 0;
-
-    //                     bool waterIsNear = true;
-
-    //                     if (!waterIsNear){
-    //                         int distanceNeededToWater = ItemDatabase.plantDatabase[plantTiles[i].name].howFarFromWaterToGrow;
-    //                         for (int k = 0; k < distanceNeededToWater;k++){
-    //                             for (int l = 0; l < distanceNeededToWater;l++){
-    //                                 if (tilePalette.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePalette.water){
-    //                                     waterIsNear = true;
-    //                                     Debug.Log("We've water");
-    //                                     break;
-    //                                 }
-    //                             }
-    //                             if (waterIsNear)
-    //                                 break;
-    //                         }
-    //                     }
-
-    //                     if (waterIsNear){
-    //                         Debug.Log("Turning "+ plantTiles[i].name + " to sapling");
-    //                         tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.sapling);
-    //                     }
-    //                     else{
-    //                         indeciesToRemove.Add(i);
-    //                         tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
-    //                     }
-    //                     //Sapling
-    //                 }
-    //                 else if (j == 1){
-    //                     //Ripe
-
-    //                     // bool waterIsNear = itemDatabase.plantDatabase[plantTiles[i].name].howFarFromWaterToGrow != 0;
-    //                     bool waterIsNear = true;
-    //                     if (!waterIsNear){
-    //                         int distanceNeededToWater = ItemDatabase.plantDatabase[plantTiles[i].name].howFarFromWaterToGrow;
-
-    //                         for (int k = 0; k < distanceNeededToWater;k++){
-    //                             for (int l = 0; l < distanceNeededToWater;l++){
-    //                                 if (tilePalette.ground.GetTile(plantTiles[i].location + new Vector3Int(-2+k,-2+l,0))==tilePalette.water){
-    //                                     waterIsNear = true;
-    //                                     break;
-    //                                 }
-    //                             }
-    //                             if (waterIsNear)
-    //                                 break;
-    //                         }
-    //                     }
-
-    //                     if (waterIsNear){
-
-    //                         // Debug.Log(plantTiles[i].name + " is now ripe");
-    //                         switch (plantTiles[i].name){
-    //                             case "carrot":
-    //                                 tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.carrot);
-    //                                 break;
-    //                             case "tomato":
-    //                                 tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.tomato);
-    //                                 break;
-    //                             case "appleTreeSapling":
-    //                                 tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.grass);
-    //                                 tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.appleTreeEmpty);
-    //                                 // Add apple tree to list
-    //                                 break;
-    //                             case "bushSapling":
-    //                                 tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.bush);
-    //                                 break;
-    //                             case "treeSapling":
-    //                                 tilePalette.choppable.SetTile(plantTiles[i].location,tilePalette.tree);
-    //                                 break;
-    //                         }
-    //                         if (ItemDatabase.plantDatabase[plantTiles[i].name].isPermanent){
-    //                             indeciesToRemove.Add(i);
-    //                             tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.grass);
-    //                         }
-    //                     }
-    //                     else{
-    //                         indeciesToRemove.Add(i);
-    //                         tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
-    //                     }
-    //                 } 
-    //                 else if (j == 2){
-
-    //                     tilePalette.ground.SetTile(plantTiles[i].location,tilePalette.dirt);
-    //                     indeciesToRemove.Add(i);
-    //                     //Dead
-                        
-    //                     //remove me from list
-    //                 }
-    //                 else if (j == 3){
-    //                     // Check if periannual or whatnot
-    //                 }
-    //             }
-    //         }
-    //         yield return new WaitForSeconds(.3f); // Make this random we want to spread these out throughout the day
-    //         //Make noise at build location
-    //     }
-
-    //     for (int i = indeciesToRemove.Count; i --> 0; ){
-    //         // plantTiles.RemoveAt(indeciesToRemove[i]);
-    //     }
-
-
-    //     yield return null;
-    // }
-
-
-    
-//     public IEnumerator addPlantTile(Vector3Int location, string plantName){
-//         // if we don't have one already
-//         bool duplicate = false;
-
-//         for (int i = 0; i<plantTiles.Count;i++){
-//             if (plantTiles[i].location == location)
-//                 duplicate = true;
-//                 yield return null;
-//         }
-
-//         if (!duplicate)
-//             plantTiles.Add(new PlantTileData(location,plantName));
-//     }
-
-//     private IEnumerator resetPlant(Vector3Int location){
-//         for (int i = 0; i < plantTiles.Count; i++){
-//             if (plantTiles[i].location == location){
-//                 plantTiles[i].resetAge();
-//                 break;
-//             }
-//         }
-//         yield return null;
-//     }
-
-    
-//     void growAllPlants(){
-//         Tilemap dirt = GameObject.Find("Dirt").GetComponent<Tilemap>();
-//         Tilemap ground = GameObject.Find("Ground").GetComponent<Tilemap>();
-//         Tilemap choppable = GameObject.Find("Choppable").GetComponent<Tilemap>();
-
-//         foreach (var pos in ground.cellBounds.allPositionsWithin)
-//         {   
-//         Vector3Int localPlace = new Vector3Int(pos.x, pos.y, pos.z);
-        
-//             if (ground.GetTile(localPlace)==sapling){
-//                 Debug.Log("We found a tree");
-//                 ground.SetTile(localPlace,grass);
-//                 choppable.SetTile(localPlace,tree);
-//             }
-//             if (dirt.GetTile(localPlace)==sapling){
-//                 Debug.Log("We found a tree");
-//                 ground.SetTile(localPlace,grass);
-//                 choppable.SetTile(localPlace,tree);
-//             }
-//         }
-//     }
-
+    public void ToggleDifficulty(){
+        if (difficulty == "creative"){
+            difficulty = "easy";
+        }
+        else {
+            difficulty = "creative";
+        }
+    }
 }
 
 

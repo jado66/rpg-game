@@ -53,6 +53,7 @@ public static class InventoryItemDatabase
             
             // Seeds
             TerraSeeds.TreeSapling(),
+            TerraSeeds.AppleSapling(),
             TerraSeeds.BushSapling(),
             TerraSeeds.TomatoSeed(),
             TerraSeeds.CarrotSeed(),

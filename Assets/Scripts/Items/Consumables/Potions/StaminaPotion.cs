@@ -84,12 +84,21 @@ public class StaminaPotion : InventoryItem
 
     public override void Use(Character character)
     {
+        AddressableAudioPlayer player = Object.FindObjectOfType<AddressableAudioPlayer>();
+
         Debug.Log($"{Name} used by {character.playerName}.");
         CharacterStats stats = character.GetStats();
+
+        if (stats.Stamina >= stats.MaxStamina)
+        {
+            Debug.Log("Stamina is already at maximum. No need to use the item.");
+            return;
+        }
 
         if (Stats.ContainsKey("RegainStamina"))
         {
             stats.RegainStamina(Stats["RegainStamina"]);
+            player.PlayAddressableSound("Assets/SFX/Effects/inventory/bottle.wav");
         }
 
         Amount--;

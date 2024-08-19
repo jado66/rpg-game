@@ -10,6 +10,7 @@ namespace PlantSystem
         [SerializeField] private Tilemap choppableTilemap;
 
         public TileBase dirt;
+        public TileBase grass;
 
 
         public void UpdateTile(Vector3Int location, TileBase tile)
@@ -17,9 +18,18 @@ namespace PlantSystem
             groundTilemap.SetTile(location, tile);
         }
 
-        public void ClearTile(Vector3Int location)
+        public void UpdateChoppableTile(Vector3Int location, TileBase tile)
         {
-            groundTilemap.SetTile(location, dirt);
+            choppableTilemap.SetTile(location, tile);
+        }
+
+        public bool HasChoppableTile(Vector3Int location)
+        {
+            return choppableTilemap.HasTile(location);
+        }
+        public void ClearTile(Vector3Int location, bool isTree)
+        {
+            groundTilemap.SetTile(location, isTree ? grass : dirt);
         }
     }
 

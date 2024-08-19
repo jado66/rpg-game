@@ -29,12 +29,14 @@ namespace PlantSystem
 
         public bool TryPlantSeed(Vector3Int location, string plantName)
         {
+            List<Vector3Int> plantsToRemove = new List<Vector3Int>();
+
             Debug.Log($"Attempting to plant seed '{plantName}' at location {location}.");
             
             if (!plantTiles.ContainsKey(location) && IsLocationPlantable(location))
             {
                 plantTiles[location] = new PlantInfo(plantName);
-                UpdatePlantTile(location);
+                UpdatePlantTile(location, plantsToRemove);
 
                 Debug.Log($"Successfully planted '{plantName}' at location {location}.");
                 return true;
@@ -52,27 +54,35 @@ namespace PlantSystem
             return false;
         }
 
-        private void UpdatePlantTile(Vector3Int location)
+         private void UpdatePlantTile(Vector3Int location, List<Vector3Int> plantsToRemove)
         {
             if (plantTiles.TryGetValue(location, out PlantInfo plant))
             {
+                var plantData = plantDataManager.GetPlantData(plant.plantName);
                 TileBase newTile = plantDataManager.GetStageTile(plant.plantName, plant.currentStage);
-                tileMapManager.UpdateTile(location, newTile);
+
+                if (plant.currentStage == plantData.growthStages.Count - 1 && plantData.isTree)
+                {
+                    // Plant is mature and is a tree, move it to choppable tilemap
+                    tileMapManager.ClearTile(location, true);
+                    tileMapManager.UpdateChoppableTile(location, newTile);
+                    plantsToRemove.Add(location);
+                }
+                else
+                {
+                    // Plant is still growing or is not a tree, update ground tilemap
+                    tileMapManager.UpdateTile(location, newTile);
+                }
             }
         }
 
-        private bool IsLocationPlantable(Vector3Int location)
+         private bool IsLocationPlantable(Vector3Int location)
         {
-            // You can add more complex checks here, such as:
-            // - Is the tile suitable for planting?
-            // - Is there no obstacle at this location?
-            // - Any other game-specific conditions
-            
-            // For now, we'll just check if the location is not occupied by another plant
-            return !plantTiles.ContainsKey(location);
+            return !plantTiles.ContainsKey(location) && !tileMapManager.HasChoppableTile(location);
         }
 
-        public void GrowPlant(Vector3Int location)
+
+        public void GrowPlant(Vector3Int location, List<Vector3Int> plantsToRemove)
         {
             if (plantTiles.TryGetValue(location, out PlantInfo plant))
             {
@@ -84,21 +94,25 @@ namespace PlantSystem
                 {
                     plant.currentStage++;
                     plant.daysInCurrentStage = 0;
-                    UpdatePlantTile(location);
+                    UpdatePlantTile(location, plantsToRemove);
                 }
 
-                if (plant.currentStage == plantData.growthStages.Count - 1)
-                {
-                    // Plant is fully grown, you might want to handle this case (e.g., make it harvestable)
-                }
+               
             }
         }
 
         public void GrowAllPlants()
         {
+            List<Vector3Int> plantsToRemove = new List<Vector3Int>();
+
             foreach (var location in new List<Vector3Int>(plantTiles.Keys))
             {
-                GrowPlant(location);
+                GrowPlant(location, plantsToRemove);
+            }
+
+            foreach (var location in plantsToRemove)
+            {
+                plantTiles.Remove(location);
             }
         }
 
@@ -117,13 +131,18 @@ namespace PlantSystem
                     // Advance to the next stage
                     plant.currentStage++;
                     plant.daysInCurrentStage = 0;
-                    UpdatePlantTile(location);
+                    UpdatePlantTile(location, plantsToRemove);
                     Debug.Log($"Advanced {plant.plantName} at {location} to stage {plant.currentStage}");
                 }
                 else
                 {
                     Debug.Log($"{plant.plantName} at {location} is already fully grown");
                 }
+            }
+
+            foreach (var location in plantsToRemove)
+            {
+                plantTiles.Remove(location);
             }
         }
 
@@ -136,7 +155,7 @@ namespace PlantSystem
                 if (plant.currentStage == plantData.growthStages.Count - 1)
                 {
                     // The plant is fully grown, so we can harvest it
-                    tileMapManager.ClearTile(location);
+                    tileMapManager.ClearTile(location, false);
                     plantTiles.Remove(location);
                     
                     // Here you might want to add logic for giving the player the harvested item

@@ -1,213 +1,213 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using System;
+
+using System.Collections.Generic;
 
 public class Monster : LivingEntity
 {
     public bool canSwim;
-
     public bool alwaysMoving;
-
-    protected  TilePalette tilePalette;
-    protected Vector3 wayPoint;
-    private float timer;
-
-    protected GridLayout grid;
- 
-    // private static cat _instance;
-
-    // public static cat Instance { get { return _instance; } }
-    protected GameObject player;
-
-    public float sightRange = 5;
-
-    protected float tempSightRange;
-
+    public float sightRange = 5f;
     public float runSpeed;
-
     public float walkSpeed;
-
-    protected bool moving; 
-
     public bool resting;
-
     public bool followingPlayer;
-
     public string id;
+    public Vector2 startingPosition = new Vector2(0, -1);
+    public bool hostile;
+    public float maxWanderDistance = 10f;
 
-    public Vector2 startingPosition = new Vector3(0,-1);
-
+    protected TilePalette tilePalette;
+    protected Vector3 wayPoint;
+    protected GridLayout grid;
+    protected GameObject player;
     protected Vector3 direction;
     protected List<Animator> animators = new List<Animator>();
 
-    public bool hostile;
+    [SerializeField]
+    private bool canPassThroughObstacles = false; // Set this in the inspector for enemies that can pass through
 
-    
+    private Vector3 startingLocation;
 
-
-    // Start is called before the first frame update
-
-    public void addAnimator(Animator animator){
-        animators.Add(animator);
-    }
-    void Awake(){
-        alive = true;
-        try{
-        animators.Add(gameObject.GetComponent<Animator>());
-        }
-        catch{}
-
-    }
-    void Start()
+    protected virtual void Awake()
     {
+        alive = true;
+
+        startingLocation = transform.position;
 
         if (string.IsNullOrEmpty(id))
         {
-            id = System.Guid.NewGuid().ToString();
+            id = Guid.NewGuid().ToString();
         }
 
-
-        if (followingPlayer) // or player is carrying
-            DontDestroyOnLoad(this);
-
-        healthbarObject.SetActive(false);
-        // If following through portal delete if there is a clone (useful for going through and back from a portal)
-        // This will be done away with when we have a saved state function for portal hopping.
-        Monster[] monsters = (Monster[]) FindObjectsOfType(typeof(Monster));
-        foreach(var monster in monsters){
-            if (monster.id == this.id && monster !=this) {
-                if (!this.followingPlayer){
-                    Debug.Log("Destroying duplicate monster " + this.gameObject.name + "!");
-                    Destroy(this.gameObject);
-                }
-            }
+        try
+        {
+            animators.Add(gameObject.GetComponent<Animator>());
         }
-        
-
-        grid = GameObject.Find("Grid").GetComponent<GridLayout>(); 
-        
-        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
-        tempSightRange = sightRange;
-        findNewWayPoint();
-        player = GameObject.Find("Character");
-        foreach(var animator in animators){
-            animator.SetFloat("moveX",startingPosition.x);
-            animator.SetFloat("moveY",startingPosition.y);
-        }
+        catch { }
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void Start()
     {
-        if (!alive)
-            return;
-        if (health <= 0)
-            kill();
+        InitializeMonster();
+        SetupAnimators();
+    }
 
-        if (player == null)
-            player = GameObject.FindWithTag("Player");
-        if (tilePalette == null)
-            tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
-        Vector3 position = transform.position;
-                
-        if (Random.Range(0,1000) <=6){
-            // if (!alwaysMoving)
-            //     resting = !resting;
-            // Debug.Log(resting);
-            findNewWayPoint();
-        }
-            
-        float distance = Vector3.Distance(position,player.transform.position);
-
-        
-        if ( Vector3.Distance(position,player.transform.position)<sightRange && hostile){
-            // if (tempSightRange == sightRange){
-            //     findNewWayPoint();
-            // }
-            wayPoint = player.transform.position;
-            resting = false;
-            // tempSightRange = sightRange*1.5f;
-            // direction = (position-player.transform.position);
-            // animator.SetFloat("moveX",direction.x);
-            // animator.SetFloat("moveY",direction.y);
-            // animator.SetBool("moving",true);
-            // position+= direction.normalized * runSpeed * Time.deltaTime;
-            
-            // transform.position = position;
-            // resting = false;
-        }
-        if (!resting){
-            tempSightRange = sightRange;
-            direction = (wayPoint-transform.position);
-            foreach(var animator in animators){
-                animator.SetFloat("moveX",direction.x);
-                animator.SetFloat("moveY",direction.y);
-                animator.SetBool("moving",true);
-            }
-            position+= direction.normalized * walkSpeed * Time.deltaTime;
-            
-            transform.position = position;
-            resting = false;
-        }
-        
-        if (resting){
-            // Debug.Log("Idle");
-            foreach(var animator in animators){
-                animator.SetBool("moving",false);
-            }
-        }
-
-        if((transform.position - wayPoint).magnitude < 3)
+    protected virtual void Update()
+    {
+        if (!alive || health <= 0)
         {
-         // when the distance between us and the target is less than 3
-         // create a new way point target
-            findNewWayPoint();
+            if (health <= 0) kill();
+            return;
+        }
+
+        UpdateReferences();
+        HandleMovement();
+    }
+
+    protected virtual void InitializeMonster()
+    {
+        id = string.IsNullOrEmpty(id) ? System.Guid.NewGuid().ToString() : id;
+        if (followingPlayer) DontDestroyOnLoad(this);
+        healthbarObject.SetActive(false);
+        HandleDuplicateMonsters();
+        
+        grid = GameObject.Find("Grid").GetComponent<GridLayout>();
+        tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
+        player = GameObject.FindWithTag("Player");
+        
+        FindNewWayPoint();
+    }
+
+    protected virtual void HandleDuplicateMonsters()
+    {
+        Monster[] monsters = FindObjectsOfType<Monster>();
+        foreach (var monster in monsters)
+        {
+            if (monster.id == this.id && monster != this && !this.followingPlayer)
+            {
+                Debug.Log($"Destroying duplicate monster {gameObject.name}!");
+                Destroy(gameObject);
+            }
         }
     }
 
-    
-
-    
-    protected void findNewWayPoint(){ 
-    // does nothing except pick a new destination to go to
-
-        // Debug.Log("Finding New waypoint");
-
-        Vector3 newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        
-        RaycastHit2D checkForGround = Physics2D.Raycast(newWayPoint+new Vector3(0,0,.5f),Vector3.down,1);
-
-        if (checkForGround.collider == null)
+    protected virtual void SetupAnimators()
+    {
+        foreach (var animator in animators)
         {
-            Debug.DrawRay(newWayPoint+new Vector3(0,0,.5f),Vector3.down,Color.green,1f);
-            Debug.Log("Waypoint at "+newWayPoint.ToString()+" is inaccessible");
-            return;
+            animator.SetFloat("moveX", startingPosition.x);
+            animator.SetFloat("moveY", startingPosition.y);
+        }
+    }
+
+    protected virtual void UpdateReferences()
+    {
+        if (player == null) player = GameObject.FindWithTag("Player");
+        if (tilePalette == null) tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
+    }
+
+    protected virtual void HandleMovement()
+    {
+        if (ShouldFindNewWaypoint()) FindNewWayPoint();
+
+        Vector3 position = transform.position;
+        float distanceToPlayer = Vector3.Distance(position, player.transform.position);
+
+        if (distanceToPlayer < sightRange && hostile)
+        {
+            ChasePlayer(position);
+        }
+        else if (!resting)
+        {
+            MoveTowardsWaypoint(position);
         }
         else
-        {   
-            wayPoint = newWayPoint;
+        {
+            SetIdleAnimation();
         }
+    }
+
+    protected virtual bool ShouldFindNewWaypoint()
+    {
+        return UnityEngine.Random.Range(0, 1000) <= 6 || Vector3.Distance(transform.position, wayPoint) < 0.1f;
+    }
+
+    protected virtual void ChasePlayer(Vector3 position)
+    {
+        wayPoint = player.transform.position;
+        resting = false;
+        MoveTowardsWaypoint(position, runSpeed);
+    }
+
+    protected virtual void MoveTowardsWaypoint(Vector3 position, float speed = -1)
+    {
+        if (speed < 0) speed = walkSpeed;
         
-        // try{
-        // Vector3 newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water ||tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
-        //     newWayPoint=  new Vector3(transform.position.x +Random.Range(-sightRange, sightRange), transform.position.y+ Random.Range(-sightRange,sightRange),0);
-        // }
-        // if (tilePalette.ground.GetTile(grid.WorldToCell(newWayPoint))==tilePalette.water || tilePalette.collidable.GetTile(grid.WorldToCell(newWayPoint))!=null){
-        //     return;
-        // }
-        // else
-        //     wayPoint = newWayPoint;
-        // }
-        // catch{
-        //     return;
-        // }
-    // don't need to change direction every frame seeing as you walk in a straight line only
-    //  Debug.Log(wayPoint + " and " + (transform.position - wayPoint).magnitude);
-    }    
+        direction = (wayPoint - position).normalized;
+        SetMovementAnimation(direction);
+        
+        position += direction * speed * Time.deltaTime;
+        transform.position = position;
+    }
+
+    protected virtual void SetMovementAnimation(Vector3 direction)
+    {
+        foreach (var animator in animators)
+        {
+            animator.SetFloat("moveX", direction.x);
+            animator.SetFloat("moveY", direction.y);
+            animator.SetBool("moving", true);
+        }
+    }
+
+    private void SetIdleAnimation()
+    {
+        foreach (var animator in animators)
+        {
+            animator.SetBool("moving", false);
+        }
+    }
+
+    protected virtual void FindNewWayPoint()
+    {
+        if (!alive){
+            return;
+        }
+        Vector3 spawnPoint = new Vector3(startingLocation.x, startingLocation.y, 0);
+        Vector3 randomOffset = UnityEngine.Random.insideUnitSphere * maxWanderDistance;
+        randomOffset.z = 0;
+        Vector3 newWayPoint = spawnPoint + randomOffset;
+
+        if (canPassThroughObstacles)
+        {
+            // If the enemy can pass through obstacles, set the waypoint directly
+            wayPoint = newWayPoint;
+            // Debug.Log($"New waypoint set at {wayPoint} (Can pass through obstacles)");
+        }
+        else{
+
+             // Create a LayerMask for layers 9, 10, and 11
+            int layerMask = (1 << 9) | (1 << 10) | (1 << 11);
+
+            // Check if the newWayPoint is hitting any colliders on the specified layers
+            Collider2D hitCollider = Physics2D.OverlapCircle(newWayPoint, 0.1f, layerMask);
+
+
+            if (hitCollider == null)
+            {
+                // No colliders hit, so this is a valid waypoint
+                wayPoint = newWayPoint;
+            }
+            else
+            {
+                Debug.Log($"Waypoint at {newWayPoint} is inaccessible (hitting {hitCollider.gameObject.name} on layer {hitCollider.gameObject.layer})");
+            }
+        }
+    }
+
+    public void addAnimator(Animator animator)
+    {
+        animators.Add(animator);
+    }
 }
-
-
-
-   

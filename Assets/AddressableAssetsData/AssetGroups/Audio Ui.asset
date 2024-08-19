@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Audio Ui
+  m_EditorClassIdentifier: 
+  m_GroupName: Audio Ui
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1d3c213a439bb524b97efc2d541aa55c
+  m_SerializeEntries:
+  - m_GUID: 058d0824061f1b44ea82ca739477a860
+    m_Address: Assets/SFX/Effects/UI/click3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 55feda11dd77b344984376f6395e2110
+    m_Address: Assets/SFX/Effects/UI/switch28.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8601a7971489f44438a9c0248eb2f6b7
+    m_Address: Assets/SFX/Effects/UI/switch29.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b9b58f6218b0431488750b3650e6e8ef, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1907077fdde171f4a939df9097069cc6, type: 2}
+    - {fileID: 11400000, guid: ab269ab89a8d31c43b5c39356bab06ce, type: 2}

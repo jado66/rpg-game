@@ -43,6 +43,23 @@ public class TerraSeeds : InventoryItem
         );
     }
 
+    public static TerraSeeds AppleSapling() 
+    {
+        return new TerraSeeds(
+            "apple-sapling",
+            "Apple Sapling",
+            "It most certainly will kill you.",
+            Uses.Tool, 
+            new Dictionary<string, int>(), 
+            150, 
+            new List<string>(), 
+            new List<string>(),
+            "Apple Tree",
+            1,
+            25
+        );
+    }
+
     // Simplified constructor for a bush sapling
     public static TerraSeeds BushSapling() 
     {

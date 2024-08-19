@@ -15,12 +15,9 @@ MonoBehaviour:
   data:
     plantName: Bush
     growthStages:
-    - stageName: seed
-      daysToNextStage: 3
-      tile: {fileID: 11400000, guid: e8a2be71ba879a74eb356aae59937f3a, type: 2}
     - stageName: sapling
-      daysToNextStage: 4
-      tile: {fileID: 11400000, guid: 6f44f04d408c59c4e959a1a2c55df87a, type: 2}
+      daysToNextStage: 5
+      tile: {fileID: 11400000, guid: dae35c80ad4681549be607c63a493b23, type: 2}
     - stageName: mature
       daysToNextStage: 0
       tile: {fileID: 11400000, guid: 6f44f04d408c59c4e959a1a2c55df87a, type: 2}

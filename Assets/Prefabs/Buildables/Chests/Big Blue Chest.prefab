@@ -7,6 +7,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8531841877673837860, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531841877673837860, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.026634216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531841877673837860, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.066596985
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531841877673837860, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.2570038
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531841877673837860, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.86680603
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531841877673837862, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6194503689366941673, guid: 8e7e9119a8f2b9142801174b7bc7ebe4,
+        type: 3}
+    - target: {fileID: 8531841877673837863, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c0e08a2e660096b40ab6e3d79743c8f3, type: 2}
+    - target: {fileID: 8531841877673837866, guid: 37af0307902198b439c05ee83566891b,
+        type: 3}
+      propertyPath: m_Name
+      value: Big Blue Chest
+      objectReference: {fileID: 0}
     - target: {fileID: 8888421809939928321, guid: 37af0307902198b439c05ee83566891b,
         type: 3}
       propertyPath: m_Offset.x
