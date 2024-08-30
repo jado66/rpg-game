@@ -27,7 +27,7 @@ public class CharacterInventory : MonoBehaviour
         // Initialization logic here
     }
 
-    void Start()
+    protected void Start()
     {
         // This needs save game names for this to work
         // bool loadSuccess = LoadInventory();
@@ -36,7 +36,7 @@ public class CharacterInventory : MonoBehaviour
         // }
     }
 
-    protected void ClearItems(){
+    public void ClearItems(){
         items.Clear();
     }
 

@@ -15,6 +15,8 @@ public class LivingEntity : Interactable
 
     public float maxHealth;
 
+    public EntitySpawner spawner;
+
     void Start(){
         alive = true;
         // healthbarObject.SetActive(false);
@@ -66,6 +68,9 @@ public class LivingEntity : Interactable
 
     protected IEnumerator WaitAndDestroy(){
         yield return new WaitForSeconds(deathVanishDelay);
+        if (spawner != null){
+            spawner.RemoveDeadEntity(this.gameObject);
+        }
         Destroy(this.gameObject);
     }
 }

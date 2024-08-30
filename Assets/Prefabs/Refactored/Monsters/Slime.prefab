@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2788160398617667765}
   - component: {fileID: 1911549306285719852}
   - component: {fileID: 8150840363349572598}
+  - component: {fileID: 2115912990056536326}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -126,7 +127,7 @@ MonoBehaviour:
   alive: 1
   healthbarObject: {fileID: 8656814464962173459}
   healthbar: {fileID: 6498406475919587283}
-  deathVanishDelay: 5
+  deathVanishDelay: 200
   health: 25
   maxHealth: 25
   canSwim: 0
@@ -143,6 +144,7 @@ MonoBehaviour:
   collisionDamage: 5
   collisionDamageCooldown: 0.25
   canPassThroughObstacles: 0
+  chest: {fileID: 0}
 --- !u!58 &1911549306285719852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -205,6 +207,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2115912990056536326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286880124214529278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de1a70dacd835643a21ffc0d3509354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 10
+  inventoryIdentifier: slime
+  isDebug: 0
+  startingItems: []
+  ExternalInventoryGui: {fileID: 0}
+  ExternalInventoryPanel: {fileID: 0}
+  inventoryUI: {fileID: 0}
+  possibleLoot:
+  - itemName: Small Health Potion
+    chance: 0.5
+    minAmount: 1
+    maxAmount: 1
+  - itemName: Coins
+    chance: 1
+    minAmount: 1
+    maxAmount: 15
+  - itemName: Grass Slimeball
+    chance: 1
+    minAmount: 1
+    maxAmount: 3
+  - itemName: Grass Shard
+    chance: 0.01
+    minAmount: 1
+    maxAmount: 1
 --- !u!1 &1133800523166534263
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,5 +530,5 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}

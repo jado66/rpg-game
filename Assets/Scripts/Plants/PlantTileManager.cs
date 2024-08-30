@@ -8,7 +8,7 @@ namespace PlantSystem
     {
         public static PlantTileManager Instance { get; private set; }
 
-        private Dictionary<Vector3Int, PlantInfo> plantTiles = new Dictionary<Vector3Int, PlantInfo>();
+        public Dictionary<Vector3Int, PlantInfo> plantTiles = new Dictionary<Vector3Int, PlantInfo>();
 
         [SerializeField] private PlantTileMapManager tileMapManager;
         [SerializeField] private PlantDataManager plantDataManager;

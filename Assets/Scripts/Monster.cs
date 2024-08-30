@@ -25,12 +25,14 @@ public class Monster : LivingEntity
     protected GridLayout grid;
     protected GameObject player;
     protected Vector3 direction;
-    protected List<Animator> animators = new List<Animator>();
+    protected List<Animator> animators = new List<Animator>(); 
 
     [SerializeField]
     private bool canPassThroughObstacles = false; // Set this in the inspector for enemies that can pass through
 
     private Vector3 startingLocation;
+
+    public Chest chest;
 
     protected virtual void Awake()
     {
@@ -74,6 +76,10 @@ public class Monster : LivingEntity
         if (followingPlayer) DontDestroyOnLoad(this);
         healthbarObject.SetActive(false);
         HandleDuplicateMonsters();
+
+        chest = gameObject.AddComponent<Chest>();
+        chest.inventory = gameObject.GetComponent<ExternalInventory>();
+        chest.isLocked = true;
         
         grid = GameObject.Find("Grid").GetComponent<GridLayout>();
         tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
@@ -257,6 +263,8 @@ public class Monster : LivingEntity
         if (!alive){
             return;
         }
+
+        chest.isLocked = false;
 
         foreach (var animator in animators)
         {

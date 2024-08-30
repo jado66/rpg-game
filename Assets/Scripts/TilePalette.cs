@@ -173,6 +173,17 @@ public class TilePalette : MonoBehaviour
         
     }
 
+    public bool IsCollidableAtTile(Vector3Int tilePos)
+    {
+        // Check if the position is within bounds of any of the collidable Tilemaps
+        if (collidable.HasTile(tilePos) || minable.HasTile(tilePos) ||
+            choppable.HasTile(tilePos) || interactable.HasTile(tilePos))
+        {
+            return true;
+        }
+        return false;
+    }
+
     void Init(){
         
     }

@@ -74,5 +74,9 @@ public class Chest : Interactable
         }
     }
 
+    void OnDestroy() {
+        CloseChest();
+    }
+
     
 }

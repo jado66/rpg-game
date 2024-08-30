@@ -55,6 +55,11 @@ public class CharacterStats : MonoBehaviour
         Money += amount; // This will use the property setter, including clamping
     }
 
+    public void SetMoney(float amount)
+    {
+        Money = amount; 
+    }
+
     public void SubtractMoney(float amount)
     {
         Money -= amount; // This will use the property setter, including clamping

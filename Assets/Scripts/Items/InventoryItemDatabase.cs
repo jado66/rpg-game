@@ -48,7 +48,7 @@ public static class InventoryItemDatabase
             new RegularItem("1", "Rock", "Not the morning kind", 2, regularItem, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
             new RegularItem("2", "Iron Ore", "Let's pump some", 10, regularItem, new Dictionary<string, int>(), 150, new List<string>(), new List<string>()),
             new RegularItem("3", "Gold Ore", "Oooh ahh", 10, regularItem, new Dictionary<string, int>(), 500, new List<string>(), new List<string>()),
-            new RegularItem("4", "Coins", "Mooooooneeey", 999, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            // new RegularItem("4", "Coins", "Mooooooneeey", 999, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
             new RegularItem("5", "Wild Flower", "A wild flower", 99, regularItem, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
             new RegularItem("6", "Pink Wild Flower", "A pink wild flower", 99, regularItem, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
             new RegularItem("6", "Purple Wild Flower", "A purple wild flower", 99, regularItem, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
@@ -108,7 +108,10 @@ public static class InventoryItemDatabase
             new ExtraLargeBackpack(),
             new StrongSpellInventoryExpansion(),
             new SpellInventoryExpansion(),
-
+            new Skull(),
+            new Bones(),
+            new GrassSlimeball(),
+            Money.Coins(),
             // new AstralProjectionScroll(),
 
             // new ConsumableItem("26", "Mana Potion L1", "A what?", 5, consumable, new Dictionary<string, int>(), 225, new List<string>(), new List<string>(), 1,"Magic Elixir"),
