@@ -111,7 +111,7 @@ TextureImporter:
       213: -2595646224574842757
     second: Terra and Water smallanimals uncatchable_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra and Water smallanimals uncatchable_0: 971778642266533627
+      Terra and Water smallanimals uncatchable_1: -8511636315153718341
+      Terra and Water smallanimals uncatchable_10: -8707654189514821834
+      Terra and Water smallanimals uncatchable_11: 3183921312457450445
+      Terra and Water smallanimals uncatchable_12: -6862624658431712335
+      Terra and Water smallanimals uncatchable_13: -4297826913801682173
+      Terra and Water smallanimals uncatchable_14: 517429440069619046
+      Terra and Water smallanimals uncatchable_15: 354255124242310433
+      Terra and Water smallanimals uncatchable_16: 8947406756959299955
+      Terra and Water smallanimals uncatchable_17: 7946524292527406140
+      Terra and Water smallanimals uncatchable_18: 9043937731780462612
+      Terra and Water smallanimals uncatchable_19: 7948098340237923877
+      Terra and Water smallanimals uncatchable_2: -2112165350403748259
+      Terra and Water smallanimals uncatchable_20: 7275283318611279349
+      Terra and Water smallanimals uncatchable_21: -6898611709894290703
+      Terra and Water smallanimals uncatchable_22: 1793447562467142256
+      Terra and Water smallanimals uncatchable_23: 6475207376163391550
+      Terra and Water smallanimals uncatchable_24: 8731102644503086322
+      Terra and Water smallanimals uncatchable_25: -7637574664940310519
+      Terra and Water smallanimals uncatchable_26: -3428186336701241496
+      Terra and Water smallanimals uncatchable_27: -2872391035655586586
+      Terra and Water smallanimals uncatchable_28: 6197558090433412575
+      Terra and Water smallanimals uncatchable_29: 9132503189613451672
+      Terra and Water smallanimals uncatchable_3: -6245726062935125152
+      Terra and Water smallanimals uncatchable_30: 6339133051779377925
+      Terra and Water smallanimals uncatchable_31: 8693348125098471709
+      Terra and Water smallanimals uncatchable_32: 9105238850382397456
+      Terra and Water smallanimals uncatchable_33: 6790066522635054071
+      Terra and Water smallanimals uncatchable_34: -4080554020365807876
+      Terra and Water smallanimals uncatchable_35: -2595646224574842757
+      Terra and Water smallanimals uncatchable_4: 2353517631869975448
+      Terra and Water smallanimals uncatchable_5: -6167611253254338027
+      Terra and Water smallanimals uncatchable_6: -127867953807024251
+      Terra and Water smallanimals uncatchable_7: -1411482375200721298
+      Terra and Water smallanimals uncatchable_8: -5030949697626548308
+      Terra and Water smallanimals uncatchable_9: 7903386964935855402
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

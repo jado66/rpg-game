@@ -348,7 +348,7 @@ TextureImporter:
       213: 4208956065091394099
     second: cave 1_114
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -365,9 +365,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -377,8 +380,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -399,10 +402,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -414,6 +422,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -426,6 +435,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2940,9 +2963,124 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cave 1_0: 7799938940092126963
+      cave 1_1: -3988860531708725667
+      cave 1_10: -8847566390139088889
+      cave 1_100: 4934232911668739450
+      cave 1_101: 1028236003114444365
+      cave 1_102: 6991245054701414714
+      cave 1_103: 2899143149824132348
+      cave 1_104: 5290725735508761118
+      cave 1_105: -1337430071891253973
+      cave 1_106: -5143263097213845056
+      cave 1_107: 8706670542350724916
+      cave 1_108: 6799240109302383815
+      cave 1_109: -2990127420653041270
+      cave 1_11: -2088612848182415656
+      cave 1_110: -1467836607098538333
+      cave 1_111: 6565853267829980507
+      cave 1_112: 8200640343071022798
+      cave 1_113: 7193827049125405700
+      cave 1_114: 4208956065091394099
+      cave 1_12: 2788084416394278146
+      cave 1_13: 884485623826612596
+      cave 1_14: 5086266962803742617
+      cave 1_15: 269274357161459834
+      cave 1_16: -8032401452934403843
+      cave 1_17: 6940249709183969277
+      cave 1_18: 773782504092693619
+      cave 1_19: -304962796818710695
+      cave 1_2: -8641022597031537277
+      cave 1_20: -5539147292111247976
+      cave 1_21: -3176772484557156883
+      cave 1_22: 8000724339418240156
+      cave 1_23: 2359682783034251972
+      cave 1_24: 8987141164866266532
+      cave 1_25: 4726675327834900646
+      cave 1_26: 288359681101170930
+      cave 1_27: -8913906392781027028
+      cave 1_28: -8646271042186326028
+      cave 1_29: 6645081167198099335
+      cave 1_3: 2923342781168007727
+      cave 1_30: -7876165625177902624
+      cave 1_31: -2845240478950515617
+      cave 1_32: -1419451224525429918
+      cave 1_33: 6318578172137357745
+      cave 1_34: -7035988903192110401
+      cave 1_35: 1818419337196250989
+      cave 1_36: -8856964406685993119
+      cave 1_37: -1092317009775976834
+      cave 1_38: -9005257217707715319
+      cave 1_39: -7498892599718642807
+      cave 1_4: -8229715699953503680
+      cave 1_40: 1529931379724421651
+      cave 1_41: -2635254108830703073
+      cave 1_42: 6605707055536011045
+      cave 1_43: -5848085724487015892
+      cave 1_44: -6663315891372754509
+      cave 1_45: -213784983561044756
+      cave 1_46: -1715758728193656042
+      cave 1_47: 7906999960146976870
+      cave 1_48: 487639385904546463
+      cave 1_49: -3694038908128613014
+      cave 1_5: 175905897157303265
+      cave 1_50: 8890741753809286082
+      cave 1_51: 3467698045402497554
+      cave 1_52: -33497613740562969
+      cave 1_53: 2630389428774615150
+      cave 1_54: 5635283002638786916
+      cave 1_55: -5477375697238608989
+      cave 1_56: -4187315806610900894
+      cave 1_57: -2334457504875831511
+      cave 1_58: 4070828312113428732
+      cave 1_59: -2612769096260800044
+      cave 1_6: -4778905202030429746
+      cave 1_60: -9108068669343504832
+      cave 1_61: 172320759067878015
+      cave 1_62: -8247827881846994580
+      cave 1_63: 1452184656012940097
+      cave 1_64: 8967923478937971862
+      cave 1_65: -2243156367356126254
+      cave 1_66: -8466529592724766451
+      cave 1_67: 7597895506741818110
+      cave 1_68: -7807156456583136392
+      cave 1_69: 3792043955773013655
+      cave 1_7: -4970168202242917271
+      cave 1_70: 5315563045161538753
+      cave 1_71: -876744335992385279
+      cave 1_72: -2006413809589509438
+      cave 1_73: 399839981565225363
+      cave 1_74: -4995790863317125196
+      cave 1_75: -3208797071491055024
+      cave 1_76: 5391131049904585949
+      cave 1_77: 5694861658596065934
+      cave 1_78: -5910488137153235680
+      cave 1_79: -824981393602144151
+      cave 1_8: 4339630085071834423
+      cave 1_80: -4823908432953807374
+      cave 1_81: 1545200718689768997
+      cave 1_82: -6651760061408831909
+      cave 1_83: 7788071631231148656
+      cave 1_84: -2627387479012556440
+      cave 1_85: 2612955369869252029
+      cave 1_86: 6521042193426055512
+      cave 1_87: -1726821380266217290
+      cave 1_88: -6888952275051608289
+      cave 1_89: -6029448391354433691
+      cave 1_9: 5820189375929686193
+      cave 1_90: -5011054624108116030
+      cave 1_91: -574963215686462289
+      cave 1_92: 8972364527339409384
+      cave 1_93: 4443607276396450751
+      cave 1_94: 7806480468679433628
+      cave 1_95: 579802070246543619
+      cave 1_96: -516812641456755263
+      cave 1_97: -6289915573821119504
+      cave 1_98: 3788747379043045280
+      cave 1_99: 7002122923607848733
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

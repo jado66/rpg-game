@@ -150,7 +150,7 @@ TextureImporter:
       213: 2296014182298898292
     second: waterDeep_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -167,9 +167,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -179,8 +182,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -201,10 +204,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -216,6 +224,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -228,6 +237,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1272,9 +1295,58 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      waterDeep_0: -6230271742832987594
+      waterDeep_1: -4696179472988265613
+      waterDeep_10: -1489756486228961728
+      waterDeep_11: -8992265680391302976
+      waterDeep_12: -9107297107145487735
+      waterDeep_13: 7049752865695065700
+      waterDeep_14: -7569202134248617203
+      waterDeep_15: -3250377287104848787
+      waterDeep_16: 5668856149849916341
+      waterDeep_17: 9034954293200732907
+      waterDeep_18: -8006183396725937932
+      waterDeep_19: -4046987651784404842
+      waterDeep_2: -6022061430101353091
+      waterDeep_20: 3098250233847715198
+      waterDeep_21: -172806492186003670
+      waterDeep_22: 3052917110796367486
+      waterDeep_23: -2488776343777478825
+      waterDeep_24: 1369147012806467289
+      waterDeep_25: -9171094493246115667
+      waterDeep_26: -6454376320023186377
+      waterDeep_27: -1845627231901936940
+      waterDeep_28: -2118165973010479203
+      waterDeep_29: -651591943530522756
+      waterDeep_3: -3249066326315533225
+      waterDeep_30: -2760936376433419265
+      waterDeep_31: 7447451095811040714
+      waterDeep_32: -2361818579819299539
+      waterDeep_33: 6609757276430481095
+      waterDeep_34: -5948549781439332775
+      waterDeep_35: 1647387814970357695
+      waterDeep_36: -2589193529898774909
+      waterDeep_37: -15926296266842625
+      waterDeep_38: 2264451836486531874
+      waterDeep_39: -2294778359864167898
+      waterDeep_4: 7026203268538902441
+      waterDeep_40: -8723783045053522547
+      waterDeep_41: 7076375926155347129
+      waterDeep_42: -4331238534155606196
+      waterDeep_43: -5298615756059354581
+      waterDeep_44: 2570163299605657274
+      waterDeep_45: -5290019548609170867
+      waterDeep_46: -4569295342786254714
+      waterDeep_47: 8364862801016087807
+      waterDeep_48: 2296014182298898292
+      waterDeep_5: -1970480882756503321
+      waterDeep_6: -3106609625243888187
+      waterDeep_7: -7540999740855555675
+      waterDeep_8: 1213131530381851249
+      waterDeep_9: -6683574304736483148
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

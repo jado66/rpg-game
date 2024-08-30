@@ -99,7 +99,7 @@ TextureImporter:
       213: 3506658379044617240
     second: TreeRuleTile 1_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,9 +116,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -128,8 +131,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -150,10 +153,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -165,6 +173,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -177,6 +186,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -864,9 +887,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TreeRuleTile 1_0: 7936771382472971270
+      TreeRuleTile 1_1: -1310932313115773546
+      TreeRuleTile 1_10: -6571300533869541562
+      TreeRuleTile 1_11: 6741730435646811816
+      TreeRuleTile 1_12: 2166643473158668060
+      TreeRuleTile 1_13: 7787111023168998882
+      TreeRuleTile 1_14: -7895413166114059805
+      TreeRuleTile 1_15: 5560323780016195241
+      TreeRuleTile 1_16: -513958612155730864
+      TreeRuleTile 1_17: 1414389795332898944
+      TreeRuleTile 1_18: 1217257693091632055
+      TreeRuleTile 1_19: 1039182589423047394
+      TreeRuleTile 1_2: -2178102452176364834
+      TreeRuleTile 1_20: -7796250611202083003
+      TreeRuleTile 1_21: -8391219096410615744
+      TreeRuleTile 1_22: -7845050968569726932
+      TreeRuleTile 1_23: -5522302086834646704
+      TreeRuleTile 1_24: 7298044509091994778
+      TreeRuleTile 1_25: 658390698669493572
+      TreeRuleTile 1_26: 7349946753304541883
+      TreeRuleTile 1_27: -6618226795697801807
+      TreeRuleTile 1_28: 1939872914121431689
+      TreeRuleTile 1_29: -6423352818960543769
+      TreeRuleTile 1_3: -5834308434770814268
+      TreeRuleTile 1_30: -2847845362303310941
+      TreeRuleTile 1_31: 3506658379044617240
+      TreeRuleTile 1_4: 3019587241762419765
+      TreeRuleTile 1_5: -5851848388004485612
+      TreeRuleTile 1_6: -8718227733865942007
+      TreeRuleTile 1_7: 6684434529696626330
+      TreeRuleTile 1_8: -552242474574542021
+      TreeRuleTile 1_9: 5314921286632288909
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

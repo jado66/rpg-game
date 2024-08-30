@@ -93,7 +93,7 @@ TextureImporter:
       213: 4975533918656722818
     second: TreeRuleTileExtras_16
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,9 +110,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,8 +125,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,10 +147,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -159,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -171,6 +180,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -192,7 +215,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e7ba04af1c3cb5840800000000000000
-      internalID: 5213976231506127742
+      internalID: 343383170101058785
       vertices: []
       indices: 
       edges: []
@@ -213,7 +236,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a7eedcb74b2a87e80800000000000000
-      internalID: -8180609827063599494
+      internalID: -9014036540446758029
       vertices: []
       indices: 
       edges: []
@@ -234,7 +257,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: af1639c7a58f8c6b0800000000000000
-      internalID: -5275693895943757318
+      internalID: 3901303112400496573
       vertices: []
       indices: 
       edges: []
@@ -255,7 +278,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0fbeacd3391f628c0800000000000000
-      internalID: -4024263602309764112
+      internalID: 5140305496631857504
       vertices: []
       indices: 
       edges: []
@@ -276,7 +299,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d6eba34306b3fcc90800000000000000
-      internalID: -7147428799234523539
+      internalID: 587489795205906116
       vertices: []
       indices: 
       edges: []
@@ -297,7 +320,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a842b9c6b1ace34f0800000000000000
-      internalID: -847017460764040054
+      internalID: 6390430784354347393
       vertices: []
       indices: 
       edges: []
@@ -318,7 +341,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2006aba5704ce87e0800000000000000
-      internalID: -1761254868389306366
+      internalID: 2354014864139668263
       vertices: []
       indices: 
       edges: []
@@ -339,7 +362,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ff8202805f2bcde60800000000000000
-      internalID: 7988456604521474303
+      internalID: 2167183096558830175
       vertices: []
       indices: 
       edges: []
@@ -360,7 +383,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 82f3e003a432832f0800000000000000
-      internalID: -993004916294402264
+      internalID: 1524879362428915038
       vertices: []
       indices: 
       edges: []
@@ -381,7 +404,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4c1bc48929c1f28c0800000000000000
-      internalID: -4021964526272597564
+      internalID: -8878396088642875715
       vertices: []
       indices: 
       edges: []
@@ -402,7 +425,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2c437f6ef5b8d4760800000000000000
-      internalID: 7443759003126412482
+      internalID: 5244586854660407738
       vertices: []
       indices: 
       edges: []
@@ -423,7 +446,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2fe191c6c188d25a0800000000000000
-      internalID: -6544425027845415182
+      internalID: 1318625706351294134
       vertices: []
       indices: 
       edges: []
@@ -444,7 +467,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4b4c06da54740fcf0800000000000000
-      internalID: -220598017154038604
+      internalID: -8557410331789155083
       vertices: []
       indices: 
       edges: []
@@ -543,9 +566,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TreeRuleTileExtras_0: 343383170101058785
+      TreeRuleTileExtras_1: -9014036540446758029
+      TreeRuleTileExtras_10: 5244586854660407738
+      TreeRuleTileExtras_11: 1318625706351294134
+      TreeRuleTileExtras_12: -8557410331789155083
+      TreeRuleTileExtras_13: -8116288759600287997
+      TreeRuleTileExtras_14: 8701750571070217153
+      TreeRuleTileExtras_15: -2835207202715382943
+      TreeRuleTileExtras_16: 4975533918656722818
+      TreeRuleTileExtras_2: 3901303112400496573
+      TreeRuleTileExtras_3: 5140305496631857504
+      TreeRuleTileExtras_4: 587489795205906116
+      TreeRuleTileExtras_5: 6390430784354347393
+      TreeRuleTileExtras_6: 2354014864139668263
+      TreeRuleTileExtras_7: 2167183096558830175
+      TreeRuleTileExtras_8: 1524879362428915038
+      TreeRuleTileExtras_9: -8878396088642875715
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

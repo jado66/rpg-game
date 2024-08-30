@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MobileController;
 
 
 // This class deals with character actions, combat, interactions with objects
@@ -34,6 +35,17 @@ public class CharacterActions : MonoBehaviour
 
     Vector2 change;
 
+    public bool isMobileControlled = false;
+
+    public Analog mobileJoystick;
+    public Button ltButton;
+    public Button rtButton;
+
+    public Button zButton;
+    public Button xButton;
+    public Button cButton;
+
+
     public void InitializeComponents(Character characterRef){
         character = characterRef;
         movement = character.GetMovement();
@@ -53,8 +65,17 @@ public class CharacterActions : MonoBehaviour
         characterMoveData = new CharacterMoveData();
 
         change = Vector2.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
+
+        if (isMobileControlled){
+            Vector2 joystickPosition = mobileJoystick.GetStickPosition();
+            change.x = joystickPosition.x;
+            change.y = joystickPosition.y;
+        }
+        else{
+            change.x = Input.GetAxisRaw("Horizontal");
+            change.y = Input.GetAxisRaw("Vertical");
+        }
+
         buttonsPressed = GatherButtonsInputs();
 
         bool isLeftShiftPressed = buttonsPressed.Contains(KeyCode.LeftShift);
@@ -174,54 +195,99 @@ public class CharacterActions : MonoBehaviour
 
     
 
+    
+
     public List<KeyCode> GatherButtonsInputs(){
         List<KeyCode> newButtonsPressed = new List<KeyCode>();
 
         // Press and hold keys 
-        if (Input.GetKey(KeyCode.LeftShift)){
-            newButtonsPressed.Add(KeyCode.LeftShift);
+        if (isMobileControlled){ 
+            if (ltButton.GetButtonState() == Button.ButtonState.hold || ltButton.GetButtonState() == Button.ButtonState.tap){
+                newButtonsPressed.Add(KeyCode.LeftShift);
+            }
+        } else
+        {
+            if (Input.GetKey(KeyCode.LeftShift)){
+                newButtonsPressed.Add(KeyCode.LeftShift);
+            }
         }
+
+
 
         // Delay keys
-        if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-            newButtonsPressed.Add(KeyCode.T);
-            // Debug.Log("torch");
-            keyCount[0]++;
+        // if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+        //     newButtonsPressed.Add(KeyCode.T);
+        //     // Debug.Log("torch");
+        //     keyCount[0]++;
+        // }
+
+        // if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
+        //     newButtonsPressed.Add(KeyCode.T);
+        //     // Debug.Log("torch");
+        //     keyCount[0]++;
+        // }
+
+
+        // HOTKEYS
+        if (isMobileControlled){
+            if (zButton.GetButtonState() == Button.ButtonState.tap && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.Z);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+            if (xButton.GetButtonState() == Button.ButtonState.tap && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.X);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+            if (cButton.GetButtonState() == Button.ButtonState.tap && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.C);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+        } 
+        else {
+            if (Input.GetKey(KeyCode.Z) && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.Z);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+
+            if (Input.GetKey(KeyCode.X) && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.X);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+
+            if (Input.GetKey(KeyCode.C) && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.C);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+
+            if (Input.GetKey(KeyCode.V) && keyCount[1] == 0) {
+                newButtonsPressed.Add(KeyCode.V);
+                keyCount[1]++;
+            }
         }
 
-        if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-            newButtonsPressed.Add(KeyCode.T);
-            // Debug.Log("torch");
-            keyCount[0]++;
+        // Interact
+        if (isMobileControlled){
+            if (rtButton.GetButtonState() == Button.ButtonState.tap && keyCount[0] == 0) {
+                newButtonsPressed.Add(KeyCode.E);
+                // Debug.Log("torch");
+                keyCount[0]++;
+            }
+        } 
+        else {
+
+            if (Input.GetKey(KeyCode.E) && keyCount[1] == 0) {
+                newButtonsPressed.Add(KeyCode.E);
+                keyCount[1]++;
+            }
         }
 
-        if (Input.GetKey(KeyCode.Z) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-            newButtonsPressed.Add(KeyCode.Z);
-            // Debug.Log("torch");
-            keyCount[0]++;
-        }
-
-        if (Input.GetKey(KeyCode.X) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-            newButtonsPressed.Add(KeyCode.X);
-            // Debug.Log("torch");
-            keyCount[0]++;
-        }
-
-        if (Input.GetKey(KeyCode.C) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-            newButtonsPressed.Add(KeyCode.C);
-            // Debug.Log("torch");
-            keyCount[0]++;
-        }
-
-        if (Input.GetKey(KeyCode.E) && keyCount[1] == 0) {
-            newButtonsPressed.Add(KeyCode.E);
-            keyCount[1]++;
-        }
-
-        if (Input.GetKey(KeyCode.V) && keyCount[1] == 0) {
-            newButtonsPressed.Add(KeyCode.V);
-            keyCount[1]++;
-        }
+        
 
         if (Input.GetKey(KeyCode.B) && keyCount[1] == 0) {
             building.ToggleBuilding();

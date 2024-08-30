@@ -54,7 +54,7 @@ public class TooltipUI : MonoBehaviour {
             }
         }
 
-        string tooltip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b>", item.Name, item.Description, statText);
+        string tooltip = string.Format("<b>{0}</b>\n{1}\n\n<b>{2}</b><b>Value: ${3}</b>", item.Name, item.Description, statText,item.Value*item.Amount);
         tooltipText.text = tooltip;
 
         ShowTooltip();

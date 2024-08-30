@@ -31,7 +31,7 @@ public class Weapon : InventoryItem
             "This looks pointy",
             Uses.Weapon, 
             new Dictionary<string, int>{}, 
-            150, 
+            1250, 
             new List<string>(), 
             new List<string>()
         );

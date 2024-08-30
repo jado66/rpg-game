@@ -38,10 +38,9 @@ public class Switch : Interactable
         base.OnCharacterInteract();
     }
 
-    public override void OnCharacterInteract(CharacterActions interaction)
+    public override void OnCharacterInteract(CharacterWorldInteraction interaction)
     {
         Toggle();
-        base.OnCharacterInteract(interaction);
     }
 
     public void Toggle()

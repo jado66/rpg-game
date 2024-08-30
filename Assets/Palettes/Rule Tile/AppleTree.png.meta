@@ -165,7 +165,7 @@ TextureImporter:
       213: -3375897408467567895
     second: AppleTree_53
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -182,9 +182,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -194,8 +197,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -216,10 +219,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -231,6 +239,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -243,6 +252,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1392,9 +1415,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      AppleTree_0: 168682660216055027
+      AppleTree_1: 1161407875479092622
+      AppleTree_10: -8035152059260413532
+      AppleTree_11: 3755687675808683405
+      AppleTree_12: 7662107936113100059
+      AppleTree_13: -4676392445328880679
+      AppleTree_14: 6528003180031728064
+      AppleTree_15: 5722141337490848409
+      AppleTree_16: 5243044292843115318
+      AppleTree_17: 6526315623991047522
+      AppleTree_18: 3299590512311009510
+      AppleTree_19: 3273223517306692864
+      AppleTree_2: 931611761240505940
+      AppleTree_20: -7332288063169510645
+      AppleTree_21: 5030787373103469755
+      AppleTree_22: -7525315077540973050
+      AppleTree_23: -7956534198387575162
+      AppleTree_24: -1055176668488018997
+      AppleTree_25: -9077547873838503903
+      AppleTree_26: 5958060436919730326
+      AppleTree_27: -5700197300590197447
+      AppleTree_28: -1727411283132836474
+      AppleTree_29: 5013406653204723103
+      AppleTree_3: 1138519763898925972
+      AppleTree_30: -3374922572661899412
+      AppleTree_31: -1197016248579229082
+      AppleTree_32: 3004926369694427238
+      AppleTree_33: 4278301917336916557
+      AppleTree_34: -2676131478638247541
+      AppleTree_35: 1159655509851401293
+      AppleTree_36: -1207654574748163436
+      AppleTree_37: 6521196317305838859
+      AppleTree_38: -7050542700434629405
+      AppleTree_39: 7232962769020448511
+      AppleTree_4: -5625458939299749718
+      AppleTree_40: -5942303986077235855
+      AppleTree_41: -9164090461899319814
+      AppleTree_42: 8112323777659135825
+      AppleTree_43: 7029491962341792971
+      AppleTree_44: 2577583670982261985
+      AppleTree_45: -8140301835420317864
+      AppleTree_46: -294586215989459770
+      AppleTree_47: 582922170009216825
+      AppleTree_48: 2224354173565436856
+      AppleTree_49: 2063519685240097842
+      AppleTree_5: 7198516199790418987
+      AppleTree_50: 766670744557192632
+      AppleTree_51: -4376611100261811974
+      AppleTree_52: 1162813367345186726
+      AppleTree_53: -3375897408467567895
+      AppleTree_6: -1593690779090809512
+      AppleTree_7: 2303978241734173025
+      AppleTree_8: 5088213815403046394
+      AppleTree_9: -1031463581482058311
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -10,7 +10,7 @@ public class Door : Interactable
 
     public bool startOpen;
     public bool isLocked;
-    public int keyID;
+    public string lockID;
     private bool isOpen;
 
     // Start is called before the first frame update
@@ -22,13 +22,17 @@ public class Door : Interactable
         {
             closedSprite.SetActive(false);
             openSprite.SetActive(true);
-            linkedTeleport.GetComponent<BoxCollider2D>().enabled = true;
+
+            if (linkedTeleport != null)
+                linkedTeleport.GetComponent<BoxCollider2D>().enabled = true;
         }
         else
         {
             closedSprite.SetActive(true);
             openSprite.SetActive(false);
-            linkedTeleport.GetComponent<BoxCollider2D>().enabled = false;
+                        
+            if (linkedTeleport != null)
+                linkedTeleport.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -37,6 +41,7 @@ public class Door : Interactable
         isOpen = !isOpen;
         SetDoorState(isOpen);
 
+        Debug.Log("interacte with door");
         if (isOpen)
         {
             StartCoroutine(CloseDoorAfterDelay(1f));
@@ -67,11 +72,29 @@ public class Door : Interactable
     }
 
     // Update is called once per frame
-    public override void OnCharacterInteract()
+    public override void OnCharacterInteract(CharacterWorldInteraction interaction)
     {
-        if (!isLocked || isOpen)
+
+        if (isLocked){
+            ToastNotification.Instance.Toast("door-locked", "This door is locked.");
+            return;
+        }
+
+        if (!isOpen)
         {
             ToggleDoor();
         }
+    }
+
+    public bool TryUseKey(string keyID)
+    {
+        if (keyID == lockID)
+        {
+            isLocked = false;
+            ToastNotification.Instance.Toast("door-locked", "This door is now unlocked.");
+
+            return true;
+        }
+        return false;
     }
 }

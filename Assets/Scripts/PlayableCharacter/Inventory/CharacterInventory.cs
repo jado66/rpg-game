@@ -36,12 +36,56 @@ public class CharacterInventory : MonoBehaviour
         // }
     }
 
-    private void PopulateStartingItems()
+    protected void ClearItems(){
+        items.Clear();
+    }
+
+    protected void PopulateStartingItems()
     {
         foreach (var entry in startingItems)
         {
             TryAddItem(entry.itemName, entry.amount);
         }
+    }
+
+    public void ExpandInventory(int newSize)
+    {
+        if (newSize <= inventorySize)
+        {
+            Debug.LogWarning("New inventory size must be larger than the current size.");
+            return;
+        }
+
+        // Store the old inventory size
+        int oldSize = inventorySize;
+
+        // Update the inventory size
+        inventorySize = newSize;
+
+        // Reorganize items if necessary
+        for (int i = oldSize - 1; i >= 0; i--)
+        {
+            if (items.TryGetValue(i, out InventoryItem item))
+            {
+                // Find the highest available slot in the new space
+                for (int j = newSize - 1; j >= oldSize; j--)
+                {
+                    if (!items.ContainsKey(j))
+                    {
+                        // Move the item to the new slot
+                        items[j] = item;
+                        items.Remove(i);
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Notify that the inventory has changed
+        SyncInventory();
+        ToastNotification.Instance.Toast("inv-expanded", $"Inventory expanded to {newSize} slots.");
+
+        Debug.Log($"Inventory expanded from {oldSize} to {newSize} slots.");
     }
 
     public InventoryItem AddOrSwapItem(int slot, InventoryItem item)

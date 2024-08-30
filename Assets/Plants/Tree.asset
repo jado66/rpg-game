@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: dbbb199efabee2042b9f1dd0d94008b2, type: 3}
   m_Name: Tree
-  m_EditorClassIdentifier: Assembly-CSharp:PlantSystem:PlantType
+  m_EditorClassIdentifier: 
   data:
     plantName: Tree
     growthStages:
-    - stageName: seed
-      daysToNextStage: 10
+    - stageName: sapling
+      daysToNextStage: 6
       tile: {fileID: 11400000, guid: dae35c80ad4681549be607c63a493b23, type: 2}
     - stageName: mature
       daysToNextStage: 0

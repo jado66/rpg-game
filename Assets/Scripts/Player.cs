@@ -1029,36 +1029,37 @@ public class Player : MonoBehaviour
     
     
     private IEnumerator AttackCo(){
-    animator.SetTrigger("attack");
+        animator.SetTrigger("attack");
 
-    // Deactivate all hitboxes first
-    upHitBox.SetActive(false);
-    rightHitBox.SetActive(false);
-    downHitBox.SetActive(false);
-    leftHitBox.SetActive(false);
+        // Deactivate all hitboxes first
+        // upHitBox.SetActive(false);
+        // rightHitBox.SetActive(false);
+        // downHitBox.SetActive(false);
+        // leftHitBox.SetActive(false);
 
-    // Activate the appropriate hitbox based on playerFacingDirection
-    if (playerFacingDirection.x > 0) {
-        rightHitBox.SetActive(true);
-    } else if (playerFacingDirection.x < 0) {
-        leftHitBox.SetActive(true);
-    } else if (playerFacingDirection.y > 0) {
-        upHitBox.SetActive(true);
-    } else if (playerFacingDirection.y < 0) {
-        downHitBox.SetActive(true);
+        // // Activate the appropriate hitbox based on playerFacingDirection
+        // if (playerFacingDirection.x > 0) {
+        //     rightHitBox.SetActive(true);
+        // } else if (playerFacingDirection.x < 0) {
+        //     leftHitBox.SetActive(true);
+        // } else if (playerFacingDirection.y > 0) {
+        //     upHitBox.SetActive(true);
+        // } else if (playerFacingDirection.y < 0) {
+        //     downHitBox.SetActive(true);
+        // }
+
+        // currentState = PlayerState.attack;
+        // yield return null; //Wait a frame
+        // yield return new WaitForSeconds(.2f);
+        // currentState = PlayerState.walk;
+
+        // // Deactivate all hitboxes after attack
+        // upHitBox.SetActive(false);
+        // rightHitBox.SetActive(false);
+        // downHitBox.SetActive(false);
+        // leftHitBox.SetActive(false);
+        yield return null;
     }
-
-    currentState = PlayerState.attack;
-    yield return null; //Wait a frame
-    yield return new WaitForSeconds(.2f);
-    currentState = PlayerState.walk;
-
-    // Deactivate all hitboxes after attack
-    upHitBox.SetActive(false);
-    rightHitBox.SetActive(false);
-    downHitBox.SetActive(false);
-    leftHitBox.SetActive(false);
-}
 
 
     
@@ -1115,8 +1116,10 @@ public class Player : MonoBehaviour
                         tilePalette.interactable.SetTile(buildSquareCellLocation,null);
                         inventory.GiveItem("Mushroom");;
                     }
-                else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlower)
+                else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlower){
                     tilePalette.decor.SetTile(buildSquareCellLocation,null);
+                    inventory.GiveItem("Wild FLower");
+                }
                 else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateOpen)
                     tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.gateClosed);
                 else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateClosed)

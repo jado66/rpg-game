@@ -167,12 +167,18 @@ public class Animal : LivingEntity
     }
 
     protected override void kill(){
+
+        if (!alive){
+            return;
+        }
+
         animator.SetBool("moving",false);
+        Debug.Log($"{type} trigger die");
         animator.SetTrigger("die");
         chest.isLocked = false;
         base.kill();
     }
-    public override void OnCharacterInteract(){
+    public override void OnCharacterInteract(CharacterWorldInteraction interaction){
         // base.OnCharacterInteract();
 
         // if (!alive){

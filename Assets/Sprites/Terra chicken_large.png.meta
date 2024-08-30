@@ -291,7 +291,7 @@ TextureImporter:
       213: -1790953857869178992
     second: Terra chicken_large_95
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,9 +308,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -320,11 +323,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -342,10 +345,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -369,6 +378,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2400,9 +2423,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra chicken_large_0: 6365077876706132896
+      Terra chicken_large_1: -4737042976063456788
+      Terra chicken_large_10: -7014104278929803304
+      Terra chicken_large_11: 4888372528938796487
+      Terra chicken_large_12: -3262354432275840742
+      Terra chicken_large_13: 4254295599003563679
+      Terra chicken_large_14: -7662432167495012155
+      Terra chicken_large_15: 182775758210452211
+      Terra chicken_large_16: 1499535225656734042
+      Terra chicken_large_17: -3646001033717886729
+      Terra chicken_large_18: -1011496401902250948
+      Terra chicken_large_19: 1079926896720316895
+      Terra chicken_large_2: -8958669271239834430
+      Terra chicken_large_20: -3555529087941197089
+      Terra chicken_large_21: -3600490809563046570
+      Terra chicken_large_22: -2042776766036357613
+      Terra chicken_large_23: 1362629467055003246
+      Terra chicken_large_24: 1984118946054570804
+      Terra chicken_large_25: 1155167740018161168
+      Terra chicken_large_26: -2280293772331265640
+      Terra chicken_large_27: 4008681490214763066
+      Terra chicken_large_28: -1440846927873782145
+      Terra chicken_large_29: 2836370280301354177
+      Terra chicken_large_3: -3277142663046120161
+      Terra chicken_large_30: 3525206287296190510
+      Terra chicken_large_31: -7368755075551063332
+      Terra chicken_large_32: 7296552584641756369
+      Terra chicken_large_33: 2515152719243028180
+      Terra chicken_large_34: 5632842573104419657
+      Terra chicken_large_35: 782879477153525435
+      Terra chicken_large_36: -5982454950363665922
+      Terra chicken_large_37: -1322843950877109753
+      Terra chicken_large_38: 341789726080792263
+      Terra chicken_large_39: 8606909854231618121
+      Terra chicken_large_4: -1131593954956780407
+      Terra chicken_large_40: 2732794572538707417
+      Terra chicken_large_41: -1433788126704568712
+      Terra chicken_large_42: 6139576757686500484
+      Terra chicken_large_43: 3818232429611883002
+      Terra chicken_large_44: -5021521033563749185
+      Terra chicken_large_45: 525907460979738949
+      Terra chicken_large_46: -3398826638185426958
+      Terra chicken_large_47: 6836531720936286287
+      Terra chicken_large_48: 5144317912150720119
+      Terra chicken_large_49: 6223448317343064261
+      Terra chicken_large_5: 3972952599272817607
+      Terra chicken_large_50: -858010332121549689
+      Terra chicken_large_51: -3870974001117874962
+      Terra chicken_large_52: 4977776752743652407
+      Terra chicken_large_53: 133792795660621063
+      Terra chicken_large_54: -8632136514052086278
+      Terra chicken_large_55: 2101064873614482020
+      Terra chicken_large_56: 8007429284462676166
+      Terra chicken_large_57: -1580189516713501132
+      Terra chicken_large_58: -88585319955057269
+      Terra chicken_large_59: -4635240214148164820
+      Terra chicken_large_6: 5489364128948881899
+      Terra chicken_large_60: 133440001040045314
+      Terra chicken_large_61: 5865475713396664257
+      Terra chicken_large_62: 9020966157342028897
+      Terra chicken_large_63: -2827767486343403077
+      Terra chicken_large_64: 1696310602966799147
+      Terra chicken_large_65: -2580058245345440597
+      Terra chicken_large_66: 8468453107048679726
+      Terra chicken_large_67: -7939058712036866465
+      Terra chicken_large_68: 48133872586692810
+      Terra chicken_large_69: -4073419937919018560
+      Terra chicken_large_7: 6373182918987765486
+      Terra chicken_large_70: 7931034650923378295
+      Terra chicken_large_71: -2503909486440231372
+      Terra chicken_large_72: 2710440323392130153
+      Terra chicken_large_73: -6667860741602973457
+      Terra chicken_large_74: -2894261280805430386
+      Terra chicken_large_75: 9188040324109372067
+      Terra chicken_large_76: 9010475710843724612
+      Terra chicken_large_77: 5992500118850538004
+      Terra chicken_large_78: 1450109647537851634
+      Terra chicken_large_79: 2955240619791426905
+      Terra chicken_large_8: -7863159802700895662
+      Terra chicken_large_80: 7716194938524852744
+      Terra chicken_large_81: 8607828802688647460
+      Terra chicken_large_82: 1867046676523575710
+      Terra chicken_large_83: 5822663751297211918
+      Terra chicken_large_84: -3815425648362311033
+      Terra chicken_large_85: 446703464624210659
+      Terra chicken_large_86: -2650663823225974040
+      Terra chicken_large_87: 5184313156464803009
+      Terra chicken_large_88: -5313544387018476590
+      Terra chicken_large_89: 1758156353907805229
+      Terra chicken_large_9: 6196696128014257880
+      Terra chicken_large_90: 404621255922893044
+      Terra chicken_large_91: 6051979971379047656
+      Terra chicken_large_92: 6617125322818933503
+      Terra chicken_large_93: -6236160445329994181
+      Terra chicken_large_94: 5509183926382550678
+      Terra chicken_large_95: -1790953857869178992
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

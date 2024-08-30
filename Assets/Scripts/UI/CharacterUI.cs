@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Text;
+using TMPro;
 
 public class CharacterUI : MonoBehaviour
 {
@@ -39,9 +40,10 @@ public class CharacterUI : MonoBehaviour
     public GameObject customSignBox;
     public Text customSignText; 
     public Text debugInventoryText;
-    public Text moneyText;
+    public TextMeshProUGUI moneyText;
     public GameObject buildGui;
     public GameObject inventoryGui;
+
     public GameObject externalInventoryGui;
     public GameObject externalInventoryPanels;
     public GameObject buyNSellMenu;
@@ -117,9 +119,9 @@ public class CharacterUI : MonoBehaviour
 
         dialogBox = GameObject.Find("Dialog");
         dialogBoxText = GameObject.Find("DialogText").GetComponent<Text>();
-        storeText = GameObject.Find("StoreTitle").GetComponent<Text>();
-        customSignBox = GameObject.Find("CustomSign");
-        customSignText = GameObject.Find("CustomSignText").GetComponent<Text>();
+        // storeText = GameObject.Find("StoreTitle").GetComponent<Text>();
+        // customSignBox = GameObject.Find("CustomSign");
+        // customSignText = GameObject.Find("CustomSignText").GetComponent<Text>();
         debugInventoryText = GameObject.Find("DebugInventory").GetComponent<Text>();
         buildGui.SetActive(false);
         externalInventoryGui.SetActive(false);
@@ -174,6 +176,7 @@ public class CharacterUI : MonoBehaviour
         mainMenuGui.SetActive(!mainMenuGui.activeSelf);
         if (mainMenuGui.activeSelf){
             inventoryGui.SetActive(false);
+
             externalInventoryGui.SetActive(false); // I should change these to functions that handle the shut downs
             buildGui.SetActive(false);
         }
@@ -288,7 +291,10 @@ public class CharacterUI : MonoBehaviour
         //     // Fix me
         //     // character.StartCoroutine(character.interact("interact"));
         // }
-        inventoryGui.SetActive(!inventoryGui.activeSelf);
+
+        bool inventoryActiveSelf = inventoryGui.activeSelf;
+        inventoryGui.SetActive(!inventoryActiveSelf);
+
     }
 
     public void ClearAllPlayerPrefs()
@@ -315,7 +321,7 @@ public class CharacterUI : MonoBehaviour
 
         ChangeColor(inventoryGui, dayColorSecondary,transitionTime, isInstant);
         ChangeColor(externalInventoryGui, dayColorSecondary,transitionTime, isInstant);
-        ChangeColor(menuBackground, dayColorSecondary,transitionTime, isInstant);
+        ChangeColor(menuBackground, dayColorPrimary,transitionTime, isInstant);
 
         ChangeColor(characterHealth, new Color32(255, 0, 0, 255),transitionTime, isInstant);
         ChangeColor(staminaBar, new Color32(122, 255, 0, 255),transitionTime, isInstant);
@@ -338,7 +344,7 @@ public class CharacterUI : MonoBehaviour
         }
         ChangeColor(inventoryGui, nightColorSecondary,transitionTime, isInstant);
         ChangeColor(externalInventoryGui, nightColorSecondary,transitionTime, isInstant);
-        ChangeColor(menuBackground, nightColorSecondary,transitionTime, isInstant);
+        ChangeColor(menuBackground, nightColorPrimary,transitionTime, isInstant);
 
         
         ChangeColor(characterHealth, new Color32(106, 0, 0, 255),transitionTime, isInstant);

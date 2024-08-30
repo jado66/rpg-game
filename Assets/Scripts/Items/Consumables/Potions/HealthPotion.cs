@@ -32,7 +32,7 @@ public class HealthPotion : InventoryItem
             "Heals you right up",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 10}}, 
-            150, 
+            25, 
             new List<string>(), 
             new List<string>()
         );
@@ -47,7 +47,7 @@ public class HealthPotion : InventoryItem
             "Heals you well",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 25}}, 
-            300, 
+            50, 
             new List<string>(), 
             new List<string>()
         );
@@ -62,7 +62,7 @@ public class HealthPotion : InventoryItem
             "Heals you greatly",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 50}}, 
-            500, 
+            75, 
             new List<string>(), 
             new List<string>()
         );
@@ -77,7 +77,7 @@ public class HealthPotion : InventoryItem
             "Fully heals you",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 10000}}, 
-            1000, 
+            350, 
             new List<string>(), 
             new List<string>()
         );

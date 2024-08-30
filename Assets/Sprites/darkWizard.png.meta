@@ -147,7 +147,7 @@ TextureImporter:
       213: -7723073378395816529
     second: darkWizard_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,9 +164,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -176,11 +179,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -198,10 +201,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -213,6 +221,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -225,6 +234,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1248,9 +1271,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      darkWizard_0: 6542235353123641116
+      darkWizard_1: 2280616012019655186
+      darkWizard_10: 6076469106174678891
+      darkWizard_11: 6381631132958219088
+      darkWizard_12: 3634014890438271815
+      darkWizard_13: -6146737824494378581
+      darkWizard_14: -5207928334735762831
+      darkWizard_15: 2910600538565365215
+      darkWizard_16: 5579704456771143867
+      darkWizard_17: -3909274748039111262
+      darkWizard_18: 4179176976034026758
+      darkWizard_19: -5172361340074374740
+      darkWizard_2: -2144655518058173104
+      darkWizard_20: -8542797813554880593
+      darkWizard_21: 2557047315609405236
+      darkWizard_22: -9109424150676479374
+      darkWizard_23: -5847852743586950247
+      darkWizard_24: 1422794655433091840
+      darkWizard_25: 7598431629640878385
+      darkWizard_26: -6953311190635365835
+      darkWizard_27: -2769505787498190683
+      darkWizard_28: -4386255418714225034
+      darkWizard_29: -1041130149026414843
+      darkWizard_3: -7859779309340725409
+      darkWizard_30: 406817679233023182
+      darkWizard_31: 6530400536984872882
+      darkWizard_32: 5966222311649642156
+      darkWizard_33: -268817276139998331
+      darkWizard_34: 3028909380332193441
+      darkWizard_35: 652796770494867609
+      darkWizard_36: 1436561421847505075
+      darkWizard_37: 4389561794046615546
+      darkWizard_38: -7433466956014692828
+      darkWizard_39: 8636788833745974458
+      darkWizard_4: 8789894255907662187
+      darkWizard_40: -4782655339377317121
+      darkWizard_41: -5210459762081778546
+      darkWizard_42: 3450627493912407398
+      darkWizard_43: -7339864901083549752
+      darkWizard_44: 7882252320005849180
+      darkWizard_45: -5037463764391550745
+      darkWizard_46: 5096093086511137827
+      darkWizard_47: -7723073378395816529
+      darkWizard_5: -9102975208890379447
+      darkWizard_6: 7192780048628230807
+      darkWizard_7: -1183084397448408710
+      darkWizard_8: -4251984147712199301
+      darkWizard_9: -7943149324665196808
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

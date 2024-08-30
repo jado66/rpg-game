@@ -90,7 +90,7 @@ TextureImporter:
       213: 3327902352089380716
     second: IceDeep_28
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -107,9 +107,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,8 +122,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -141,10 +144,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -156,6 +164,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -168,6 +177,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -792,9 +815,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      IceDeep_0: -8628499925395614188
+      IceDeep_1: -6544083716456731271
+      IceDeep_10: -6934383307039759854
+      IceDeep_11: 8128843927503573423
+      IceDeep_12: 7964231104566272461
+      IceDeep_13: 4768868229952468679
+      IceDeep_14: -6961279508188582769
+      IceDeep_15: -4424811909389644746
+      IceDeep_16: 2349595208579587361
+      IceDeep_17: 6806541602071048718
+      IceDeep_18: -6298177508730358950
+      IceDeep_19: -484831315079270256
+      IceDeep_2: -8109082202355000427
+      IceDeep_20: -880273726029692540
+      IceDeep_21: -1382895430910040228
+      IceDeep_22: 8044976951271869936
+      IceDeep_23: 5731583104834798041
+      IceDeep_24: -3118008851523692048
+      IceDeep_25: 7227084445224616588
+      IceDeep_26: -4822308508974720646
+      IceDeep_27: -1238258651935029237
+      IceDeep_28: 3327902352089380716
+      IceDeep_3: 8934022824313093049
+      IceDeep_4: 3237531913092382329
+      IceDeep_5: 1633167339142305575
+      IceDeep_6: 6862977788280275602
+      IceDeep_7: 2885086996386644230
+      IceDeep_8: 6884791390811320522
+      IceDeep_9: 1284421186786512787
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

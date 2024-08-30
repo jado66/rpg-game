@@ -288,7 +288,7 @@ TextureImporter:
       213: -6809456953939895970
     second: OvGround_94
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -305,9 +305,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -317,8 +320,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -339,10 +342,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -354,6 +362,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -366,6 +375,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2376,9 +2399,104 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      OvGround_0: 3162036774272536541
+      OvGround_1: 5732566713826419041
+      OvGround_10: -186210831824253058
+      OvGround_11: -5453385236396687617
+      OvGround_12: -4528157808172167658
+      OvGround_13: -5476024385594061854
+      OvGround_14: 5931174460728229909
+      OvGround_15: -7654290344290320713
+      OvGround_16: 18014859127468057
+      OvGround_17: -1556054819776844313
+      OvGround_18: -6854844190708431561
+      OvGround_19: 3090443519089737898
+      OvGround_2: 3226299905870547857
+      OvGround_20: 14855584534906832
+      OvGround_21: -983388299688793047
+      OvGround_22: -883827536440222292
+      OvGround_23: 8227712510119938518
+      OvGround_24: 687627997625565204
+      OvGround_25: 8118474139566055202
+      OvGround_26: -8071131888840413394
+      OvGround_27: -7217264432703875950
+      OvGround_28: 1279806615887789090
+      OvGround_29: 1211602466622922105
+      OvGround_3: -7080994503625097049
+      OvGround_30: 302629319147802048
+      OvGround_31: 5250739833012077335
+      OvGround_32: -6074599607369632610
+      OvGround_33: 5047402843869428947
+      OvGround_34: 9069491975776893795
+      OvGround_35: -2206888494829476194
+      OvGround_36: -1135754973138691255
+      OvGround_37: 1549513176732490564
+      OvGround_38: -1077645556982567136
+      OvGround_39: 6271675322198161539
+      OvGround_4: -1575330199413455129
+      OvGround_40: -4868290073248820787
+      OvGround_41: -5081601229649422694
+      OvGround_42: 1570574488524007090
+      OvGround_43: 9137890432864340743
+      OvGround_44: -1663586851238816698
+      OvGround_45: -4510247551608688665
+      OvGround_46: -5864881807981610888
+      OvGround_47: -1584319137133313604
+      OvGround_48: -4069270142154067394
+      OvGround_49: -44399582556314119
+      OvGround_5: -208428543069134289
+      OvGround_50: -7850425293249505672
+      OvGround_51: 8892898081276943440
+      OvGround_52: 7172391233413162718
+      OvGround_53: -2082589663307059460
+      OvGround_54: 3904841440050157656
+      OvGround_55: 7114884298790027170
+      OvGround_56: -6060769559466957445
+      OvGround_57: 3121861480002971596
+      OvGround_58: -4331083659397012384
+      OvGround_59: 9160752570298109715
+      OvGround_6: -5255848484853135203
+      OvGround_60: 4502454457982314929
+      OvGround_61: -5072669510682326716
+      OvGround_62: -4587646846731771562
+      OvGround_63: 5511160756088815394
+      OvGround_64: 8305552989353777338
+      OvGround_65: 3273315674682417615
+      OvGround_66: -6906615487956851194
+      OvGround_67: 4804016947614266982
+      OvGround_68: 4985353145036807740
+      OvGround_69: 5770574650082995092
+      OvGround_7: -786716041521961375
+      OvGround_70: -2865292438084654770
+      OvGround_71: -7446803994150333579
+      OvGround_72: 8486519859731279797
+      OvGround_73: -6059499229123327956
+      OvGround_74: -855973762634362746
+      OvGround_75: -1364226998118972516
+      OvGround_76: 7189967278361493133
+      OvGround_77: -7111993197324087678
+      OvGround_78: -7906225107026351600
+      OvGround_79: 2324884963898937305
+      OvGround_8: 6436687524091856376
+      OvGround_80: -1100355440444384425
+      OvGround_81: -5244061397297525412
+      OvGround_82: -2493558466229143456
+      OvGround_83: 8789297365437028740
+      OvGround_84: 5648383868892084945
+      OvGround_85: 323959601678017081
+      OvGround_86: -4008042488140176135
+      OvGround_87: -2587095623531469296
+      OvGround_88: 3702435427623893792
+      OvGround_89: -4675133298870137720
+      OvGround_9: -2768959603744281391
+      OvGround_90: 5650430097411712221
+      OvGround_91: 1503314785343762179
+      OvGround_92: -287351658060491095
+      OvGround_93: 5525155306438998422
+      OvGround_94: -6809456953939895970
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

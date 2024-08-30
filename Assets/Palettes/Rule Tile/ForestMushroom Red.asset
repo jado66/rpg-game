@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: ForestMushroom Red
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: 221022339, guid: c8bbe524f97ae4f46877c9af00392867, type: 3}
+  m_DefaultColliderType: 1
+  RuleNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  firstExists: 1
+  These: 0
+  DefaultNumOfThese: 0
+  TheseNumberOfTiles: 00000000000000
+  NotZero: 5
+  firstExists2: 1
+  NotThese: 1
+  DefaultNumOfNotThese: 0
+  NotTheseNumberOfTiles: 000000000000
+  t1: []
+  t2: []
+  t3: []
+  t4: []
+  t5: []
+  t6: []
+  t7: []
+  n1: []
+  n2: []
+  n3: []
+  n4: []
+  n5: []
+  n6: []
+  m_TilingRules:
+  - m_Neighbors: 0000000000000000000000000000000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 221022339, guid: c8bbe524f97ae4f46877c9af00392867, type: 3}
+    - {fileID: 794851453, guid: c8bbe524f97ae4f46877c9af00392867, type: 3}
+    - {fileID: -2144097090, guid: c8bbe524f97ae4f46877c9af00392867, type: 3}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 1
+    m_ColliderType: 1
+    m_RandomTransform: 0

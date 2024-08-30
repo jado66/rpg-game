@@ -111,7 +111,7 @@ TextureImporter:
       213: -1242802689487638345
     second: carrotToGrass_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      carrotToGrass_0: -1855040886547996261
+      carrotToGrass_1: 2757212851698974527
+      carrotToGrass_10: 6212168060520725020
+      carrotToGrass_11: 1540542659921935840
+      carrotToGrass_12: 1858405120243730126
+      carrotToGrass_13: 8479382319771386494
+      carrotToGrass_14: 8702381758869228788
+      carrotToGrass_15: -5696759901630761056
+      carrotToGrass_16: -563940970063460413
+      carrotToGrass_17: -5114063459851208151
+      carrotToGrass_18: -2473088898831720400
+      carrotToGrass_19: -9156978522674954980
+      carrotToGrass_2: 2579345273820612134
+      carrotToGrass_20: 1890249910721452393
+      carrotToGrass_21: -6168488467786631126
+      carrotToGrass_22: 7840018065065802733
+      carrotToGrass_23: -5641497067354205964
+      carrotToGrass_24: 8520602821838256290
+      carrotToGrass_25: -4817434322452491194
+      carrotToGrass_26: -1851895484572731697
+      carrotToGrass_27: -836172145155401595
+      carrotToGrass_28: 3405806694284167473
+      carrotToGrass_29: -5904940774300398914
+      carrotToGrass_3: 7589183438021352929
+      carrotToGrass_30: 4510310907536052812
+      carrotToGrass_31: -3104544570114436666
+      carrotToGrass_32: -6616541888035769466
+      carrotToGrass_33: -3471163332585698961
+      carrotToGrass_34: -3453490502148744079
+      carrotToGrass_35: -1242802689487638345
+      carrotToGrass_4: 2879819727630518304
+      carrotToGrass_5: 6770271939417864616
+      carrotToGrass_6: -3784144455594045834
+      carrotToGrass_7: -5593520548890735076
+      carrotToGrass_8: 1483084726352666847
+      carrotToGrass_9: 5002178194706664444
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

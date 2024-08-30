@@ -43,14 +43,28 @@ public static class InventoryItemDatabase
         var regularItem = InventoryItem.Uses.RegularItem;
 
         items = new List<InventoryItem> {
-                           // id, name, description, useType, stats,  value, strongConsumers,  weakConsumers,   amount = 1,  stackAmount = 0)
-            new RegularItem("0", "Wood", "Not the morning kind", 10, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            new RegularItem("1", "Rock", "Not the morning kind", 10, regularItem, new Dictionary<string, int>(), 15, new List<string>(), new List<string>()),
-            new RegularItem("2", "Iron Ore", "Let's pump some", 10, regularItem, new Dictionary<string, int>(), 350, new List<string>(), new List<string>()),
-            new RegularItem("3", "Gold Ore", "Oooh ahh", 10, regularItem, new Dictionary<string, int>(), 750, new List<string>(), new List<string>()),
+                            // id,  name,  description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = nul            
+            new RegularItem("0", "Wood", "Can be used for building", 10, regularItem, new Dictionary<string, int>(), 5, new List<string>(), new List<string>()),
+            new RegularItem("1", "Rock", "Not the morning kind", 2, regularItem, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
+            new RegularItem("2", "Iron Ore", "Let's pump some", 10, regularItem, new Dictionary<string, int>(), 150, new List<string>(), new List<string>()),
+            new RegularItem("3", "Gold Ore", "Oooh ahh", 10, regularItem, new Dictionary<string, int>(), 500, new List<string>(), new List<string>()),
             new RegularItem("4", "Coins", "Mooooooneeey", 999, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            new RegularItem("gem", "Gem", "Gem gem ", 10, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
-            
+            new RegularItem("5", "Wild Flower", "A wild flower", 99, regularItem, new Dictionary<string, int>(), 3, new List<string>(), new List<string>()),
+            new RegularItem("6", "Pink Wild Flower", "A pink wild flower", 99, regularItem, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
+            new RegularItem("6", "Purple Wild Flower", "A purple wild flower", 99, regularItem, new Dictionary<string, int>(), 25, new List<string>(), new List<string>()),
+
+            new RegularItem("gem", "Gem", "Gem gem ", 10, regularItem, new Dictionary<string, int>(), 850, new List<string>(), new List<string>()),
+            new RegularItem("grass-shard", "Grass Shard", "A rare crystal filled with energy", 750, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new RegularItem("fire-shard", "Fire Shard", "A rare crystal filled with energy", 1250, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new RegularItem("ice-shard", "Ice Shard", "A rare crystal filled with energy", 1250, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new RegularItem("silver-key", "Silver Key", "It must open something.", 1, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new RegularItem("gold-key", "Gold Key", "It must open something.", 1, regularItem, new Dictionary<string, int>(), 10, new List<string>(), new List<string>()),
+            new Key("woods-house-key", "Woods House Key", "It must open something.",750,"wk-1"),
+            new Key("house-key-2", "Woods Mansion Key", "It must open something.",5500,"wk-2"),
+            new Key("house-key-3", "Castle House Key", "It must open something.",3500,"ck-1"),
+            new Key("house-key-4", "Castle Mansion Key", "It must open something.",9500,"ck-2"),
+            // new Key(id: "woods-house-key",name: "Woods House Key",description: "This key unlocks the house in the woods",keyId: "woods-house"),
+
             // Seeds
             TerraSeeds.TreeSapling(),
             TerraSeeds.AppleSapling(),
@@ -80,7 +94,7 @@ public static class InventoryItemDatabase
             GardenPlant.Tomato(),
             GardenPlant.RedMushroom(),
             GardenPlant.PinkMushroom(),
-            GardenPlant.GreenMushroom(),
+            GardenPlant.WhiteMushroom(),
             GardenPlant.Apple(),
             GardenPlant.UnripeApple(),
             GardenPlant.UnripeApple(),
@@ -89,7 +103,11 @@ public static class InventoryItemDatabase
             new DaySpell(),
             new GrowthSpell(),
             new IlluminationSpell(),
-
+            new MediumBackpack(),
+            new LargeBackpack(),
+            new ExtraLargeBackpack(),
+            new StrongSpellInventoryExpansion(),
+            new SpellInventoryExpansion(),
 
             // new AstralProjectionScroll(),
 
@@ -103,10 +121,10 @@ public static class InventoryItemDatabase
             FertileEgg.ChickenEgg(),
 
             // new RegularItem("30", "Feather", "Really light", 999, regularItem, new Dictionary<string, int>(), 1, new List<string>(), new List<string>(), 99),
-            new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 650, new List<string>(), new List<string>(), 1),
-            new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
+            new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 750, new List<string>(), new List<string>(), 1),
+            new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
             new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 550, new List<string>(), new List<string>(), 1),
-            new ShovelItem("34", "Shovel", "For digging gardens", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
+            new ShovelItem("34", "Shovel", "For digging gardens", tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>(), 1),
             new ToolItem("astral-scroll", "Astral Projection Scroll", "Used to temporarily separate your spirit from body.", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("35", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             
@@ -197,40 +215,40 @@ public static class InventoryItemDatabase
 // Definitions for InventoryItem subclasses
 public class RegularItem : InventoryItem
 {
-    public RegularItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
+    public RegularItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = null)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount, iconPath) { }
 
     
 }
 
 public class InteractableItem : InventoryItem
 {
-    public InteractableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
+    public InteractableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = null)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount, iconPath) { }
 
    
 }
 
 public class ConsumableItem : InventoryItem
 {
-    public ConsumableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
+    public ConsumableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = null)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount, iconPath) { }
 
    
 }
 
 public class ToolItem : InventoryItem
 {
-    public ToolItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
+    public ToolItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = null)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount, iconPath) { }
 
    
 }
 
 public class WearableItem : InventoryItem
 {
-    public WearableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers)
-        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount) { }
+    public WearableItem(string id, string name, string description, int stackAmount, Uses use, Dictionary<string, int> stats, int value, List<string> strongConsumers, List<string> weakConsumers, string iconPath = null)
+        : base(id, name, description, use, stats, value, strongConsumers, weakConsumers, 1, stackAmount, iconPath) { }
 
     
 }

@@ -35,7 +35,7 @@ public class Torch : InventoryItem
             "Keeps the darkness away..",
             Uses.Consumable, 
             new Dictionary<string, int>(), 
-            150, 
+            10, 
             20f, // default light time in seconds
             new List<string>(), 
             new List<string>()
@@ -45,7 +45,7 @@ public class Torch : InventoryItem
     public override void Use(Character character)
     {
         
-        bool success = character.ToggleTorch(true);
+        bool success = character.ToggleTorch(true, 10);
 
         if (!success){
             return;
@@ -76,7 +76,7 @@ public class Torch : InventoryItem
     private IEnumerator LightTimeCountdown(Character character)
     {
         yield return new WaitForSeconds(LightTime);
-        character.ToggleTorch(false);
+        character.ToggleTorch(false, 10);
         Debug.Log("Torch light time ended");
     }
 }

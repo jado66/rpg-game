@@ -31,7 +31,7 @@ public class StaminaPotion : InventoryItem
             "A small energy boost",
             Uses.Consumable, 
             new Dictionary<string, int>{{"RegainStamina", 10}}, 
-            150, 
+            25, 
             new List<string>(), 
             new List<string>()
         );
@@ -46,7 +46,7 @@ public class StaminaPotion : InventoryItem
             "A good energy boost",
             Uses.Consumable, 
             new Dictionary<string, int>{{"RegainStamina", 25}}, 
-            300, 
+            50, 
             new List<string>(), 
             new List<string>()
         );
@@ -61,7 +61,7 @@ public class StaminaPotion : InventoryItem
             "A huge energy boost",
             Uses.Consumable, 
             new Dictionary<string, int>{{"RegainStamina", 50}}, 
-            500, 
+            75, 
             new List<string>(), 
             new List<string>()
         );
@@ -76,7 +76,7 @@ public class StaminaPotion : InventoryItem
             "Fully energy recovery",
             Uses.Consumable, 
             new Dictionary<string, int>{{"RegainStamina", 10000}}, 
-            1000, 
+            250, 
             new List<string>(), 
             new List<string>()
         );

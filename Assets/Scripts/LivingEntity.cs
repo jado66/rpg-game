@@ -26,26 +26,34 @@ public class LivingEntity : Interactable
     }
 
     public virtual void TakeDamage(float amount){
-        Debug.Log("Taking damage from player");
+        // Debug.Log("Taking damage from player");
         // if (!alive)
         //     return;
 
         
         health -= amount;
+        Debug.Log($"{type} took {(float)amount} damage");
 
         if (health <= 0){
             kill();
         }
         else{
-            if (healthbarObject != null && !healthbarObject.activeSelf){
-                healthbar.fillAmount = (float)(health)/(float)(maxHealth);
+            if (healthbarObject != null){
+
+                float fillAmount = (float)(health)/(float)(maxHealth);
+                // Debug.Log($"Entity hit. Health percentage fill is {fillAmount}");
+                healthbar.fillAmount = fillAmount;
                 healthbarObject.SetActive(true);
             }
         }
     }
 
     protected virtual void kill(){
-        Debug.Log("Killing "+ name);
+
+        if (!alive){
+            return;
+        }
+
         if (healthbarObject != null){
             healthbarObject.SetActive(false);
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;

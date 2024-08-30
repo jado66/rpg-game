@@ -71,7 +71,7 @@ public class DaySpell : MagicSpells
 {
     public DaySpell() 
         : base("day-spell", "Day Spell", "Turn the night into day", Uses.Consumable, 
-               new Dictionary<string, int>(), 150, new List<string>(), new List<string>())
+               new Dictionary<string, int>(), 500, new List<string>(), new List<string>())
     {
     }
 
@@ -120,7 +120,7 @@ public class GrowthSpell : MagicSpells
 {
     public GrowthSpell() 
         : base("growth-spell", "Growth Spell", "Makes all plants grow.", Uses.Consumable, 
-               new Dictionary<string, int>(), 150, new List<string>(), new List<string>())
+               new Dictionary<string, int>(), 2500, new List<string>(), new List<string>())
     {
     }
 
@@ -166,7 +166,7 @@ public class NightSpell : MagicSpells
 {
     public NightSpell() 
        : base("night-spell", "Night Spell", "Turn the day into night", Uses.Consumable, 
-              new Dictionary<string, int>(), 150, new List<string>(), new List<string>())
+              new Dictionary<string, int>(), 500, new List<string>(), new List<string>())
     {
     }
 
@@ -219,7 +219,7 @@ public class IlluminationSpell : MagicSpells
 
     public IlluminationSpell() 
         : base("illumination-spell", "Illumination Spell", "Works like a torch.", Uses.Consumable, 
-               new Dictionary<string, int>(), 150, new List<string>(), new List<string>())
+               new Dictionary<string, int>(), 250, new List<string>(), new List<string>())
     {
     }
 
@@ -250,11 +250,11 @@ public class IlluminationSpell : MagicSpells
             character.StopCoroutine(currentCoroutine);
             currentCoroutine = null;
             DecreaseItemCount(character);
-            character.ToggleTorch(false);
+            character.ToggleTorch(false, 10);
             return;
         }
 
-        bool success = character.ToggleTorch(true);
+        bool success = character.ToggleTorch(true, 35);
 
         if (!success)
         {
@@ -284,7 +284,7 @@ public class IlluminationSpell : MagicSpells
             stats.UseMana(1f * Time.deltaTime); // Drain mana over time
         }
 
-        character.ToggleTorch(false);
+        character.ToggleTorch(false, 10);
         Debug.Log("Illumination spell ended due to lack of mana");
         
         DecreaseItemCount(character);

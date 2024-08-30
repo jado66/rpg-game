@@ -23,6 +23,7 @@ public class Tutorial : MonoBehaviour
             if (tutorialTasks == 0)
             {
                 ToastNotification.Instance.Toast("no-tutorial-tasks", "There are no tasks left!");
+                StartCoroutine(ShowDelayedToast());
             }
             else
             {
@@ -33,5 +34,11 @@ public class Tutorial : MonoBehaviour
         {
             Debug.Log("There are no tasks left to complete.");
         }
+    }
+
+    private IEnumerator ShowDelayedToast()
+    {
+        yield return new WaitForSeconds(3);
+        ToastNotification.Instance.Toast("exit-tutorial", "Exit the portal to leave!");
     }
 }

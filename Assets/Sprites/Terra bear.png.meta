@@ -285,7 +285,7 @@ TextureImporter:
       213: 6099692688819056169
     second: Terra bear_93
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -302,9 +302,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -314,11 +317,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -336,10 +339,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -351,6 +359,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -363,6 +372,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2352,9 +2375,103 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra bear_0: -5015167473817713281
+      Terra bear_1: -6046340837694511522
+      Terra bear_10: 8462009886710215058
+      Terra bear_11: -8765299322246832055
+      Terra bear_12: -4482866538523774696
+      Terra bear_13: -1127532174325022946
+      Terra bear_14: 1433116084790652969
+      Terra bear_15: -3294836250445196974
+      Terra bear_16: -3998993361283777487
+      Terra bear_17: 6887388050704688744
+      Terra bear_18: -4886478953694401437
+      Terra bear_19: -2997621593995359533
+      Terra bear_2: 7699114238795488393
+      Terra bear_20: 7546856564696689680
+      Terra bear_21: -3240904695945241251
+      Terra bear_22: -8904232485780435231
+      Terra bear_23: -146625820384621121
+      Terra bear_24: 3296452430922357109
+      Terra bear_25: 8039315667874836470
+      Terra bear_26: 6268696449847419833
+      Terra bear_27: 5210363424130787666
+      Terra bear_28: 961456712973588582
+      Terra bear_29: -8177399472999102784
+      Terra bear_3: -2609747821004269627
+      Terra bear_30: -2712207260690762528
+      Terra bear_31: 4357018260904687353
+      Terra bear_32: -5579937010274142634
+      Terra bear_33: 5581711674787237582
+      Terra bear_34: 844991113915862950
+      Terra bear_35: 3676770157076843602
+      Terra bear_36: -3274310977563943187
+      Terra bear_37: 1217579084772623246
+      Terra bear_38: 624719579827530495
+      Terra bear_39: 4024027611179893753
+      Terra bear_4: 6344927618404726382
+      Terra bear_40: 5731991496885407255
+      Terra bear_41: -7538666346120111964
+      Terra bear_42: 5247614267620644986
+      Terra bear_43: 4613202428790858879
+      Terra bear_44: -8919454619971232271
+      Terra bear_45: 8602651568401403387
+      Terra bear_46: -205207315274660469
+      Terra bear_47: -6530217125746942877
+      Terra bear_48: -5247743559713445965
+      Terra bear_49: -6808727410418341266
+      Terra bear_5: -6146440647465128141
+      Terra bear_50: -244416642416487363
+      Terra bear_51: 9102726065387014421
+      Terra bear_52: 2174192081468365055
+      Terra bear_53: -5406537213793654737
+      Terra bear_54: -3763977458880975934
+      Terra bear_55: 6946930810662185710
+      Terra bear_56: -2089094456310588490
+      Terra bear_57: 5796209169503461909
+      Terra bear_58: -8669397337249348763
+      Terra bear_59: 8246097956859383774
+      Terra bear_6: 4776928951162588771
+      Terra bear_60: 3774429199886215180
+      Terra bear_61: 1469834533689382912
+      Terra bear_62: -5159899779231754840
+      Terra bear_63: -1715816227647061667
+      Terra bear_64: -6234437691237264059
+      Terra bear_65: -4713886853643177672
+      Terra bear_66: -2165617061590378508
+      Terra bear_67: -7649389415858076812
+      Terra bear_68: 3527419629675492724
+      Terra bear_69: 5275897736815244212
+      Terra bear_7: 2640604343261134460
+      Terra bear_70: 5321676244708974196
+      Terra bear_71: 565128497232256159
+      Terra bear_72: -4693851370027102001
+      Terra bear_73: 6466627981527099349
+      Terra bear_74: -8917553733872883515
+      Terra bear_75: 3261688417864305018
+      Terra bear_76: -2002723421577235411
+      Terra bear_77: -3961989409762609263
+      Terra bear_78: 6896863627700273726
+      Terra bear_79: -1255644543080242798
+      Terra bear_8: -3792029824384422551
+      Terra bear_80: -650554103157711095
+      Terra bear_81: 4945420464300922518
+      Terra bear_82: 3437720265051993816
+      Terra bear_83: 2565772586409121398
+      Terra bear_84: -7828075162078773322
+      Terra bear_85: -1363454231071821251
+      Terra bear_86: 5394296211507962466
+      Terra bear_87: -7487172843274635315
+      Terra bear_88: 3229590381798540917
+      Terra bear_89: -6536263899816079346
+      Terra bear_9: 2346504862063044058
+      Terra bear_90: -5855704155158888685
+      Terra bear_91: 8521331177047645160
+      Terra bear_92: 190856579411016062
+      Terra bear_93: 6099692688819056169
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

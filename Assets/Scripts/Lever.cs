@@ -23,8 +23,7 @@ public class Lever : Interactable
         }
 
     }
-    public override void OnCharacterInteract(){
-        base.OnCharacterInteract();
+    public override void OnCharacterInteract(CharacterWorldInteraction interaction){
         
         toggleLever();
     }

@@ -111,7 +111,7 @@ TextureImporter:
       213: 4270260616988532064
     second: ploughToGrass_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      ploughToGrass_0: 3150594833409054040
+      ploughToGrass_1: 7257783834973121226
+      ploughToGrass_10: 3903176402001173032
+      ploughToGrass_11: -7440810792399274070
+      ploughToGrass_12: 6191128472686086032
+      ploughToGrass_13: -4925414317400273822
+      ploughToGrass_14: 1594941079991941265
+      ploughToGrass_15: 5767487830314850030
+      ploughToGrass_16: 6672599376668461354
+      ploughToGrass_17: -8838603565009295658
+      ploughToGrass_18: -750364049830505679
+      ploughToGrass_19: 3694862812740120994
+      ploughToGrass_2: -2325721137768442305
+      ploughToGrass_20: -1359165537943233630
+      ploughToGrass_21: 5546520819974397298
+      ploughToGrass_22: -4692444608776248403
+      ploughToGrass_23: -6201034728903323881
+      ploughToGrass_24: 7030930898556656994
+      ploughToGrass_25: 787969242371332901
+      ploughToGrass_26: 8926263964831375668
+      ploughToGrass_27: -698842648295222922
+      ploughToGrass_28: 1977532677720394218
+      ploughToGrass_29: -4023188270286528960
+      ploughToGrass_3: 8358019997723816392
+      ploughToGrass_30: 8608902197252837755
+      ploughToGrass_31: -8801068246468384046
+      ploughToGrass_32: 951875034491247918
+      ploughToGrass_33: -5730643929611974874
+      ploughToGrass_34: 8964017745744593257
+      ploughToGrass_35: 4270260616988532064
+      ploughToGrass_4: 4995650663124124538
+      ploughToGrass_5: 6472605461536498955
+      ploughToGrass_6: 8975210354747569251
+      ploughToGrass_7: -7912766559308152447
+      ploughToGrass_8: -3100556720035111789
+      ploughToGrass_9: -8791690524403055810
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

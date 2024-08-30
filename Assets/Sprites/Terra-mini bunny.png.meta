@@ -291,7 +291,7 @@ TextureImporter:
       213: -1327158814938992421
     second: Terra-mini bunny_95
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,9 +308,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -320,11 +323,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -342,10 +345,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -369,6 +378,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2400,9 +2423,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra-mini bunny_0: -6666989957535701551
+      Terra-mini bunny_1: 7099759388241171529
+      Terra-mini bunny_10: -9141190457694716784
+      Terra-mini bunny_11: 8306435331709905307
+      Terra-mini bunny_12: -847551055740777533
+      Terra-mini bunny_13: 7838292953207613987
+      Terra-mini bunny_14: -5013648912022419977
+      Terra-mini bunny_15: 7694498833979565620
+      Terra-mini bunny_16: 4926306099310458169
+      Terra-mini bunny_17: -6197660867298032912
+      Terra-mini bunny_18: -372698686918444157
+      Terra-mini bunny_19: -3428259854928976391
+      Terra-mini bunny_2: 599428675211756451
+      Terra-mini bunny_20: 5137185960564843748
+      Terra-mini bunny_21: -4419545075727237851
+      Terra-mini bunny_22: -2980523645109868363
+      Terra-mini bunny_23: 5045711325004349352
+      Terra-mini bunny_24: -1549282506993470291
+      Terra-mini bunny_25: -2369991523633207896
+      Terra-mini bunny_26: -8206165652435720555
+      Terra-mini bunny_27: -5314830614438354651
+      Terra-mini bunny_28: -2434460627189114863
+      Terra-mini bunny_29: 6161022409017246229
+      Terra-mini bunny_3: -2421409596963854763
+      Terra-mini bunny_30: 6521114427802724379
+      Terra-mini bunny_31: 8054575402560487958
+      Terra-mini bunny_32: 3964783185460910037
+      Terra-mini bunny_33: 4478892799996032375
+      Terra-mini bunny_34: -2914427728579992903
+      Terra-mini bunny_35: 514984817875649769
+      Terra-mini bunny_36: 1050024226611143540
+      Terra-mini bunny_37: 1677816756841296879
+      Terra-mini bunny_38: 6058535936176613699
+      Terra-mini bunny_39: 6575559909616743668
+      Terra-mini bunny_4: 3189939947163165653
+      Terra-mini bunny_40: -205188281385216226
+      Terra-mini bunny_41: 4301468567195196609
+      Terra-mini bunny_42: -1933614553819223260
+      Terra-mini bunny_43: -450158845699169610
+      Terra-mini bunny_44: -1327897998320584946
+      Terra-mini bunny_45: -20384421407888010
+      Terra-mini bunny_46: -4104511337571981266
+      Terra-mini bunny_47: 6998853277497594807
+      Terra-mini bunny_48: 2731048887634404777
+      Terra-mini bunny_49: 9103713379052802836
+      Terra-mini bunny_5: 975737205019298047
+      Terra-mini bunny_50: -7247986844325929236
+      Terra-mini bunny_51: 1235904444175733105
+      Terra-mini bunny_52: 4171071639468336308
+      Terra-mini bunny_53: -8668982656125126622
+      Terra-mini bunny_54: 8321779330614155499
+      Terra-mini bunny_55: 8327647689668445875
+      Terra-mini bunny_56: -848179697947457098
+      Terra-mini bunny_57: 2583890767439641822
+      Terra-mini bunny_58: 9106255918043742992
+      Terra-mini bunny_59: 4844520963191620850
+      Terra-mini bunny_6: 3402130720666345535
+      Terra-mini bunny_60: 3371454247041452610
+      Terra-mini bunny_61: 959630529566654109
+      Terra-mini bunny_62: -2523808758742830619
+      Terra-mini bunny_63: -21596101567774521
+      Terra-mini bunny_64: -7120491205020077416
+      Terra-mini bunny_65: -4959107567745070393
+      Terra-mini bunny_66: 7169393141956841037
+      Terra-mini bunny_67: 3514095618377287140
+      Terra-mini bunny_68: 3843916388275237609
+      Terra-mini bunny_69: -7220364111093451538
+      Terra-mini bunny_7: -5943186527844576012
+      Terra-mini bunny_70: 6708289337501448790
+      Terra-mini bunny_71: 5787998859365769948
+      Terra-mini bunny_72: 3607000024843568989
+      Terra-mini bunny_73: 8735482387067614707
+      Terra-mini bunny_74: 4985344578778709703
+      Terra-mini bunny_75: -1013234413329162529
+      Terra-mini bunny_76: 9175620641487178649
+      Terra-mini bunny_77: 1809538196247294686
+      Terra-mini bunny_78: -5128122443141075405
+      Terra-mini bunny_79: 2057763258943370238
+      Terra-mini bunny_8: -1689461886599784283
+      Terra-mini bunny_80: 1558724199861865559
+      Terra-mini bunny_81: 6287403345895163663
+      Terra-mini bunny_82: 2818966423615069952
+      Terra-mini bunny_83: 4275682368298007506
+      Terra-mini bunny_84: 4567503206296006031
+      Terra-mini bunny_85: 2335641999878090608
+      Terra-mini bunny_86: 3894962156389819719
+      Terra-mini bunny_87: 3926835351462086106
+      Terra-mini bunny_88: 534263933646950351
+      Terra-mini bunny_89: -499204762360449029
+      Terra-mini bunny_9: 8114673373164285722
+      Terra-mini bunny_90: -1385334499177813379
+      Terra-mini bunny_91: 864736031456978063
+      Terra-mini bunny_92: -5663113942569694105
+      Terra-mini bunny_93: -8762807022065896824
+      Terra-mini bunny_94: 9181841257868083574
+      Terra-mini bunny_95: -1327158814938992421
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

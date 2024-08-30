@@ -32,7 +32,12 @@ public class CharacterWorldInteraction: MonoBehaviour
     private int defaultLayer;
     private GridLayout grid;
 
+    private SceneManager sceneManager;
+
     private Vector3 playerFacingDirection;
+
+    private Chest chest;
+    private Store store;
 
     public void InitializeComponents(Character characterRef){
         character = characterRef;
@@ -48,10 +53,12 @@ public class CharacterWorldInteraction: MonoBehaviour
         defaultLayer = LayerMask.NameToLayer("Default");
         grid = GameObject.Find("Grid").GetComponent<GridLayout>();
 
+        sceneManager = character.GetSceneManager();
+
     }
 
     public IEnumerator Interact(){
-        Debug.Log($"We are actually interacting - interact layer {interactLayer}");
+        // Debug.Log($"We are actually interacting - interact layer {interactLayer}");
        
         buildSquareCellLocation = grid.WorldToCell(movement.characterCenter+movement.playerFacingDirection);
 
@@ -68,12 +75,12 @@ public class CharacterWorldInteraction: MonoBehaviour
 
 
         if(interactableHit.collider != null){ 
-            Debug.Log("We hit something");
+            // Debug.Log("We hit something");
             try{
-                Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
+                // Debug.Log("Player interacted with "+interactableHit.collider.gameObject.GetComponent<Interactable>().type);
                 var interactables = interactableHit.collider.gameObject.GetComponents<Interactable>();
                 foreach (var interactable in interactables) {
-                    interactable.OnCharacterInteract();
+                    interactable.OnCharacterInteract(this);
                 }
             }
             catch {
@@ -83,28 +90,32 @@ public class CharacterWorldInteraction: MonoBehaviour
             }
         }
          else{
-            Debug.Log("Nothing on the interact layer");
+            // Debug.Log("Nothing on the interact layer");
             // Check for fence
             if (tilePalette.interactable.GetTile(buildSquareCellLocation)==tilePalette.mushroomTile){
-                Debug.Log("Hit a mushroom");
-                tilePalette.interactable.SetTile(buildSquareCellLocation,null);
-
-                float randomChance = Random.value; // Returns a value between 0.0 and 1.0
-                if (randomChance < 0.1f) // 50% chance for Green Mushroom
-                {
-                    inventory.TryAddItem("Green Mushroom");
-                }
-                else if (randomChance < 0.3f)// 50% chance for Red Mushroom
-                {
-                    inventory.TryAddItem("Red Mushroom");
-                }
-                else{
-                    inventory.TryAddItem("Mushroom");
-
-                }
+                tilePalette.interactable.SetTile(buildSquareCellLocation,null);    
+                inventory.TryAddItem("Mushroom");
             }
-            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlower)
+            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.mushroomTileRed){
+                tilePalette.decor.SetTile(buildSquareCellLocation,null);    
+                inventory.TryAddItem("Red Mushroom");
+            }
+            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.mushroomTileWhite){
+                tilePalette.decor.SetTile(buildSquareCellLocation,null);    
+                inventory.TryAddItem("White Mushroom");
+            }
+            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlower){
                 tilePalette.decor.SetTile(buildSquareCellLocation,null);
+                inventory.TryAddItem("Wild Flower");
+            }
+            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlowerPink){
+                tilePalette.decor.SetTile(buildSquareCellLocation,null);
+                inventory.TryAddItem("Pink Wild Flower");
+            }
+            else if (tilePalette.decor.GetTile(buildSquareCellLocation)==tilePalette.forestFlowerPurple){
+                tilePalette.decor.SetTile(buildSquareCellLocation,null);
+                inventory.TryAddItem("Purple Wild Flower");
+            }
             else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateOpen)
                 tilePalette.choppable.SetTile(buildSquareCellLocation,tilePalette.gateClosed);
             else if (tilePalette.choppable.GetTile(buildSquareCellLocation) == tilePalette.gateClosed)
@@ -323,5 +334,75 @@ public class CharacterWorldInteraction: MonoBehaviour
         }
 
         yield return null;
+    }
+
+    public void OpenChest(Chest newChest){
+
+        chest = newChest;
+        sceneManager.ToggleInventory(true);
+    }
+
+    public Chest GetOpenChest(){
+        return chest;
+    }
+
+    public void CloseOpenChest(){
+        chest.CloseChest();
+        sceneManager.ToggleInventory(false);
+        chest = null;
+    }
+
+    public void OpenStore(Store newStore){
+
+        store = newStore;
+        sceneManager.ToggleInventory(true);
+    }
+
+    public Store GetOpenStore(){
+        return store;
+    }
+
+    public void CloseOpenStore(){
+        store.CloseStore();
+        sceneManager.ToggleInventory(false);
+        store = null;
+    }
+
+    public bool TryUseKey(string keyID)
+    {
+        buildSquareCellLocation = grid.WorldToCell(movement.characterCenter + movement.playerFacingDirection);
+
+        Vector2 rayOrigin = movement.characterCenter;
+        Vector2 rayDirection = movement.playerFacingDirection;
+        RaycastHit2D interactableHit = Physics2D.Raycast(rayOrigin, rayDirection, 1f, 1 << interactLayer);
+
+        if (interactableHit.collider != null)
+        {
+            Door door = interactableHit.collider.gameObject.GetComponent<Door>();
+            if (door != null)
+            {
+                bool unlocked = door.TryUseKey(keyID);
+                if (unlocked)
+                {
+                    Debug.Log("Door unlocked successfully!");
+                    return true;
+                }
+                else
+                {
+                    Debug.Log("Wrong key or door already unlocked!");
+                    return false;
+                }
+            }
+            else
+            {
+                Debug.Log("There's an interactable object here, but it's not a door.");
+                return false;
+            }
+        }
+        else
+        {
+            Debug.Log("No door found in front of the player.");
+            return false;
+        }
     }
 }

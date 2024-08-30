@@ -111,7 +111,7 @@ TextureImporter:
       213: -4907993427770835318
     second: cobbleStoneToGrass_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cobbleStoneToGrass_0: -3486990794007545272
+      cobbleStoneToGrass_1: -5811384508561172735
+      cobbleStoneToGrass_10: -2002137312222295243
+      cobbleStoneToGrass_11: -5440887547691077319
+      cobbleStoneToGrass_12: -2269481526896094013
+      cobbleStoneToGrass_13: 6453640993315156672
+      cobbleStoneToGrass_14: 1083407960723745707
+      cobbleStoneToGrass_15: -7690522071251071987
+      cobbleStoneToGrass_16: 2758065513875646285
+      cobbleStoneToGrass_17: -2053091271346411450
+      cobbleStoneToGrass_18: 6312099935925852533
+      cobbleStoneToGrass_19: 475616853418645240
+      cobbleStoneToGrass_2: 2820279478945657422
+      cobbleStoneToGrass_20: 2322203255455548725
+      cobbleStoneToGrass_21: 818737917105901616
+      cobbleStoneToGrass_22: -8831209628094369904
+      cobbleStoneToGrass_23: 7559562532238763907
+      cobbleStoneToGrass_24: 8260443368127613700
+      cobbleStoneToGrass_25: -2522920541692489309
+      cobbleStoneToGrass_26: 1390463686352080513
+      cobbleStoneToGrass_27: 5150299008501065846
+      cobbleStoneToGrass_28: -5640225065569012742
+      cobbleStoneToGrass_29: 9059308841148122970
+      cobbleStoneToGrass_3: 4139370409248857266
+      cobbleStoneToGrass_30: -1194585152623248449
+      cobbleStoneToGrass_31: -5680079313029627254
+      cobbleStoneToGrass_32: -4077547986971202261
+      cobbleStoneToGrass_33: 2782943013099516070
+      cobbleStoneToGrass_34: -2683490905321552786
+      cobbleStoneToGrass_35: -4907993427770835318
+      cobbleStoneToGrass_4: 8196971989329641598
+      cobbleStoneToGrass_5: -6299988123577494489
+      cobbleStoneToGrass_6: -7363891443744088436
+      cobbleStoneToGrass_7: -1894291317941450080
+      cobbleStoneToGrass_8: 3843694104193774835
+      cobbleStoneToGrass_9: -4226137396155227659
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

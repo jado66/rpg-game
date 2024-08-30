@@ -147,7 +147,7 @@ TextureImporter:
       213: 8683853968582465999
     second: SnowIce_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,9 +164,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -176,11 +179,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -198,10 +201,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -213,6 +221,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -225,6 +234,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1248,9 +1271,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      SnowIce_0: -7074746967327533689
+      SnowIce_1: -4983293676015875024
+      SnowIce_10: 6557161343272617782
+      SnowIce_11: 1509043956743559923
+      SnowIce_12: 2339466600975041406
+      SnowIce_13: 4878462967268691094
+      SnowIce_14: 7782871640037860026
+      SnowIce_15: 3622711210427008709
+      SnowIce_16: -2820727951779666251
+      SnowIce_17: 8173159739967989881
+      SnowIce_18: 3398306317533570335
+      SnowIce_19: 1372931861489668703
+      SnowIce_2: 3325688166149433158
+      SnowIce_20: -3979366920104574282
+      SnowIce_21: 6352103548482242636
+      SnowIce_22: 2686126086154209688
+      SnowIce_23: 2708678392458147794
+      SnowIce_24: 2343963452338383670
+      SnowIce_25: 8233233140905636782
+      SnowIce_26: 8460454119468085277
+      SnowIce_27: -9010859921163841112
+      SnowIce_28: -2861642345591102688
+      SnowIce_29: 4214106198985449735
+      SnowIce_3: 5196032772548127403
+      SnowIce_30: 6459754110217358316
+      SnowIce_31: -3761148600136702035
+      SnowIce_32: 9143174668540925796
+      SnowIce_33: -5872614981240695906
+      SnowIce_34: 23980449093782326
+      SnowIce_35: -2149254356541760925
+      SnowIce_36: -177228629734339696
+      SnowIce_37: -1884030246014379436
+      SnowIce_38: -8250361647384030516
+      SnowIce_39: 7227205981145882252
+      SnowIce_4: -7092082168685277891
+      SnowIce_40: -6168138010666089858
+      SnowIce_41: 15785762892053181
+      SnowIce_42: 1715742116813716904
+      SnowIce_43: -3755173016173925524
+      SnowIce_44: -4822513531971822212
+      SnowIce_45: 4235537205348444226
+      SnowIce_46: -348399189558994584
+      SnowIce_47: 8683853968582465999
+      SnowIce_5: -3651059823555691999
+      SnowIce_6: -8782938811248102396
+      SnowIce_7: 5392506348422500837
+      SnowIce_8: 2965152008129686703
+      SnowIce_9: -2975764251938754453
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -32,7 +32,7 @@ public class GardenPlant : InventoryItem
             "For horses.",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 10},{"RegainStamina", 10}}, 
-            150, 
+            5, 
             new List<string>(), 
             new List<string>()
         );
@@ -47,22 +47,22 @@ public class GardenPlant : InventoryItem
             "Ripe from the vine",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 25},{"RegainStamina", 10}}, 
-            300, 
+            3, 
             new List<string>(), 
             new List<string>()
         );
     }
 
     // Simplified constructor for a large health potion
-    public static GardenPlant GreenMushroom() 
+    public static GardenPlant WhiteMushroom() 
     {
         return new GardenPlant(
-            "green-mushroom",
-            "Green Mushroom",
-            "Looks dangerous.",
+            "white-mushroom",
+            "White Mushroom",
+            "A pretty rare mushroom.",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 10},{"RegainStamina", 10}}, 
-            1000, 
+            50, 
             new List<string>(), 
             new List<string>()
         );
@@ -76,7 +76,7 @@ public class GardenPlant : InventoryItem
             "Squishy.",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", -30}}, 
-            1000, 
+            5, 
             new List<string>(), 
             new List<string>()
         );
@@ -90,7 +90,7 @@ public class GardenPlant : InventoryItem
             "Looks tasty.",
             Uses.Consumable, 
             new Dictionary<string, int>{{"RegainStamina", 40}}, 
-            1000, 
+            25, 
             new List<string>(), 
             new List<string>()
         );
@@ -105,7 +105,7 @@ public class GardenPlant : InventoryItem
             "Keeps doctors away",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", 10},{"RegainStamina", 10}}, 
-            1000, 
+            5, 
             new List<string>(), 
             new List<string>()
         );
@@ -119,7 +119,7 @@ public class GardenPlant : InventoryItem
             "Doesn't keeps doctors away",
             Uses.Consumable, 
             new Dictionary<string, int>{{"Heals", -2},{"RegainStamina", -10}}, 
-            1000, 
+            0, 
             new List<string>(), 
             new List<string>()
         );

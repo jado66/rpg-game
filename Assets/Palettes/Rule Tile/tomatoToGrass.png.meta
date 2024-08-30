@@ -111,7 +111,7 @@ TextureImporter:
       213: -5489414904129599829
     second: tomatoToGrass_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      tomatoToGrass_0: -7221979971780053564
+      tomatoToGrass_1: 5642437455506156427
+      tomatoToGrass_10: 5822888211565993500
+      tomatoToGrass_11: 7213916281467741806
+      tomatoToGrass_12: -5684079139978920450
+      tomatoToGrass_13: -4678837194420645937
+      tomatoToGrass_14: -3025584789346253328
+      tomatoToGrass_15: -3784018517907918450
+      tomatoToGrass_16: 4701398343074622822
+      tomatoToGrass_17: 6902664777245501084
+      tomatoToGrass_18: 5585604507849896891
+      tomatoToGrass_19: -6150168596391873939
+      tomatoToGrass_2: 2712399663336535815
+      tomatoToGrass_20: 8217224723365692923
+      tomatoToGrass_21: 7043293216257105463
+      tomatoToGrass_22: 35937847690861277
+      tomatoToGrass_23: 2650957387486219562
+      tomatoToGrass_24: -1392147980666807443
+      tomatoToGrass_25: 9084228590744390163
+      tomatoToGrass_26: 2148308602271751137
+      tomatoToGrass_27: 3213816590904736439
+      tomatoToGrass_28: -7588690542532085832
+      tomatoToGrass_29: 2615916767202821559
+      tomatoToGrass_3: 6676921931583807613
+      tomatoToGrass_30: 4082693127776716385
+      tomatoToGrass_31: 2477645783075600970
+      tomatoToGrass_32: -7562929880412332105
+      tomatoToGrass_33: 8080164006442958444
+      tomatoToGrass_34: -8252545652421725397
+      tomatoToGrass_35: -5489414904129599829
+      tomatoToGrass_4: 2803565770843136971
+      tomatoToGrass_5: -650292161167127329
+      tomatoToGrass_6: 641933639412936746
+      tomatoToGrass_7: 8634803039217916717
+      tomatoToGrass_8: -3660428717168395392
+      tomatoToGrass_9: -8856701956254894883
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

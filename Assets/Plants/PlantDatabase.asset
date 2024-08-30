@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b1bb9d6083f52924ea0e223c8faedb97, type: 3}
   m_Name: PlantDatabase
-  m_EditorClassIdentifier: Assembly-CSharp:PlantSystem:PlantDatabase
+  m_EditorClassIdentifier: 
   plantTypes:
-  - {fileID: 11400000, guid: bfddaccd30cf6544aa9d13f66246aa32, type: 2}
-  - {fileID: 11400000, guid: e345c58c7abffa740acec4ad0de608a0, type: 2}
   - {fileID: 11400000, guid: 452e200c953771547a2717111f79e916, type: 2}
   - {fileID: 11400000, guid: a2f07fefef040da4b9e94dfbd39c1c29, type: 2}
   - {fileID: 11400000, guid: 6dce4c352e71170489af0a55a9a3eab9, type: 2}
+  - {fileID: 11400000, guid: bfddaccd30cf6544aa9d13f66246aa32, type: 2}
+  - {fileID: 11400000, guid: e345c58c7abffa740acec4ad0de608a0, type: 2}

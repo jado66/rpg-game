@@ -60,10 +60,26 @@ public class Dialog : MonoBehaviour
     }
 
     public void InitializeDialog(){
-        dialogGameObject.SetActive(true);
-        backButton.onClick.AddListener(OnBackClicked);
-        nextButton.onClick.AddListener(OnNextClicked);
+        if (dialogGameObject) {
+            dialogGameObject.SetActive(true);
+        }
+
+        if (backButton != null) {
+            backButton.onClick.AddListener(OnBackClicked);
+        } else {
+            Debug.LogWarning("Back button is not defined.");
+            return;
+        }
+
+        if (nextButton != null) {
+            nextButton.onClick.AddListener(OnNextClicked);
+        } else {
+            Debug.LogWarning("Next button is not defined.");
+            return;
+        }
+        
         UpdateUI();
+
     }
 
     void UpdateUI()

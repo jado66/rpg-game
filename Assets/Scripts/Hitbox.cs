@@ -5,7 +5,9 @@ using UnityEngine;
 public class Hitbox : MonoBehaviour
 {
     public CharacterCombat character;
-    
+    private Dictionary<GameObject, float> hitCooldowns = new Dictionary<GameObject, float>();
+    public float hitCooldownDuration = 0.1f; // Adjust this value as needed
+
     void Start()
     {
         if (character == null)
@@ -20,21 +22,49 @@ public class Hitbox : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        // Update cooldowns
+        List<GameObject> objectsToRemove = new List<GameObject>();
+        
+        foreach (var kvp in hitCooldowns)
+        {
+            hitCooldowns[kvp.Key] -= Time.deltaTime;
+            if (hitCooldowns[kvp.Key] <= 0)
+            {
+                objectsToRemove.Add(kvp.Key);
+            }
+        }
+
+        // Remove expired cooldowns
+        foreach (var obj in objectsToRemove)
+        {
+            hitCooldowns.Remove(obj);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"CharacterHitbox: Collision detected with {collision.gameObject.name}");
+        GameObject hitObject = collision.gameObject;
 
-        if (collision.TryGetComponent(out LivingEntity livingEntity))
+        if (!hitCooldowns.ContainsKey(hitObject) || hitCooldowns[hitObject] <= 0)
         {
-            ApplyKnockbackToEnemy(collision.gameObject, livingEntity);
-        }
-        else if (collision.gameObject.name == "CombatDummy")
-        {
-            ApplyKnockbackToDummy(collision.gameObject);
-        }
-        else if (collision.TryGetComponent(out Pot pot))
-        {
-            pot.OnHit();
+            if (hitObject.TryGetComponent(out LivingEntity livingEntity))
+            {
+                ApplyKnockbackToEnemy(hitObject, livingEntity);
+            }
+            else if (hitObject.name == "CombatDummy")
+            {
+                ApplyKnockbackToDummy(hitObject);
+            }
+            else if (hitObject.TryGetComponent(out Pot pot))
+            {
+                pot.OnHit();
+            }
+            // Add more conditions here for other types of hittable objects
+
+            // Set cooldown for the hit object
+            hitCooldowns[hitObject] = hitCooldownDuration;
         }
     }
 
@@ -45,19 +75,15 @@ public class Hitbox : MonoBehaviour
 
         if (target.TryGetComponent(out Rigidbody2D rb))
         {
-            rb.velocity = Vector2.zero;
-            rb.AddForce(direction * force, ForceMode2D.Impulse);
-            StartCoroutine(KnockbackResetRoutine(rb));
-            Debug.Log($"CharacterHitbox: Applied force {direction * force} to {target.name}");
+            ApplyKnockback(rb, direction, force);
         }
 
         livingEntity.TakeDamage(character.damageDealt);
-        Debug.Log($"CharacterHitbox: Dealt {character.damageDealt} damage to {target.name}");
     }
 
     private void ApplyKnockbackToDummy(GameObject dummy)
     {
-        Debug.Log("hit from character");
+        Debug.Log("Hit from character");
         if (dummy.TryGetComponent(out CombatDummy combatDummy))
         {
             combatDummy.health -= character.damageDealt;
@@ -68,10 +94,15 @@ public class Hitbox : MonoBehaviour
 
         if (dummy.TryGetComponent(out Rigidbody2D rb))
         {
-            rb.velocity = Vector2.zero; // Reset velocity before applying new force
-            rb.AddForce(direction * force, ForceMode2D.Impulse);
-            StartCoroutine(KnockbackResetRoutine(rb));
+            ApplyKnockback(rb, direction, force);
         }
+    }
+
+    private void ApplyKnockback(Rigidbody2D rb, Vector2 direction, float force)
+    {
+        rb.velocity = Vector2.zero; // Reset velocity before applying new force
+        rb.AddForce(direction * force, ForceMode2D.Impulse);
+        StartCoroutine(KnockbackResetRoutine(rb));
     }
 
     private IEnumerator KnockbackResetRoutine(Rigidbody2D rb)

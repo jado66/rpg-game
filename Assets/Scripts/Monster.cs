@@ -17,6 +17,9 @@ public class Monster : LivingEntity
     public bool hostile;
     public float maxWanderDistance = 10f;
 
+    public float collisionDamage;
+    public float collisionDamageCooldown = 1f; // Cooldown time in seconds
+    private float lastCollisionDamageTime;
     protected TilePalette tilePalette;
     protected Vector3 wayPoint;
     protected GridLayout grid;
@@ -128,6 +131,49 @@ public class Monster : LivingEntity
         }
     }
 
+    void OnCollisionEnter2D(Collision2D  collision)
+    {
+        
+        if (!alive)
+            return;
+
+        Debug.Log("Collided with object tag: " + collision.gameObject.tag);
+
+
+        if (collision.gameObject.CompareTag("Character"))
+        {
+            ApplyCollisionDamage(collision.gameObject);        
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D  collision)
+    {
+        
+        if (!alive)
+            return;
+
+        Debug.Log("Collided with object tag: " + collision.gameObject.tag);
+
+
+        if (collision.gameObject.CompareTag("Character"))
+        {
+            ApplyCollisionDamage(collision.gameObject);        
+        }
+    }
+
+    protected virtual void ApplyCollisionDamage(GameObject player)
+    {
+        if (collisionDamage > 0 && Time.time - lastCollisionDamageTime >= collisionDamageCooldown)
+        {
+            Character character = player.GetComponent<Character>();
+            if (character != null)
+            {
+                character.TakeDamage(collisionDamage);
+                lastCollisionDamageTime = Time.time;
+            }
+        }
+    }
+
     protected virtual bool ShouldFindNewWaypoint()
     {
         return UnityEngine.Random.Range(0, 1000) <= 6 || Vector3.Distance(transform.position, wayPoint) < 0.1f;
@@ -201,10 +247,27 @@ public class Monster : LivingEntity
             }
             else
             {
-                Debug.Log($"Waypoint at {newWayPoint} is inaccessible (hitting {hitCollider.gameObject.name} on layer {hitCollider.gameObject.layer})");
+                // Debug.Log($"Waypoint at {newWayPoint} is inaccessible (hitting {hitCollider.gameObject.name} on layer {hitCollider.gameObject.layer})");
             }
         }
     }
+
+    protected override void kill(){
+
+        if (!alive){
+            return;
+        }
+
+        foreach (var animator in animators)
+        {
+            Debug.Log("Monster killed");
+            animator.SetTrigger("die");
+        }
+       
+
+        base.kill();
+    }
+
 
     public void addAnimator(Animator animator)
     {

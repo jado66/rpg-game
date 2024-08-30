@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
    
 
-     public virtual void OnCharacterInteract(CharacterActions interaction){
+     public virtual void OnCharacterInteract(CharacterWorldInteraction interaction){
         // Debug.Log("Player interacted with a "+type);
     }
 }

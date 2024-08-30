@@ -111,7 +111,7 @@ TextureImporter:
       213: 3547173409561275967
     second: dirtToGrass_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,11 +143,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -162,10 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -177,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -189,6 +198,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -960,9 +983,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      dirtToGrass_0: 2887788860058196502
+      dirtToGrass_1: 8543787328714310219
+      dirtToGrass_10: -2975781392689221087
+      dirtToGrass_11: -2227153546756740809
+      dirtToGrass_12: 8950881115907046486
+      dirtToGrass_13: 3944700060771554867
+      dirtToGrass_14: 8697143224049670877
+      dirtToGrass_15: -3718027549075554560
+      dirtToGrass_16: 6524306765998001450
+      dirtToGrass_17: 5827377570215762426
+      dirtToGrass_18: 1393152578219266946
+      dirtToGrass_19: -4828501760586878185
+      dirtToGrass_2: -3198152343026369031
+      dirtToGrass_20: 1726312552640123726
+      dirtToGrass_21: -2896018491026413958
+      dirtToGrass_22: -8329476317304702984
+      dirtToGrass_23: 7860394392544202544
+      dirtToGrass_24: -2923829267491957374
+      dirtToGrass_25: -5098973513643648435
+      dirtToGrass_26: -6956646379468959804
+      dirtToGrass_27: -7514491076500487832
+      dirtToGrass_28: 2062447824901461725
+      dirtToGrass_29: -8868710479755164994
+      dirtToGrass_3: -1152527793094743830
+      dirtToGrass_30: 6808912221375873437
+      dirtToGrass_31: -6939602127842289224
+      dirtToGrass_32: -3331881710474224800
+      dirtToGrass_33: 2492639725726199005
+      dirtToGrass_34: -6550403363399006507
+      dirtToGrass_35: 3547173409561275967
+      dirtToGrass_4: -9210010874072752449
+      dirtToGrass_5: 7463704610044393537
+      dirtToGrass_6: 8216349450061858985
+      dirtToGrass_7: 3432171543540299941
+      dirtToGrass_8: 4557238440473915806
+      dirtToGrass_9: 7129533229928427881
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

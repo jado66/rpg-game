@@ -3,14 +3,18 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
-    public List<GameItemUI> uiItems = new List<GameItemUI>();
+    public List<ItemUI> uiItems = new List<ItemUI>();
     public GameObject slotPrefab;
+    public GameObject disabledSlotPrefab;
+
     public Transform slotPanel;
     public string inventoryIdentifier;
 
     public GameObject parent;
     private CharacterInventory currentInventory;
     private int currentInventorySize = 0;
+
+    public int availableSlots = 0;
 
     private Dictionary<int, InventoryItem> localItems = new Dictionary<int, InventoryItem>();
 
@@ -77,18 +81,33 @@ public class InventoryUI : MonoBehaviour
             GameObject slotGO = Instantiate(slotPrefab, slotPanel);
             slotGO.transform.localPosition = Vector3.zero;
 
-            GameItemUI uiItem = slotGO.GetComponentInChildren<GameItemUI>();
+            ItemUI uiItem = slotGO.GetComponentInChildren<ItemUI>();
             uiItem.slotIndex = i;
             uiItem.parentInventory = currentInventory;
 
             uiItems.Add(uiItem);
         }
+
+        // Add disabled slots
+        if (availableSlots != 0)
+        {
+            int disabledSlots = Mathf.Max(0, availableSlots - currentInventorySize);
+            for (int i = 0; i < disabledSlots; i++)
+            {
+                GameObject slotGO = Instantiate(disabledSlotPrefab, slotPanel);
+                slotGO.transform.localPosition = Vector3.zero;
+            }
+        }
+
+        // Update the UI to reflect the new inventory size
+        UpdateUI();
     }
 
     private void OnInventoryChangedHandler(string identifier)
     {
         if (currentInventory.inventoryIdentifier == identifier)
         {
+            UpdateInventorySize(); // Add this line to check for size changes
             UpdateUI();
         }
     }

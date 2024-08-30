@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject cameraTarget;
 
+    private float zPos = -15f;
 
     void Start()
     {
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour
         } else {
             _instance = this;
         }
+    }
+
+    public void SetZPos(float newZPos){
+        zPos = newZPos;
     }
 
     // Update is called once per frame
@@ -35,6 +40,7 @@ public class GameManager : MonoBehaviour
         Vector3 position = transform.position;
         position.x = cameraTarget.transform.position.x;
         position.y = cameraTarget.transform.position.y;
+        position.z = zPos;
         transform.position = position;    
     }
 }

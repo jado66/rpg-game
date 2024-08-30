@@ -183,7 +183,7 @@ TextureImporter:
       213: -8013457723156663928
     second: AdditionalItems_59
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,9 +200,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -211,12 +214,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -234,10 +237,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -249,6 +257,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -261,6 +270,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1536,9 +1559,69 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      AdditionalItems_0: -4694765055228893091
+      AdditionalItems_1: 9166437877938170178
+      AdditionalItems_10: 7417753920135538112
+      AdditionalItems_11: -3234995774110280412
+      AdditionalItems_12: 7297850526047852101
+      AdditionalItems_13: 2541640505188210235
+      AdditionalItems_14: 8730358962165902148
+      AdditionalItems_15: -8989672290819151380
+      AdditionalItems_16: -4922035741482371780
+      AdditionalItems_17: -8261334675909375518
+      AdditionalItems_18: -7070801388317529076
+      AdditionalItems_19: 1766539383104482196
+      AdditionalItems_2: 879331773496082800
+      AdditionalItems_20: -3133179847365788176
+      AdditionalItems_21: -8816534833937820259
+      AdditionalItems_22: -1778302837937150335
+      AdditionalItems_23: 8916466661091867808
+      AdditionalItems_24: 7394684251790514365
+      AdditionalItems_25: 6243557125976623520
+      AdditionalItems_26: 3362429759279041526
+      AdditionalItems_27: -2582079124459053266
+      AdditionalItems_28: -8353381008796219797
+      AdditionalItems_29: 5652252812000648230
+      AdditionalItems_3: -6946630448412027537
+      AdditionalItems_30: 2770558859916037039
+      AdditionalItems_31: -6481062600431861904
+      AdditionalItems_32: 8924932506985762880
+      AdditionalItems_33: 7834903846851095747
+      AdditionalItems_34: -6134671413140282405
+      AdditionalItems_35: 112671196259598682
+      AdditionalItems_36: 8043161024060112878
+      AdditionalItems_37: 1352096865114372736
+      AdditionalItems_38: -3595535380275933115
+      AdditionalItems_39: 4443857178620099287
+      AdditionalItems_4: -5871210116956060381
+      AdditionalItems_40: -3685489419481344771
+      AdditionalItems_41: 3307590251501475629
+      AdditionalItems_42: -971925431240164906
+      AdditionalItems_43: -8858532935473939418
+      AdditionalItems_44: -4076109892255903771
+      AdditionalItems_45: -1706307544091125710
+      AdditionalItems_46: 5750621707911731877
+      AdditionalItems_47: -4383292094681683491
+      AdditionalItems_48: 1034508574093977890
+      AdditionalItems_49: 8558781135176891874
+      AdditionalItems_5: -7558544236111798327
+      AdditionalItems_50: -2620090081185945577
+      AdditionalItems_51: 2650743613324909760
+      AdditionalItems_52: 4314245428535057537
+      AdditionalItems_53: 5072573183858917461
+      AdditionalItems_54: -5038881665362778231
+      AdditionalItems_55: 1249366699914609777
+      AdditionalItems_56: 8068428415794259903
+      AdditionalItems_57: 9106589805177761266
+      AdditionalItems_58: -1899942121414326148
+      AdditionalItems_59: -8013457723156663928
+      AdditionalItems_6: 7138984396594218472
+      AdditionalItems_7: 7759277694395754506
+      AdditionalItems_8: -1000380879257836088
+      AdditionalItems_9: -7749517215905404293
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -363,6 +363,7 @@ public class SceneManager : MonoBehaviour
         if (dayHasChanged) 
         {
             StartCoroutine(AdvancePlants());
+            StartCoroutine(ResetAllStoreInventories());
         }
 
         timeIsPaused = false;
@@ -370,6 +371,19 @@ public class SceneManager : MonoBehaviour
 
     public void GrowAllPlants(){
         PlantTileManager.Instance.AdvanceAllPlantsToNextStage();
+    }
+
+    public IEnumerator ResetAllStoreInventories()
+    {
+        // Find all game objects with the StoreInventory component
+        StoreInventory[] storeInventories = FindObjectsOfType<StoreInventory>();
+
+        // Iterate through each StoreInventory and call the Reset method
+        foreach (StoreInventory inventory in storeInventories)
+        {
+            inventory.ResetInventory();
+            yield return null; // Yielding null makes sure we don't block the main thread
+        }
     }
 
     public IEnumerator AdvancePlants()
@@ -409,6 +423,22 @@ public class SceneManager : MonoBehaviour
         //     // character.StartCoroutine(character.interact("interact"));
         // }
         characterUI.inventoryGui.SetActive(!characterUI.inventoryGui.activeSelf);
+    }
+
+    public void ToggleInventory(bool forcedState)
+    {
+        if (characterUI.customSignBox.activeSelf)
+            return;
+
+        if (characterUI.buildGui.activeSelf){
+            characterUI.buildGui.SetActive(false);
+        }
+        if (characterUI.mainMenuGui.activeSelf){
+            characterUI.mainMenuGui.SetActive(false);
+        }
+
+        // If forcedState is true, always open the inventory; if false, close it.
+        characterUI.inventoryGui.SetActive(forcedState);
     }
     
 

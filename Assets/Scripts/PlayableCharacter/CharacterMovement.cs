@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class CharacterMovement : MonoBehaviour
 {
     private Animator animator;
@@ -10,6 +9,8 @@ public class CharacterMovement : MonoBehaviour
     private List<Enum> buttonsPressed = new List<Enum>();
 
     [SerializeField] private Character character;
+
+    private CharacterActions actions;
     private CharacterStats stats;
     [SerializeField] private Rigidbody2D rigidbody;
 
@@ -25,10 +26,15 @@ public class CharacterMovement : MonoBehaviour
     public float timeSinceLastTeleport = 0f;
     public float teleportCooldown = 2f; // Adjust this value as needed
 
+    private CharacterWorldInteraction interactions;
+
+
 
     public void InitializeComponents(Character characterRef){
         character = characterRef;
+        actions =   character.GetActions();
         rigidbody =  GetComponent<Rigidbody2D>();
+        interactions = character.GetWorldInteraction();
         animator = character.GetAnimator();
         collider = GetComponent<Collider2D>();
 
@@ -54,10 +60,24 @@ public class CharacterMovement : MonoBehaviour
     public void HandleMovement(Vector2 change, bool isLeftShiftPressed)
     {
         movement = Vector2.zero;
+
         movement.x = change.x;
         movement.y = change.y;
-
+       
+        
         if (change != Vector2.zero){
+
+            // am I currently interacting
+            Chest chest = interactions.GetOpenChest();
+            Store store = interactions.GetOpenStore();
+            if (chest != null){
+                interactions.CloseOpenChest();
+            }
+            if (store != null){
+                interactions.CloseOpenStore();
+            }
+
+
             playerFacingDirection.x = change.x;
             playerFacingDirection.y = change.y;
             playerFacingDirection.Normalize();
@@ -73,8 +93,13 @@ public class CharacterMovement : MonoBehaviour
 
         HandleAnimation(isSprinting);
 
-         if (movement == Vector2.zero){
-            stats.RegainStamina(stats.StaminaDrainPerSecond/2 * Time.deltaTime);
+        if (!isSprinting){
+            if (movement == Vector2.zero){
+                stats.RegainStamina(stats.StaminaDrainPerSecond/2 * Time.deltaTime);
+            }
+            else{
+                stats.RegainStamina(stats.StaminaDrainPerSecond/4 * Time.deltaTime);
+            }
         }
         
     }

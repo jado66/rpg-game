@@ -36,7 +36,7 @@ public class Ghost : NighttimeMonster
            
             Character character = collision.gameObject.GetComponent<Character>();
             character.TakeDamage(damageDealt);
-            character.ToggleTorch(false);
+            character.ToggleTorch(false, 10);
             DisappearViolently();
         
         }

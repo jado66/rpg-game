@@ -76,8 +76,17 @@ public class TilePalette : MonoBehaviour
     public AdvancedRuleTile gateClosed;
 
     public AdvancedRuleTile mushroomTile;
+    public AdvancedRuleTile mushroomTileRed;
+
+    public AdvancedRuleTile mushroomTileWhite;
+
 
     public AdvancedRuleTile forestFlower;
+
+    public AdvancedRuleTile forestFlowerPink;
+
+    public AdvancedRuleTile forestFlowerPurple;
+
 
     public AdvancedRuleTile forestRock;
 
@@ -101,7 +110,7 @@ public class TilePalette : MonoBehaviour
     public AdvancedRuleTile cobbleStonePath;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         interactLayer = LayerMask.NameToLayer("Interactable");
         choppableLayer = LayerMask.NameToLayer("Choppable");

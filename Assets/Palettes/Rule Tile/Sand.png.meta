@@ -159,7 +159,7 @@ TextureImporter:
       213: -9180818045597733641
     second: Sand_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -176,9 +176,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -188,8 +191,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -210,10 +213,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -225,6 +233,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -237,6 +246,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -258,7 +281,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 650d3db6280dde310800000000000000
-      internalID: 1436033114774425686
+      internalID: 8610565575992400378
       vertices: []
       indices: 
       edges: []
@@ -279,7 +302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8b6a91103758f1390800000000000000
-      internalID: -7845405296869923144
+      internalID: 3623700348287497924
       vertices: []
       indices: 
       edges: []
@@ -300,7 +323,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: df7f6e240e4bce2f0800000000000000
-      internalID: -942179346739169283
+      internalID: -6945038649756141661
       vertices: []
       indices: 
       edges: []
@@ -321,7 +344,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3796113cd0872c1c0800000000000000
-      internalID: -4484890278404986509
+      internalID: -7451876566494666742
       vertices: []
       indices: 
       edges: []
@@ -1260,9 +1283,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Sand_0: 8610565575992400378
+      Sand_1: 3623700348287497924
+      Sand_10: -4233545646319245028
+      Sand_11: 7803973253228483333
+      Sand_12: 7759006360657939254
+      Sand_13: 4337464657146819835
+      Sand_14: -1675446407046740919
+      Sand_15: -5933979815152646187
+      Sand_16: 473963228878475727
+      Sand_17: -5939204617039489762
+      Sand_18: -1640665775790378054
+      Sand_19: -7287066857277724933
+      Sand_2: -6945038649756141661
+      Sand_20: -221424915726821937
+      Sand_21: 2347504195104129236
+      Sand_22: -6605846359336392590
+      Sand_23: -1864156471433332397
+      Sand_24: -8095486474206197790
+      Sand_25: 8073483248002355840
+      Sand_26: 2953687551984712522
+      Sand_27: -3075472573002918600
+      Sand_28: -6798518186432209579
+      Sand_29: 2283827482880640087
+      Sand_3: -7451876566494666742
+      Sand_30: -214222897351473913
+      Sand_31: -2628885917863336290
+      Sand_32: -3952461108691877087
+      Sand_33: -6097613015718522140
+      Sand_34: 8306558592064062076
+      Sand_35: -5905942554799025329
+      Sand_36: 3312767491519729447
+      Sand_37: -821660598511256779
+      Sand_38: -6121605229986933445
+      Sand_39: 6612916623704123976
+      Sand_4: -3098895514709955098
+      Sand_40: -7291480892286516824
+      Sand_41: 3900060665448167919
+      Sand_42: -7222098661109877492
+      Sand_43: 6209298153630992781
+      Sand_44: 3938644060809820491
+      Sand_45: -5905701878604920464
+      Sand_46: 30337800945419211
+      Sand_47: -9180818045597733641
+      Sand_5: -5841890831651314445
+      Sand_6: 585986783326448432
+      Sand_7: -4708790119301175501
+      Sand_8: 8774151864180844191
+      Sand_9: 6835801334202730952
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

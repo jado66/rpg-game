@@ -1,157 +1,196 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
-using UnityEngine.SceneManagement;
 
-
-public class StartGameScreen : MonoBehaviour
+public class TitleScreenManager : MonoBehaviour
 {
-    public List<Text> titleScreenTexts;
-    public List<GameObject> titleScreens;
-
+    public GameObject[] titleScreens;
+    public Text[] titleScreenTexts;
     public Image line;
-
-    int titleScreenCount;
-    int titleScreenIndex;
-
-    int previousIndex;
-    int previousIndex2;
-
-    int keyCount;
-
+    public Color[] titleColors;
+    public float fadeDuration = 2f;
+    public float rotationInterval = 5f;
     public GameObject MainMenuScreen;
-    public GameObject SavedGameScreen;
 
-    public GameObject About;
+    public GameObject titleText;
 
-    public GameObject NewGame;
+    private int currentIndex = 0;
+    private bool isRotating = true;
+    private Coroutine rotationCoroutine;
 
     public GameObject loadingScreen;
 
     public Text newGameInput;
 
+    public GameObject ControllerPicker;
 
+    private Action pendingAction;
 
-                                                            //Terra                         Ignis                           Snow                                Tropical                        Desert
-    List<Color> titleColors = new List<Color>(){new Color(0.239f,0.180f,0.086f,1),new Color(0.952f,.642f,.071f,1),new Color(0.239f,0.180f,0.086f,1),new Color(0.0f,.383f,.192f,1),new Color(0.240f,0.694f,0.707f,1)};
-    // Start is called before the first frame update
-    void Start()
+    public enum ControllerType
     {
-        titleScreenCount = titleScreens.Count;
-        foreach ( var titleScreen in titleScreens)
+        Desktop,
+        Mobile,
+        Console
+    }
+
+    private void Start()
+    {
+        InitializeTitleScreens();
+        StartTitleScreenRotation();
+    }
+
+    private void Update()
+    {
+        bool anyInput = Input.anyKey || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
+
+        if (anyInput && isRotating)
+        {
+            StopTitleScreenRotation();
+            GoToMainMenu();
+        }
+    }
+
+    private void InitializeTitleScreens()
+    {
+        for (int i = 0; i < titleScreens.Length; i++)
+        {
+            titleScreens[i].SetActive(i == 0);
+            if (i == 0)
+            {
+                titleScreens[i].GetComponent<Image>().color = Color.white;
+            }
+        }
+    }
+
+    private void StartTitleScreenRotation()
+    {
+        isRotating = true;
+        rotationCoroutine = StartCoroutine(RotateTitleScreenRoutine());
+    }
+
+    private void StopTitleScreenRotation()
+    {
+        if (rotationCoroutine != null)
+        {
+            StopCoroutine(rotationCoroutine);
+        }
+        isRotating = false;
+    }
+
+    private IEnumerator RotateTitleScreenRoutine()
+    {
+        while (isRotating)
+        {
+            yield return new WaitForSeconds(rotationInterval);
+            yield return StartCoroutine(FadeToNextScreen());
+        }
+    }
+
+    private IEnumerator FadeToNextScreen()
+    {
+        int nextIndex = (currentIndex + 1) % titleScreens.Length;
+
+        Image currentImage = titleScreens[currentIndex].GetComponent<Image>();
+        Image nextImage = titleScreens[nextIndex].GetComponent<Image>();
+
+        titleScreens[nextIndex].SetActive(true);
+        nextImage.color = new Color(nextImage.color.r, nextImage.color.g, nextImage.color.b, 0);
+
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
+
+            currentImage.color = new Color(currentImage.color.r, currentImage.color.g, currentImage.color.b, 1 - alpha);
+            nextImage.color = new Color(nextImage.color.r, nextImage.color.g, nextImage.color.b, alpha);
+
+            yield return null;
+        }
+
+        currentImage.color = new Color(currentImage.color.r, currentImage.color.g, currentImage.color.b, 0);
+        titleScreens[currentIndex].SetActive(false);
+
+        nextImage.color = new Color(nextImage.color.r, nextImage.color.g, nextImage.color.b, 1);
+
+        currentIndex = nextIndex;
+
+        Debug.Log($"Transitioned to screen index: {currentIndex}");
+    }
+
+    private void GoToMainMenu()
+    {
+        Debug.Log("Going to Main Menu");
+        foreach (var titleScreen in titleScreens)
         {
             titleScreen.SetActive(false);
         }
-        titleScreens[0].SetActive(true);
+        MainMenuScreen.SetActive(true);
+        titleText.SetActive(false);
+    }
 
+    // Public method to return to the starting screen
+    public void ReturnToStartingScreen()
+    {
+        StopTitleScreenRotation();
         MainMenuScreen.SetActive(false);
-        SavedGameScreen.SetActive(false);
-        About.SetActive(false);
-        NewGame.SetActive(false);
-
-        if (GameObject.Find("Character")!= null){
-            Destroy(GameObject.Find("Character"));
-        }
-        if (GameObject.Find("Main Camera")!= null){
-            Destroy(GameObject.Find("MainCamera"));
-        }
+        
+        // Reset to the first title screen
+        currentIndex = 0;
+        InitializeTitleScreens();
+        
+        // Restart the rotation
+        StartTitleScreenRotation();
+        
+        Debug.Log("Returned to starting screen");
+        titleText.SetActive(true);
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    public void LoadTutorial(){
+        CheckAndExecute(SetControllerAndContinue, PerformLoadTutorial);
+    }
+
+    public void StartNewGame(){
+        CheckAndExecute(SetControllerAndContinue, PerformStartNewGame);
+    }
+
+    public void SetControllerAndContinue(string controllerTypeString)
     {
-        if (Input.GetKey(KeyCode.Space) && keyCount==0){
-            Debug.Log("Space");
-            // rotateTitleScreen();
-            if (!MainMenuScreen.activeSelf)
-                goToMainScreen();
-            keyCount ++;
-        }
-
-        if (Input.GetKey(KeyCode.R) && keyCount==0){
-            Debug.Log("Space");
-            rotateTitleScreen();
-            
-            keyCount ++;
-        }
-
-        
-        if (keyCount != 0)
-            keyCount+=1;
-        if (keyCount>=20)
-            keyCount = 0;
-        
-    }
-
-    void rotateTitleScreen(){
-        
-        
-        int newTitleScreenIndex = UnityEngine.Random.Range(0,titleScreenCount);
-
-        int i = 0;
-        while (newTitleScreenIndex == titleScreenIndex &&
-               newTitleScreenIndex == previousIndex && i < 100 )
-            i ++;
-            newTitleScreenIndex = UnityEngine.Random.Range(0,titleScreenCount);
-
-        previousIndex2 = previousIndex;
-        previousIndex = titleScreenIndex;
-        titleScreenIndex = newTitleScreenIndex;
-        
-
-        Debug.Log("Setting "+titleScreens[titleScreenIndex].name+" active");
-        foreach ( var titleScreen in titleScreens)
+        if (Enum.TryParse<ControllerType>(controllerTypeString, true, out var controllerType))
         {
-            titleScreen.SetActive(false);
+            PlayerPrefs.SetInt("ControllerType", (int)controllerType);
+            PlayerPrefs.Save();
+            pendingAction?.Invoke();
+            pendingAction = null;
         }
-        titleScreens[titleScreenIndex].SetActive(true);
-
-        foreach(var text in titleScreenTexts){
-            text.color = titleColors[titleScreenIndex];
+        else
+        {
+            Debug.LogError("Invalid controller type: " + controllerTypeString);
         }
-        line.color = titleColors[titleScreenIndex];
     }
-
-    public void savePlayerPrefs(){
-        // PlayerPrefs.SetFloat("MusicVol",SoundScrollers[0].GetComponent<Scrollbar>().value);
-        // PlayerPrefs.SetFloat("SoundEffectsVol",SoundScrollers[1].GetComponent<Scrollbar>().value);
-        // PlayerPrefs.SetFloat("WarningVol",SoundScrollers[2].GetComponent<Scrollbar>().value);
-        // PlayerPrefs.SetFloat("UiVol",SoundScrollers[3].GetComponent<Scrollbar>().value);
-        PlayerPrefs.Save();
+    private void CheckAndExecute(Action<string> setControllerAndContinue, Action performAction)
+    {
+        if (PlayerPrefs.HasKey("ControllerType"))
+        {
+            performAction();
+        }
+        else
+        {
+            ControllerPicker.SetActive(true);
+            pendingAction = performAction;
+        }
     }
+    
 
-
-    public void loadSavedGameNames(){
-        // string path = Application.persistentDataPath + string.Format("/savedGames.fun");
-        // if (File.Exists(path)){
-        //     // Debug.Log("Load successful");
-        //     BinaryFormatter formatter = new BinaryFormatter();
-        //     FileStream stream = new FileStream(path, FileMode.Open);
-
-        //     // SavedGamesDatabase savedGameDatabase = formatter.Deserialize(stream) as SavedGamesDatabase;
-        //     // stream.Close();
-
-        //     // savedGameNames = savedGameDatabase.savedGameNames;
-        //     // numberOfSavedGames = savedGameDatabase.numberOfSavedGames;
-
-            
-        // }
-        // else{
-        //     Debug.Log("File does not exist");
-        // }
-    }
-
-    public void loadTutorial(){
+    private void PerformLoadTutorial(){
         LoadingData.sceneToLoad = "Tutorial";
             
         Instantiate(loadingScreen,Vector3.zero,Quaternion.identity);
     }
 
-    public void startNewGame(){
+    private void PerformStartNewGame()
+    {
         string name = newGameInput.GetComponent<Text>().text;
 
         if (name == "")
@@ -159,12 +198,10 @@ public class StartGameScreen : MonoBehaviour
         PlayerPrefs.SetString("PlayerName",name);
         PlayerPrefs.Save();
 
-        LoadingData.sceneToLoad = "Tutorial";
+        LoadingData.sceneToLoad = "Terra";
             
         Instantiate(loadingScreen,Vector3.zero,Quaternion.identity);
     }
 
-    public void goToMainScreen(){
-        MainMenuScreen.SetActive(true);
-    }
+    
 }

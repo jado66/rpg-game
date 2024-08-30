@@ -291,7 +291,7 @@ TextureImporter:
       213: -7079134699127769784
     second: Goul_95
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,9 +308,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -320,11 +323,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -342,10 +345,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -369,6 +378,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2400,9 +2423,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Goul_0: 5485827300900042678
+      Goul_1: 867770681388853408
+      Goul_10: -2334399159690508980
+      Goul_11: -588686434799109936
+      Goul_12: -6861775515276513203
+      Goul_13: -2709375318088214715
+      Goul_14: 8727023317251601261
+      Goul_15: -5799841070828500934
+      Goul_16: -37173132683691156
+      Goul_17: -3544263222504881174
+      Goul_18: 4196348000807674306
+      Goul_19: -42877976879508569
+      Goul_2: 4314180001660462769
+      Goul_20: 2874915625654788817
+      Goul_21: -3031860725026076683
+      Goul_22: 2217385765552289354
+      Goul_23: 2381838181432396658
+      Goul_24: -9013491679217583283
+      Goul_25: 2357151646261008816
+      Goul_26: -6523693426883807996
+      Goul_27: -7020665018608250704
+      Goul_28: 9022126891947344476
+      Goul_29: 6570778319550232315
+      Goul_3: -2648541090231957727
+      Goul_30: -1967034728850419443
+      Goul_31: 4163684474173740155
+      Goul_32: -5397915924414517576
+      Goul_33: 9156537751990178294
+      Goul_34: 1026652121657176601
+      Goul_35: -8830608259169175177
+      Goul_36: -5349977157859848439
+      Goul_37: 7914338886973279919
+      Goul_38: -3832941748860830156
+      Goul_39: -144367391340878935
+      Goul_4: -2122046040402159855
+      Goul_40: 4184989644086299907
+      Goul_41: 7559093041993284336
+      Goul_42: -3345622241670578635
+      Goul_43: 8085812856852053223
+      Goul_44: 6352745925655690965
+      Goul_45: 7838867664115846335
+      Goul_46: 712369466890594006
+      Goul_47: 5097386580902798310
+      Goul_48: 8943316970185395214
+      Goul_49: 5429723020935988956
+      Goul_5: 533879337321090230
+      Goul_50: 4083115244830154070
+      Goul_51: -6712599512069607615
+      Goul_52: 6871938758138579868
+      Goul_53: -3497033687850141753
+      Goul_54: -5397184914995541180
+      Goul_55: -8793256581384706117
+      Goul_56: 6348667680922193311
+      Goul_57: -1105509936895905678
+      Goul_58: 7866168458979294358
+      Goul_59: 5070860451898906590
+      Goul_6: 4970399932046496012
+      Goul_60: 432550580263320550
+      Goul_61: 8528613735584848900
+      Goul_62: 2064684891230763298
+      Goul_63: 896381009777016021
+      Goul_64: -3954391183723088739
+      Goul_65: -1060757682142889667
+      Goul_66: -8474127328466341613
+      Goul_67: -8746894032118553304
+      Goul_68: 4219499323569703024
+      Goul_69: -4178388162705921642
+      Goul_7: -7558368697493165060
+      Goul_70: 1413456589158665260
+      Goul_71: -5509356910105513001
+      Goul_72: 1093497738307650188
+      Goul_73: 271374249126459180
+      Goul_74: -7670305756558489290
+      Goul_75: -75400834435765847
+      Goul_76: 5609369966267163239
+      Goul_77: -791012066765405559
+      Goul_78: 809900086126092530
+      Goul_79: -4235293717742095624
+      Goul_8: -1350936199753232704
+      Goul_80: -2646262725087603013
+      Goul_81: -1448035973217806792
+      Goul_82: 7408892347274178919
+      Goul_83: -2231515176633985407
+      Goul_84: -5386136137533660935
+      Goul_85: 7886163341482494572
+      Goul_86: 794943402988011315
+      Goul_87: -6754092750400220526
+      Goul_88: -6822472575952374116
+      Goul_89: 3632506176857380406
+      Goul_9: -4497400692222082829
+      Goul_90: 5731970449112495205
+      Goul_91: -527991358863954441
+      Goul_92: 7538180374778649425
+      Goul_93: 2827778977689050701
+      Goul_94: -8107506380467718109
+      Goul_95: -7079134699127769784
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

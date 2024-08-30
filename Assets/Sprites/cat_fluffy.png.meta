@@ -291,7 +291,7 @@ TextureImporter:
       213: -4810661680292927262
     second: cat_fluffy_95
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,9 +308,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -320,11 +323,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -342,10 +345,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -369,6 +378,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2400,9 +2423,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cat_fluffy_0: 4433279828452356290
+      cat_fluffy_1: 896085702115868174
+      cat_fluffy_10: 3462057537124473433
+      cat_fluffy_11: -1249700952229832382
+      cat_fluffy_12: -2724233510159912208
+      cat_fluffy_13: 1779653603053585810
+      cat_fluffy_14: 728200711687325723
+      cat_fluffy_15: 4004311808041369775
+      cat_fluffy_16: 5472866227215550966
+      cat_fluffy_17: 526806453833494312
+      cat_fluffy_18: 4555760052066017093
+      cat_fluffy_19: 2774009098245496293
+      cat_fluffy_2: 8230932192571783617
+      cat_fluffy_20: 1738668768447773502
+      cat_fluffy_21: -1908531304686247426
+      cat_fluffy_22: -7684755638360910395
+      cat_fluffy_23: 6888566457792374959
+      cat_fluffy_24: 5986588250004439378
+      cat_fluffy_25: 4277735018925413740
+      cat_fluffy_26: -2550304928977034607
+      cat_fluffy_27: 4105466259798647671
+      cat_fluffy_28: -395398197929232906
+      cat_fluffy_29: 6785653160929031305
+      cat_fluffy_3: 7741681519828806323
+      cat_fluffy_30: 2408507883327932338
+      cat_fluffy_31: -1134060237031221940
+      cat_fluffy_32: -2142636639840315787
+      cat_fluffy_33: -2216107536179809760
+      cat_fluffy_34: 5541083583262183491
+      cat_fluffy_35: 7670297410265400594
+      cat_fluffy_36: -4409189808125204115
+      cat_fluffy_37: -6100054420075414789
+      cat_fluffy_38: 4812838387414106421
+      cat_fluffy_39: 3452467276250698141
+      cat_fluffy_4: -2291215765640391626
+      cat_fluffy_40: -7536389127611047636
+      cat_fluffy_41: 7966459956526007794
+      cat_fluffy_42: -1836132160370489
+      cat_fluffy_43: 5654524357300809782
+      cat_fluffy_44: 6775250946237377278
+      cat_fluffy_45: -5271768234128092169
+      cat_fluffy_46: -678256625355840166
+      cat_fluffy_47: -599781004678812539
+      cat_fluffy_48: -568646466529233139
+      cat_fluffy_49: -1617894107952942139
+      cat_fluffy_5: -1631974698028222992
+      cat_fluffy_50: 6416647991191045619
+      cat_fluffy_51: -1351838711999443206
+      cat_fluffy_52: -5071180969378053470
+      cat_fluffy_53: -4807233975284631004
+      cat_fluffy_54: 5725944022198713100
+      cat_fluffy_55: 3180870016042861055
+      cat_fluffy_56: -6852016128210544473
+      cat_fluffy_57: -4483638827317121099
+      cat_fluffy_58: -1754292424156431284
+      cat_fluffy_59: -1689492945718720334
+      cat_fluffy_6: -4996428623755850248
+      cat_fluffy_60: -5329978150063192142
+      cat_fluffy_61: 54845610462316367
+      cat_fluffy_62: 2005561437265649680
+      cat_fluffy_63: -2288154268367591886
+      cat_fluffy_64: 3135594330662001328
+      cat_fluffy_65: -440509440441345638
+      cat_fluffy_66: 2175052954072874035
+      cat_fluffy_67: -7528417400261536516
+      cat_fluffy_68: -8533455066652428003
+      cat_fluffy_69: -7208537207358370571
+      cat_fluffy_7: 7359871999929011842
+      cat_fluffy_70: -6762257447682749490
+      cat_fluffy_71: 9126154758584195553
+      cat_fluffy_72: -8648057669137393400
+      cat_fluffy_73: 3058191042616750172
+      cat_fluffy_74: 1333619509994233985
+      cat_fluffy_75: -2258267401525905414
+      cat_fluffy_76: -1396215441227474455
+      cat_fluffy_77: 5709164477907890001
+      cat_fluffy_78: 3511201915291668071
+      cat_fluffy_79: -1007028076172558859
+      cat_fluffy_8: -8110991604154566802
+      cat_fluffy_80: 2272755730408898958
+      cat_fluffy_81: -5712317864202945751
+      cat_fluffy_82: -9189608491634124010
+      cat_fluffy_83: 8328717970022472748
+      cat_fluffy_84: 7290300378492443765
+      cat_fluffy_85: -3821833935550775320
+      cat_fluffy_86: 8301621347361848349
+      cat_fluffy_87: -3968931120171698837
+      cat_fluffy_88: 6001768289729538014
+      cat_fluffy_89: -1341550610956240587
+      cat_fluffy_9: -4447904944824498542
+      cat_fluffy_90: 5382690129625233068
+      cat_fluffy_91: -6768466290867202658
+      cat_fluffy_92: -2205934610284226120
+      cat_fluffy_93: -7254968121375654868
+      cat_fluffy_94: -483751236452863157
+      cat_fluffy_95: -4810661680292927262
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -16,7 +16,7 @@ public class DialogTrigger : Interactable
         dialog = GetComponent<Dialog>();
     }
 
-    public override void OnCharacterInteract()
+    public override void OnCharacterInteract(CharacterWorldInteraction interaction)
     {
         if (dialogGameObject.activeSelf)
         {

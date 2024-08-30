@@ -201,7 +201,7 @@ TextureImporter:
       213: -6285464816281071152
     second: Terra mini black and white unicorns_65
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -218,9 +218,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -230,11 +233,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -252,10 +255,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -267,6 +275,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -279,6 +288,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1680,9 +1703,75 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra mini black and white unicorns_0: -8402816384769065317
+      Terra mini black and white unicorns_1: 5527792474702934076
+      Terra mini black and white unicorns_10: 93610165741782199
+      Terra mini black and white unicorns_11: -8929056261403664990
+      Terra mini black and white unicorns_12: -4750488360034061527
+      Terra mini black and white unicorns_13: 19026624639233228
+      Terra mini black and white unicorns_14: -3063804971849236427
+      Terra mini black and white unicorns_15: 8593384580652113655
+      Terra mini black and white unicorns_16: 6909972605881697199
+      Terra mini black and white unicorns_17: -6874439440840023361
+      Terra mini black and white unicorns_18: 4068617097300546231
+      Terra mini black and white unicorns_19: 4660567704036468491
+      Terra mini black and white unicorns_2: -5212968365808959615
+      Terra mini black and white unicorns_20: 4046767776959695484
+      Terra mini black and white unicorns_21: 4033184073886280819
+      Terra mini black and white unicorns_22: 2268752213306135827
+      Terra mini black and white unicorns_23: 7639870209450142695
+      Terra mini black and white unicorns_24: -2391898265565645852
+      Terra mini black and white unicorns_25: -6042333775044604726
+      Terra mini black and white unicorns_26: 5349473037198694075
+      Terra mini black and white unicorns_27: 4048918908321859922
+      Terra mini black and white unicorns_28: 6920066760489051084
+      Terra mini black and white unicorns_29: -7714295948054427975
+      Terra mini black and white unicorns_3: 472210481584168035
+      Terra mini black and white unicorns_30: 4141231846872077726
+      Terra mini black and white unicorns_31: -2315510102247464938
+      Terra mini black and white unicorns_32: -5680351855119050193
+      Terra mini black and white unicorns_33: -8234484556561858000
+      Terra mini black and white unicorns_34: -7515444100492872673
+      Terra mini black and white unicorns_35: 2555779433182946389
+      Terra mini black and white unicorns_36: 994468508514979357
+      Terra mini black and white unicorns_37: -7230820807435896664
+      Terra mini black and white unicorns_38: 5235646778126826702
+      Terra mini black and white unicorns_39: -6589555992227315259
+      Terra mini black and white unicorns_4: 4971337511441780105
+      Terra mini black and white unicorns_40: -745962390720686902
+      Terra mini black and white unicorns_41: 7460548093655746420
+      Terra mini black and white unicorns_42: -6402499900027487007
+      Terra mini black and white unicorns_43: -1594525145090593344
+      Terra mini black and white unicorns_44: 2135995687698857513
+      Terra mini black and white unicorns_45: -1830157336332658474
+      Terra mini black and white unicorns_46: -5677676779240425176
+      Terra mini black and white unicorns_47: -7638877363488564701
+      Terra mini black and white unicorns_48: -6824570233532237453
+      Terra mini black and white unicorns_49: 8486015342906513388
+      Terra mini black and white unicorns_5: -8582112309521833322
+      Terra mini black and white unicorns_50: -5748936176454547057
+      Terra mini black and white unicorns_51: -778294979255738163
+      Terra mini black and white unicorns_52: 8553151827642169319
+      Terra mini black and white unicorns_53: 3875124901811382846
+      Terra mini black and white unicorns_54: -8278987056283812533
+      Terra mini black and white unicorns_55: -4886311546636553778
+      Terra mini black and white unicorns_56: 4737128813459166287
+      Terra mini black and white unicorns_57: -6722627106454262856
+      Terra mini black and white unicorns_58: -2150263632523846021
+      Terra mini black and white unicorns_59: 8820854955466006823
+      Terra mini black and white unicorns_6: -4273481416007220581
+      Terra mini black and white unicorns_60: -2343797456834469777
+      Terra mini black and white unicorns_61: 5953557760410809160
+      Terra mini black and white unicorns_62: -878935777520488145
+      Terra mini black and white unicorns_63: -3801161553389549998
+      Terra mini black and white unicorns_64: -2389480164656096990
+      Terra mini black and white unicorns_65: -6285464816281071152
+      Terra mini black and white unicorns_7: -5689148536477475639
+      Terra mini black and white unicorns_8: -7043100135979878121
+      Terra mini black and white unicorns_9: -4780723945919101845
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

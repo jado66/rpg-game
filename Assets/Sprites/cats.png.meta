@@ -183,7 +183,7 @@ TextureImporter:
       213: -4292060310006827293
     second: cats_59
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,9 +200,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -212,8 +215,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -234,10 +237,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -249,6 +257,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -261,6 +270,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1536,9 +1559,69 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      cats_0: -8731579659179131352
+      cats_1: 9082711985608580245
+      cats_10: -7560090195465093135
+      cats_11: -1432421053420832878
+      cats_12: -6250045176879219735
+      cats_13: 1077954081987010654
+      cats_14: 8360960357736994992
+      cats_15: -9062856269952265
+      cats_16: 8831290096353964151
+      cats_17: 3675329739939943206
+      cats_18: -2703558324749756268
+      cats_19: -8908584347482326726
+      cats_2: 7237890493632380373
+      cats_20: 5072762292325903353
+      cats_21: -14775699800920148
+      cats_22: -2980130715786676971
+      cats_23: 4860115165887637347
+      cats_24: 2948902926618568588
+      cats_25: -2454313401296836304
+      cats_26: 2799626869581645427
+      cats_27: -1129723328406099386
+      cats_28: 7467584523605619273
+      cats_29: -3323369658914724982
+      cats_3: -2475163443659574512
+      cats_30: 3723021887377392319
+      cats_31: 8855316567876602211
+      cats_32: -4428682380222604465
+      cats_33: 4236359783288184336
+      cats_34: -2782761995226635134
+      cats_35: -5028794388745948194
+      cats_36: -155171934549870773
+      cats_37: -2191145162824217053
+      cats_38: 5454476045990073997
+      cats_39: 5774711225843813179
+      cats_4: 2646288756313310950
+      cats_40: -6066587252904607264
+      cats_41: -5248214214771737741
+      cats_42: 838231178003054111
+      cats_43: 1607972829268222791
+      cats_44: -39755175928062659
+      cats_45: 7251854882774616179
+      cats_46: -1939987533242106819
+      cats_47: -5008184514454822890
+      cats_48: -7123044744641958318
+      cats_49: -7008394955705106579
+      cats_5: -2682188321893631393
+      cats_50: 8272490930465357037
+      cats_51: 5763792453026710770
+      cats_52: 5199842517127833266
+      cats_53: 2566472158836495588
+      cats_54: 3767763898657900683
+      cats_55: 8189735920907190565
+      cats_56: -1339326425994871135
+      cats_57: -4104314455734983228
+      cats_58: -3658413830411201260
+      cats_59: -4292060310006827293
+      cats_6: 7228881338296057996
+      cats_7: 1568535785916322633
+      cats_8: -9037314830030201704
+      cats_9: -8109234464669567543
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

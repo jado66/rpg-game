@@ -291,7 +291,7 @@ TextureImporter:
       213: 8140362432525023317
     second: Terra chickens_baby_95
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -308,9 +308,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -320,11 +323,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -342,10 +345,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +365,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -369,6 +378,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2400,9 +2423,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Terra chickens_baby_0: 5578755839929651860
+      Terra chickens_baby_1: 5655516423437044618
+      Terra chickens_baby_10: 8686090442935925514
+      Terra chickens_baby_11: -1155941133328268855
+      Terra chickens_baby_12: -7724176989668103067
+      Terra chickens_baby_13: 4796790120494765857
+      Terra chickens_baby_14: 5250969093191050204
+      Terra chickens_baby_15: 1233333487858667490
+      Terra chickens_baby_16: -2791291624865069522
+      Terra chickens_baby_17: 376137590119356113
+      Terra chickens_baby_18: 7947625633187022124
+      Terra chickens_baby_19: -4772761291058079832
+      Terra chickens_baby_2: -6632835822631103358
+      Terra chickens_baby_20: 7869259734994155807
+      Terra chickens_baby_21: 1680870959386707557
+      Terra chickens_baby_22: 1524024683832993163
+      Terra chickens_baby_23: -3707936135034886301
+      Terra chickens_baby_24: 1063778301673486882
+      Terra chickens_baby_25: -5322377251008389834
+      Terra chickens_baby_26: -8186370243540567195
+      Terra chickens_baby_27: -6049061936110929777
+      Terra chickens_baby_28: -4565852501137851711
+      Terra chickens_baby_29: 3547968526610821051
+      Terra chickens_baby_3: -3379568767642796933
+      Terra chickens_baby_30: 5525689393463364219
+      Terra chickens_baby_31: 1562744933749308793
+      Terra chickens_baby_32: 8891920187411984405
+      Terra chickens_baby_33: 1485685637264177095
+      Terra chickens_baby_34: -2468730405419124932
+      Terra chickens_baby_35: -2729588152603652612
+      Terra chickens_baby_36: 7940070446643160934
+      Terra chickens_baby_37: -1966671261903878624
+      Terra chickens_baby_38: -5554872518347519693
+      Terra chickens_baby_39: -6368417409668063540
+      Terra chickens_baby_4: 8040846529820411464
+      Terra chickens_baby_40: -4934955477657697344
+      Terra chickens_baby_41: -1227064808867708205
+      Terra chickens_baby_42: -6528454815200785808
+      Terra chickens_baby_43: 8302835551966169694
+      Terra chickens_baby_44: -3172468304504914560
+      Terra chickens_baby_45: -5831017675281926158
+      Terra chickens_baby_46: 5074653552871282311
+      Terra chickens_baby_47: 793782076952707495
+      Terra chickens_baby_48: 5017450279081355261
+      Terra chickens_baby_49: 172918733096776113
+      Terra chickens_baby_5: -941186564448024825
+      Terra chickens_baby_50: -8531444490556852353
+      Terra chickens_baby_51: -2020263004541574662
+      Terra chickens_baby_52: 8272529714587432995
+      Terra chickens_baby_53: -1564634779670962146
+      Terra chickens_baby_54: -6870815053423429686
+      Terra chickens_baby_55: -5177033267054160546
+      Terra chickens_baby_56: 7041436630802977297
+      Terra chickens_baby_57: -4483287044670715045
+      Terra chickens_baby_58: 1441446452884621627
+      Terra chickens_baby_59: 5018258499949102315
+      Terra chickens_baby_6: -7057759394870752148
+      Terra chickens_baby_60: 1573045121430849455
+      Terra chickens_baby_61: 5795335017160662908
+      Terra chickens_baby_62: -4668297826431110632
+      Terra chickens_baby_63: -8509827241301245149
+      Terra chickens_baby_64: -1420618207287868271
+      Terra chickens_baby_65: 597296512430538975
+      Terra chickens_baby_66: -7044154424775136970
+      Terra chickens_baby_67: 5977943508312057283
+      Terra chickens_baby_68: 640147193374757276
+      Terra chickens_baby_69: -8026239469392073026
+      Terra chickens_baby_7: -4038942100376662943
+      Terra chickens_baby_70: -3396976963799165041
+      Terra chickens_baby_71: 7843249275570403560
+      Terra chickens_baby_72: -2070997231607198474
+      Terra chickens_baby_73: 1736432644880167215
+      Terra chickens_baby_74: -2823234907305985050
+      Terra chickens_baby_75: -8633563216185881556
+      Terra chickens_baby_76: -4376289698688881767
+      Terra chickens_baby_77: 7427321381323691162
+      Terra chickens_baby_78: -1960277398742529822
+      Terra chickens_baby_79: -1552064621800421902
+      Terra chickens_baby_8: 3209726242448147136
+      Terra chickens_baby_80: -8827891796634447566
+      Terra chickens_baby_81: -4770976103905219046
+      Terra chickens_baby_82: -7658440910343090360
+      Terra chickens_baby_83: -8429181582394343645
+      Terra chickens_baby_84: -5619404780438554189
+      Terra chickens_baby_85: -1776536835408892466
+      Terra chickens_baby_86: 5184324706431843483
+      Terra chickens_baby_87: 8825238290271471595
+      Terra chickens_baby_88: -6700508746126934376
+      Terra chickens_baby_89: -3621789965479319564
+      Terra chickens_baby_9: -3343496210490364458
+      Terra chickens_baby_90: -1790983279838939292
+      Terra chickens_baby_91: 2997836084675026880
+      Terra chickens_baby_92: -7388823403958329228
+      Terra chickens_baby_93: 8268766183761221488
+      Terra chickens_baby_94: 4054028586591480596
+      Terra chickens_baby_95: 8140362432525023317
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

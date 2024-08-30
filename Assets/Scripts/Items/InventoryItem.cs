@@ -8,8 +8,8 @@ public class InventoryItem : GameItem
     public InventoryItem(string id, string name, string description, Uses useType,
                          Dictionary<string, int> stats, int value, 
                          List<string> strongConsumers, List<string> weakConsumers,
-                         int amount = 1, int stackAmount = 1)
-        : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount)
+                         int amount = 1, int stackAmount = 1, string iconName = null)
+        : base(id, name, description, useType, stats, value, strongConsumers, weakConsumers, amount, iconName)
     {
         StackAmount = stackAmount;
     }
@@ -57,7 +57,7 @@ public class InventoryItem : GameItem
         var clonedWeakConsumers = new List<string>(WeakConsumers);
 
         return new InventoryItem(
-            Id, Name, Description, UseType, clonedStats, Value, clonedStrongConsumers, clonedWeakConsumers, Amount, StackAmount);
+            Id, Name, Description, UseType, clonedStats, Value, clonedStrongConsumers, clonedWeakConsumers, Amount, StackAmount, IconName);
     }
 
     public InventoryItem Merge(InventoryItem other)

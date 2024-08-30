@@ -21,7 +21,7 @@ public class Character : MonoBehaviour
 
     [SerializeField] private CharacterHotbar hotbar; 
 
-    [SerializeField] private CharacterInventoryUI inventoryUI;
+    // [SerializeField] private CharacterInventoryUI inventoryUI;
 
 
     [SerializeField] private CharacterCombat combat;
@@ -38,6 +38,8 @@ public class Character : MonoBehaviour
     public BluePrint activeBlueprint;
 
     public GameItemUI selectedItem;
+    public StoreItemUI selectedStoreItem;
+
 
     public Animator animator;
 
@@ -46,8 +48,10 @@ public class Character : MonoBehaviour
     public bool hasPlayerStartedTheGame;
 
 
-
     public List<GameObject> followingObjects = new List<GameObject>();
+
+    public int enhancedInventorySlotCount = 0;
+    public int primaryInventorySize = 6;
 
     private void Awake()
     {
@@ -99,7 +103,7 @@ public class Character : MonoBehaviour
         }
         hotbar = GetComponent<CharacterHotbar>(); 
 
-        inventoryUI = GetComponent<CharacterInventoryUI>(); 
+        // inventoryUI = GetComponent<CharacterInventoryUI>(); 
         combat = GetComponent<CharacterCombat>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         rigidbody = GetComponent<Rigidbody2D>();
@@ -116,11 +120,14 @@ public class Character : MonoBehaviour
         // inventory.InitializeComponents(this);
         combat.InitializeComponents(this);
 
-        if (characterIsInControl){
-            inventoryUI.InitializeComponents(this);
-        }
+        // if (characterIsInControl){
+        //     inventoryUI.InitializeComponents(this);
+        // }
     }
 
+   
+
+   
     public Animator GetAnimator(){
         return animator;
     }
@@ -132,6 +139,9 @@ public class Character : MonoBehaviour
     }
     public CharacterMovement GetMovement(){
         return movement;
+    }
+    public CharacterActions GetActions(){
+        return actions;
     }
     public CharacterWorldInteraction GetWorldInteraction(){
         return worldInteraction;
@@ -199,6 +209,11 @@ public class Character : MonoBehaviour
     {
         // get difficulty
         StartCoroutine(Respawn());
+    }
+
+    public bool TryUseKey(string keyId)
+    {
+        return worldInteraction.TryUseKey(keyId);
     }
 
     public void Attack()
@@ -276,7 +291,12 @@ public class Character : MonoBehaviour
 
     }
 
-    public bool ToggleTorch(bool isOn)
+    public void SetTorchBrightness(float amount){
+        Light light = torch.GetComponent<Light>();
+        light.intensity = amount;
+    }
+
+    public bool ToggleTorch(bool isOn, float brightness)
     {
         if (torch.activeSelf == isOn)
         {
@@ -284,6 +304,7 @@ public class Character : MonoBehaviour
         }
 
         torch.SetActive(isOn);
+        SetTorchBrightness(brightness);
         return true;
     }
 
@@ -297,5 +318,31 @@ public class Character : MonoBehaviour
         if (!characterIsInControl)
             return;
         ToastNotification.Instance.Toast("no-stamina", "You are out of stamina!");
+    }
+
+    public int GetMoneyAmount()
+    {
+        return (int)stats.Money;
+    }
+
+    public void GiveMoney(int amount)
+    {
+        stats.AddMoney((float)amount);
+        ToastNotification.Instance.Toast("get-money", $"You received ${amount}!");
+    }
+    public void SpendMoney(int amount)
+    {
+        stats.SubtractMoney((float)amount);
+    }
+
+    public void ExpandInventory(int newSize){
+        primaryInventorySize = newSize;
+        inventory.ExpandInventory(newSize+enhancedInventorySlotCount);
+    }
+
+    public int GetEnhancedInventorySpaces(){return enhancedInventorySlotCount;}
+    public void SetEnhancedInventorySpaces(int newAmount){
+        enhancedInventorySlotCount = newAmount;
+        inventory.ExpandInventory(primaryInventorySize + newAmount);
     }
 }

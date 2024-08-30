@@ -27,7 +27,7 @@ public class Chest : Interactable
         //     inventory.SetInventoryUI(uiInventory);
         // }
     }
-    public override void OnCharacterInteract(){
+    public override void OnCharacterInteract(CharacterWorldInteraction character){
         // base.OnCharacterInteract();
 
         if (animator != null){
@@ -45,20 +45,34 @@ public class Chest : Interactable
 
         if (isOpen && !isLocked){
             Debug.Log("Tying to open");
-
+            character.OpenChest(this);
             inventory.OpenExternalInventory();
         }
         else{
             Debug.Log("Tying to open");
-
+            character.CloseOpenChest();
             inventory.CloseExternalInventory();
         }
+        
         
         
         // animator.SetBool("IsOpen",!isOpen);
     }
 
+    public void CloseChest() {
+        if(isOpen) {
+            Debug.Log("Closing the chest.");
+            
+            if(animator != null) {
+                animator.SetBool("IsOpen", false);
+            }
 
+            inventory.CloseExternalInventory();
+            isOpen = false;
+        } else {
+            Debug.Log("Chest is already closed.");
+        }
+    }
 
     
 }
