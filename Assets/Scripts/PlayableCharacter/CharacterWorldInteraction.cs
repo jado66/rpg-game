@@ -163,7 +163,12 @@ public class CharacterWorldInteraction: MonoBehaviour
         bool success = inventory.TryAddItem(itemName);
         
         if (success){
-           PlantTileManager.Instance.HarvestPlant(buildSquareCellLocation);
+            bool canHarvest = PlantTileManager.Instance.HarvestPlant(buildSquareCellLocation);
+
+            if (!canHarvest){
+                PlantTileManager.Instance.ClearTile(buildSquareCellLocation, false);
+            }
+
         }
 
         stats.DepleteStamina(.5f);

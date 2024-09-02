@@ -65,7 +65,7 @@ public class Animal : LivingEntity
         }
 
         chest = gameObject.AddComponent<Chest>();
-        chest.inventory = gameObject.GetComponent<ExternalInventory>();
+        chest.inventory = gameObject.GetComponent<StoreInventory>();
         chest.isLocked = true;
 
 

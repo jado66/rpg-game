@@ -7,7 +7,7 @@ public class Chest : Interactable
     public Animator animator;
 
     SceneManager sceneManager;
-    public ExternalInventory inventory;
+    public StoreInventory inventory;
 
     bool isOpen;
 
@@ -46,12 +46,12 @@ public class Chest : Interactable
         if (isOpen && !isLocked){
             Debug.Log("Tying to open");
             character.OpenChest(this);
-            inventory.OpenExternalInventory();
+            inventory.OpenStoreInventory();
         }
         else{
             Debug.Log("Tying to open");
             character.CloseOpenChest();
-            inventory.CloseExternalInventory();
+            inventory.CloseStoreInventory();
         }
         
         
@@ -67,7 +67,7 @@ public class Chest : Interactable
                 animator.SetBool("IsOpen", false);
             }
 
-            inventory.CloseExternalInventory();
+            inventory.CloseStoreInventory();
             isOpen = false;
         } else {
             Debug.Log("Chest is already closed.");

@@ -15,7 +15,7 @@ public class ExternalInventory : CharacterInventory
         inventoryUI = playerUI.externalInventoryPanels.GetComponent<InventoryUI>();
     }
 
-    public void OpenExternalInventory()
+    public  void OpenInventory()
     {
         Debug.Log("external inv = open inv");
         ExternalInventoryGui.SetActive(true);
@@ -23,9 +23,10 @@ public class ExternalInventory : CharacterInventory
 
         // Store the current inventory and set this as the new current inventory
         inventoryUI.SetInventory(this);
+
     }
 
-    public void CloseExternalInventory()
+    public  void CloseInventory()
     {
         ExternalInventoryGui.SetActive(false);
         ExternalInventoryPanel.SetActive(false);

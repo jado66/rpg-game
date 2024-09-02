@@ -54,11 +54,11 @@ public class Torch : InventoryItem
         SceneManager sceneManager = GameObject.FindObjectOfType<SceneManager>();
         bool isDay = sceneManager.IsDay();
 
-        if (isDay)
-        {
-            ToastNotification.Instance.Toast("not-day", "You can't use this in the day.");
-            return;
-        }
+        // if (isDay)
+        // {
+        //     ToastNotification.Instance.Toast("not-day", "You can't use this in the day.");
+        //     return;
+        // }
 
         Amount--;
         

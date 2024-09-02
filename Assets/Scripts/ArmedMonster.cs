@@ -6,7 +6,6 @@ public class ArmedMonster : Monster
     public int damageDealt;
     public int recoilForce;
     public int timeBetweenSwings;
-    public Chest chest;
 
     private int swingTimer;
     private SpriteRenderer spriteRenderer;
@@ -20,9 +19,7 @@ public class ArmedMonster : Monster
     private void InitializeArmedMonster()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        chest = gameObject.AddComponent<Chest>();
-        chest.inventory = gameObject.GetComponent<ExternalInventory>();
-        chest.isLocked = true;
+      
     }
 
     protected override void Update()
@@ -90,11 +87,17 @@ public class ArmedMonster : Monster
 
     protected override void kill()
     {
+        if (!alive){
+            return;
+        }
+        
         Debug.Log("Killing " + name);
         healthbarObject.SetActive(false);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         gameObject.layer = LayerMask.NameToLayer("Interactable");
+
         alive = false;
+        Chest chest = GetComponent<Chest>();
         chest.isLocked = false;
 
         if (animators.Count > 0)

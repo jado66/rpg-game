@@ -32,8 +32,6 @@ public class Monster : LivingEntity
 
     private Vector3 startingLocation;
 
-    public Chest chest;
-
     protected virtual void Awake()
     {
         alive = true;
@@ -77,8 +75,13 @@ public class Monster : LivingEntity
         healthbarObject.SetActive(false);
         HandleDuplicateMonsters();
 
-        chest = gameObject.AddComponent<Chest>();
-        chest.inventory = gameObject.GetComponent<ExternalInventory>();
+        if (GetComponent<Chest>() == null)
+        {
+            gameObject.AddComponent<Chest>();
+        }
+
+        Chest chest = GetComponent<Chest>();
+        chest.inventory = gameObject.GetComponent<StoreInventory>();
         chest.isLocked = true;
         
         grid = GameObject.Find("Grid").GetComponent<GridLayout>();
@@ -264,6 +267,7 @@ public class Monster : LivingEntity
             return;
         }
 
+        Chest chest = GetComponent<Chest>();
         chest.isLocked = false;
 
         foreach (var animator in animators)

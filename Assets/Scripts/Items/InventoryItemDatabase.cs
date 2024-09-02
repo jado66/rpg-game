@@ -124,9 +124,9 @@ public static class InventoryItemDatabase
             FertileEgg.ChickenEgg(),
 
             // new RegularItem("30", "Feather", "Really light", 999, regularItem, new Dictionary<string, int>(), 1, new List<string>(), new List<string>(), 99),
-            new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 150, new List<string>(), new List<string>(), 1),
-            new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 75, new List<string>(), new List<string>(), 1),
-            new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>(), 1),
+            new PickaxeItem("31", "Pickaxe", "It's off to work", tool, new Dictionary<string, int>(), 75, new List<string>(), new List<string>(), 1),
+            new HoeItem("32", "Hoe", "For tilling ground", tool, new Dictionary<string, int>(), 55, new List<string>(), new List<string>(), 1),
+            new AxeItem("33", "Axe", "For chopping all things choppable", tool, new Dictionary<string, int>(), 65, new List<string>(), new List<string>(), 1),
             new ShovelItem("34", "Shovel", "For irrigation", tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>(), 1),
             new ToolItem("astral-scroll", "Astral Projection Scroll", "Used to temporarily separate your spirit from body.", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),
             new ToolItem("35", "Hammer", "Used to construct whatever is in the build menu?", 1, tool, new Dictionary<string, int>(), 125, new List<string>(), new List<string>()),

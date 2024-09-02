@@ -190,6 +190,7 @@ public class Character : MonoBehaviour
             sceneManager.StartFakeLoading();
             yield return new WaitForSeconds(0.2f); // Wait for 0.2 second
             sceneManager.minIntensity = 20;
+            sceneManager.maxIntensity = 80;
 
             transform.position = respawn.transform.position;
             stats.Respawn();

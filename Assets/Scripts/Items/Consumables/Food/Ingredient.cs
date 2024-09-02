@@ -32,7 +32,7 @@ public class Ingredient : InventoryItem
             "From chickens",
             Uses.Consumable, 
             new Dictionary<string, int>{}, 
-            150, 
+            25, 
             new List<string>(), 
             new List<string>(),
             1,
@@ -49,7 +49,7 @@ public class Ingredient : InventoryItem
             "Dead chicken",
             Uses.Consumable, 
             new Dictionary<string, int>{}, 
-            300, 
+            25, 
             new List<string>(), 
             new List<string>(),
             1,
@@ -60,12 +60,12 @@ public class Ingredient : InventoryItem
     public static Ingredient Feather() 
     {
         return new Ingredient(
-            "meat",
+            "feather",
             "Feather",
             "Chicken Feather",
             Uses.RegularItem, 
             new Dictionary<string, int>{}, 
-            300, 
+            3, 
             new List<string>(), 
             new List<string>(),
             1,

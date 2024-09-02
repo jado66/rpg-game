@@ -10,7 +10,7 @@ public class LootItem
     public int maxAmount;
 }
 
-public class MonsterLoot : ExternalInventory
+public class MonsterLoot : StoreInventory
 {
     [SerializeField] private List<LootItem> possibleLoot = new List<LootItem>();
 
@@ -18,6 +18,14 @@ public class MonsterLoot : ExternalInventory
 
     protected new void Start()
     {
+
+        CharacterUI playerUi = GameObject.Find("PlayerUI").GetComponent<CharacterUI>();
+
+        StoreInventoryGui = playerUi.externalInventoryGui;
+        StoreInventoryPanel = playerUi.externalInventoryPanels;
+        inventoryUI = playerUi.externalInventoryPanels.GetComponent<InventoryUI>();
+    
+
         base.Start();
         GenerateLoot();
     }

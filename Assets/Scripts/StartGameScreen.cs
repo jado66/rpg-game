@@ -2,7 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+using TMPro;
 public class TitleScreenManager : MonoBehaviour
 {
     public GameObject[] titleScreens;
@@ -21,7 +21,7 @@ public class TitleScreenManager : MonoBehaviour
 
     public GameObject loadingScreen;
 
-    public Text newGameInput;
+    public TMP_InputField  newGameInput;
 
     public GameObject ControllerPicker;
 
@@ -191,11 +191,15 @@ public class TitleScreenManager : MonoBehaviour
 
     private void PerformStartNewGame()
     {
-        string name = newGameInput.GetComponent<Text>().text;
+        string name = newGameInput.text;
 
-        if (name == "")
-            return;
-        PlayerPrefs.SetString("PlayerName",name);
+        string newName = name;
+
+        if (newName == ""){
+            newName = "player1";
+        }
+            
+        PlayerPrefs.SetString("PlayerName",newName);
         PlayerPrefs.Save();
 
         LoadingData.sceneToLoad = "Terra";

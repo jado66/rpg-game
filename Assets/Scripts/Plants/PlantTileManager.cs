@@ -54,7 +54,7 @@ namespace PlantSystem
             return false;
         }
 
-         private void UpdatePlantTile(Vector3Int location, List<Vector3Int> plantsToRemove)
+        private void UpdatePlantTile(Vector3Int location, List<Vector3Int> plantsToRemove)
         {
             if (plantTiles.TryGetValue(location, out PlantInfo plant))
             {
@@ -147,7 +147,7 @@ namespace PlantSystem
         }
 
         
-        public void HarvestPlant(Vector3Int location)
+        public bool HarvestPlant(Vector3Int location)
         {
             if (plantTiles.TryGetValue(location, out PlantInfo plant))
             {
@@ -158,9 +158,16 @@ namespace PlantSystem
                     tileMapManager.ClearTile(location, false);
                     plantTiles.Remove(location);
                     
+                    return true;
                     // Here you might want to add logic for giving the player the harvested item
                 }
             }
+
+            return false;
+        }
+
+        public void ClearTile(Vector3Int location, bool isTree){
+            tileMapManager.ClearTile(location, isTree);
         }
 
         public bool CanHarvest(Vector3Int location)
