@@ -19,7 +19,7 @@ public class MonsterLoot : StoreInventory
     protected new void Start()
     {
 
-        CharacterUI playerUi = GameObject.Find("PlayerUI").GetComponent<CharacterUI>();
+        CharacterUI playerUi = FindObjectOfType<CharacterUI>();
 
         StoreInventoryGui = playerUi.externalInventoryGui;
         StoreInventoryPanel = playerUi.externalInventoryPanels;

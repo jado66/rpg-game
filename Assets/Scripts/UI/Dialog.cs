@@ -62,6 +62,9 @@ public class Dialog : MonoBehaviour
     public void InitializeDialog(){
         if (dialogGameObject) {
             dialogGameObject.SetActive(true);
+            nextButton.gameObject.SetActive(true);  
+            backButton.gameObject.SetActive(true); 
+
         }
 
         if (backButton != null) {
@@ -96,6 +99,8 @@ public class Dialog : MonoBehaviour
         {
             nextButtonText.text = "Next";
         }
+
+        // backButton.gameObject.SetActive(true); 
     }
 
     public void OnBackClicked()

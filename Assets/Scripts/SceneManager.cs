@@ -56,7 +56,7 @@ public class SceneManager : MonoBehaviour
     [Header("UI")]
     public CharacterUI characterUI;
 
-    private Light worldLight;
+    public Light worldLight;
 
     public FauxLoading fauxLoadingScreen;   
 
@@ -79,7 +79,10 @@ public class SceneManager : MonoBehaviour
         player1 = GameObject.Find("Player1").GetComponent<Character>();
         tilePalette = GameObject.Find("TilePalette").GetComponent<TilePalette>();
         characterUI = GameObject.Find("PlayerUI").GetComponent<CharacterUI>();
-        worldLight = GetComponent<Light>();
+
+        if (!worldLight){
+            worldLight = GetComponent<Light>();
+        }
 
         if (developersMode)
             worldLight.intensity = maxIntensity / 2;

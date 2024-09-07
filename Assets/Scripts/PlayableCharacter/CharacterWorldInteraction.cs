@@ -37,6 +37,8 @@ public class CharacterWorldInteraction: MonoBehaviour
     private Vector3 playerFacingDirection;
 
     private Chest chest;
+    private Sign sign;
+
     private Store store;
 
     public void InitializeComponents(Character characterRef){
@@ -351,10 +353,27 @@ public class CharacterWorldInteraction: MonoBehaviour
         return chest;
     }
 
+    
+
+
+
     public void CloseOpenChest(){
         chest.CloseChest();
         sceneManager.ToggleInventory(false);
         chest = null;
+    }
+
+    public void ReadSign(Sign newSign){
+        sign = newSign;
+    }
+
+    public void StopReadingSign(){
+        sign.HideSignText();
+        sign = null;
+    }
+
+    public Sign GetOpenSign(){
+        return sign;
     }
 
     public void OpenStore(Store newStore){

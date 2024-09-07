@@ -78,19 +78,24 @@ public class PairedPortals : MonoBehaviour
 
     private void UpdateLightingSettings(SceneManager sceneManager)
     {
-        if (isIndoors)
+        PairedPortals targetTeleporter = GetPairedPortals();
+
+        if (targetTeleporter.isIndoors)
         {
+            Debug.Log($"min {20}; max {80}");
             sceneManager.minIntensity = 20;
             sceneManager.maxIntensity = 80;
         }
-        else if (isUnderground)
+        else if (targetTeleporter.isUnderground)
         {
+            Debug.Log($"min {0}; max {0}");
             sceneManager.minIntensity = 0;
             sceneManager.maxIntensity = 0;
             sceneManager.characterUI.TriggerNight(0f, true);
         }
         else
         {
+            Debug.Log($"min {0}; max {80}");
             sceneManager.maxIntensity = 80;
             sceneManager.minIntensity = 0;
         }

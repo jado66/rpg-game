@@ -70,6 +70,10 @@ public class CharacterMovement : MonoBehaviour
             // am I currently interacting
             Chest chest = interactions.GetOpenChest();
             Store store = interactions.GetOpenStore();
+            Sign sign = interactions.GetOpenSign();
+            if (sign != null){
+                sign.HideSignText();
+            }
             if (chest != null){
                 interactions.CloseOpenChest();
             }

@@ -1,54 +1,51 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class Sign : Interactable
-{   
-   
-    public bool customizable;
+{
+    [TextArea(3, 10)]
+    public string signText = "Enter sign text here";
 
-    Player player;
+    public GameObject dialogPanel;
+    public TMP_Text dialogText;
 
-    PlayerUI playerUi;
+    private bool isDisplaying = false;
+ 
+    public Button backButton; // Reference to the Back button
+    public Button nextButton; // Reference to the Next button
 
 
+    public override void OnCharacterInteract(CharacterWorldInteraction character)
+    {
+        if (isDisplaying)
+        {
+            HideSignText();
+            character.StopReadingSign();
 
-    public string message = "Hello world";
-
-    void Start(){
-        player = GameObject.Find("player1").GetComponent<Player>();
-        playerUi = GameObject.Find("PlayerUI").GetComponent<PlayerUI>();
-        
+        }
+        else
+        {
+            ShowSignText();
+            character.ReadSign(this);
+        }
     }
-    public override void OnCharacterInteract(CharacterWorldInteraction interaction){
-        
-        Debug.Log("Interacted with sign");
-        if (playerUi.customSignBox.activeSelf && playerUi.customSignBox.GetComponent<InputField>().isFocused){
-            Debug.Log("We shouldn't be doing anything");
-            return;}
-        //Lets worry about the player state
-        if (playerUi.dialogBox.activeSelf || playerUi.customSignBox.activeSelf)
-            player.currentState = PlayerState.walk;
-        else{
-            player.currentState = PlayerState.standby;
-        }
 
-        if (!customizable){
-            playerUi.dialogBoxText.text = message;
-            playerUi.dialogBox.SetActive(!playerUi.dialogBox.activeSelf);
-        }
-        else{
-            if (playerUi.customSignBox.activeSelf)
-                message = playerUi.customSignText.text.ToString();
-            else
-                playerUi.customSignText.text = message;
-            playerUi.customSignBox.SetActive(!playerUi.customSignBox.activeSelf);
-        }
-        // GameObject dialogBox = GameObject.Find("DialogBox");
-        // Debug.Log(dialogBox == null?"No dialog box":"Found dialog box");
-        // dialogBox.SetActive(!dialogBox.activeSelf);
-        
+    private void ShowSignText()
+    {
+
+        dialogPanel.SetActive(true);
+        dialogText.text = signText;
+        isDisplaying = true;
+
+        backButton.gameObject.SetActive(false);
+        nextButton.gameObject.SetActive(false);
+
+    }
+
+    public void HideSignText()
+    {
+        dialogPanel.SetActive(false);
+        isDisplaying = false;
     }
 }
