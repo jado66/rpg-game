@@ -1,34 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Store : Interactable
 {   
-
-    SceneManager sceneManager;
+    public SceneManager sceneManager;
     public StoreInventory inventory;
-
     public bool isOpen = false;
-    void Start(){
+    public bool autoOpen = true;  // New bool to determine if store should auto-open
+    public GameObject dialogGameObject;
+    private DialogManager dialogManager;         
+    public UnityEvent onFinish;
+
+    private CharacterWorldInteraction character;
+
+    void Start()
+    {
         sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
+        dialogManager = GetComponent<DialogManager>();
     }
-    public override void OnCharacterInteract(CharacterWorldInteraction character){
-        Debug.Log("Made it here - Store");
 
-        if (!isOpen){
-            Debug.Log("Tying to open");
-            character.OpenStore(this);
-            inventory.OpenStoreInventory();
-            isOpen = true;
+    public override void OnCharacterInteract(CharacterWorldInteraction newCharacter)
+    {
 
+        character = newCharacter;
+
+        if (isOpen){
+            CloseStore();
         }
         else{
-            character.CloseOpenStore();
-            inventory.CloseStoreInventory();
+            if (autoOpen)
+            {
+                OpenStore();
+            }
+            else if (dialogManager != null)
+            {
+                dialogManager.StartDialog();
+            }
         }
     }
 
-    public void CloseStore() {
+    public void OpenStore()
+    {
+        Debug.Log("Trying to open store");
+        character.OpenStore(this);
+        inventory.OpenStoreInventory();
+        isOpen = true;
+    }
+
+    public void CloseStore() 
+    {
         if(isOpen) {
             Debug.Log("Closing the chest.");
             
@@ -39,5 +61,4 @@ public class Store : Interactable
         }
     }
 
-    
 }

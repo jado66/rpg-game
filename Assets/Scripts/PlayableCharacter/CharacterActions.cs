@@ -93,11 +93,7 @@ public class CharacterActions : MonoBehaviour
         HandleKeyCounts();
     }
     public void FixedUpdateClone(){
-
-        // Clear buttons pressed
         buttonsPressed.Clear();
-
-        
 
         if (characterMoves.Count > 0){
             characterMoveData = characterMoves.Dequeue();
@@ -116,7 +112,6 @@ public class CharacterActions : MonoBehaviour
         if (buttonsPressed == null || buttonsPressed.Count == 0) {
             return;
         }
-
 
         if (buttonsPressed.Contains(KeyCode.E)) {
             buttonsPressed.Remove(KeyCode.E);
@@ -162,26 +157,6 @@ public class CharacterActions : MonoBehaviour
             }
         }
     }
-
-    // private void HandleHobarItemAssignement(int index){
-    //     InventoryItem selectedItem;
-    //     GameItemUI selectItemUI = character.selectedItem;
-        
-    //     if (selectItemUI != null){
-    //         selectedItem = selectItemUI.Item;
-        
-        
-    //         InventoryItem oldItem = hotbar.SetHotbarItem(index, selectedItem);
-
-            
-    //         selectItemUI.UpdateGameItem(oldItem);
-    //         selectItemUI.UnselectItem();
-            
-    //         // Debug.Log($"Setting {selectedItem.Name} to slot {index}");
-
-    //     }
-
-    // }
     private void ReplayItemUsages(List<InventoryItem> usedItems){
         if(usedItems != null) {
             foreach(var item in usedItems) {
@@ -192,10 +167,6 @@ public class CharacterActions : MonoBehaviour
             }
         }
     }
-
-    
-
-    
 
     public List<KeyCode> GatherButtonsInputs(){
         List<KeyCode> newButtonsPressed = new List<KeyCode>();
@@ -211,22 +182,6 @@ public class CharacterActions : MonoBehaviour
                 newButtonsPressed.Add(KeyCode.LeftShift);
             }
         }
-
-
-
-        // Delay keys
-        // if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-        //     newButtonsPressed.Add(KeyCode.T);
-        //     // Debug.Log("torch");
-        //     keyCount[0]++;
-        // }
-
-        // if (Input.GetKey(KeyCode.T) && keyCount[0] == 0 && currentState == CharacterState.walk) {
-        //     newButtonsPressed.Add(KeyCode.T);
-        //     // Debug.Log("torch");
-        //     keyCount[0]++;
-        // }
-
 
         // HOTKEYS
         if (isMobileControlled){
@@ -282,12 +237,10 @@ public class CharacterActions : MonoBehaviour
         else {
 
             if (Input.GetKey(KeyCode.E) && keyCount[1] == 0) {
-                newButtonsPressed.Add(KeyCode.E);
+                newButtonsPressed.Add(KeyCode.E); 
                 keyCount[1]++;
             }
         }
-
-        
 
         if (Input.GetKey(KeyCode.B) && keyCount[1] == 0) {
             building.ToggleBuilding();

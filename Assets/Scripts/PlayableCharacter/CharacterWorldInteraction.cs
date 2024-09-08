@@ -37,6 +37,8 @@ public class CharacterWorldInteraction: MonoBehaviour
     private Vector3 playerFacingDirection;
 
     private Chest chest;
+
+    public Vector3? chestLocation;
     private Sign sign;
 
     private Store store;
@@ -344,7 +346,7 @@ public class CharacterWorldInteraction: MonoBehaviour
     }
 
     public void OpenChest(Chest newChest){
-
+        chestLocation = transform.position;
         chest = newChest;
         sceneManager.ToggleInventory(true);
     }
@@ -353,11 +355,12 @@ public class CharacterWorldInteraction: MonoBehaviour
         return chest;
     }
 
-    
-
-
-
     public void CloseOpenChest(){
+        if (chest == null){
+            return;
+        }
+
+        chestLocation = null;
         chest.CloseChest();
         sceneManager.ToggleInventory(false);
         chest = null;
@@ -377,7 +380,7 @@ public class CharacterWorldInteraction: MonoBehaviour
     }
 
     public void OpenStore(Store newStore){
-
+        chestLocation = transform.position;
         store = newStore;
         sceneManager.ToggleInventory(true);
     }
@@ -387,6 +390,11 @@ public class CharacterWorldInteraction: MonoBehaviour
     }
 
     public void CloseOpenStore(){
+        if (store == null){
+            return;
+        }
+
+        chestLocation = null;
         store.CloseStore();
         sceneManager.ToggleInventory(false);
         store = null;

@@ -4,7 +4,7 @@ public class NewDialogTrigger : Interactable
 {
     [SerializeField] private DialogManager dialogManager;
 
-    private void Start()
+    protected void Start()
     {
         if (dialogManager == null)
         {

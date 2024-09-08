@@ -18,14 +18,15 @@ public class DialogManager : MonoBehaviour
     [SerializeField] private List<DialogPair> dialogPairs = new List<DialogPair>();
     private Dictionary<string, DialogData> dialogDataDict = new Dictionary<string, DialogData>();
 
+    public GameObject exclamation;
+
     private DialogData currentDialog;
     private DialogNode currentNode;
-    private Stack<DialogNode> history = new Stack<DialogNode>();
-    private Queue<DialogNode> currentBranch = new Queue<DialogNode>();
+    private int currentNodeIndex;
 
     [SerializeField] private string initialDialogKey;
     [SerializeField] private string currentDialogKey;
-    [SerializeField] private bool canNavigateBackwards = true;
+    [SerializeField] private bool canNavigateBackwards = false;
 
     private void Awake()
     {
@@ -40,20 +41,33 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    public void ShowExclamation(){
+        if (exclamation != null){
+            exclamation.SetActive(true);
+        }
+    }
+
+    public void HideExclamation(){
+        if (exclamation != null){
+            exclamation.SetActive(false);
+        }
+    }
+
     public void SetDialogKey(string newKey)
     {
         currentDialogKey = newKey;
     }
 
-    public void StartDialog()
+     public void StartDialog()
     {
+        dialogUI.gameObject.SetActive(true);
         dialogUI.ConnectDialogToUI(this);
 
         if (dialogDataDict.TryGetValue(currentDialogKey, out DialogData dialogData))
         {
-            currentDialog = dialogData;
-            currentNode = dialogData.RootNode;
-            history.Clear();
+            currentDialog = dialogData.CreatePlaythroughCopy();  // Create a deep copy of the DialogData
+            currentNodeIndex = 0;
+            currentNode = currentDialog.RootNode;
             if (currentNode == null)
             {
                 Debug.LogError($"No nodes found in dialog {currentDialogKey}.");
@@ -74,8 +88,7 @@ public class DialogManager : MonoBehaviour
         dialogUI.SetDialogText(currentNode.text);
         currentNode.OnNodeEnter.Invoke();
 
-        bool isFirstNode = history.Count == 0;
-        dialogUI.SetBackButtonEnabled(canNavigateBackwards && !isFirstNode);
+        dialogUI.SetBackButtonEnabled(canNavigateBackwards && currentNodeIndex > 0);
 
         if (currentNode.branchingType == BranchingType.Options)
         {
@@ -95,7 +108,7 @@ public class DialogManager : MonoBehaviour
         else // BranchingType.None
         {
             dialogUI.HideButtons();
-            bool isLastNode = (currentBranch.Count == 0);
+            bool isLastNode = currentNodeIndex == currentDialog.allNodes.Count - 1;
             dialogUI.SetNextButtonEnabled(true);
             dialogUI.SetNextButtonText(isLastNode ? "End" : "Next");
         }
@@ -103,8 +116,18 @@ public class DialogManager : MonoBehaviour
 
     private void OnBooleanEventResult(bool result)
     {
-        EnqueueBranch(result ? currentNode.Branch2 : currentNode.Branch1);
-        ProcessNextNode();
+        List<DialogNode> newBranch = result ? currentNode.Branch2 : currentNode.Branch1;
+        if (newBranch.Count > 0)
+        {
+            currentDialog.allNodes = new List<DialogNode>(newBranch);
+            currentNodeIndex = 0;
+            currentNode = currentDialog.allNodes[currentNodeIndex];
+            UpdateUI();
+        }
+        else
+        {
+            ProcessNextNode();
+        }
     }
 
     public void HandleOptionSelected(int optionIndex)
@@ -112,9 +135,18 @@ public class DialogManager : MonoBehaviour
         if (optionIndex >= 0 && optionIndex < currentNode.Options.Count)
         {
             currentNode.Options[optionIndex].onSelect.Invoke();
-            EnqueueBranch(optionIndex == 0 ? currentNode.Branch1 : currentNode.Branch2);
-            history.Push(currentNode);
-            ProcessNextNode();
+            List<DialogNode> newBranch = optionIndex == 0 ? currentNode.Branch1 : currentNode.Branch2;
+            if (newBranch.Count > 0)
+            {
+                currentDialog.allNodes = new List<DialogNode>(newBranch);
+                currentNodeIndex = 0;
+                currentNode = currentDialog.allNodes[currentNodeIndex];
+                UpdateUI();
+            }
+            else
+            {
+                ProcessNextNode();
+            }
         }
     }
 
@@ -122,64 +154,49 @@ public class DialogManager : MonoBehaviour
     {
         if (currentNode.branchingType == BranchingType.None)
         {
-            bool isLastNode = currentDialog.allNodes.IndexOf(currentNode) == currentDialog.allNodes.Count - 1;
-            if (isLastNode)
+            if (currentNodeIndex == currentDialog.allNodes.Count - 1)
             {
                 EndDialog();
             }
             else
             {
-                history.Push(currentNode);
                 ProcessNextNode();
             }
-            
         }
     }
 
     public void HandleBackButton()
     {
-        if (canNavigateBackwards && history.Count > 0)
+        if (canNavigateBackwards && currentNodeIndex > 0)
         {
-            currentNode = history.Pop();
-            currentBranch.Clear();
+            currentNodeIndex--;
+            currentNode = currentDialog.allNodes[currentNodeIndex];
             UpdateUI();
         }
-    }
-
-    private void EnqueueBranch(List<DialogNode> branch)
-    {
-        foreach (var node in branch)
-        {
-            currentBranch.Enqueue(node);
-        }
-    }
-
-    private bool IsLastNode()
-    {
-        return currentBranch.Count == 0 && GetNextMainSequenceNode() == null;
     }
 
     private void ProcessNextNode()
     {
-        if (currentBranch.Count > 0)
+        currentNodeIndex++;
+        if (currentNodeIndex < currentDialog.allNodes.Count)
         {
-            currentNode = currentBranch.Dequeue();
+            currentNode = currentDialog.allNodes[currentNodeIndex];
             UpdateUI();
         }
         else
         {
-            // We've reached the end of the current branch or main sequence
             EndDialog();
         }
     }
 
     private void EndDialog()
     {
+        if (currentDialog.hideExclamationOnClose){
+            HideExclamation();
+        }
         currentDialog.onDialogEnd.Invoke();
         currentDialog = null;
         currentNode = null;
-        currentBranch.Clear();
-        history.Clear();
         dialogUI.HideDialog();
     }
 }

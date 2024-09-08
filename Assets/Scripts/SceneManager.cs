@@ -412,20 +412,7 @@ public class SceneManager : MonoBehaviour
 
     
     public void ToggleInventory(){
-        if (characterUI.customSignBox.activeSelf)
-            return;
-
-        if (characterUI.buildGui.activeSelf){
-            characterUI.buildGui.SetActive(false);
-        }
-        if (characterUI.mainMenuGui.activeSelf){
-            characterUI.mainMenuGui.SetActive(false);
-        }
-        // if (character.currentState== PlayerState.standby){
-        //     // Fix me
-        //     // character.StartCoroutine(character.interact("interact"));
-        // }
-        characterUI.inventoryGui.SetActive(!characterUI.inventoryGui.activeSelf);
+        characterUI.ToggleInventory();
     }
 
     public void ToggleInventory(bool forcedState)

@@ -17,6 +17,18 @@ public class DialogData
     public UnityEvent onDialogEnd;
 
     public DialogNode RootNode => allNodes.Count > 0 ? allNodes[0] : null;
+    public bool hideExclamationOnClose; 
+
+
+    public DialogData CreatePlaythroughCopy()
+    {
+        DialogData copy = new DialogData();
+        copy.allNodes = new List<DialogNode>(this.allNodes); // Shallow copy of the list
+        copy.onDialogStart = this.onDialogStart;
+        copy.onDialogEnd = this.onDialogEnd;
+        copy.hideExclamationOnClose = this.hideExclamationOnClose; // Copy the value of hideExclamationOnClose
+        return copy;
+    }
 }
 
 [Serializable]

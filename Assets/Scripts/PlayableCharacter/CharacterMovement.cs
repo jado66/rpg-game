@@ -28,7 +28,11 @@ public class CharacterMovement : MonoBehaviour
 
     private CharacterWorldInteraction interactions;
 
+    [SerializeField] private float movementThreshold = 0.25f;
+    [SerializeField] private float closingDelay = 0.5f;
+    private Coroutine closingCoroutine;
 
+    private TooltipUI tooltip;
 
     public void InitializeComponents(Character characterRef){
         character = characterRef;
@@ -37,8 +41,8 @@ public class CharacterMovement : MonoBehaviour
         interactions = character.GetWorldInteraction();
         animator = character.GetAnimator();
         collider = GetComponent<Collider2D>();
-
-        stats = character.GetStats(); // Reference to stats
+        stats = character.GetStats(); 
+        tooltip = GameObject.Find("Tooltip").GetComponent<TooltipUI>();
     }
 
     public void FixedUpdate(){
@@ -56,7 +60,6 @@ public class CharacterMovement : MonoBehaviour
         return timeSinceLastTeleport >= teleportCooldown; // Check cooldown
     }
 
-
     public void HandleMovement(Vector2 change, bool isLeftShiftPressed)
     {
         movement = Vector2.zero;
@@ -64,23 +67,19 @@ public class CharacterMovement : MonoBehaviour
         movement.x = change.x;
         movement.y = change.y;
        
-        
         if (change != Vector2.zero){
 
-            // am I currently interacting
-            Chest chest = interactions.GetOpenChest();
-            Store store = interactions.GetOpenStore();
-            Sign sign = interactions.GetOpenSign();
-            if (sign != null){
-                sign.HideSignText();
-            }
-            if (chest != null){
-                interactions.CloseOpenChest();
-            }
-            if (store != null){
-                interactions.CloseOpenStore();
-            }
+            if (interactions.chestLocation.HasValue){
+                Vector3 chestLocationValue = interactions.chestLocation.Value;
 
+                float distanceMoved = Vector3.Distance(chestLocationValue, characterCenter);
+
+                if (distanceMoved >= movementThreshold)
+                {
+                    HandleClosingExternalInventory();
+                    interactions.chestLocation = null;
+                }
+            }
 
             playerFacingDirection.x = change.x;
             playerFacingDirection.y = change.y;
@@ -105,7 +104,27 @@ public class CharacterMovement : MonoBehaviour
                 stats.RegainStamina(stats.StaminaDrainPerSecond/4 * Time.deltaTime);
             }
         }
-        
+    }
+
+    private void HandleClosingExternalInventory()
+    {
+        tooltip.HideTooltip();
+        Chest chest = interactions.GetOpenChest();
+        Store store = interactions.GetOpenStore();
+        Sign sign = interactions.GetOpenSign();
+
+        if (sign != null)
+        {
+            sign.HideSignText();
+        }
+        if (chest != null)
+        {
+            interactions.CloseOpenChest();
+        }
+        if (store != null)
+        {
+            interactions.CloseOpenStore();
+        }
     }
 
     public void EnterWater(){
@@ -150,12 +169,10 @@ public class CharacterMovement : MonoBehaviour
         else{
             animator.SetBool("moving", false);
             animator.SetBool("running", false);
-
         }
-
     }
 
-     private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         if (collider != null)
         {
@@ -168,123 +185,4 @@ public class CharacterMovement : MonoBehaviour
             Gizmos.DrawLine(characterCenter, characterCenter + playerFacingDirection);
         }
     }
-
-    // if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.standby 
-    //                                       && currentState != PlayerState.swim && keyCount[0] == 0){
-    //         cloneState = CloneState.attack;
-    //         StartCoroutine(AttackCo());
-    //         keyCount[0] ++;
-    //     }
-    //     else if (currentState == PlayerState.standby && onBoat){
-    //         Debug.Log("Move boat");
-    //         moveBoat();
-    //     }
-    //     else if (animator.GetBool("swimming")){
-    //         cloneState = CloneState.swim;
-    //         animator.SetFloat("moveX",change.x);
-    //         animator.SetFloat("moveY",change.y);
-    //         animator.SetBool("moving",true);
-    //         movePlayer(false);
-    //         playerFacingDirection.x = change.x;
-    //         playerFacingDirection.y = change.y;
-    //         playerFacingDirection.Normalize();
-    //     }
-    //     else if (change != Vector3.zero && currentState != PlayerState.standby && (currentState == PlayerState.walk || currentState == PlayerState.run)){
-    //         // Debug.Log("Change = ("+change.x.ToString()+","+change.y.ToString());
-    //         animator.SetFloat("moveX",change.x);
-    //         animator.SetFloat("moveY",change.y);
-    //         animator.SetBool("moving",true);
-    //         movePlayer(Input.GetKey(KeyCode.LeftShift)&&(stamina >= 1));
-    //         cloneState = (Input.GetKey(KeyCode.LeftShift)? CloneState.run : CloneState.walk);
-    //         playerFacingDirection.x = change.x;
-    //         playerFacingDirection.y = change.y;
-    //         playerFacingDirection.Normalize();
-    //     }
-        
-    //     else if (currentState != PlayerState.standby){
-    //         cloneState = CloneState.walk;
-    //         currentState = PlayerState.walk;
-    //         animator.SetBool("moving",false);
-    //         animator.SetBool("running",false);
-    //     }
-    //     else if (currentState == PlayerState.standby){
-    //         // control bird
-    //         if (astralProjecting){
-    //             moveAstralProjection(change);
-    //         }
-    //     }
-        
-    //     playerMoveData.movement = change;
-    //     // playerMoveData.buttonsPressed.Clear();
-    //     playerMoveData.buttonsPressed = buttonsPressed.GetRange(0, buttonsPressed.Count); // Shallow copy
-    //     playerMoveData.cloneState = cloneState;
-    //     playerMoves.Enqueue(playerMoveData);
-
-    //     try{
-    //         buildSquareCellLocation = tilePalette.grid.WorldToCell(characterCenter+playerFacingDirection);
-    //         buildSquare.transform.position = tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
-    //         noBuildSquare.transform.position = tilePalette.grid.CellToWorld(buildSquareCellLocation)+new Vector3(.5f,.5f,1);
-    //     }
-    //     catch{
-    //         Debug.Log("Grid missing");
-    //     }
-    //     StartCoroutine("handleButtonPressesCo");
-
-    // private IEnumerator handleButtonPressesCo(){
-
-
-
-    //     foreach (var button in buttonsPressed){
-    //         // Debug.Log("button pressed");
-
-    //         switch(button){
-    //             case KeyCode.T:
-    //                 Debug.Log("torch");
-    //                 torch.SetActive(!torch.activeSelf); 
-    //                 setEnabledShadows(lightCount == 0 && !torch.activeSelf);
-    //                 break;
-    //             case KeyCode.E:
-    //                 if (onBoat){
-    //                     boat.OnCharacterInteract();
-    //                 }
-    //                 else
-    //                     StartCoroutine(interact("interact"));
-    //                 break;
-    //             case KeyCode.Q:
-    //                 StartCoroutine(interact("dig"));
-    //                 break;
-    //             case KeyCode.C:
-    //                 StartCoroutine(interact("chop"));
-    //                 break;
-    //             case KeyCode.F:
-    //                 StartCoroutine(interact("build"));
-    //                 break;
-    //             case KeyCode.M:
-    //                 StartCoroutine(interact("mine"));
-    //                 break;
-    //             case KeyCode.P:
-    //                 Debug.Log("astralProjecting");
-    //                 if (!astralProjecting){
-    //                    astralProject(); 
-    //                 }
-    //                 else
-    //                     returnProjectionToBody();
-    //                 break;
-    //         }
-    //     }
-
-    //     // reset button presses
-    //     for (int i = 0; i <10; i++){
-    //         if (keyCount[i] != 0)
-    //             keyCount[i]+=1;
-    //         if (keyCount[i]>=15)
-    //             keyCount[i] = 0;
-    //     }
-
-    //     yield return null;
-    
-
-
-
-        
 }

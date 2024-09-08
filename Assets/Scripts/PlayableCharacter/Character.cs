@@ -346,4 +346,9 @@ public class Character : MonoBehaviour
         enhancedInventorySlotCount = newAmount;
         inventory.ExpandInventory(primaryInventorySize + newAmount);
     }
+
+    public void CloseExternalInventory(){
+        worldInteraction.CloseOpenStore();
+        worldInteraction.CloseOpenChest();
+    }
 }

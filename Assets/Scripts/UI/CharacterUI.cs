@@ -70,7 +70,7 @@ public class CharacterUI : MonoBehaviour
 
     public Text pauseMenuButtonText;
 
-  
+    public TooltipUI tooltip;
 
     // Start is called before the first frame update
 
@@ -278,6 +278,8 @@ public class CharacterUI : MonoBehaviour
     }
 
     public void ToggleInventory(){
+        tooltip.HideTooltip();
+
         if (customSignBox.activeSelf)
             return;
 
@@ -295,6 +297,10 @@ public class CharacterUI : MonoBehaviour
         bool inventoryActiveSelf = inventoryGui.activeSelf;
         inventoryGui.SetActive(!inventoryActiveSelf);
 
+
+        if (inventoryActiveSelf){
+            character.CloseExternalInventory();
+        }
     }
 
     public void ClearAllPlayerPrefs()
